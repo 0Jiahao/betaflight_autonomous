@@ -99,6 +99,7 @@ static void applyMultirotorAltHold(void)
 {
     // compute the P I D terms
     rangefinderAlt = rangefinderGetLatestAltitude();
+    my_altitude = rangefinderAlt;
     // xv[0] = xv[1];
     // xv[1] = rangefinderAlt / gain;
     // yv[0] = yv[1];
@@ -293,7 +294,6 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
         // accAlt = accAlt * CONVERT_PARAMETER_TO_FLOAT(250) + (float)rangefinderAlt * (1.0f - CONVERT_PARAMETER_TO_FLOAT(250));    // complementary filter for altitude estimation (baro & acc)
         vel += vel_acc;
     }
-    my_altitude = estimatedAltitude;
 
     DEBUG_SET(DEBUG_ALTITUDE, 0, accSum[2]/accSumCount);
     DEBUG_SET(DEBUG_ALTITUDE, 3, (int32_t)my_rangefinder);

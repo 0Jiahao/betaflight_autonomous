@@ -9,29 +9,29 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"bus_spi_soft.c"
-	.section	.gnu.lto_.profile.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.profile.1035db4ce56b7f0b,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.icf.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.icf.1035db4ce56b7f0b,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.inline.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.inline.1035db4ce56b7f0b,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.pureconst.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.pureconst.1035db4ce56b7f0b,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.symbol_nodes.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.1035db4ce56b7f0b,"",%progbits
 	.ascii	"x\234cc```b\000\001\000\000R\000\011"
 	.text
-	.section	.gnu.lto_.refs.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.refs.1035db4ce56b7f0b,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.decls.1035db4ce56b7f0b,"",%progbits
 	.ascii	"x\234cc\200\000F V\001\342\377@\000b\037d \000\000\276"
 	.ascii	"|\004\352"
 	.text
-	.section	.gnu.lto_.symtab.d47ce2458b19bcde,"",%progbits
+	.section	.gnu.lto_.symtab.1035db4ce56b7f0b,"",%progbits
 	.text
 	.section	.gnu.lto_.opts,"",%progbits
 	.ascii	"'-fno-math-errno' '-fno-signed-zeros' '-fno-trappin"

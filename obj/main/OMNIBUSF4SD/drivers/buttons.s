@@ -9,29 +9,29 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"buttons.c"
-	.section	.gnu.lto_.profile.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.profile.386a1a0a5c031eff,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.icf.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.icf.386a1a0a5c031eff,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.inline.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.inline.386a1a0a5c031eff,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.pureconst.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.pureconst.386a1a0a5c031eff,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.symbol_nodes.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.386a1a0a5c031eff,"",%progbits
 	.ascii	"x\234cc```b\000\001\000\000R\000\011"
 	.text
-	.section	.gnu.lto_.refs.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.refs.386a1a0a5c031eff,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.decls.386a1a0a5c031eff,"",%progbits
 	.ascii	"x\234cc\200\000F V\001\342\377@\000b\037d \000\000\276"
 	.ascii	"|\004\352"
 	.text
-	.section	.gnu.lto_.symtab.5c6821a2ecd48458,"",%progbits
+	.section	.gnu.lto_.symtab.386a1a0a5c031eff,"",%progbits
 	.text
 	.section	.gnu.lto_.opts,"",%progbits
 	.ascii	"'-fno-math-errno' '-fno-signed-zeros' '-fno-trappin"

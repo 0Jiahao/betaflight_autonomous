@@ -9,24 +9,24 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"main.c"
-	.section	.gnu.lto_.profile.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.profile.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234cc```\001bF\0069f\000\000\267\000-"
 	.text
-	.section	.gnu.lto_.icf.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.icf.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234cc``\340`@\000F\206\003\177V\234\340g\000\000\017"
 	.ascii	"\322\003K"
 	.text
-	.section	.gnu.lto_.jmpfuncs.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234cc``\340`@\000F(\015\000\001P\000\020"
 	.text
-	.section	.gnu.lto_.inline.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.inline.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234cc``Pf@\000F\006\006\326[\374\214\014L@6\013\230"
 	.ascii	"d`\344b\204\023 >\000&\372\001E"
 	.text
-	.section	.gnu.lto_.pureconst.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.pureconst.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234cc```\006bF\006\023\000\000\231\000?"
 	.text
-	.section	.gnu.lto_main.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_main.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234mO=K\003A\020}ogs\011\202\026\2322\210m\232\004"
 	.ascii	"\264\260\366\247H*\013-\364\007\334I\004/\304\302B#"
 	.ascii	"\304+\264\322N\305\217x\205\270\177\300@lm\202\202U"
@@ -43,17 +43,17 @@
 	.ascii	"\342\214\375R\265\331Juk\263V]_]\333\030\271J\015\277"
 	.ascii	")\353e\353"
 	.text
-	.section	.gnu.lto_.symbol_nodes.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234cc``H\002b\006\246f\306z\006\206\011\347\030\030"
 	.ascii	"\200\324\256\206\205\214\014\014\214m\214\365\214`!"
 	.ascii	"\006\206\206\006\007\240@+c=\023\212@\013c=3\262\000"
 	.ascii	"3\020.y\360\217\221\231\201\211\341\310\202k\335\354"
 	.ascii	"\314\014\214\014O@\014\006\000\202.\030c"
 	.text
-	.section	.gnu.lto_.refs.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.refs.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.decls.5e764e66696b93dd,"",%progbits
 	.ascii	"x\234m\220ML\023A\024\307\347\355lK?p\301\206\230\232"
 	.ascii	"p\250\2348-'\017M\274y\320\203\361\346A\016*\25654J"
 	.ascii	"KZ\215\034'\026\215\"A\242\215)\012\261\306\230hB\220"
@@ -87,7 +87,7 @@
 	.ascii	"\215E\317\251\235\304\233\324:#\247\316\237\215$\366"
 	.ascii	"8R\266\016\355\025\346\312\234\371\013\265\\\371\365"
 	.text
-	.section	.gnu.lto_.symtab.fa80455fcca555a2,"",%progbits
+	.section	.gnu.lto_.symtab.5e764e66696b93dd,"",%progbits
 	.ascii	"main\000"
 	.ascii	"\000"
 	.ascii	"\000"

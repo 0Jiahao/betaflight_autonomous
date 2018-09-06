@@ -9,29 +9,29 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"bus_i2c_soft.c"
-	.section	.gnu.lto_.profile.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.profile.a6b0c7d7ce6a5e04,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.icf.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.icf.a6b0c7d7ce6a5e04,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.inline.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.inline.a6b0c7d7ce6a5e04,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.pureconst.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.pureconst.a6b0c7d7ce6a5e04,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.symbol_nodes.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.a6b0c7d7ce6a5e04,"",%progbits
 	.ascii	"x\234cc```b\000\001\000\000R\000\011"
 	.text
-	.section	.gnu.lto_.refs.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.refs.a6b0c7d7ce6a5e04,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.decls.a6b0c7d7ce6a5e04,"",%progbits
 	.ascii	"x\234cc\200\000F V\001\342\377@\000b\037d \000\000\276"
 	.ascii	"|\004\352"
 	.text
-	.section	.gnu.lto_.symtab.b96b432effe6e907,"",%progbits
+	.section	.gnu.lto_.symtab.a6b0c7d7ce6a5e04,"",%progbits
 	.text
 	.section	.gnu.lto_.opts,"",%progbits
 	.ascii	"'-fno-math-errno' '-fno-signed-zeros' '-fno-trappin"

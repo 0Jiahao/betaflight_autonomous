@@ -9,15 +9,15 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"transponder_ir_ilap.c"
-	.section	.gnu.lto_.profile.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.profile.5644c63409ab4835,"",%progbits
 	.ascii	"x\234cc```\001bF\006\013]\000\001\025\000q"
 	.text
-	.section	.gnu.lto_.icf.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.icf.5644c63409ab4835,"",%progbits
 	.ascii	"x\234cc``\220b@\000\026\206\033\177~_cc<\363\365\322"
 	.ascii	"f\016\246\325\237\267\365\2613\037\230\324\324\316\303"
 	.ascii	"\000\000\270\250\014t"
 	.text
-	.section	.gnu.lto_.jmpfuncs.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.5644c63409ab4835,"",%progbits
 	.ascii	"x\234cc``(`@\000&\006&FF\346\3729\314\014@\314\010d"
 	.ascii	"3\202\330l\014\014\214\007X\030\031\200\370?\020\360"
 	.ascii	"32Maf\234\326z\350<{7\363\034f&F\006\306\315\2142`\314"
@@ -25,17 +25,17 @@
 	.ascii	"\007\304\030\2670B\344\017\210\201\0250\000\000\322"
 	.ascii	"\006\032>"
 	.text
-	.section	.gnu.lto_.inline.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.inline.5644c63409ab4835,"",%progbits
 	.ascii	"x\234cc``\360e@\000&\006\006\325\255\202\214\214\014"
 	.ascii	"\002\214\014\314\011,\366\027\336~fd\340<\323%\300\304"
 	.ascii	"\300\270\240\227\215\005JA\224\362\210\000\025*0\002"
 	.ascii	"\231\254\035\352\014\334+\334\230@\342,\274\014\014"
 	.ascii	"\314\023\374\200,\000\030\371\013v"
 	.text
-	.section	.gnu.lto_.pureconst.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.pureconst.5644c63409ab4835,"",%progbits
 	.ascii	"x\234cc```\005b&\006)&)\000\000\376\000D"
 	.text
-	.section	.gnu.lto_updateTransponderDMABufferIlap.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_updateTransponderDMABufferIlap.5644c63409ab4835,"",%progbits
 	.ascii	"x\234\235V[L\224G\024\236\363\317\177\331\373.\240i"
 	.ascii	"\253+b*AzqKL\223\366\275\017\355s}m\032\004bH,\030 "
 	.ascii	"M\233>\360\003\012\242\020/\025\324uk\360F\255J\361"
@@ -124,7 +124,7 @@
 	.ascii	"\333\274\354\0021\261\317\373\266@\212\0344\233\233"
 	.ascii	"\373yVN\246=3w\256\320\315\377\017Ro\223\271"
 	.text
-	.section	.gnu.lto_transponderIrInitIlap.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_transponderIrInitIlap.5644c63409ab4835,"",%progbits
 	.ascii	"x\234\235SMO\023Q\024}g^;\255-m\\\021\214]\2600!5\206"
 	.ascii	"Y\372+\374\015\246\001\026M\264\222\326\2702\351\320"
 	.ascii	"\212-\301\010\211\264j3\352\304X\304\370\211\025\245"
@@ -162,7 +162,7 @@
 	.ascii	"\241H\254s_\244\275#\272;L\317\236Pgk\033\363\376q\375"
 	.ascii	"\013\214\000]\314"
 	.text
-	.section	.gnu.lto_ilapTansponderVTable.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_ilapTansponderVTable.5644c63409ab4835,"",%progbits
 	.ascii	"x\234cc``\260\004bm\006\010\230\302\314\270s\347\233"
 	.ascii	"\333\354\365\177\033:\032\032\036t\257df\233\303\314"
 	.ascii	"0\215\031\"5\263\351\366w~\213m\015\035\013\032\004"
@@ -170,19 +170,19 @@
 	.ascii	"(Y?713O?\245(\263,\265\250X\277\244(1\257\270 ?/%\265"
 	.ascii	"(>\023\210r\022\013\364\222\031\000\236f$\257"
 	.text
-	.section	.gnu.lto_.symbol_nodes.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.5644c63409ab4835,"",%progbits
 	.ascii	"x\234cc``\010\004b\006\246\377\014\365\014\014\023\316"
 	.ascii	"1\200\250]\013\034\031\030X\377204(1003\375c\250g\204"
 	.ascii	"K5\200\244\032\030\031\033\201R\014\214\215\214\365"
 	.ascii	"L`)\240\332\006\007\220b\026\206'\017\37712\000\000"
 	.ascii	"7o\023h"
 	.text
-	.section	.gnu.lto_.refs.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.refs.5644c63409ab4835,"",%progbits
 	.ascii	"x\234\015\303!\012\000 \020\000\301\335;\320f\020\304"
 	.ascii	"`\020\223\377\377\241\016L\001\316_\301\206\035\207"
 	.ascii	"N\\\272\365\032\221i\006<\024>\000\367"
 	.text
-	.section	.gnu.lto_.decls.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.decls.5644c63409ab4835,"",%progbits
 	.ascii	"x\234\265W{PS\331\031\277\347\236\220\204\030\036+\324"
 	.ascii	"\272Jw\\e5\375\003\242\256\263v\333\231\216\335v\246"
 	.ascii	"\365\217\355v:\2663\354t\232\015\020$NHl\022\266]\377"
@@ -335,7 +335,7 @@
 	.ascii	"\304}\213\306E/\310\360\021\240\375\033\315\261\006"
 	.ascii	"\321"
 	.text
-	.section	.gnu.lto_.symtab.3de56f67bfd03b76,"",%progbits
+	.section	.gnu.lto_.symtab.5644c63409ab4835,"",%progbits
 	.ascii	"updateTransponderDMABufferIlap\000"
 	.ascii	"\000"
 	.ascii	"\000"

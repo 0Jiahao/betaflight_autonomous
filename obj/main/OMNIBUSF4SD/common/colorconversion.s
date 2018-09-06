@@ -9,28 +9,28 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"colorconversion.c"
-	.section	.gnu.lto_.profile.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.profile.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234cc```\001bF\006W?\000\001P\000\237"
 	.text
-	.section	.gnu.lto_.icf.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.icf.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234cc``\340c@\000&\206\327\273o/ef\274\376\343\350"
 	.ascii	"]~\006\0003\214\006\301"
 	.text
-	.section	.gnu.lto_.jmpfuncs.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234cc``\340b@\000F\006FF\306\3729\314\014\014\000"
 	.ascii	"\006\245\0013"
 	.text
-	.section	.gnu.lto_.inline.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.inline.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234cc``\010f@\000F\006\206\013\014B\214\314\014\034"
 	.ascii	"\214\014\314\022`R\200A\000H2piM\323f`[ \317\304\300"
 	.ascii	"\370\202\235\005B\202\010\016&\006\316\011\366\034 "
 	.ascii	"\246\000\023\203\376\005k\240\372\036\011\036\006\225"
 	.ascii	"+\2422`#\001\252\352\013J"
 	.text
-	.section	.gnu.lto_.pureconst.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.pureconst.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234cc```\006bF\006I\000\000~\000$"
 	.text
-	.section	.gnu.lto_hsvToRgb24.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_hsvToRgb24.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234\225X\353w\024U\022\277\325wfz^y \002*AA\022B\""
 	.ascii	"d\000\001\001\021Q8G\344O\330O\313\346p\316\352Y\310"
 	.ascii	"9\240~\360\203t2y\200\200\304lB ;\321\000A\214\030C"
@@ -148,18 +148,18 @@
 	.ascii	"\374\271\202\245y\371\014\362\371\337_\\\354\372\333"
 	.ascii	"\242\345\213\371\362E/\374\0175\014C\035"
 	.text
-	.section	.gnu.lto_.symbol_nodes.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234cc``\220\006b\006&\206z\006\206\011\347\030@\324"
 	.ascii	"\256\006G\006\006VF\206\006%\006\006f\006\000LJ\004"
 	.ascii	"\246"
 	.text
-	.section	.gnu.lto_.refs.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.refs.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234\015\3121\016C\000\024\000\320\377\014\305,\351"
 	.ascii	"\304\005\252I\255\022gpmv\244\261\213s\370\303\333\336"
 	.ascii	"+\"\346\364\016J*j\032Z:>\364|\371102\261d]\323\226"
 	.ascii	"\366t\244\177:\323\025\205;\342\001\013N\011\326"
 	.text
-	.section	.gnu.lto_.decls.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.decls.657b58ed05557cbd,"",%progbits
 	.ascii	"x\234\265VYPTG\024\355\373z\030\206a\321\000ea\212J"
 	.ascii	"Y\212\300G`\004I\214\177V\374H\276\362\221J\252\222"
 	.ascii	"\374\214\003\216\200\0053ff0e\276\036\002#.\211b\241"
@@ -262,7 +262,7 @@
 	.ascii	"?\374+\242\265\305~\226\2200_\211un\274\022+{\371\007"
 	.ascii	"\204\240\346c"
 	.text
-	.section	.gnu.lto_.symtab.893b6df4bae19a33,"",%progbits
+	.section	.gnu.lto_.symtab.657b58ed05557cbd,"",%progbits
 	.ascii	"hsvToRgb24\000"
 	.ascii	"\000"
 	.ascii	"\000"

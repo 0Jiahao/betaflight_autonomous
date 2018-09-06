@@ -9,24 +9,24 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"config.c"
-	.section	.gnu.lto_.profile.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.profile.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc```\001bF\006&F\000\000}\000\017"
 	.text
-	.section	.gnu.lto_.icf.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.icf.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc``\340`@\000F\206\266\275/\226\3621\000\000\015"
 	.ascii	"\320\002\356"
 	.text
-	.section	.gnu.lto_.jmpfuncs.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc```e@\000F\020\001\000\000\355\000\015"
 	.text
-	.section	.gnu.lto_.inline.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.inline.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc``\020a@\000F\006\006f&F\006& \223m\201<\023"
 	.ascii	"X\014\000\012'\000\353"
 	.text
-	.section	.gnu.lto_.pureconst.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.pureconst.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc```\006bF\006\006\000\000e\000\013"
 	.text
-	.section	.gnu.lto_targetConfiguration.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_targetConfiguration.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc``\250\003bu \226\006bFf\006F\246\011\347\030"
 	.ascii	"\030\0329\230\030\031A\214\006\016F\206z&\306z\306\036"
 	.ascii	"\346)\314\214\207\332\237\355d\322\\\336\000\004\007"
@@ -39,14 +39,14 @@
 	.ascii	"\375\222\304\242\364\324\022}\177_?O\247\320`7\023\375"
 	.ascii	"\344\374\274\264\314t\275d\006\000\022H8A"
 	.text
-	.section	.gnu.lto_.symbol_nodes.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc``\020\001b\006\2466\306z\006\206\011\347\030"
 	.ascii	"\030\200\324\256\006G\240\020\0001\206\004{"
 	.text
-	.section	.gnu.lto_.refs.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.refs.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.decls.1180f35a790acd0c,"",%progbits
 	.ascii	"x\234cc``\270\311\310\300\220\011\244\003\200\370?\020"
 	.ascii	"0\001\351\203\014\010\000\224f\330\315\200\011\312\031"
 	.ascii	"!r\011\004\324Maf\374\260p\303\016\316\373\214w\031"
@@ -70,7 +70,7 @@
 	.ascii	"\237\014V\251\227\314\341\356\027\252\340li\311\240"
 	.ascii	"J\214j\006\000\325\301\214\353"
 	.text
-	.section	.gnu.lto_.symtab.5febda1779567ccd,"",%progbits
+	.section	.gnu.lto_.symtab.1180f35a790acd0c,"",%progbits
 	.ascii	"targetConfiguration\000"
 	.ascii	"\000"
 	.ascii	"\000"

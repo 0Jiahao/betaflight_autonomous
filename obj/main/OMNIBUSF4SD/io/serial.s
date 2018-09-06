@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"serial.c"
-	.section	.gnu.lto_.profile.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.profile.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234cc```\003bF\206\016\326_L\000\004\311\001\227"
 	.text
-	.section	.gnu.lto_.icf.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.icf.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234cc``\330\317\200\000\012\014\327\356\255n`c\354"
 	.ascii	"[x\350\031\023\323\216O\377?\2632_\3319\375\006;\313"
 	.ascii	"\276?7\2170\263\336\330\336\260\234\203\355\336\321"
@@ -27,7 +27,7 @@
 	.ascii	"-\373\351\352\3376\036\271\227\275\367\202\345\347\376"
 	.ascii	"\353<\317\243\000\266\224\001\0008 b\361"
 	.text
-	.section	.gnu.lto_.jmpfuncs.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\265T;O\303@\014\266\357\322K\011\205\322\226\207"
 	.ascii	"\004\001\301\012\013\003?\202\277\224)H\010\030X\021"
 	.ascii	"S\207\262\263 \236\345\015B\260\000Eb``c\346'\200\300"
@@ -57,7 +57,7 @@
 	.ascii	"\231+\346x@~\001ZFN\224\374\332\205\205>\235vm\370\006"
 	.ascii	"\266\214iq"
 	.text
-	.section	.gnu.lto_.inline.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.inline.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234m\223Kk\023Q\024\307\377\347\3163\311\344\3214"
 	.ascii	"\211b\307t\026n\334\204 \350B\021\202\340v>C\327\311"
 	.ascii	"\312/\240Y(\370Z\314\"\264\233\252QD\332\225\013\343"
@@ -94,12 +94,12 @@
 	.ascii	"\240\037\224\360x\344\306\306b\026H\213\220\202\377"
 	.ascii	"{\217\265n"
 	.text
-	.section	.gnu.lto_.pureconst.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.pureconst.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234cc``\320\007bq\006\006F)f\006V\0066V\016VNK\036"
 	.ascii	"K^V>V~KA\011!IaV\021VQ)1)q\011)\011i\026\031\026Y\013"
 	.ascii	"9\023\000L\003\003\247"
 	.text
-	.section	.gnu.lto_nopConsumer.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_nopConsumer.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234cc``\330\011\304r@,\015\304\214\314\014\214L\023"
 	.ascii	"\316104r012\202\030\015\034\214\014\365L\214\365\214"
 	.ascii	"=\314S\230\031\017\265?\333\311\244\271\274\001\010"
@@ -115,7 +115,7 @@
 	.ascii	"\222\365s\0233\363\3643\363\365\213S\2132\023s\364\222"
 	.ascii	"\031XR\022K\022\001\250EHH"
 	.text
-	.section	.gnu.lto_pgResetFn_serialConfig.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_pgResetFn_serialConfig.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\235\224ko\023G\024\206\347\335\331]\233\370\232"
 	.ascii	"/\005U.\360\241(\004\020V\244\376\203~\351\017\350\037"
 	.ascii	"@\250 K\005$\370\001\036b\310\245P\224J\330U\243\025"
@@ -169,7 +169,7 @@
 	.ascii	"\273\342{>\331\235\330\362\351\346\255\"\350\366>\334"
 	.ascii	"\265s[b;\022\377\002O?O/"
 	.text
-	.section	.gnu.lto_serialPortIdentifiers.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialPortIdentifiers.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234cc``\270\015\304\214\014\0200\205\231q\317\201"
 	.ascii	"\205\347Y\273\231\347030\312\003\271'\227\354\372\303"
 	.ascii	"\003\34222\262\002\271-\235\337\257sBd\345\200\334\213"
@@ -181,7 +181,7 @@
 	.ascii	"v\001\361N \336\001\304\333\201x\033\020o\005\342-@"
 	.ascii	"\274\231Q\206\201q/\243\005\003\000\302/Co"
 	.text
-	.section	.gnu.lto_lookupBaudRateIndex.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_lookupBaudRateIndex.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234UR[KTQ\024^\337^\373\234\031'o/Q\310<\010%f\204"
 	.ascii	"\223\364O\372\005M*1P\006Z\320\333\354\2311/\0301DN"
 	.ascii	"1\234\302\012\013\244R)K\363v\274\020\005S\246/\202"
@@ -215,7 +215,7 @@
 	.ascii	"\222\251\266D\352|\242\243\265=\225<\333\330L\321\323"
 	.ascii	"\311\213-'\223\027Z\235T[K\353\245\337^\311\336f"
 	.text
-	.section	.gnu.lto_baudRates.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_baudRates.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\2345\221\311N\002A\030\204\373\237\021\334P\256\036"
 	.ascii	"&\236|\001\365\302\305\367\3611\3068\032\324\030=\020"
 	.ascii	"\2278F\024p\211k\242\200\340\206\003(\210\013z1F4\034"
@@ -241,7 +241,7 @@
 	.ascii	"k`\025\254\200(\210\200e\020\006!\020\004K`\2214FYr"
 	.ascii	"\261_\357n\306\317"
 	.text
-	.section	.gnu.lto_findSerialPortIndexByIdentifier.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_findSerialPortIndexByIdentifier.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234M\222\337K\024Q\024\307\317\271g\356\314\262\273"
 	.ascii	"m\322\203E\314\203/\213h\346&>\367\336\037\320\037\220"
 	.ascii	"\350\006\003\265\301\332Co{m5\225zX\"\267\230\206Z-"
@@ -276,7 +276,7 @@
 	.ascii	"T\177:\353\364\034\353\354\205\250\323\227\316\234t"
 	.ascii	"\216:\351\254t2}\351S\177\000\347m\317\232"
 	.text
-	.section	.gnu.lto_findSerialPortUsageByIdentifier.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_findSerialPortUsageByIdentifier.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215S\337KSQ\034\377~\317\271?\2669G\320C%{\350"
 	.ascii	"ED*\227\024\275\365\2774\334\202\013\265@}\350A\330"
 	.ascii	"\321Yk\324CHNY#\206\026\2754\315\232\263-\253\353LS"
@@ -318,7 +318,7 @@
 	.ascii	"\021\010\206\232\215\363F\260Q5B\201\340eg\203?\024"
 	.ascii	"0\002\376\346\340\037x\337<Z"
 	.text
-	.section	.gnu.lto_findSerialPortUsageByPort.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_findSerialPortUsageByPort.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215SAO\023A\024~ofv\267\264\205\230x\320\220\036"
 	.ascii	"<H\010\321\264\022\2157\377\202\361'\330\000\207&\012"
 	.ascii	"\011p\360@\322\201\202\225\250\011!BI\255\246\021\225"
@@ -360,7 +360,7 @@
 	.ascii	"\3779o\0258\355\352L]}\243\026\250\255\256\271PT\345"
 	.ascii	"\257\255\016T\373\033k\376\000g|<x"
 	.text
-	.section	.gnu.lto_findSerialPortConfig.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_findSerialPortConfig.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215\224\333k\023[\024\306\3677{f2\271VQP$\017"
 	.ascii	"\302AD\221\206\276\010>\370\340_\340\243\317\245*\004"
 	.ascii	"\264B\365<g\237\266\247m<>\210\330\010a*\343\015\025"
@@ -413,7 +413,7 @@
 	.ascii	"\305\267\324\372k\252k\327\307\327Wo\333\360\015t\330"
 	.ascii	"\320\202"
 	.text
-	.section	.gnu.lto_findNextSerialPortConfig.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_findNextSerialPortConfig.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215\223\321KSQ\034\307\317\357\234{\357\346v\267"
 	.ascii	"\202\036\012\361A\010\021!\034\276\364\020\364\320_"
 	.ascii	"\321\363\230\006\003\233\240\366\274\2233\347\252\207"
@@ -460,7 +460,7 @@
 	.ascii	"\371\302%\217\253\331\335\340)q9=\265\356Zgs\335\037"
 	.ascii	"\372\263\210\035"
 	.text
-	.section	.gnu.lto_determinePortSharing.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_determinePortSharing.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234M\222\317KTQ\024\307\317\367\236\367c\260\034["
 	.ascii	"\004Q=D\310\020\203\034\241\225\320\256e\273\376\003"
 	.ascii	"\221\214\001\233\011\265\265\327\321R\321\205DZ\015"
@@ -494,7 +494,7 @@
 	.ascii	"\361H\323\305\306hmCU\035\025]\21176\237\213\307\352"
 	.ascii	"\243\227B\365Wcu\315\321x\354\017\001\372\347\257"
 	.text
-	.section	.gnu.lto_isSerialPortShared.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_isSerialPortShared.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234]\223MHTQ\024\307\317\271\347\275;3\346d\264Qj"
 	.ascii	"\012\241b\320\300\211\004w\255\214v\021\264i=\230\346"
 	.ascii	"P\315\304\214\255\275\31689\203A\022\216\345\364\024"
@@ -531,7 +531,7 @@
 	.ascii	"\206\023\227\367'\232\303\361\306\213\027\"-\315g\212"
 	.ascii	"\313\177\000*6\362\355"
 	.text
-	.section	.gnu.lto_findNextSharedSerialPort.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_findNextSharedSerialPort.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215UkLTG\024\236s\347\336\273\273w\357>\330\005"
 	.ascii	"yt\323\2306\206\3306n\015\211i\372J\2336M\372\243\355"
 	.ascii	"\317\366/\001\0327m1\021\233\370\303\224\253X\321\332"
@@ -617,7 +617,7 @@
 	.ascii	"\212\013\327\224(\241\322\342\222\265\177\001\037\242"
 	.ascii	"\0159"
 	.text
-	.section	.gnu.lto_findSharedSerialPort.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_findSharedSerialPort.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234]QAh\023Q\020\235\267\263\331ll\233\212\010\205"
 	.ascii	"\032ho\241\036\232\263\007\257\336<{\016\261\322EM!"
 	.ascii	"\251\347|\033[+\012\212\264\021\343\326\256\210\212"
@@ -645,7 +645,7 @@
 	.ascii	"'\316\344s\223\301D\376h\266xr_q<[\030;~,\230\034?\322"
 	.ascii	"m\377\003Z\016\276\267"
 	.text
-	.section	.gnu.lto_isSerialConfigValid.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_isSerialConfigValid.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234}UklTU\020>s\317\275\273w\357\276\240\205>t\011"
 	.ascii	"\005\254\010\022*j\324\204\304G\370\251&$\222\030\177"
 	.ascii	"\250ADm\224\226P\214\376\353\245\333n\273\241\306\""
@@ -732,7 +732,7 @@
 	.ascii	"rq\341\252\325\213\012\337/X\255\345\027\274\271\374"
 	.ascii	"Cc\245\320\311I\177#_\356\374\005\365w\336\345"
 	.text
-	.section	.gnu.lto_serialFindPortConfiguration.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialFindPortConfiguration.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215S\355K\223Q\024\277\347\336\347m:%\010\212"
 	.ascii	"d\037\3722\304\014\227\024}\363o\350_h\270\005\017\324"
 	.ascii	"\002\365C\337vs\226\211}\210h*c\344\322b\021\230YK\233"
@@ -775,7 +775,7 @@
 	.ascii	"\314S\246\277A5\003>\3779G\2757\3403}\336&\377_5\274"
 	.ascii	"F\221"
 	.text
-	.section	.gnu.lto_doesConfigurationUsePort.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_doesConfigurationUsePort.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\205T\355k\223W\024\277\347\336\347>/IZ\006\203"
 	.ascii	"*#Ha\024\321\215\306\342\030\354\203\260?c_K\033!\260"
 	.ascii	"uP\375\260oylZ\333\240\037\3064\255\204\240\231nt\010"
@@ -827,7 +827,7 @@
 	.ascii	"\230\330\237\210\267{-\315m\255\211\326\346\203q\235"
 	.ascii	"hk\215\177\364\024&\276\242\273"
 	.text
-	.section	.gnu.lto_openSerialPort.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_openSerialPort.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\235VklTE\024\236s\347\336\275\273\367\356\243"
 	.ascii	"Xh\251\256R\177\02041Tb4j\324\230\350\017\177\252?\214"
 	.ascii	"\211\211\311\332\326d#\264\244\324\204\037\306\336\262"
@@ -928,7 +928,7 @@
 	.ascii	"E\305\232\277 /\177\265#\327W\220\347\317C\275\277\001"
 	.ascii	"\\G\334\224"
 	.text
-	.section	.gnu.lto_closeSerialPort.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_closeSerialPort.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\235T\317OTW\024\276\337;\357\327\314{\020R\233"
 	.ascii	"\324\350,\\H\214i\303H4M\2720\351\237\320e\267\004X"
 	.ascii	"L\322b\202.41\235+\203\216\304\2324\2660f\034\011\021"
@@ -981,7 +981,7 @@
 	.ascii	"\251\241q{\244\276\256\251!\321P\267\255\3619\"\270"
 	.ascii	"\300\336"
 	.text
-	.section	.gnu.lto_serialInit.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialInit.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\235V]l\024U\024\276g\356\314\354\354\314v\177"
 	.ascii	"\250\256\002\033\345\2054(a!\370`\214&>\310;\017>\371"
 	.ascii	"\206\200I\023l\223\226\007\337:\260\005Z\024i\214[\265"
@@ -1064,7 +1064,7 @@
 	.ascii	"\274\275a\375\272|1[]\\\262\361\315\3427\012K\331\242"
 	.ascii	"RX\264n\375{\377\002\325\375\252%"
 	.text
-	.section	.gnu.lto_serialRemovePort.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialRemovePort.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215SKOSQ\020\2369s\037m)\2701bH\343\216\020\214"
 	.ascii	"\241\022\366\376\027\0025i\"\230\200\013\023\027=\266"
 	.ascii	"BEM4\306V\203\215\251\2501.\010AA,\362\270\024\304\212"
@@ -1104,7 +1104,7 @@
 	.ascii	"\302\365\241\306#\341\203\341P\223\031n\254\017\035"
 	.ascii	"\375\001\214\030M\031"
 	.text
-	.section	.gnu.lto_serialGetAvailablePortCount.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialGetAvailablePortCount.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234-N=K\003A\024|\263\253w\327\304V\304\200i\323\344"
 	.ascii	"\004{\377K\010\026\007~@\322\012\267^\220\030\024\024"
 	.ascii	"1'\006\221\263\262T1Q\202\315\222\037\220H\032\213T"
@@ -1120,7 +1120,7 @@
 	.ascii	"\244\360\037&\177\235pM\344\363\245\260V\255\204\033"
 	.ascii	"\345h3\214\266\302\332Z5*\257\227*\362\013N\304P\200"
 	.text
-	.section	.gnu.lto_serialIsPortAvailable.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialIsPortAvailable.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234MS\337K\024Q\024>\337=\363c\333V\353!0b\241'\021"
 	.ascii	"#\334$\350\255\277\241\267\236\023\335`\240\014\264"
 	.ascii	"\207^bonjK=D\264&\333\020\213\025\321C\210\245\331\252"
@@ -1156,7 +1156,7 @@
 	.ascii	"\351\316\263\336I/\335e{\235\035\351s\377\001\272\350"
 	.ascii	"\354\243"
 	.text
-	.section	.gnu.lto_waitForSerialPortToFinishTransmitting.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_waitForSerialPortToFinishTransmitting.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234U\220\317+DQ\024\307\317\367\235\373\336<3\330"
 	.ascii	"\372\321\210\205\222\215\371\023l-\375\013\223,\246"
 	.ascii	"\374\250am\2561~\205\242\0305\275\005\011\033\205\374"
@@ -1181,7 +1181,7 @@
 	.ascii	"_\262#\326\035O\364\304\022\275\261\276\316d\"\336\325"
 	.ascii	"\322A\341@\265\367&\373\177\000\274\337\223f"
 	.text
-	.section	.gnu.lto_serialPassthrough.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialPassthrough.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\215Tmk\024W\024>\347\236y\333\331M\3246 \352\026"
 	.ascii	"\213\032\202\025L[\213\337\305_\340O\220`m\300*\304"
 	.ascii	"|\360\333\216M\322\354\222|h\213\256\3550m#\032\002"
@@ -1237,7 +1237,7 @@
 	.ascii	"F\263\241\376\340G\215\246\\\356\265\324z/\326\375\017"
 	.ascii	"\031G(/"
 	.text
-	.section	.gnu.lto_serialConfig_Registry.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_serialConfig_Registry.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234cc``\270\012\304\222\014\0200\205\231q\347\316"
 	.ascii	"7\267\331\353\3776t44<\350\276\305\274\217\177\0163"
 	.ascii	"\3034f\210\334\314\246\333\337\371-\2665t,h\020\230"
@@ -1250,7 +1250,7 @@
 	.ascii	"\005$\304\365\364\213\213\222\365s\0233\363\3643\363"
 	.ascii	"\365\213S\2132\023s\364\222\031\0002-Rn"
 	.text
-	.section	.gnu.lto_.symbol_nodes.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234U\320IO\024Q\024\005\340{\352u74\016\014\332 `"
 	.ascii	"\025t;K\342/p\241\277\304\025!\356\020\335\270:e\322"
 	.ascii	"\322I\263`2\016\340\320b\2518\241(*6+M\305\245+\177"
@@ -1278,7 +1278,7 @@
 	.ascii	"\345\352L{\345\206\\ \337\335!\261\303\206\003\221\377"
 	.ascii	"\032X\373\356"
 	.text
-	.section	.gnu.lto_.refs.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.refs.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234-\216Q\016\2020\020Dg\246\245\013-\001\214\210"
 	.ascii	"[1\352\375/\343\225\254\201\217\311\233}\331l6\001\370"
 	.ascii	"\266\220\220\030\020\305\016\242\222L\260\240\376`7"
@@ -1288,7 +1288,7 @@
 	.ascii	"uA]Q7\232\303+}\217\017\230\332\"\274\243\033w8\371"
 	.ascii	"lJ/\265\317\221\302[E\037\021?\242\331\006\233"
 	.text
-	.section	.gnu.lto_.decls.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.decls.a8cd27bd62c09084,"",%progbits
 	.ascii	"x\234\265|\011TTI\266 /#3\201d\263\320\266\254*\272"
 	.ascii	"\272\273\332\337\345\3713Uj\255]\347\314\237\351Z\254"
 	.ascii	"n\347\227ZG\251\372]5\013Mij\321\255\340@Z]\325\377"
@@ -1973,7 +1973,7 @@
 	.ascii	"\351,\244\330\352i'NH0\033\312!\304\271\220\013\370"
 	.ascii	"1\360\372?\002\220\304w"
 	.text
-	.section	.gnu.lto_.symtab.abd5d97dc3761d35,"",%progbits
+	.section	.gnu.lto_.symtab.a8cd27bd62c09084,"",%progbits
 	.ascii	"pgResetFn_serialConfig\000"
 	.ascii	"\000"
 	.ascii	"\000"

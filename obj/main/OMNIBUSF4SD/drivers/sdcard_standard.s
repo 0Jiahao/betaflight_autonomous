@@ -9,26 +9,26 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"sdcard_standard.c"
-	.section	.gnu.lto_.profile.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.profile.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234cc```\001bF\006!A\000\000\255\000/"
 	.text
-	.section	.gnu.lto_.icf.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.icf.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234cc``\340`@\000F\206\257G\233\347\3631\000\000\016"
 	.ascii	"\354\002\372"
 	.text
-	.section	.gnu.lto_.jmpfuncs.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234cc``\020a@\000F\006fFFF\366\3729\314\014@\314\010"
 	.ascii	"\302\014\000 \244\003\205"
 	.text
-	.section	.gnu.lto_.inline.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.inline.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234cc``\320f@\000F\006\006\341\343\014\214L\214\012"
 	.ascii	"@\026\003\210`\221Z\323\303\301\300\266@\236\211\201"
 	.ascii	"e\201<\013\003\323\005~\036\260R\000s\017\005,"
 	.text
-	.section	.gnu.lto_.pureconst.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.pureconst.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234cc```\006bF\006S\000\000\232\000@"
 	.text
-	.section	.gnu.lto_readBitfield.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_readBitfield.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234mTML\\U\024\276\347\235\3677\377@\200R\030\023"
 	.ascii	"\026Nh7\035\0237\356L\\Uc\342\322\304M3e\206\004\243"
 	.ascii	",f\246\215\256za`F\006[5*\326\227\211\201\264J\2146"
@@ -88,14 +88,14 @@
 	.ascii	"\321\341U\360\023/\247\023!\271%V\317\264\265\245\022"
 	.ascii	"i3\231H\035x!\255\355\213\375\013\244N\333U"
 	.text
-	.section	.gnu.lto_.symbol_nodes.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234cc``\020\006b\006&\246z\006\206\011\347\030\030"
 	.ascii	"\200\324\256\006G\240\010\000'\367\003\365"
 	.text
-	.section	.gnu.lto_.refs.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.refs.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.decls.2e332d062e9831f3,"",%progbits
 	.ascii	"x\234\265SML\023Q\020~\323m\260,\010\304\020\203I\017"
 	.ascii	"\204h\332K\273\210&\352\315\350AOz\362\200\227f\351"
 	.ascii	".vI\273\253\335\255QO\253\"\022L\024\023b\342_\004A"
@@ -144,7 +144,7 @@
 	.ascii	"~T\344\205-\222V-\211a\2015'\261\256\"\240\271\354\303"
 	.ascii	"\232\177\231%\371\005\200\375\234\226"
 	.text
-	.section	.gnu.lto_.symtab.745e5e41a18d1c83,"",%progbits
+	.section	.gnu.lto_.symtab.2e332d062e9831f3,"",%progbits
 	.ascii	"readBitfield\000"
 	.ascii	"\000"
 	.ascii	"\000"

@@ -237,6 +237,6 @@ extern const char* const buildTime;
 # 19 "./src/main/build/version.c" 2
 
 const char * const targetName = "OMNIBUSF4SD";
-const char * const shortGitRevision = "7ad274f";
+const char * const shortGitRevision = "065043e";
 const char * const buildDate = "Sep  6 2018";
-const char * const buildTime = "09:23:34";
+const char * const buildTime = "14:57:50";

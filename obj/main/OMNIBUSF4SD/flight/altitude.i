@@ -5811,6 +5811,7 @@ typedef enum {
     DEBUG_RCCOMMAND,
     DEBUG_ATTITUDE,
     DEBUG_YAW,
+    DEBUG_MSG2,
     DEBUG_COUNT
 } debugType_e;
 
@@ -7297,6 +7298,7 @@ static void applyMultirotorAltHold(void)
 {
 
     rangefinderAlt = rangefinderGetLatestAltitude();
+    my_altitude = rangefinderAlt;
 
 
 
@@ -7389,9 +7391,9 @@ void updateRangefinderAltHoldState(void)
 }
 
 
-# 193 "./src/main/flight/altitude.c" 3 4
+# 194 "./src/main/flight/altitude.c" 3 4
 _Bool 
-# 193 "./src/main/flight/altitude.c"
+# 194 "./src/main/flight/altitude.c"
     isThrustFacingDownwards(attitudeEulerAngles_t *attitude)
 {
     return __extension__ ({ __typeof__ (attitude->values.roll) _x = (attitude->values.roll); _x > 0 ? _x : -_x; }) < 800 && __extension__ ({ __typeof__ (attitude->values.pitch) _x = (attitude->values.pitch); _x > 0 ? _x : -_x; }) < 800;
@@ -7495,7 +7497,6 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
 
         vel += vel_acc;
     }
-    my_altitude = estimatedAltitude;
 
     {if (debugMode == (DEBUG_ALTITUDE)) {debug[(0)] = (accSum[2]/accSumCount);}};
     {if (debugMode == (DEBUG_ALTITUDE)) {debug[(3)] = ((int32_t)my_rangefinder);}};

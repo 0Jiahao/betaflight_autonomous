@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"ledstrip.c"
-	.section	.gnu.lto_.profile.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.profile.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc```\003bF\206\207|\3339\001\005\311\001\275"
 	.text
-	.section	.gnu.lto_.icf.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.icf.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``\270\312\310\000\007~\014\323\272\376_\342"
 	.ascii	"g\334wvg7\033\323\336\207\357\332Y\231'm_|\227\231\005"
 	.ascii	"L\262\202I60\311\016&9\276\037[\370\232\237s\336\341"
@@ -40,7 +40,7 @@
 	.ascii	"x\203\367\177z\362\2201\004\034u\241\340\320\016\003"
 	.ascii	"\223\014\000\235I\374\370"
 	.text
-	.section	.gnu.lto_.jmpfuncs.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.ae457b8825197381,"",%progbits
 	.ascii	"x\234\315V]oTE\030\236gf9\373\325\356\266R\265\232\275"
 	.ascii	"X\022\032\023\334\030\321h\032/\344\302\217h\214^\370"
 	.ascii	"\023\370\013\246\027\275\332\223P\254\221\210`\214!"
@@ -103,7 +103,7 @@
 	.ascii	"+\275\313w\365\224\272z^\350z\307\377\365\260\377\000"
 	.ascii	"\374\265_\325"
 	.text
-	.section	.gnu.lto_.inline.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.inline.ae457b8825197381,"",%progbits
 	.ascii	"x\234\245UIh\024Q\020}\325\375{\272\323\223\231\351"
 	.ascii	"\254\250Q\247\305\250\301%\2068\212\210\306\200Q\\\260"
 	.ascii	"\005\301\263\336\022\222\253x\036\004E4\204v!!\030D"
@@ -152,13 +152,13 @@
 	.ascii	"Vf\257\307gOKr\026\252\314\302u\034$%bm\356L\341\017"
 	.ascii	"p;\214\351l\343\353\177\315\015\277\001\264z\011\375"
 	.text
-	.section	.gnu.lto_.pureconst.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.pureconst.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``p\004b\005\006I\016INV.)~)aI\021)\031)\005"
 	.ascii	")U)uImI\035)=I\003)#\011c)S\0113)\013\013;\011{)gV\027"
 	.ascii	"IW\0137)\017\011O\011o)_\011?\211 \011\000\016L\011"
 	.ascii	"\221"
 	.text
-	.section	.gnu.lto_updateDimensions.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_updateDimensions.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215V\353S\023W\024\277g\357f\023\262\201\000\276"
 	.ascii	"!(\235\216\355\250\225\200\212J?\364{\377\003\235\351"
 	.ascii	"\227V\235\221\231j;\322\017\366\023[Q\300Zg\034Z_\333"
@@ -248,7 +248,7 @@
 	.ascii	"\312\205\264Z@\253\005.\324\177\274|\361\222\225*.\026"
 	.ascii	"\222X\360\177\001\226\262\377\000\233\332\307a"
 	.text
-	.section	.gnu.lto_updateLedCount.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_updateLedCount.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225T\353O\\U\020?s\316}\357\002\205\017\274\272"
 	.ascii	"\005\022C\014m\322MCL4\232\030\377\205\372\0274\330"
 	.ascii	"(\211RCk\342+\341\362\350\322\342\243\210-$7\333\262"
@@ -314,7 +314,7 @@
 	.ascii	"\016=_\261\257\252j\177\265-\225\275\225U/\352R\372"
 	.ascii	"7\332K\354o\321\344H\002"
 	.text
-	.section	.gnu.lto_getLedQuadrant.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_getLedQuadrant.ae457b8825197381,"",%progbits
 	.ascii	"x\234uTkoTe\020\2369sn{\330K/P\304\354\207&\3304T\303"
 	.ascii	"JH\177\201\037\214?\203P\0227\021\024\220\004>\365\330"
 	.ascii	"-\275PIjc\327\346dcJ\014\030\251\265\250\025)E9\322"
@@ -371,7 +371,7 @@
 	.ascii	"\017%\337\332\271\027l\366_;\320\264\357\250~\360\310"
 	.ascii	"\236&<\206G\377/\367u\370\027\323\250\002\325"
 	.text
-	.section	.gnu.lto_pgResetFn_ledStripConfig.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_pgResetFn_ledStripConfig.ae457b8825197381,"",%progbits
 	.ascii	"x\234\235V\355STU\030?\277{\356\275{w\027v\311\010D"
 	.ascii	"W#\301qL\307\035\276T\337\373\324\267f\372\013\032\265"
 	.ascii	"\206\031\003\007\373\320\207F.\" \3258\014\223Tx\323"
@@ -447,7 +447,7 @@
 	.ascii	"\253\326\275]\220\273v\305J\346\243\375kb\377r~\336"
 	.ascii	"\033\271ozV\346\257\311/x%o\325\352w\220\373/j,^|"
 	.text
-	.section	.gnu.lto_hsv.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_hsv.ae457b8825197381,"",%progbits
 	.ascii	"x\234}\323\333N\023Q\024\006\340Y\335-\205B\351\013"
 	.ascii	"L|\005Aoz\341\363x\343;\230\"T\032IDM1\001\032\305\240"
 	.ascii	"\021\001c\011e\244\203\007h\2418\210XN\205\326C*\301"
@@ -477,7 +477,7 @@
 	.ascii	"\210\274l\322\002\"\217\232C\316\"\337\"_#_!md\026\371"
 	.ascii	"\022iQ\324\240\012N\177\001\230#GS"
 	.text
-	.section	.gnu.lto_defaultModeColors.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_defaultModeColors.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225\222\315J\002Q\024\307\357\361\372\225)\366"
 	.ascii	"\000\363\022\265\362\015Z\364\022=\212\206F)\024D\265"
 	.ascii	"\210Y\004\331\007\264\021\374\250\031+\307\257\314)"
@@ -500,7 +500,7 @@
 	.ascii	"\311;B\333\005\272\006\001\2016\261\011t\005\273@\227"
 	.ascii	"\261\013t\036\273@_!\000\352x\373\003\000k\366\026"
 	.text
-	.section	.gnu.lto_defaultSpecialColors.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_defaultSpecialColors.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``\260cd`\000\"0\230\302\314\370\344\367\332"
 	.ascii	"]|\335\314s\230\031\030\331\200\334/]\255\337\231A\\"
 	.ascii	"FFv \367\320\247\015\313y \262\314\310\212\031\301\212"
@@ -515,7 +515,7 @@
 	.ascii	"\317h\001\222\231\276\177\325\012n\270\014\013\310\252"
 	.ascii	"\003@\031\306\203@\002\000\010Xb\263"
 	.text
-	.section	.gnu.lto_applyLedThrustRingLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedThrustRingLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215W\373S\324U\024\277\347{\277\337\375\356\356"
 	.ascii	"w_ >\300\325\034\0135_+\242N\315T\323\324O\375P?\364"
 	.ascii	"\037\2302\311\214\012\2036\325O|\005eC\033F\235\304"
@@ -621,7 +621,7 @@
 	.ascii	"\27147w\345\373\257\346\254\314\311s\344\341\252\030"
 	.ascii	"\375\237\323\025\354\037\323\364:\206"
 	.text
-	.section	.gnu.lto_applyLedHsv.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedHsv.ae457b8825197381,"",%progbits
 	.ascii	"x\234]R[KTQ\024\336\337\331\347\326\2143jO\005\363`"
 	.ascii	"\221\014V8\371\007\242\327~\206\251\220\344%\264\207"
 	.ascii	"\336f\353\230\343h\201c:\301p\220\201.\006\021*\231"
@@ -663,7 +663,7 @@
 	.ascii	"\337\250\253\274^\\\306\364\352\322\372kFYmUm\235M\356"
 	.ascii	"\3135\345\0257\377\002\345\0069D"
 	.text
-	.section	.gnu.lto_applyLedVtxLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedVtxLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215XipT\307\021\236\236\331\373\320\012!t\256"
 	.ascii	"Nt \016\313\216\223\030;U\261\253\342\374H\225\355\374"
 	.ascii	"\266S\371\301\241\224Ilp\331\330q%?\264B\034\022\207"
@@ -853,7 +853,7 @@
 	.ascii	"\012\2348{\255`\362\037\246}8u:LqH\205?M\235\\\360\361"
 	.ascii	"\223\254\274\315\376\017\016\370\017\216"
 	.text
-	.section	.gnu.lto_applyLedWarningLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedWarningLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225\227\355ST\327\031\300\317s\317\356\275\373"
 	.ascii	"rw\227e\227}q\230N\022\233\222\304\014\230i\276\364"
 	.ascii	"[\247\375\224/\375\037$:\035f\022\315\020;\371\270\027"
@@ -963,7 +963,7 @@
 	.ascii	"\277\262\251vk\315\326?\376~\333\013\333j\335\346\344"
 	.ascii	"\271\315\377\003\356\360\317\025"
 	.text
-	.section	.gnu.lto_applyLedGpsLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedGpsLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215W\351S\\\305\026\357\323=sge\206\031\342B\325"
 	.ascii	"\030\263\223\305rD\255\362\333+\253\374j\351\337`i\312"
 	.ascii	"J\225\232\024\211\345\027\253r\303\032H4\030a\2227\216"
@@ -1073,7 +1073,7 @@
 	.ascii	"\022\367\233\353\326\277\264\366\255\265%\377\007\223"
 	.ascii	"b\223\203"
 	.text
-	.section	.gnu.lto_applyLarsonScannerLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLarsonScannerLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225W\373S\324\327\025\277\347\336}?yj\320\325"
 	.ascii	"\220DD\024EE\343\333\266\323\351t2\323\351\377\340("
 	.ascii	"i\234\211\222Q;\315L\177`\001\005\301D@e\325\035\246"
@@ -1200,14 +1200,14 @@
 	.ascii	"\314\367\337\337\233\261o&]\037\260\377\003\352J\260"
 	.ascii	"\250"
 	.text
-	.section	.gnu.lto_larsonParameters.13775.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_larsonParameters.13775.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``\210\004bF\006\010\230\302\314\270\345\310"
 	.ascii	"\3616\216n\3469\314\014\214\214@\356\3727;\177\362B"
 	.ascii	"\270\014\310\\F0w\331\306\311\277\330,\2665t,h0\230"
 	.ascii	"\303\3144\025\250j+\243\314T\240\354\026\020\305\304"
 	.ascii	"\270\231Q\206\201q\033\243\005\003\000\213\356\033\320"
 	.text
-	.section	.gnu.lto_applyLedFixedLayers.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedFixedLayers.ae457b8825197381,"",%progbits
 	.ascii	"x\234\235ZyT\225G\262\377\352\353\273q\027. \"\010\242"
 	.ascii	"&\022c\\\320$&f&\306D\375#\357\315\2343\223?2\2319\231"
 	.ascii	"ys\0225G\317\311\323<ur\222\314L\270\200\262\210(\242"
@@ -1467,7 +1467,7 @@
 	.ascii	"\233\360\217I<v\372\215z\215\015\030O\012\030\177\332"
 	.ascii	"\236\255c\225\377\005\004W\364u"
 	.text
-	.section	.gnu.lto_flightModeToLed.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_flightModeToLed.ae457b8825197381,"",%progbits
 	.ascii	"x\234U\220\317J\303@\020\207\367\327ij\301H_`\017\276"
 	.ascii	"\202\236\3628>J\213E\004\301S\213 9\210\210\036D,46"
 	.ascii	"6\365O\254\255\261\365d{\020\361$\350EDP\004\021\013"
@@ -1485,7 +1485,7 @@
 	.ascii	"\005\215kxX\324\350st\241q\301y\306y\312\031q\2669["
 	.ascii	"\234G\360\024\006\374\371\003\"1\240]"
 	.text
-	.section	.gnu.lto_applyLedBlinkLayer.part.8.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedBlinkLayer.part.8.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215U[OTW\024\336\353\3549\227\271\242-\326\322"
 	.ascii	"\360@\322hb\3338\322\313C\303\203m\372n\375\013Th;\251"
 	.ascii	"\016\004i\372\310q\300\001\204T\3442T:\232i\250i\233"
@@ -1559,7 +1559,7 @@
 	.ascii	" \313\375\261\353\223\377\"\372\224\375\013g\021\237"
 	.ascii	"\013"
 	.text
-	.section	.gnu.lto_applyLedBlinkLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedBlinkLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215S[KTQ\024\336\337\331\347\346xC\250\207`\036"
 	.ascii	"\204\242\301\004G\352\261~C\377A\324` S\324\350q\216"
 	.ascii	"3\3528Vd\221\243\014CLD\370P`\322h35\332\3111\265\274"
@@ -1602,7 +1602,7 @@
 	.ascii	"\025u\365\265\236\232\222r\226u\271\246\242\254\276"
 	.ascii	"\362|\365\025\245\336SUY\373\033\022?i+"
 	.text
-	.section	.gnu.lto_applyLedIndicatorLayer.part.9.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedIndicatorLayer.part.9.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215V{P\224U\024\277\347\273\373\355~\373^|\224"
 	.ascii	"\02446\215\225\217\021\315jj\372\243\032\377hj\246\246"
 	.ascii	"\177\233i\306A\305\244A1\320\311?\232\341S\220\227f"
@@ -1699,7 +1699,7 @@
 	.ascii	"\366\237\316\237\235\260\330\212/\323\223\347\317I\374"
 	.ascii	"\346\377\034\314e\377\002\346F\254\015"
 	.text
-	.section	.gnu.lto_applyLedIndicatorLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedIndicatorLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215T\355oSU\030?\317=\367\255\353\013!a\203B\215"
 	.ascii	"$\212\013\250\214Mb\374\342\277`\342_`\226m\232\031"
 	.ascii	"\020\262\315h\342\207\336\255\263[\253\037\000m\231"
@@ -1763,7 +1763,7 @@
 	.ascii	"\373\033\353\333\232^\330\367\206\326\326\274\267\251"
 	.ascii	"Ekm\250\337\323\244\274\364\346\277L\241a\016"
 	.text
-	.section	.gnu.lto_applyLedBatteryLayer.part.10.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedBatteryLayer.part.10.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215\222KHTQ\030\307\317\377~3\327\321f4\227\302"
 	.ascii	",\2020\020\315IZ\005-Z\264n\327>S)ASF#Z\315q|\314\370"
 	.ascii	"\200&\363\205\\dB\2426\241\226\215\343#\0335\337\243"
@@ -1806,7 +1806,7 @@
 	.ascii	"\260\226\027\026\027\270\355\346x\276\240(\367\346\305"
 	.ascii	"2\272|%\357'K\233S\031"
 	.text
-	.section	.gnu.lto_applyLedBatteryLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedBatteryLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225T\337k\024W\024\276\337\334\371\271\235\335"
 	.ascii	"\"h!2\024\037j\203X\214\245-\364\245o}\356[\377\200"
 	.ascii	"`R\010h\225$R\372\224\331\354\232\270I\205(u#\313\320"
@@ -1863,7 +1863,7 @@
 	.ascii	"\315\256\264\3577n\255\377\364\303\226\177\000\270\375"
 	.ascii	"\020\027"
 	.text
-	.section	.gnu.lto_applyLedRssiLayer.part.11.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedRssiLayer.part.11.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215\224\337K\223Q\030\307\317\363>\357;\347\362"
 	.ascii	"G^\012\273\010\302@\260M\351\242+A\242\353\350_0\225"
 	.ascii	"\0204e.\242\253\035g\272\371\003ZK\247\310\253\214\274"
@@ -1908,7 +1908,7 @@
 	.ascii	"\015\315YZ^\342\260\030\355\305\222\262\302\233Z\225"
 	.ascii	"\223v\360\312\325\242_q]o\316"
 	.text
-	.section	.gnu.lto_applyLedRssiLayer.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_applyLedRssiLayer.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225T\335O\034U\024\277g\356\334\371bw\203\251"
 	.ascii	"IC21}\260\222&\015\324\217\304\027M\214\361\331\027"
 	.ascii	"\377\002Rx \351W`\033\323\027\031X\\\272\350CE\2735"
@@ -1968,7 +1968,7 @@
 	.ascii	"\"\336\272\273\245\315\221\366\245\226]M\007D{\034g"
 	.ascii	"\376\006\030\"$B"
 	.text
-	.section	.gnu.lto_ledStripUpdate.part.13.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_ledStripUpdate.part.13.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215W\377ST\327\025\277\347\335}o\337~gA\004dE"
 	.ascii	",\001'\324\272q\232L\373C\247\223\316\364\227\376\222"
 	.ascii	"\0372\355\037\340 3a&`\006I\223\337x\202\273|3\226X"
@@ -2087,7 +2087,7 @@
 	.ascii	"\366[\273w\225\025\276&\251\205\245\261\032\013\366"
 	.ascii	"\024\027\357)\361\022}\307\033\354\177.\374|N"
 	.text
-	.section	.gnu.lto_layerTable.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_layerTable.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``\330\314\310\300 \315\000\001S\230\031w\356"
 	.ascii	"|s\233\275\376oCGC\303\203\356U\202\223X\34703Lc\306"
 	.ascii	"\220[\360\373\310#F&\260\034#X\356KW\353w\346n\3469"
@@ -2104,7 +2104,7 @@
 	.ascii	"X\317\300x\210\321\202ARO\277\270(Y?713O?3_?'5\245\270"
 	.ascii	"\244(\263@/\231\001\000\312F\250\224"
 	.text
-	.section	.gnu.lto_setModeColor.part.14.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_setModeColor.part.14.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225S\337oTU\020>\337\235{\317\275{\331\355\213"
 	.ascii	"/J\326\304DjCMX\232\306gM|\362\317 m\037\232\0005\255"
 	.ascii	"\017\274\365\320\037\266EcL\245-nV\322(`\2255\245\261"
@@ -2154,7 +2154,7 @@
 	.ascii	"\355\215M;\252\304z\277ekK\253u\303\206\025\363_VL\250"
 	.ascii	"\366"
 	.text
-	.section	.gnu.lto_generateLedConfig.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_generateLedConfig.ae457b8825197381,"",%progbits
 	.ascii	"x\234}V}PT\327\025\177\347\335\367\336\276}\373E\215"
 	.ascii	"\205\250\324\304\211\210\361\013\215AQ\223\330\2443"
 	.ascii	"\231t2\235\376\321\177\323\231\030\305\224\251\225\014"
@@ -2273,7 +2273,7 @@
 	.ascii	"I\362\245\344\315J\311[\234\222\313\177\363\244\377"
 	.ascii	"\003P\227\311T"
 	.text
-	.section	.gnu.lto_directionCodes.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_directionCodes.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``x\000\304\214\014\0200\205\231\361h\357\346"
 	.ascii	"3\334\335\314s\230\031\030\217\200\370'\227\354\372"
 	.ascii	"\303\003\34232\262\002\271\263>n^\302\013\221\276\012"
@@ -2286,7 +2286,7 @@
 	.ascii	"\267\003\3616 \336\012\304[\200x3\243\014\003\343^F"
 	.ascii	"\013\006\0006\250G'"
 	.text
-	.section	.gnu.lto_baseFunctionCodes.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_baseFunctionCodes.ae457b8825197381,"",%progbits
 	.ascii	"x\234-\213\315\012\001Q\024\200\357\231\313\314f\032"
 	.ascii	"/0/\301j\312Ky\204Q\026\362\267b7\242(\033J\031\203"
 	.ascii	"\361;~\023M\241lm\330\211X\260\240\306\271\356\234\316"
@@ -2300,7 +2300,7 @@
 	.ascii	"\364\021\033\351!]\244\203XH\0331\221\026\250\004\306"
 	.ascii	"\240\221\037#TR\322"
 	.text
-	.section	.gnu.lto_overlayCodes.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_overlayCodes.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``x\010\304\214\014\0200\205\231\361\364\243"
 	.ascii	"\3766\246n\3469\314\014\214\327A\374\223Kv\375\341\001"
 	.ascii	"\361\031\031Y\201\334\015\213\367\355\343\207H\237\004"
@@ -2313,7 +2313,7 @@
 	.ascii	"\361\016 \336\016\304\333\200x+\020o\001\342\315\214"
 	.ascii	"2\014\214{\031-\030\000\334\326Hh"
 	.text
-	.section	.gnu.lto_isOverlayTypeUsed.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_isOverlayTypeUsed.ae457b8825197381,"",%progbits
 	.ascii	"x\234uS[K\025Q\024^\337\354\2319\343\234\213\366X\234"
 	.ascii	"\007\011\242+\235\"z\210\036\352\265\236\373\001\335"
 	.ascii	"\204\204nXD=\271S\323\324\0029\244\302\341\220\207."
@@ -2360,7 +2360,7 @@
 	.ascii	"og\211\307\370\232\355\233K\366\376\217\276\205~\001"
 	.ascii	"\1776i\323"
 	.text
-	.section	.gnu.lto_updateRequiredOverlay.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_updateRequiredOverlay.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225\230\333sTU\026\306\367:\273/\247/\351N\337"
 	.ascii	"\2224\004\210\304p7!DPDt\036|\261\346\257\030/UR\245"
 	.ascii	"\316\224\372\340\203U\034\023\222\220\013L&\002\226"
@@ -2478,7 +2478,7 @@
 	.ascii	"J\237\027\3167V\275\362\3543:*\317\276\372\302\213o"
 	.ascii	"Nd|I\374\006\324O\326\001"
 	.text
-	.section	.gnu.lto_reevaluateLedConfig.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_reevaluateLedConfig.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215S\335K\024Q\024?g\356\334\231q\335U\002\211"
 	.ascii	"\004\243(\204\254p\036\372\003\372\007\372'\302$\204"
 	.ascii	"\262\322\236z\331\321\325]?B,r\213e\312\245\002\237"
@@ -2522,7 +2522,7 @@
 	.ascii	"\317\325\236i\274\334Pw\261\272\006\214\306\332K\247"
 	.ascii	"j\353\377\002\275\021eZ"
 	.text
-	.section	.gnu.lto_parseLedStripConfig.part.12.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_parseLedStripConfig.part.12.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215X\011p\225\325\025\376\317\275o\337\262o\360"
 	.ascii	"\262'\204EY\304\005\367%*\210\021\261\316t\231N\333"
 	.ascii	"A\304\226\221B\007hGg:\223\007!\011\001ic\204`~\037"
@@ -2736,7 +2736,7 @@
 	.ascii	"\315\026\263f\210\327f\212\251\277\223h\362\277\331"
 	.ascii	"q\351\027"
 	.text
-	.section	.gnu.lto_chunkSeparators.13516.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_chunkSeparators.13516.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``\230\016\304\214\014\0200\205\231qZ\353\241"
 	.ascii	"\363\354\335\314s\230\201\202@\356\305\226\015s\230"
 	.ascii	"A\\FF\026 \367\337\363\373\217\230!\262V@\356\241O\033"
@@ -2746,7 +2746,7 @@
 	.ascii	"\214[\201\324vF\010\275\015Jo\001\342\315\2142\014\214"
 	.ascii	";\031-\030\000Q\345.S"
 	.text
-	.section	.gnu.lto_parseLedStripConfig.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_parseLedStripConfig.ae457b8825197381,"",%progbits
 	.ascii	"x\234]Q\317KTQ\024>\337=w\336{\250\023\341\246\204\013"
 	.ascii	"\272(F\021\234\242]\213\366\375\0311Z\014\324\030\332"
 	.ascii	"\242\335\273\245C\015\272\220\324\031\030^\264(u#Y\244"
@@ -2775,7 +2775,7 @@
 	.ascii	"t\241\177\340\262\227\033,\234\315\237\373\013&u\246"
 	.ascii	"\215"
 	.text
-	.section	.gnu.lto_ledStripUpdate.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_ledStripUpdate.ae457b8825197381,"",%progbits
 	.ascii	"x\234\215T\353K\024Q\024\277\277\271\363\332qw\263\207"
 	.ascii	"V\264\037\204\002\261\017-B_\373/\352\017\010\363\203"
 	.ascii	"\320\013\265O}\330\253n\270f\205\212\216!C-D\004Q\250"
@@ -2823,7 +2823,7 @@
 	.ascii	"\362HMmu\325\311}\025,Tq\252\272\272\362x\355\301\252"
 	.ascii	"c\225\207j\376\002T\271\265\316"
 	.text
-	.section	.gnu.lto_parseColor.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_parseColor.ae457b8825197381,"",%progbits
 	.ascii	"x\234\225V\351OTW\024\277\347\335\367f\336\254lRE\307"
 	.ascii	"\3044\022b\333H\351f\323\246I\023?\365S\377\203&\004"
 	.ascii	"\250%A0@\233~\343\261\213\324v2\025H\247\003L\260Tc"
@@ -2914,7 +2914,7 @@
 	.ascii	"(\314\312/pf\344\255]\227\227\233\225[\370\031a\371"
 	.ascii	"7\3519\377\002\036Qxz"
 	.text
-	.section	.gnu.lto_hsv_limit.13852.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_hsv_limit.13852.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``\210\001bF\006\010\230\302\314\270\276\365"
 	.ascii	"\311J\216n\3469\314\014\214\377\031\201\374\243\377"
 	.ascii	"\277\037\340\007\361\031\031\231\200\334\023\375_\236"
@@ -2922,7 +2922,7 @@
 	.ascii	"\301\034f&FC\031\306\255\2142\214F2\214\233\201\324"
 	.ascii	"\026F0\315\300\270\215\321\202\001\000@\375\035\334"
 	.text
-	.section	.gnu.lto_setModeColor.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_setModeColor.ae457b8825197381,"",%progbits
 	.ascii	"x\234m\222\313KTa\030\306\277\347|\3472\316\315UP0\213"
 	.ascii	" It\341$\322\272E\253\376\206V\241.\004uB[\264\233\343"
 	.ascii	"\245\324\262\010M\263a\212!\312\312\312\0139\232Z:y"
@@ -2966,7 +2966,7 @@
 	.ascii	"\005\205\247\275l\035\015\024\007\312,\327\231\2372"
 	.ascii	"\177\001N\365J\356"
 	.text
-	.section	.gnu.lto_ledStripInit.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_ledStripInit.ae457b8825197381,"",%progbits
 	.ascii	"x\234u\222\317O\023A\024\307\337wg\273\255\255\264\034"
 	.ascii	"\274\020\375\007\210\011\3737\031\340\320\304_\001\356"
 	.ascii	";\200\012\202\211\204H\365\320\2309\220p\021P\254\225"
@@ -2996,7 +2996,7 @@
 	.ascii	"\332\374\356\256v\377\312\245\354U?{\315\277\334\331"
 	.ascii	"\321\335\323\225\275\336\326N\377\000\375\020\004\001"
 	.text
-	.section	.gnu.lto_ledStripEnable.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_ledStripEnable.ae457b8825197381,"",%progbits
 	.ascii	"x\234m\220\315K\002a\020\306\347\331\327]M\250Ct\211"
 	.ascii	":x\225\300\375\233\302:\010}\241\335}\323B\303\016\""
 	.ascii	"i\020K\354\255\223\205\244\225\332\307\"t\013\013\301"
@@ -3018,7 +3018,7 @@
 	.ascii	"\222\014\346\347\261j2`F\302Asq6\264d\206\226\315\205"
 	.ascii	"\371\271\310j8\264\022\010\322\017(\247\231\022"
 	.text
-	.section	.gnu.lto_ledStripConfig_Registry.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_ledStripConfig_Registry.ae457b8825197381,"",%progbits
 	.ascii	"x\234cc``\270\016\304\322\014\0200\205\231q\347\316"
 	.ascii	"7\267\331\353\3776t44<\350\236\315\374\206\177\0163"
 	.ascii	"\3034f\210\334\314\246\333\337\371-\2665t,h\020\230"
@@ -3032,7 +3032,7 @@
 	.ascii	"\231\257\237\223\232R\\R\224Y\240\227\314\000\000\313"
 	.ascii	"\222T\257"
 	.text
-	.section	.gnu.lto_.symbol_nodes.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.ae457b8825197381,"",%progbits
 	.ascii	"x\234]\223\333W\224U\030\207\367\376\355\031N\036Pg"
 	.ascii	"\020\320\021\020ETpD\020\344\246\254\273\376\207Z\253"
 	.ascii	"\253\226\253\273\226u\323\325;\332\010\011K3)(\\\011"
@@ -3094,7 +3094,7 @@
 	.ascii	"&n\036\177\205O8 \036\025\221\232!\217:\357L\246\367"
 	.ascii	";/f\314\227'\376\003\271e]\013"
 	.text
-	.section	.gnu.lto_.refs.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.refs.ae457b8825197381,"",%progbits
 	.ascii	"x\234e\223\313n#U\020\206\277\277\272\333\355K\307\355"
 	.ascii	"k\222\266\343\366%\343N'\023\307\271\230x\342$\260\340"
 	.ascii	"\"!\004H\360D\263\2317\230\367\231a\026\221\242\221"
@@ -3131,7 +3131,7 @@
 	.ascii	"\356\011\355\013\337\315\215\340K\277\370\026\253\363"
 	.ascii	"/\340!N\360"
 	.text
-	.section	.gnu.lto_.decls.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.decls.ae457b8825197381,"",%progbits
 	.ascii	"x\234\314\275\007\230d\311U&Z7#MUfV\325\250{4\032I\255"
 	.ascii	"\221kfZBhF\026\364\220\304\000\002$\201\340}ha\231\336"
 	.ascii	"e%\340\261<\261 \026\263\356\261\240,\357\275\367\336"
@@ -4564,7 +4564,7 @@
 	.ascii	"\256\235\013\377\270+\331\015\224\274-\375\0274\024"
 	.ascii	"\300a"
 	.text
-	.section	.gnu.lto_.symtab.22381cef7abec88e,"",%progbits
+	.section	.gnu.lto_.symtab.ae457b8825197381,"",%progbits
 	.ascii	"ledStripConfig_System\000"
 	.ascii	"\000"
 	.ascii	"\004"

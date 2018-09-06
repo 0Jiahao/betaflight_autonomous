@@ -9,20 +9,20 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"target.c"
-	.section	.gnu.lto_.profile.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.profile.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.icf.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.icf.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234cc``\340`@\000F\206\276\206\313{\331\030\000\014"
 	.ascii	"\263\002\264"
 	.text
-	.section	.gnu.lto_.inline.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.inline.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.pureconst.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.pureconst.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_timerHardware.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_timerHardware.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234\255\226\333WZG\024\306\317\034\340\200\340%m_"
 	.ascii	"\332.\036\332\227\254\366\255\227\265\032\372\320\377"
 	.ascii	"\015RT\254IJ\033M\255!\215\306j4.1\027j\003\022\213"
@@ -88,14 +88,14 @@
 	.ascii	"\240\021\320'\240S\240\223\240\017@\357\203\006@\377"
 	.ascii	"\"\026\201\264\210\026\341\0373\213B\254"
 	.text
-	.section	.gnu.lto_.symbol_nodes.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234cc``\340\006b\006\326\277\014\014\215J \026\000"
 	.ascii	"\015\361\001\267"
 	.text
-	.section	.gnu.lto_.refs.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.refs.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.decls.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"x\234\315YyPT\311\031\237~=\027\303e\300J6Y*\265IX\245"
 	.ascii	"\222\322\0014{TmmE\001w\255\012h\015\230T\374#\324,"
 	.ascii	"\216\312\206\303\205a\257\034\365\270\004qWEWEAAA\005"
@@ -291,7 +291,7 @@
 	.ascii	"\316\026\242o\255'O\321\206\020\231\350e\253jG\2219"
 	.ascii	"\261\030\337~\235]C\366o\355 \313\372"
 	.text
-	.section	.gnu.lto_.symtab.a53cffc3b22638ac,"",%progbits
+	.section	.gnu.lto_.symtab.7f601ef34b0d6d7d,"",%progbits
 	.ascii	"timerHardware\000"
 	.ascii	"\000"
 	.ascii	"\000"

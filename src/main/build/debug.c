@@ -65,4 +65,5 @@ const char * const debugModeNames[DEBUG_COUNT] = {
     "ANGLE",
     "ATTITUDE",
     "YAW",
+    "MSG2",
 };

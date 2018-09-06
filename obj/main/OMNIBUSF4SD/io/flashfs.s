@@ -9,11 +9,11 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"flashfs.c"
-	.section	.gnu.lto_.profile.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.profile.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234cc```\003bF\206\343\254\357\230\000\005\255\001"
 	.ascii	"\312"
 	.text
-	.section	.gnu.lto_.icf.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.icf.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234cc``\230\302\200\000\222\014\215\307\232\36721"
 	.ascii	"n\377z\271\231\237i\315\337\033\327\331\230\301$\313"
 	.ascii	"\264O\333\317s\263v\317\335p\216\223m\306\201\023Z\354"
@@ -25,7 +25,7 @@
 	.ascii	"\367{\270\305N\364\034?\301*>s\305\337\243\254\022s"
 	.ascii	"\033^\3730\000\000\331\267J\375"
 	.text
-	.section	.gnu.lto_.jmpfuncs.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\205TMO\302@\020\235\331--\264`\353\267\207\376"
 	.ascii	"\004\257\3768Np1\036\274\032O\230\370\0234\212\212 "
 	.ascii	"V\023o$&\236L\374\011z\340\346E\203ov\013\026Z\312&"
@@ -49,7 +49,7 @@
 	.ascii	"\344\021?\245\265F\246V\332\221L\273\300\236\371h\374"
 	.ascii	"\001\326D\022*"
 	.text
-	.section	.gnu.lto_.inline.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.inline.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234mR\275N\002A\020\376fw\271\177\270\025\016\304"
 	.ascii	"\004#RX\031\036\200\207\240\366\011\214\301\027\260"
 	.ascii	"1\2411!\261\2410\304D\013\012M\260\266\261\325\006c"
@@ -71,12 +71,12 @@
 	.ascii	"\357LF\215\245!\220\241g\224\006\334\346\252}Y\245u"
 	.ascii	"x\372\317\317a\301&\374d\325OcA|\003\330\262Nl"
 	.text
-	.section	.gnu.lto_.pureconst.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.pureconst.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234cc``\320\006bQ\006)\026\011V\0116Iv\011\016IN\006"
 	.ascii	".\026n\011\036\026^)~)\001\011A\011!\011a)\021IQK1\011"
 	.ascii	"qI\011I\000B\331\003E"
 	.text
-	.section	.gnu.lto_flashfsWriteBuffers.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsWriteBuffers.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\215WmPT\347\025~\317}\367\356\336\375d\331]\276"
 	.ascii	"\224(\012H\240mHluL\375S\307\217\350\217\366G\353t:"
 	.ascii	"\375\321\031\342`\303L\2123B~\330?l\000A\202\332\304"
@@ -200,7 +200,7 @@
 	.ascii	"\346\327\012\2126\025\347o\317+.\330V\230,\344\0223"
 	.ascii	"\347\305\377\000\327g\002#"
 	.text
-	.section	.gnu.lto_flashfsFlushAsync.part.0.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsFlushAsync.part.0.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\215SMLSA\020\336y\363\366\265*\345\302A\202\304"
 	.ascii	"pi\"\027j\202\007\022/\236\274z\360\240W ml\242\230"
 	.ascii	"P<\350\205-\224\320\252\007S\371\321\372B\032=h\364"
@@ -243,7 +243,7 @@
 	.ascii	"u\247<\036w\343a\357\031\267\317f\355}\177\001d\012"
 	.ascii	"\212\017"
 	.text
-	.section	.gnu.lto_flashfsEraseCompletely.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsEraseCompletely.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234e\220\313K\002Q\024\306\317w\257suQ\255\245\242"
 	.ascii	"\275\033\347o\022A\022z@\376\00139\230Z.\"\312 \206"
 	.ascii	"\230\332\264\214\310\036\323sr\325\252 \332\005\005"
@@ -265,7 +265,7 @@
 	.ascii	"\314\212'\315\334T\332\034Oe'\314\354\244\231\031K\345"
 	.ascii	"F3\271d\232\276\001\355\225\243I"
 	.text
-	.section	.gnu.lto_flashfsEraseRange.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsEraseRange.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\225T\335O\\U\020\237\271s\277v\027\026J[J\354"
 	.ascii	">`\224\220V\3235}\356\037\320W\353_@\350VIlI\026^|\342"
 	.ascii	"\300.K\011~\020bW]7\006\202h5!\264\021\335.\226z\273"
@@ -320,7 +320,7 @@
 	.ascii	"\255\343y$!\210\243\211d\2107\317%:{\273\223\021\015"
 	.ascii	"\360m\367\371D\367\361Do\362%\354\372\013%?\315u"
 	.text
-	.section	.gnu.lto_flashfsIsReady.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsIsReady.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234cc``\330\002\304R@,\015\304\214\314\014\214L\023"
 	.ascii	"\316104r012\202\030\015\034\214\014\365L\214\365\214"
 	.ascii	"=\314S\230\031\247v\356\276\316\253\271\274\241\241"
@@ -335,7 +335,7 @@
 	.ascii	"\201ABO\277\270(Y?713O?3_?-'\2618#\255X/\231\001\000"
 	.ascii	"\237\220C\""
 	.text
-	.section	.gnu.lto_flashfsGetSize.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsGetSize.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234-\217\315JBQ\024\205\367\272\347z\257A?\323(\011"
 	.ascii	"\247N\274\223\036\242\327\020A\022\372\201|\200\273"
 	.ascii	"\325\"\303\240\2104\220K\330\250QT\250\225\322\340\342"
@@ -355,7 +355,7 @@
 	.ascii	"\222\004\012\235\020O'\275\334Z\332[NeW\274\354\252"
 	.ascii	"\227YJ\345\0263\271d\232~\000\350\373k\273"
 	.text
-	.section	.gnu.lto_flashfsGetWriteBufferSize.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsGetWriteBufferSize.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234cc``\330\011\304R@,\015\304\214\314\014\214L\023"
 	.ascii	"\316104r012\202\030\015\034\214\014\365L\214\365\214"
 	.ascii	"=\314S\230\031/\266l\230\303\334\315<\007\250\214\005"
@@ -371,7 +371,7 @@
 	.ascii	"\334\304\314<\375\314|\375\264\234\304\342\214\264b"
 	.ascii	"\275d\006\000\337\207I\021"
 	.text
-	.section	.gnu.lto_flashfsGetWriteBufferFreeSpace.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsGetWriteBufferFreeSpace.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234eRKk\023Q\024>\347\236;\217L\222\351\306\205H\026"
 	.ascii	"\205\256\322E\363\017\374/\245P,\370\000\363\003r\315"
 	.ascii	"Tk\321\205\210\3060\014\022W\256D\305\261\032_\031T"
@@ -401,7 +401,7 @@
 	.ascii	";4\273p\270\266p\2446\177p\266~`\276>3\007\177\001\234"
 	.ascii	"\333\341\004"
 	.text
-	.section	.gnu.lto_flashfsGetGeometry.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsGetGeometry.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234-\216\275J\003Q\024\204\317\354Y7\253\250\235 "
 	.ascii	"\272E\332Xd\237)\004\202\001\177\300}\200\275&\202\212"
 	.ascii	"\026\026&B\330B\253`\245\342\372\223Fn\225N\211\202"
@@ -418,7 +418,7 @@
 	.ascii	"\036o\327\232;qs7nl\325\222\315FR\255\313\037\012\002"
 	.ascii	"O]"
 	.text
-	.section	.gnu.lto_flashfsGetOffset.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsGetOffset.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234mSKO\023Q\024\276\347\336\231\351\364\215\254L"
 	.ascii	"\354\202\004\033\003\013\272a\355\017p\353\326\015\022"
 	.ascii	"\032I|$4nLL/-\017+j@\260\326\246\222\232\006\2141\306"
@@ -462,7 +462,7 @@
 	.ascii	"<\1775\030lj9\333|\255)\344.\361O\326\377\005W\330i"
 	.ascii	"\346"
 	.text
-	.section	.gnu.lto_flashfsFlushAsync.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsFlushAsync.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\225U]LTW\020>s\317\336\273w\177\201.\377\356\203"
 	.ascii	"/\244\350\203\230\2661$ML\037\2334i\037\372\320\364"
 	.ascii	"Q\015\244$\255&B\037\332\027.\177\302\272MjA\226Jn\314"
@@ -535,7 +535,7 @@
 	.ascii	"\213JJ\012\366;\366~XXXp\360\355\242\217\013\212\255"
 	.ascii	"r]\374?\034m!\020"
 	.text
-	.section	.gnu.lto_flashfsFlushSync.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsFlushSync.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\225\225MlTU\024\307\357yw\336\307|\367\303 \326"
 	.ascii	"\321]\203\270hM\330t\345\332\304\245+\226\225\320\330"
 	.ascii	"\304\217\204\211\0337\363JKg\206!Q\032\030\224L\314"
@@ -598,7 +598,7 @@
 	.ascii	"ok\333\271\353\215\366\017v\206u\331\016\377\003.\277"
 	.ascii	"\272A"
 	.text
-	.section	.gnu.lto_flashfsSeekAbs.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsSeekAbs.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234]PKKBQ\020\236\357\036\275\272\311e\010\272(\010"
 	.ascii	"D\002]\365kZ\211$\011\225\340m\177O\232\217\260E\364"
 	.ascii	"0\220K(\021\255\242\"{\330\003.\256\334T\024\321\242"
@@ -621,7 +621,7 @@
 	.ascii	"p<\021\216ME\214\311\230\021\212\222\236\210\305\214"
 	.ascii	"\211\331\037\015\360\203\336"
 	.text
-	.section	.gnu.lto_flashfsSeekRel.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsSeekRel.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\215\220\313+Dq\024\307\317\367wf\356L\311l)\026"
 	.ascii	"\224\222\324\314?d#\231(\2172\366s\031\214\327B\036"
 	.ascii	"WM7\215&\311\306#\317\361\274Y\331 \226\024\032%iRd"
@@ -646,7 +646,7 @@
 	.ascii	"1\321\022OD\233\310\352\214\307\023\315\335\237Oh\245"
 	.ascii	"\\"
 	.text
-	.section	.gnu.lto_flashfsWriteByte.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsWriteByte.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\215SKOSA\024\236s\347\366\336\266\\y?jl\342\262"
 	.ascii	"qCE\177\200\177\300\277\340\002\211D\022_\021c\342\306"
 	.ascii	"\216\255\320b5!F\213\251D\253\211\2720\206\020\241R"
@@ -692,7 +692,7 @@
 	.ascii	"\221\2576\330|\272!x\274\276\351D\260\351d\260\361X"
 	.ascii	"}\363\321\306\346\332\006\246\037>w\346\310?n9\226j"
 	.text
-	.section	.gnu.lto_flashfsWrite.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsWrite.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\225XyP\225\327\025\277\347\273o_Y\036n\301\352"
 	.ascii	"\270TI]\342\022\305\304-\232?:\323v&3\231L\232\277Z"
 	.ascii	"c\241a\306j\007\350\037\311?|\202\262\250\264\212\010"
@@ -831,7 +831,7 @@
 	.ascii	"0u\336_\355\222\373~\312gIif\371\234\346\370\230d>L"
 	.ascii	"MIOOZ\370\177in\314\227"
 	.text
-	.section	.gnu.lto_flashfsReadAbs.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsReadAbs.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234uR\335KTQ\020?s\347\356\335U\367C\352Eh\333\204"
 	.ascii	"\022\261\007\227(\210^z\356\271\377`\325]\022\314\300"
 	.ascii	"\255\207z\310\343\356\252\211=H\344*\333EVd\221\240"
@@ -874,7 +874,7 @@
 	.ascii	"\347/,ffOII\205\327\357\327\212.\371|\336\012,\363\226"
 	.ascii	"g\024]\276\350\365\237\365zJ\376\003?\206b\316"
 	.text
-	.section	.gnu.lto_flashfsIdentifyStartOfFreeSpace.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsIdentifyStartOfFreeSpace.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234uT\373OTG\024\236s\347\276\366\356\262\273D\210"
 	.ascii	"\0047)1!\276Z\267\206\244\241\375\301\244&M\3747,B%"
 	.ascii	"\305\232\000\355\257\\wqY\204\266 \262\304u5\010\321"
@@ -949,7 +949,7 @@
 	.ascii	"\024\027~u\240T.\312/(5J\363KJ\367|[P\220_\374\0370"
 	.ascii	"\253h\025"
 	.text
-	.section	.gnu.lto_flashfsInit.part.1.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsInit.part.1.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234]QMK\233A\020\236gg\2237\012\365\254\222\203P<"
 	.ascii	"x\320\374\003\377\213\010\322\200Z0? \253Q\022\211T"
 	.ascii	"\021\2156\274H@h\017\0364\324\257h\375\274\350\305\317"
@@ -974,7 +974,7 @@
 	.ascii	"\247#\336\033\213\177\216uuw$>u%\332:\351\015R\226\252"
 	.ascii	"\017"
 	.text
-	.section	.gnu.lto_flashfsIsEOF.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsIsEOF.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234M\221;K\003A\020\307\347\277{\257Fk\321\024\201"
 	.ascii	"T6\236`\343\327\011BP\360\001\346\003\334z\247D\211"
 	.ascii	"\202\2129A\016Ig%\276\242y\030\341Ha\347\023A\301F,"
@@ -998,7 +998,7 @@
 	.ascii	"\335:A40\342f\347'\334\231\364\324\254;5\347f\246\323"
 	.ascii	"\331\311Lvd\202~\001:\270\226z"
 	.text
-	.section	.gnu.lto_flashfsInit.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_flashfsInit.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234]P;K\003A\020\236\357fs\027E\013\273 )\004+\033"
 	.ascii	"\017\361\027\211 \012>\300\374\200\254\211\242!\"\211"
 	.ascii	"\350\011rH:\253 \34231\305\021A+5\210\205 \210\017\264"
@@ -1021,7 +1021,7 @@
 	.ascii	"\261^719\350\216\015\214\214\273#\023\356\320\350@b"
 	.ascii	"x(\321;H_\335\251\230("
 	.text
-	.section	.gnu.lto_.symbol_nodes.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234]\220O/\003A\030\306\237\335\327\266\245\326\252"
 	.ascii	"\356n\333\355V[\177\016\022\351\321\301\005\237\304"
 	.ascii	"Gy7\262\341 \301\311\301\301Az\364\001\324\215\224\003"
@@ -1045,7 +1045,7 @@
 	.ascii	"\244C\344;\350j\341{\375\213\012\311@\361\227>V>\033"
 	.ascii	"\370\006;6\317o"
 	.text
-	.section	.gnu.lto_.refs.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.refs.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234M\217\261JCQ\020D\347\314\274w\237\006\275\232"
 	.ascii	"(\011\006\002Z\210\205\006mM\221o\027\261\260\020\377"
 	.ascii	"!\177\222\2254\026\313,\2633\007\266I:\3244\211.\226"
@@ -1057,7 +1057,7 @@
 	.ascii	"\356_\205\373\226\373O\351\357\337?\014\254Dt\004=\247"
 	.ascii	"\013*"
 	.text
-	.section	.gnu.lto_.decls.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.decls.f4fe8e810eda6b86,"",%progbits
 	.ascii	"x\234\265Z\013PTW\232\276\247Ow\3234/\203\306\230\014"
 	.ascii	"\2255.\211\354\316(j\222\315dgj3I&fR\2733I\305Lvu6E"
 	.ascii	"Zl\224\204\207\241\333\235qj\253\366\002\312K\021P\004"
@@ -1360,7 +1360,7 @@
 	.ascii	"\357\213\217\026}\341\267\350\223%\320^\014\277_\266"
 	.ascii	"{\351\223?|\261\310Cq\205t\376/\367\023\346\251"
 	.text
-	.section	.gnu.lto_.symtab.1f8c01af60d86ce,"",%progbits
+	.section	.gnu.lto_.symtab.f4fe8e810eda6b86,"",%progbits
 	.ascii	"flashfsEraseCompletely\000"
 	.ascii	"\000"
 	.ascii	"\000"

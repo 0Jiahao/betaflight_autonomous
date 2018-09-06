@@ -9,26 +9,26 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"arm_cmplx_mag_f32.c"
-	.section	.gnu.lto_.profile.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.profile.1a741a68793bc920,"",%progbits
 	.ascii	"x\234cc```\001bF\206Ts\000\001y\000\250"
 	.text
-	.section	.gnu.lto_.icf.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.icf.1a741a68793bc920,"",%progbits
 	.ascii	"x\234cc``\340`@\000F\206\223\237v\374\346b\000\000\020"
 	.ascii	"\245\003\210"
 	.text
-	.section	.gnu.lto_.jmpfuncs.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.1a741a68793bc920,"",%progbits
 	.ascii	"x\234cc``\320e@\000F\006fFFF\366\3729\314\014P\314\310"
 	.ascii	"\004\022\307F0\000\000~\263\003\247"
 	.text
-	.section	.gnu.lto_.inline.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.inline.1a741a68793bc920,"",%progbits
 	.ascii	"x\234cc``pe@\000F\006\006\313\317\314\254\214L\012@"
 	.ascii	"\026\263\327\231\227b\014l\013\344\231\030X\026\310"
 	.ascii	"\2630\260\000\0250\363020N\360\303G1\000\000wi\011\372"
 	.text
-	.section	.gnu.lto_.pureconst.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.pureconst.1a741a68793bc920,"",%progbits
 	.ascii	"x\234cc```\006bF\006)\000\000\177\000%"
 	.text
-	.section	.gnu.lto_arm_cmplx_mag_f32.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_arm_cmplx_mag_f32.1a741a68793bc920,"",%progbits
 	.ascii	"x\234}V{PTU\030?\337=\367\336]v\321U\3615@\211!\251"
 	.ascii	"e\340\203\277\372\257\321ir&\233f\370\253\277\214\030"
 	.ascii	"K'A\006q\246i\246\341&\270>\303f4\252\333R\224\2265"
@@ -129,17 +129,17 @@
 	.ascii	"\315\306\205\212\026\345\254(,\\VT\314\370\371\270b"
 	.ascii	"\346b\361/\255\221;\341"
 	.text
-	.section	.gnu.lto_.symbol_nodes.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.1a741a68793bc920,"",%progbits
 	.ascii	"x\234cc``\010\000b\006\246n\306z\006\206\011\347\030"
 	.ascii	"\030\200\324\256\006G\006\006\306\036\306zF\260\010"
 	.ascii	"\003CC\203\003\003\0033\003#\303\223\225\307\244A\364"
 	.ascii	"\221\366\247;\230A\214%\335P\306\221~(\343\311\364?"
 	.ascii	"q\014\000=\210\026l"
 	.text
-	.section	.gnu.lto_.refs.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.refs.1a741a68793bc920,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.decls.1a741a68793bc920,"",%progbits
 	.ascii	"x\234\275UkL\024W\024\2363\263\300\262<|\304*M\370a"
 	.ascii	"\370#i\012K\325\304\3304\215\204\"\222\000mX\371\241"
 	.ascii	"\177\326u]d\315\356\216\262\263\251\332\327(\026Q\244"
@@ -229,7 +229,7 @@
 	.ascii	"\0262\377DO\220\224\230\230X\215FE\245I:\311f\375\013"
 	.ascii	"\214M;\021"
 	.text
-	.section	.gnu.lto_.symtab.63be6df6c81b244e,"",%progbits
+	.section	.gnu.lto_.symtab.1a741a68793bc920,"",%progbits
 	.ascii	"arm_cmplx_mag_f32\000"
 	.ascii	"\000"
 	.ascii	"\000"

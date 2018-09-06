@@ -9,15 +9,15 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"rx_xn297.c"
-	.section	.gnu.lto_.profile.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.profile.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234cc```\001bF\206:\177\000\001\303\000\331"
 	.text
-	.section	.gnu.lto_.icf.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.icf.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234cc``\220b@\000\026\206\271[\357\335\341f\234\261"
 	.ascii	"k\351t\026\246\037\217\346\336dg~\323\364q\016/\003"
 	.ascii	"\000\246#\0143"
 	.text
-	.section	.gnu.lto_.jmpfuncs.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234}\216=\012\302@\020\205\337\333\211\306F\274\300"
 	.ascii	"\336\325BR\331J\252\\\300*\205\177\330\211\330\247\310"
 	.ascii	"\025,\275\200 L^\022\220\255v\341\025\373\346\233\217"
@@ -28,7 +28,7 @@
 	.ascii	"\317\375\273\036\027\026r\\'G[\275\217\253\271\022t"
 	.ascii	"\313:\200\001GWE\352"
 	.text
-	.section	.gnu.lto_.inline.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.inline.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234cc``\230\305\200\000L\014\014\252\023Y\030Y\230"
 	.ascii	"\024\262\24703Nk=t\236\275\233y\0163\023#\003\343fF"
 	.ascii	"\031\006&\205,(\315\310\300\300\010\"XT:\336\3521\260"
@@ -37,10 +37,10 @@
 	.ascii	"\013##X#\263E\307=c\210F\266\017z,\014,@\035@= '\200"
 	.ascii	"\265\300\365B\030\014\000\311u\033\206"
 	.text
-	.section	.gnu.lto_.pureconst.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.pureconst.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234cc```\005b&\006)fI\000\000\377\000D"
 	.text
-	.section	.gnu.lto_XN297_UnscramblePayload.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_XN297_UnscramblePayload.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234}UYs\024U\024\276\247oOO\317\364,I\220\012\206"
 	.ascii	"\201J\212\204\020\262\211Z.\345\203e\371\344\223\377"
 	.ascii	"@\213$<\244J\3630 \305\213\225N&\231\020\004\214\245"
@@ -127,7 +127,7 @@
 	.ascii	"\007\363\2524\377\242\267**\374\274\334_\256TV\362\262"
 	.ascii	"w\252\324\262w?Z\360\037\013\203\376\021"
 	.text
-	.section	.gnu.lto_xn297_data_scramble.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_xn297_data_scramble.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234M\222[S\222Q\024\206\367\346C\324D\355|\244\351"
 	.ascii	"\246\373&\273\361\256\237\324_\300\011\035\264\322\311"
 	.ascii	"\230\350\002\0353\034k*\2024\361C4\017\021B\240\242"
@@ -165,7 +165,7 @@
 	.ascii	"\003*\350\007^\320\007>\201^\320\303M\214o\363Z\366"
 	.ascii	"\017\035\273fP"
 	.text
-	.section	.gnu.lto_xn297_crc_xorout.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_xn297_crc_xorout.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234-\222\331NZQ\024\206\317\346\010\016\250t\036\022"
 	.ascii	".z\323\007\260\275\361\265\372\006\016\330\0106mmHO"
 	.ascii	"4\320\332\252\201\204`\261Z&\265U\250\003G(\202\202"
@@ -201,7 +201,7 @@
 	.ascii	"\024\230\004\023 \010\002\300\017|\300\013\276\200q"
 	.ascii	"0\306\214\022+\262V\351?N\354C4"
 	.text
-	.section	.gnu.lto_XN297_WritePayload.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_XN297_WritePayload.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234\215V[S\024W\020>=gvf\366\306\"\212\020]SZb!\011"
 	.ascii	"\210x\003\237R\311C\252\222\227\374\203\244\024}\260"
 	.ascii	"\222P\026\232\224Oa`\001\205\210Q\023\221\235,\021\243"
@@ -301,7 +301,7 @@
 	.ascii	"\213\336\2373'\233gfgj\363ge~>w\2412o\036\237\375Q\226"
 	.ascii	":\373\223\257\026\376\007\037\220\241\341"
 	.text
-	.section	.gnu.lto_.symbol_nodes.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234cc``h\001b\006\246>\306z\006\206\011\347\030\030"
 	.ascii	"\200\324\256\006G\006\006\326nF\206\006%\006\006f\326"
 	.ascii	"\036FF0\203\251\237\261\236\021E\015\343\004\306z&\260"
@@ -309,11 +309,11 @@
 	.ascii	"\337\330@tK\327\263\035\314\314\314@\201\207_$At\313"
 	.ascii	"$\260\000+\303\222Yo\344\031\000\306G n"
 	.text
-	.section	.gnu.lto_.refs.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.refs.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234cc``\020\004b&\006\006F!\006&\015&f\006F\031\006"
 	.ascii	"&5\006\000\005\342\000\241"
 	.text
-	.section	.gnu.lto_.decls.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.decls.51dffcdfb7d09fca,"",%progbits
 	.ascii	"x\234\265VmLSg\024\276\347\336\202\345\012\324t\316"
 	.ascii	"i\3229g\224\370cPdl\352\257\231,\331L\266\030cb\266"
 	.ascii	"\371cM-Ujh\273\265e\321\375\272\2120\242\016%ST\324"
@@ -415,7 +415,7 @@
 	.ascii	"NF\327\267hlS\202\331c6\2519\214`:\3046-r\272\234\311"
 	.ascii	"\036y\236\3153\333J\000\254\377\000m\333\353a"
 	.text
-	.section	.gnu.lto_.symtab.2012f8ba2365cf2f,"",%progbits
+	.section	.gnu.lto_.symtab.51dffcdfb7d09fca,"",%progbits
 	.ascii	"XN297_UnscramblePayload\000"
 	.ascii	"\000"
 	.ascii	"\000"

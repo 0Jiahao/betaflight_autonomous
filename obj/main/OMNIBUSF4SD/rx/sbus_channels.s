@@ -9,20 +9,20 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"sbus_channels.c"
-	.section	.gnu.lto_.profile.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.profile.296c7c294f270036,"",%progbits
 	.ascii	"x\234cc```\001bF\006\017W\000\001M\000\231"
 	.text
-	.section	.gnu.lto_.icf.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.icf.296c7c294f270036,"",%progbits
 	.ascii	"x\234cc``\020a@\000f\206\265\307~\374\344a\354:\334"
 	.ascii	"\370\236\205\351\323\317\331\217\230\031\000g\355\011"
 	.ascii	"\275"
 	.text
-	.section	.gnu.lto_.jmpfuncs.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.296c7c294f270036,"",%progbits
 	.ascii	"x\234cc``\320d@\000f\006&FF\346\3729\314\014@\314\310"
 	.ascii	"\010\3450\00113\023\224\303\002\022`\000\000\217\213"
 	.ascii	"\007\013"
 	.text
-	.section	.gnu.lto_.inline.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.inline.296c7c294f270036,"",%progbits
 	.ascii	"x\234e\221!o\002A\020\205g\366.\307R\232@\240`9\014"
 	.ascii	"A4!\301\340\010\301\343\361\370z\334\210\312&5\025\024"
 	.ascii	"u\246\276\011\006Y\333`H\220\310\232\376\014v\336\354"
@@ -37,10 +37,10 @@
 	.ascii	"#\226hK\347\360\301a\320'w\324<rX\366\346\371\323\357"
 	.ascii	"\266K\376o\257}\2277\316c\340\227^\001\231\003P\342"
 	.text
-	.section	.gnu.lto_.pureconst.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.pureconst.296c7c294f270036,"",%progbits
 	.ascii	"x\234cc```\007bf\006VF)&)\000\001T\000M"
 	.text
-	.section	.gnu.lto_sbusChannelsReadRawRC.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_sbusChannelsReadRawRC.296c7c294f270036,"",%progbits
 	.ascii	"x\234mQMO\023Q\024}g\336\314t\350\0075\256\2144\246"
 	.ascii	"\256\0326\214\306\370\013\374\007\376\001\203\015j\023"
 	.ascii	"\251I+\011;\036\255B\021M\210\221\252\223\221@\242!"
@@ -75,7 +75,7 @@
 	.ascii	"xG\372|\252\275\355\330\271\364\251\324i\235\367\376"
 	.ascii	"\001\327i\366\204"
 	.text
-	.section	.gnu.lto_sbusChannelsDecode.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_sbusChannelsDecode.296c7c294f270036,"",%progbits
 	.ascii	"x\234\225\327]L\024W\024\007\36093\263\273\263\263\313"
 	.ascii	".\"\"\342\212`\252\350\213\3306\2764\021\233\330\227"
 	.ascii	"\276\232\364\271\241\306\2666\225&\242\211\361\305\341"
@@ -169,7 +169,7 @@
 	.ascii	"\225\313\370\340\263\324\265\251\377\002\024\021\360"
 	.ascii	"\361"
 	.text
-	.section	.gnu.lto_sbusChannelsInit.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_sbusChannelsInit.296c7c294f270036,"",%progbits
 	.ascii	"x\234}T[KTQ\024\336\337\331\373\234\031gt\306\354%h"
 	.ascii	"\010\203B\272\340\320[\324c\377 z\017\223.BM\240\005"
 	.ascii	"\276\271S\233\321\254\220(\243\323)\214\210nD\332E\233"
@@ -216,16 +216,16 @@
 	.ascii	"J\255\335XUZ.\302\225\325+6\247\326U\254\217WV\257\334"
 	.ascii	"\232\332R\261i\255\231c\315o\005dv'"
 	.text
-	.section	.gnu.lto_.symbol_nodes.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.296c7c294f270036,"",%progbits
 	.ascii	"x\234cc``\260\002b\006\246\036\306z\006\206\011\347"
 	.ascii	"\030\030\200\324\216\005\007\033\330\200b\335\214\365"
 	.ascii	"\2140\261]\015\216@\221^\306z&\024\021\006\000\303\310"
 	.ascii	"\016\232"
 	.text
-	.section	.gnu.lto_.refs.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.refs.296c7c294f270036,"",%progbits
 	.ascii	"x\234cc```\003bF&&\006F\006\000\000\270\000\023"
 	.text
-	.section	.gnu.lto_.decls.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.decls.296c7c294f270036,"",%progbits
 	.ascii	"x\234\305Y}PTW\226\177\367\335n>\232/\003d\302F6\343"
 	.ascii	"fY\303L\215\266\037I\214\273S\273\2335\353\354\3741"
 	.ascii	"[S\356\354\037\331\232\252\236N\323B'\320\315t7\256"
@@ -466,7 +466,7 @@
 	.ascii	"\011\341\274\322Gz\035\344\305\034\276\351\347F\203"
 	.ascii	"\365\177\001\314\007}G"
 	.text
-	.section	.gnu.lto_.symtab.6d4c781fb3655410,"",%progbits
+	.section	.gnu.lto_.symtab.296c7c294f270036,"",%progbits
 	.ascii	"sbusChannelsDecode\000"
 	.ascii	"\000"
 	.ascii	"\000"

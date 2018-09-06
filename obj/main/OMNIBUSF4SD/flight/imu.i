@@ -5544,6 +5544,7 @@ typedef enum {
     DEBUG_RCCOMMAND,
     DEBUG_ATTITUDE,
     DEBUG_YAW,
+    DEBUG_MSG2,
     DEBUG_COUNT
 } debugType_e;
 
@@ -8022,10 +8023,10 @@ static void imuCalculateEstimatedAttitude(timeUs_t currentTimeUs)
                 0
 # 466 "./src/main/flight/imu.c"
                      ;
-        accmx = accAverage[X];
-        accmy = accAverage[Y];
-        accmz = accAverage[Z];
     }
+    accmx = accAverage[X];
+    accmy = accAverage[Y];
+    accmz = accAverage[Z];
     imuMahonyAHRSupdate(deltaT * 1e-6f,
                         ((gyroAverage[X]) * 0.0174532925f), ((gyroAverage[Y]) * 0.0174532925f), ((gyroAverage[Z]) * 0.0174532925f),
                         useAcc, accAverage[X], accAverage[Y], accAverage[Z],

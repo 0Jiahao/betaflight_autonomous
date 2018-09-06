@@ -132,21 +132,13 @@ static void calculateSetpointRate(int axis)
     if((FLIGHT_MODE(ANGLE_MODE)) && (axis == 2)) // yaw channel
     {
         float desiredYaw = -rcCommand[2];
-        if(desiredYaw > 180)
-        {
-            desiredYaw = 180;
-        }
-        if(desiredYaw < -179.9)
-        {
-            desiredYaw = -179.9;
-        }
-        float currentYaw = attitude.values.yaw/10; // 0~360
+        float currentYaw = attitude.values.yaw/10.0; // 0~360
         if(currentYaw > 180)
         {
             currentYaw = currentYaw - 360;
         }
         float errorYaw = desiredYaw - currentYaw;
-        errorYaw = (((int)(errorYaw * 10) + 1800) % 3600 - 1800) / 10.0;
+        errorYaw = errorYaw / fabs(errorYaw) * (((int)(fabs(errorYaw) * 10) + 1800) % 3600 - 1800) / 10.0;
         if(errorYaw_i + (int)errorYaw > 100000000)
         {
             errorYaw_i = 100000000;
@@ -156,7 +148,7 @@ static void calculateSetpointRate(int axis)
             errorYaw_i = -100000000;
         }
         errorYaw_i = errorYaw_i + errorYaw;
-        angleRate = - (3 * errorYaw - 0.05 * gyroz + errorYaw_i/1000000);
+        angleRate = - (2 * errorYaw - 0.25 * gyroz + errorYaw_i/1000000);
         DEBUG_SET(DEBUG_YAW,0,currentYaw);
         DEBUG_SET(DEBUG_YAW,1,desiredYaw);
         DEBUG_SET(DEBUG_YAW,2,gyroz);

@@ -9,14 +9,14 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"bus_i2c_busdev.c"
-	.section	.gnu.lto_.profile.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.profile.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234cc```\001bF\006kY\000\001\013\000d"
 	.text
-	.section	.gnu.lto_.icf.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.icf.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234cc``\020a@\000f\206=\267/4q1\276\233\363\241\225"
 	.ascii	"\203i\341\241\235W\331\030\000a\350\011\022"
 	.text
-	.section	.gnu.lto_.jmpfuncs.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234\225\216\275\012\302\000\014\204\357K\212\225."
 	.ascii	"}\201>\204\257\347\324I\034\\\245S_B\324]\234\005\037"
 	.ascii	"I\223\202\366g\322\300\221\034\271\334e%i\203\276\345"
@@ -26,7 +26,7 @@
 	.ascii	"\3164\303~\320Lo3\005\013y\267\273?\313\224\347\017"
 	.ascii	"\027\232\204\336\372\215=@"
 	.text
-	.section	.gnu.lto_.inline.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.inline.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234cc``8\301\200\000\314\014\014\334\302\214L\014"
 	.ascii	"\034\214\014\314\012`R\203\015(\314\266@\236\211\201"
 	.ascii	"\361\005;\013\204\004\021\034`&\007H\023\033?\003\003"
@@ -34,10 +34,10 @@
 	.ascii	"\023\374\230\0301\214`\272\300O\204#\240f\000y\000="
 	.ascii	"\261\033\360"
 	.text
-	.section	.gnu.lto_.pureconst.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.pureconst.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234cc```\007bf\006IFI&I\000\001\264\000_"
 	.text
-	.section	.gnu.lto_i2cBusWriteRegister.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_i2cBusWriteRegister.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234\205\220\317k\023Q\020\307\337w'\331$m\242\240"
 	.ascii	"^\304\034r(\204^\262RA\374oJL\202\344\240H\242\275\346"
 	.ascii	"\265*\261\306C)&)a\225\010\026E\361G\255\255\246M\355"
@@ -69,7 +69,7 @@
 	.ascii	":z:\337\237\355K\365\363?\235\031H\244\224\351E\224"
 	.ascii	"\313\034\363\245\223\247\222\177\000,+\357C"
 	.text
-	.section	.gnu.lto_i2cBusReadRegisterBuffer.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_i2cBusReadRegisterBuffer.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234\205\221\317KTQ\024\307\357\367\2357ofttSA\341"
 	.ascii	",\\\010\203\233ya\213\332\264\353\377\020\233\031L("
 	.ascii	"\211\321\334\316u*Jt!\341\250=_1AY\024QjV\376\354\345"
@@ -103,7 +103,7 @@
 	.ascii	"\224\025D\224\3154\233\351\246\366&\353t\246\265\271"
 	.ascii	"\375\324_>\201\005;"
 	.text
-	.section	.gnu.lto_i2cBusReadRegister.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_i2cBusReadRegister.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234\205R[KTQ\024\336\337Yg\256\316\364\326\005\232"
 	.ascii	"\007\037\264\301\027O\030\304\374\0331\225\360\241\210"
 	.ascii	"\261|\235=\232\250\331\203H3\332p\222\351\">D\0273-"
@@ -139,17 +139,17 @@
 	.ascii	"\330R]\257\202\276E\351\306\343vC\335\351\272\337\241"
 	.ascii	"\352\017D"
 	.text
-	.section	.gnu.lto_.symbol_nodes.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234U\310A\015\200@\014D\321\337v\203.\260\204\201"
 	.ascii	"\026\007\350A\004\0328`\203\205\302^\330L&?y\0030\347"
 	.ascii	"\321\013\207u\347\315\026SJ\305\245\227\033\327N$\304"
 	.ascii	"\355\023\210\030\023\026\361\362\007\313\235G\025\223"
 	.ascii	"\322\252\255<\313\321\036\247"
 	.text
-	.section	.gnu.lto_.refs.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.refs.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.decls.e8fca03b218d8f52,"",%progbits
 	.ascii	"x\234\265XiTTG\026~\365\252\241\027\032p\304d\310\031"
 	.ascii	"fNN\206\343\3513\023lE'\313\231\374\030\267d\310\211"
 	.ascii	"\306\003\306L\346G:-\264\261=\002\206n\234d\376\314"
@@ -348,7 +348,7 @@
 	.ascii	"\0203\376\325\027\012\250\242v\344P /\376\017g\277\011"
 	.ascii	"}"
 	.text
-	.section	.gnu.lto_.symtab.a1143144b143a2ed,"",%progbits
+	.section	.gnu.lto_.symtab.e8fca03b218d8f52,"",%progbits
 	.ascii	"i2cBusWriteRegister\000"
 	.ascii	"\000"
 	.ascii	"\000"

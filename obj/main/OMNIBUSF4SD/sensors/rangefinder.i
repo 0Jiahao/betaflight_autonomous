@@ -5702,6 +5702,7 @@ typedef enum {
     DEBUG_RCCOMMAND,
     DEBUG_ATTITUDE,
     DEBUG_YAW,
+    DEBUG_MSG2,
     DEBUG_COUNT
 } debugType_e;
 

@@ -91,6 +91,9 @@ static bool mavlinkTelemetryEnabled =  false;
 static portSharing_e mavlinkPortSharing;
 
 float uart_altitude;
+float uart_roll;
+float uart_pitch;
+float uart_yaw;
 
 static void mavlinkReceive(uint16_t c, void *data)
 {
@@ -101,14 +104,27 @@ static void mavlinkReceive(uint16_t c, void *data)
     {
         switch(msg.msgid)
         {
-            case 105:
+            case 105: // highres_imu for test of communication
             {
                 mavlink_highres_imu_t hr;
                 mavlink_msg_highres_imu_decode(&msg,&hr);
                 uart_altitude = hr.abs_pressure;
                 DEBUG_SET(DEBUG_UART,1,hr.time_usec);	
-                DEBUG_SET(DEBUG_UART,3,100 * uart_altitude);
+                DEBUG_SET(DEBUG_UART,3,uart_altitude);
+                break;
             }
+            case 81: //setpoint command
+            {
+                mavlink_manual_setpoint_t command;
+                mavlink_msg_manual_setpoint_decode(&msg,&command);
+                uart_altitude = command.thrust;
+                uart_roll = command.roll;   //maybe need normalization but this should be done in the JeVois
+                uart_pitch = command.pitch;
+                uart_yaw = command.yaw;
+                DEBUG_SET(DEBUG_UART,1,command.time_boot_ms);	
+                DEBUG_SET(DEBUG_UART,3,uart_altitude);
+                break;
+            } 
         }
     }
 }
@@ -401,11 +417,11 @@ void mavlinkSendMAVStates(void)
     // time_boot_ms Timestamp (milliseconds since system boot)
     (uint64_t)microsISR(),
     // xacc
-    accX_tmp*accVelScale/100,
+    accmx / 2048 * 9.80665,
     // yacc
-    accY_tmp*accVelScale/100,
+    -accmy / 2048 * 9.80665,
     // zacc
-    accZ_tmp*accVelScale/100,
+    -accmz / 2048 * 9.80665,
     // rollspeed Roll angular speed (rad/s)
     gyrox,
     // pitchspeed Pitch angular speed (rad/s)
@@ -419,7 +435,7 @@ void mavlinkSendMAVStates(void)
     // yaw Yaw angle (rad)
     DECIDEGREES_TO_RADIANS(attitude.values.yaw),
     // altitude (cm)
-    0,   
+    (float)-my_altitude/100,   
     // extract 1 time
     0,
     // extract 2
@@ -431,9 +447,12 @@ void mavlinkSendMAVStates(void)
     msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
     mavlinkSerialWrite(mavBuffer, msgLength);
     DEBUG_SET(DEBUG_UART,2,my_altitude);
-    DEBUG_SET(DEBUG_MSG,0,accX_tmp*1000);
-    DEBUG_SET(DEBUG_MSG,1,accY_tmp*1000);
-    DEBUG_SET(DEBUG_MSG,2,accZ_tmp*1000);
+    DEBUG_SET(DEBUG_MSG,0,accmx);
+    DEBUG_SET(DEBUG_MSG,1,accmy);
+    DEBUG_SET(DEBUG_MSG,2,accmz);
+    DEBUG_SET(DEBUG_MSG2,0,gyrox);
+    DEBUG_SET(DEBUG_MSG2,1,gyroy);
+    DEBUG_SET(DEBUG_MSG2,2,gyroz);
     DEBUG_SET(DEBUG_ATTITUDE,0,attitude.values.roll);
     DEBUG_SET(DEBUG_ATTITUDE,1,attitude.values.pitch);
     DEBUG_SET(DEBUG_ATTITUDE,2,attitude.values.yaw);

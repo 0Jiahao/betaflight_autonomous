@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"stm32f4xx_dcmi.c"
-	.section	.gnu.lto_.profile.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.profile.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234cc```\003bF\206\263\214=\214\000\004\364\001i"
 	.text
-	.section	.gnu.lto_.icf.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.icf.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234cc``\250d@\000\021\206Y[\357\335ca\374}\354K)\323"
 	.ascii	"\257\316SkY\230'=]\366\225\225\345\365\341\307\337Y"
 	.ascii	"Y\367\364_\374\310\312\266k\336\3713|\354\2557>\374"
@@ -22,14 +22,14 @@
 	.ascii	"_\217\360\010<\231q\365\"\247\340\252[w\033X\204\036"
 	.ascii	"\276\\\277\222_\030\314f\000\000\237F@\203"
 	.text
-	.section	.gnu.lto_.jmpfuncs.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234E\215[\016\3020\014\004g\355\320\226G\351\363\262"
 	.ascii	"|q\021$\256\302\315\322Fq\204\245\325\214\366\303\333"
 	.ascii	"\001_\376\267\237\021\0308$I\357\217s\201\256\252\372"
 	.ascii	"\340Pi\327J\347V%\335[\361h26y\302d\222\227\227\245"
 	.ascii	"0{\225\265_\022grv\346\030\\\202kp\013r\000Xb\026\210"
 	.text
-	.section	.gnu.lto_.inline.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.inline.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\235S\253N\003A\024\275wf\272;\235\356n\207W\013"
 	.ascii	"I\223\356\027\220*T\323\354\027\020\014\036\015\341"
 	.ascii	"\017\020\030\024\006AP\210:\220$\030d\203\302\201\344"
@@ -51,12 +51,12 @@
 	.ascii	"\220\271\362\315'\223Q\250t\223\221\024\2551[H.P\256"
 	.ascii	"\377\374(\312\226M\2646\226\324\3037w\030o\313"
 	.text
-	.section	.gnu.lto_.pureconst.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.pureconst.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\015\303\311\021\200 \020\000\260E\024\361>\360"
 	.ascii	"\225\016\354\277A\315LJD\274\377'$\235\2547(F\325d\266"
 	.ascii	"Xmv\207\323\345\326|>\304\003\012"
 	.text
-	.section	.gnu.lto_DCMI_CROPCmd.part.0.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_CROPCmd.part.0.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\215P\277K[Q\024\276\337;\357\305th\035\2728du"
 	.ascii	"\310P\257\230\202\377\200\270\024E\210\270\212M\322"
 	.ascii	"\366\201)\222\004u\363\2521\211\255\240\203\332\022"
@@ -82,7 +82,7 @@
 	.ascii	"\372\3539\231LDd2\025\017\265\275\320\351h$\356\266"
 	.ascii	"D\204\277;6\022N\015\244b\327\340\377\240}"
 	.text
-	.section	.gnu.lto_DCMI_JPEGCmd.part.1.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_JPEGCmd.part.1.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\215PKK[A\024\236\357\236{c\\\024A\\t\221\255\013"
 	.ascii	")f\212\351O\0207R\021\"nEc\332^h\212$\241u\347\324G"
 	.ascii	"\022\037\240\013_\\\2565 \301E\251\245\244\257D\205"
@@ -109,7 +109,7 @@
 	.ascii	"\310\311T2&S\351D\244\353\205N\217\306\022n8&\202}\361"
 	.ascii	"w\321\364p:\376\027\301^\237\331"
 	.text
-	.section	.gnu.lto_DCMI_Cmd.part.2.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_Cmd.part.2.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\215P;HcA\024\235\363\356{1\026b\261[X\244\265"
 	.ascii	"\260\320\021c\275\325b\263(\013\021[\321\030\365\201"
 	.ascii	"\021I\302\256\235\343/\211\253\240\205?\344\341\006"
@@ -135,7 +135,7 @@
 	.ascii	"\356\011G\335\206\260\360\267E\276\207\022]\211\310"
 	.ascii	"\013\233\327\241\354"
 	.text
-	.section	.gnu.lto_DCMI_CaptureCmd.part.3.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_CaptureCmd.part.3.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\215PKK[A\024\236\357\236{c\\\210\253\212\213l"
 	.ascii	"](\324\221\244?A\334HEHq+\032\243^0\"Ih\3359\365\221"
 	.ascii	"D+\264\213\370 \\4 \305\205\250\210\357\250\020B@l\241"
@@ -161,7 +161,7 @@
 	.ascii	"d,\024\034\324\351\201H\314m\215\010\177W\364C8\331"
 	.ascii	"\227\214>\000\247\333\237\240"
 	.text
-	.section	.gnu.lto_DCMI_ITConfig.part.4.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_ITConfig.part.4.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\215R\315kSA\020\337\337\233\367^RD\332\203h\017"
 	.ascii	"\271\326\320\203]i\364/\260\010EZ\204\024\217\206\232"
 	.ascii	"F}`D\222\240\275u\215m\222j\241\202m\205\360\324\200"
@@ -193,7 +193,7 @@
 	.ascii	"L{]I\021\3529\320\327\233\350\035\010\367\247\316\305"
 	.ascii	"s\203\271\324o\362\254\3101"
 	.text
-	.section	.gnu.lto_DCMI_DeInit.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_DeInit.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\235\222\273/DA\024\306\317w\307\275H\350\024\022"
 	.ascii	"\022Z\215I\360'\210F$\022\372\015\353u\305\212\354\212"
 	.ascii	"\350\314b\355z+\026\315F\256b\243B\304\373}\255G\242"
@@ -218,7 +218,7 @@
 	.ascii	"\363\320`\240\266\246K\225;\374\001\273\332O?\014\345"
 	.ascii	"\030\257"
 	.text
-	.section	.gnu.lto_DCMI_Init.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_Init.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225\224\331KTQ\034\307\317\357\236\271w6u\004"
 	.ascii	"\227\204|\360!\021{\360\202\366\037$\201\204\021\330"
 	.ascii	"s\226K5\220\"\343\024\276y]G3\251\007\027\220\301FJ"
@@ -266,7 +266,7 @@
 	.ascii	"rwIV\346)\032.*,qf\0242G\366\301\334\234\374\234R\247"
 	.ascii	";\317\355:W\3506\271\213K\312~\003\370H\015\236"
 	.text
-	.section	.gnu.lto_DCMI_StructInit.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_StructInit.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\235\222\317KTQ\024\307\357\367\335\231\227(\326"
 	.ascii	"\"\210\240Y\270\010\304\215\027\264\376\202D\2200\202"
 	.ascii	"q+C\215F\017\032\2117\257p\347uj\232\261\022\\\244\201"
@@ -297,7 +297,7 @@
 	.ascii	"\343\024\273\007\322\031\247=-\366t\035\351\355I\365"
 	.ascii	"\0149^\322s\317\245\275_Z\0270\007"
 	.text
-	.section	.gnu.lto_DCMI_CROPConfig.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_CROPConfig.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225SMHTQ\024\276\347\335\367\336\374\351P\264"
 	.ascii	"\2112p\021\210\033\037h\021\255\225@\302\222\246\375"
 	.ascii	"`\243\321\203\224\030\247\220\026y\035uf\372\243\026"
@@ -335,7 +335,7 @@
 	.ascii	"\207\032\355\262\020\333VUYS\035\254<r\270\266\272\311"
 	.ascii	"\216\004\"\341\323\241\310o\243wU\312"
 	.text
-	.section	.gnu.lto_DCMI_CROPCmd.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_CROPCmd.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225RMh\023A\024~\337\314\356f+\321\336\304C\020"
 	.ascii	"\241\207\322\036\272\322x\324\233x\021\213\020\361Z"
 	.ascii	"j\032u\301\210$A{\313\244M\223T\213zhk)K\215\207\322"
@@ -367,7 +367,7 @@
 	.ascii	"\203'uz4\231v\007\222d\017\245.$r#\271\324o\312\201"
 	.ascii	"\313\247"
 	.text
-	.section	.gnu.lto_DCMI_SetEmbeddedSynchroCodes.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_SetEmbeddedSynchroCodes.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225\223MHTQ\024\307\357yw\336\233/g\222p!$\345"
 	.ascii	"\"\0207>\320\326m\224@\302\010l/93\321@Z\314L\345\316"
 	.ascii	"\253\2163\366E-\324@\306\232\026\342\246\017#\373\360"
@@ -406,7 +406,7 @@
 	.ascii	"~_S\260\302\307\212j\252\353j\033\252\217\373\003\341"
 	.ascii	"\332\346`\244>\022:\351\213\374\005:\270Y\244"
 	.text
-	.section	.gnu.lto_DCMI_JPEGCmd.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_JPEGCmd.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225RMh\023A\024~\337\314n\262\225\210\340A<\344"
 	.ascii	" \024)\355\241+\215Wo\"\005\261\010\021\257\245\246"
 	.ascii	"Q\027\214H\022\264\267L\3324I\265\250\207\266\226\260"
@@ -437,7 +437,7 @@
 	.ascii	"\321 gg\322\011;\223M\305\206N\352\364x\"\345\014&\310"
 	.ascii	"\032I^\210g\307\262\311\337Y:\312\241"
 	.text
-	.section	.gnu.lto_DCMI_Cmd.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_Cmd.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225RMh\023A\024~\337\314\356f+\021\017B\361\220"
 	.ascii	"\203\320Ch\017]i\274z\023/\322\"D\274\226\232F\015\030"
 	.ascii	"\221$ho\2314m\222jQ\017m\255e\321x(=\251\210ZM\374["
@@ -468,7 +468,7 @@
 	.ascii	"6\227\216\015\235\321\351\361D:5\230 {$y9\236\033\313"
 	.ascii	"%w\000\372>\313\353"
 	.text
-	.section	.gnu.lto_DCMI_CaptureCmd.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_CaptureCmd.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225RMh\023A\024~\337\314n\262\225\250\267\342"
 	.ascii	"!\007\241\207\322\202]i\274z\023/b\021\"\342\255\324"
 	.ascii	"4\352\202\021I\202\366\226I\233&\251\006\365\220\326"
@@ -498,7 +498,7 @@
 	.ascii	"y,\231v.\234\035\017rv&\235\2603\331Tl\364\264NO&R\316"
 	.ascii	"H\202\254\261\344\245xv\"\233\374\015\361<\313\015"
 	.text
-	.section	.gnu.lto_DCMI_ReadData.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_ReadData.b7e85ed871d74411,"",%progbits
 	.ascii	"x\2345NKK\002Q\024>g\2563)T\313\026\345\302\255\213"
 	.ascii	"\274\240\375\204h\023B`\273\026Rj5\220\021\243\204;"
 	.ascii	"\257fi\024\324B\015\206!l\021\255z\221\275\\\015\022"
@@ -520,7 +520,7 @@
 	.ascii	"\270\255\361\204\021\341\211d<\340\237\224r4\022\327"
 	.ascii	"}\021\370\005I\013x&"
 	.text
-	.section	.gnu.lto_DCMI_ITConfig.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_ITConfig.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\225RMH\024a\030~\237ygfG3\352\020\324\301C\340"
 	.ascii	"A\364\340\204z\355\224\004\022J\240tl1\335j!#\326\245"
 	.ascii	"\354\264\237\177\273jRAj\"Sm\007\221\016\031\221\375"
@@ -554,7 +554,7 @@
 	.ascii	"\222\335\015\365Gu\270\253\263;^\327I\221\246}-\315"
 	.ascii	"\321\346v\2475v\246-\331\221\214\375\0064+\350\355"
 	.text
-	.section	.gnu.lto_DCMI_GetFlagStatus.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_GetFlagStatus.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\235SKhTg\024>\347\377\357c\356d\246\272pc\230"
 	.ascii	"\205 !\350\302)F\272r#\212\">\020\354\302]\2521\255"
 	.ascii	"C\233\022g\246\242+\377db\036\032\253`b\3230\2663U\021"
@@ -606,7 +606,7 @@
 	.ascii	"\245e\345\321\322/l\316\320\323\331\026\211\307\342"
 	.ascii	"[\343\337\304\336\001)\334\235\364"
 	.text
-	.section	.gnu.lto_DCMI_ClearFlag.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_ClearFlag.b7e85ed871d74411,"",%progbits
 	.ascii	"x\2345PKH[Q\020\235s\257\357i\250\242\013\027B\245\270"
 	.ascii	"\0237>\320n]\210\242\210\265\010\012.\203M\"}\305\210"
 	.ascii	"$\"v\345M4&\255\202\005?\205\020\345\271\020Wm)~\243"
@@ -632,7 +632,7 @@
 	.ascii	"\351\321e\277/hW\373\310\323\330\320\326\342mzQ\337"
 	.ascii	"\374\037.\265\224\224"
 	.text
-	.section	.gnu.lto_DCMI_GetITStatus.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_GetITStatus.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234URMHTQ\024>\337\273\357\315\214\246\325\242E\304"
 	.ascii	"@B\210\350\302\027*\264l\221\004\022F\240\264\035\374"
 	.ascii	"\013'2bf\012\027\202w\034s\264\302Z8\223\015S\215\204"
@@ -670,7 +670,7 @@
 	.ascii	"\274\305u\344,?QY\341\251\250vy\003\376@M\340\262?\253"
 	.ascii	"6\023\375\005\034z\376\005"
 	.text
-	.section	.gnu.lto_DCMI_ClearITPendingBit.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_DCMI_ClearITPendingBit.b7e85ed871d74411,"",%progbits
 	.ascii	"x\2345P\337KSa\030~\237\363\355\234-2J\360Bp\027\321"
 	.ascii	"\315\330\215\007\264\377 \011FL\204\351\365\241\346"
 	.ascii	"\242\003M\342l\304\356\374\266\264\263RQqN\030+\316"
@@ -696,7 +696,7 @@
 	.ascii	"Uz8\235\265\273\323\024\356\273\221LX\211\301s\224\203"
 	.ascii	"\224\330"
 	.text
-	.section	.gnu.lto_.symbol_nodes.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234]\3109\016\202`\024E\341{\371q@@\034\266c\241+"
 	.ascii	"\273\2508\017\261t+\332Ib\353Z\264v$\304\346\321\234"
 	.ascii	"\223|u\000G\026\361\326\024p\270\001\002O\331%\035\026"
@@ -707,10 +707,10 @@
 	.ascii	"\371}\340B\226\213\274r\261+\227\370\310\037W\342\007"
 	.ascii	"[\177l\025"
 	.text
-	.section	.gnu.lto_.refs.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.refs.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.decls.b7e85ed871d74411,"",%progbits
 	.ascii	"x\234\265Y\013PTW\232\276\347\236\006\272[\036\006\222"
 	.ascii	"\024\231\241j-\313Uvf\244\215Z3\233\252\354\304\031"
 	.ascii	"$\031f\306\214\003:\26335;\244\205V;\005\335\006\232"
@@ -944,7 +944,7 @@
 	.ascii	"\213PE\300\017\036\376B#\370\371\021,d\261\036\376\027"
 	.ascii	"\223BS\016"
 	.text
-	.section	.gnu.lto_.symtab.92b2174f955ac6a9,"",%progbits
+	.section	.gnu.lto_.symtab.b7e85ed871d74411,"",%progbits
 	.ascii	"DCMI_DeInit\000"
 	.ascii	"\000"
 	.ascii	"\000"
