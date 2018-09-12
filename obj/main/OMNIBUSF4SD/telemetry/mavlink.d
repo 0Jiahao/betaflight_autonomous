@@ -53,17 +53,18 @@ obj/main/OMNIBUSF4SD/telemetry/mavlink.o: src/main/telemetry/mavlink.c \
  src/main/drivers/serial.h src/main/drivers/io.h \
  src/main/drivers/resource.h src/main/drivers/io_def.h \
  src/main/drivers/io_def_generated.h src/main/io/gimbal.h \
- src/main/io/ledstrip.h src/main/io/motors.h src/main/rx/rx.h \
- src/main/sensors/sensors.h src/main/sensors/acceleration.h \
- src/main/sensors/gyro.h src/main/sensors/barometer.h \
- src/main/drivers/barometer/barometer.h src/main/sensors/boardalignment.h \
- src/main/sensors/battery.h src/main/common/filter.h \
- src/main/sensors/current.h src/main/sensors/current_ids.h \
- src/main/sensors/voltage.h src/main/sensors/voltage_ids.h \
- src/main/telemetry/telemetry.h src/main/telemetry/ibus_shared.h \
- src/main/telemetry/mavlink.h src/main/build/debug.h \
- lib/main/MAVLink/common/mavlink.h lib/main/MAVLink/common/version.h \
- lib/main/MAVLink/common/common.h lib/main/MAVLink/common/../protocol.h \
+ src/main/io/ledstrip.h src/main/io/motors.h src/main/io/beeper.h \
+ src/main/rx/rx.h src/main/sensors/sensors.h \
+ src/main/sensors/acceleration.h src/main/sensors/gyro.h \
+ src/main/sensors/barometer.h src/main/drivers/barometer/barometer.h \
+ src/main/sensors/boardalignment.h src/main/sensors/battery.h \
+ src/main/common/filter.h src/main/sensors/current.h \
+ src/main/sensors/current_ids.h src/main/sensors/voltage.h \
+ src/main/sensors/voltage_ids.h src/main/telemetry/telemetry.h \
+ src/main/telemetry/ibus_shared.h src/main/telemetry/mavlink.h \
+ src/main/build/debug.h lib/main/MAVLink/common/mavlink.h \
+ lib/main/MAVLink/common/version.h lib/main/MAVLink/common/common.h \
+ lib/main/MAVLink/common/../protocol.h \
  lib/main/MAVLink/common/../mavlink_types.h \
  lib/main/MAVLink/common/../mavlink_helpers.h \
  lib/main/MAVLink/common/../checksum.h \
@@ -342,6 +343,8 @@ src/main/io/gimbal.h:
 src/main/io/ledstrip.h:
 
 src/main/io/motors.h:
+
+src/main/io/beeper.h:
 
 src/main/rx/rx.h:
 

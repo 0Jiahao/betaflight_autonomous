@@ -5701,6 +5701,9 @@ typedef enum {
     DEBUG_ATTITUDE,
     DEBUG_YAW,
     DEBUG_MSG2,
+    DEBUG_COMMAND,
+    DEBUG_DESIREDANGLE,
+    DEBUG_REQUEST,
     DEBUG_COUNT
 } debugType_e;
 
@@ -7908,22 +7911,38 @@ union flightDynamicsTrims_u;
 void setAccelerationTrims(union flightDynamicsTrims_u *accelerationTrimsToUse);
 void accInitFilters(void);
 # 53 "./src/main/flight/pid.c" 2
+# 1 "./src/main/telemetry/mavlink.h" 1
+# 18 "./src/main/telemetry/mavlink.h"
+       
+
+void initMAVLinkTelemetry(void);
+void handleMAVLinkTelemetry(void);
+void checkMAVLinkTelemetryState(void);
+
+void freeMAVLinkTelemetryPort(void);
+void configureMAVLinkTelemetryPort(void);
+
+extern float uart_altitude;
+extern float uart_roll;
+extern float uart_pitch;
+extern float uart_yaw;
+# 54 "./src/main/flight/pid.c" 2
 
  uint32_t targetPidLooptime;
 static 
-# 55 "./src/main/flight/pid.c" 3 4
+# 56 "./src/main/flight/pid.c" 3 4
                _Bool 
-# 55 "./src/main/flight/pid.c"
+# 56 "./src/main/flight/pid.c"
                     pidStabilisationEnabled;
 
 static 
-# 57 "./src/main/flight/pid.c" 3 4
+# 58 "./src/main/flight/pid.c" 3 4
                _Bool 
-# 57 "./src/main/flight/pid.c"
+# 58 "./src/main/flight/pid.c"
                     inCrashRecoveryMode = 
-# 57 "./src/main/flight/pid.c" 3 4
+# 58 "./src/main/flight/pid.c" 3 4
                                           0
-# 57 "./src/main/flight/pid.c"
+# 58 "./src/main/flight/pid.c"
                                                ;
 
  float axisPID_P[3], axisPID_I[3], axisPID_D[3], axisPIDSum[3];
@@ -7931,11 +7950,11 @@ static
 static float dT;
 
 extern const pidConfig_t pgResetTemplate_pidConfig; pidConfig_t pidConfig_System; pidConfig_t pidConfig_Copy; extern const pgRegistry_t pidConfig_Registry; const pgRegistry_t pidConfig_Registry __attribute__ ((section(".pg_registry"), used, aligned(4))) = { .pgn = 504 | (2 << 12), .size = sizeof(pidConfig_t) | PGR_SIZE_SYSTEM_FLAG, .address = (uint8_t*)&pidConfig_System, .copy = (uint8_t*)&pidConfig_Copy, .ptr = 0, .reset = {.ptr = (void*)&pgResetTemplate_pidConfig}, };
-# 74 "./src/main/flight/pid.c"
+# 75 "./src/main/flight/pid.c"
 const pidConfig_t pgResetTemplate_pidConfig __attribute__ ((section(".pg_resetdata"), used, aligned(2))) = { .pid_process_denom = 4, .runaway_takeoff_prevention = 
-# 74 "./src/main/flight/pid.c" 3 4
+# 75 "./src/main/flight/pid.c" 3 4
 1
-# 74 "./src/main/flight/pid.c"
+# 75 "./src/main/flight/pid.c"
 , .runaway_takeoff_deactivate_throttle = 25, .runaway_takeoff_deactivate_delay = 500 }
 
 
@@ -7952,12 +7971,12 @@ extern void pgResetFn_pidProfiles(pidProfile_t *); pidProfile_t pidProfiles_Syst
 
 void resetPidProfile(pidProfile_t *pidProfile)
 {
-    static const pidProfile_t _reset_template_133 = { .pid = { [PID_ROLL] = { 40, 40, 30 }, [PID_PITCH] = { 58, 50, 35 }, [PID_YAW] = { 70, 45, 20 }, [PID_ALT] = { 50, 0, 0 }, [PID_POS] = { 15, 0, 0 }, [PID_POSR] = { 34, 14, 53 }, [PID_NAVR] = { 25, 33, 83 }, [PID_LEVEL] = { 50, 50, 75 }, [PID_MAG] = { 40, 0, 0 }, [PID_VEL] = { 55, 55, 75 } }, .pidSumLimit = 500, .pidSumLimitYaw = 400, .yaw_lpf_hz = 0, .dterm_lpf_hz = 100, .dterm_notch_hz = 260, .dterm_notch_cutoff = 160, .dterm_filter_type = FILTER_BIQUAD, .itermWindupPointPercent = 50, .vbatPidCompensation = 0, .pidAtMinThrottle = PID_STABILISATION_ON, .levelAngleLimit = 55, .setpointRelaxRatio = 100, .dtermSetpointWeight = 0, .yawRateAccelLimit = 100, .rateAccelLimit = 0, .itermThrottleThreshold = 350, .itermAcceleratorGain = 1000, .crash_time = 500, .crash_delay = 0, .crash_recovery_angle = 10, .crash_recovery_rate = 100, .crash_dthreshold = 50, .crash_gthreshold = 400, .crash_setpoint_threshold = 350, .crash_recovery = PID_CRASH_RECOVERY_OFF, .horizon_tilt_effect = 75, .horizon_tilt_expert_mode = 
-# 90 "./src/main/flight/pid.c" 3 4
+    static const pidProfile_t _reset_template_134 = { .pid = { [PID_ROLL] = { 40, 40, 30 }, [PID_PITCH] = { 58, 50, 35 }, [PID_YAW] = { 70, 45, 20 }, [PID_ALT] = { 50, 0, 0 }, [PID_POS] = { 15, 0, 0 }, [PID_POSR] = { 34, 14, 53 }, [PID_NAVR] = { 25, 33, 83 }, [PID_LEVEL] = { 50, 50, 75 }, [PID_MAG] = { 40, 0, 0 }, [PID_VEL] = { 55, 55, 75 } }, .pidSumLimit = 500, .pidSumLimitYaw = 400, .yaw_lpf_hz = 0, .dterm_lpf_hz = 100, .dterm_notch_hz = 260, .dterm_notch_cutoff = 160, .dterm_filter_type = FILTER_BIQUAD, .itermWindupPointPercent = 50, .vbatPidCompensation = 0, .pidAtMinThrottle = PID_STABILISATION_ON, .levelAngleLimit = 55, .setpointRelaxRatio = 100, .dtermSetpointWeight = 0, .yawRateAccelLimit = 100, .rateAccelLimit = 0, .itermThrottleThreshold = 350, .itermAcceleratorGain = 1000, .crash_time = 500, .crash_delay = 0, .crash_recovery_angle = 10, .crash_recovery_rate = 100, .crash_dthreshold = 50, .crash_gthreshold = 400, .crash_setpoint_threshold = 350, .crash_recovery = PID_CRASH_RECOVERY_OFF, .horizon_tilt_effect = 75, .horizon_tilt_expert_mode = 
+# 91 "./src/main/flight/pid.c" 3 4
    0
-# 90 "./src/main/flight/pid.c"
-   , .crash_limit_yaw = 200, .itermLimit = 150 }; memcpy((pidProfile), &_reset_template_133, sizeof(*(pidProfile)));
-# 133 "./src/main/flight/pid.c"
+# 91 "./src/main/flight/pid.c"
+   , .crash_limit_yaw = 200, .itermLimit = 150 }; memcpy((pidProfile), &_reset_template_134, sizeof(*(pidProfile)));
+# 134 "./src/main/flight/pid.c"
      ;
 }
 
@@ -7991,13 +8010,13 @@ void pidSetItermAccelerator(float newItermAccelerator)
 void pidStabilisationState(pidStabilisationState_e pidControllerState)
 {
     pidStabilisationEnabled = (pidControllerState == PID_STABILISATION_ON) ? 
-# 165 "./src/main/flight/pid.c" 3 4
+# 166 "./src/main/flight/pid.c" 3 4
                                                                             1 
-# 165 "./src/main/flight/pid.c"
+# 166 "./src/main/flight/pid.c"
                                                                                  : 
-# 165 "./src/main/flight/pid.c" 3 4
+# 166 "./src/main/flight/pid.c" 3 4
                                                                                    0
-# 165 "./src/main/flight/pid.c"
+# 166 "./src/main/flight/pid.c"
                                                                                         ;
 }
 
@@ -8227,6 +8246,13 @@ static float pidLevel(int axis, const pidProfile_t *pidProfile, const rollAndPit
     angle += GPS_angle[axis];
 
     angle = constrainf(angle, -pidProfile->levelAngleLimit, pidProfile->levelAngleLimit);
+    {if (debugMode == (DEBUG_DESIREDANGLE)) {debug[(axis)] = (angle);}};
+    if((flightModeFlags & (RANGEFINDER_MODE)))
+    {
+        if(axis == 0){angle = uart_roll / 3.14 * 180;}
+        if(axis == 1){angle = uart_pitch / 3.14 * 180;}
+    }
+    {if (debugMode == (DEBUG_DESIREDANGLE)) {debug[(axis)] = (angle);}};
     const float errorAngle = angle - ((attitude.raw[axis] - angleTrim->raw[axis]) / 10.0f);
     if ((flightModeFlags & (ANGLE_MODE))) {
 
@@ -8294,9 +8320,9 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
         if (inCrashRecoveryMode && cmpTimeUs(currentTimeUs, crashDetectedAtUs) > crashTimeDelayUs) {
             if (pidProfile->crash_recovery == PID_CRASH_RECOVERY_BEEP) {
                 systemBeep(
-# 460 "./src/main/flight/pid.c" 3 4
+# 468 "./src/main/flight/pid.c" 3 4
                1
-# 460 "./src/main/flight/pid.c"
+# 468 "./src/main/flight/pid.c"
                );
             }
             if (axis == FD_YAW) {
@@ -8323,26 +8349,26 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
                     if (__extension__ ({ __typeof__ (attitude.raw[FD_ROLL] - angleTrim->raw[FD_ROLL]) _x = (attitude.raw[FD_ROLL] - angleTrim->raw[FD_ROLL]); _x > 0 ? _x : -_x; }) < crashRecoveryAngleDeciDegrees
                        && __extension__ ({ __typeof__ (attitude.raw[FD_PITCH] - angleTrim->raw[FD_PITCH]) _x = (attitude.raw[FD_PITCH] - angleTrim->raw[FD_PITCH]); _x > 0 ? _x : -_x; }) < crashRecoveryAngleDeciDegrees) {
                         inCrashRecoveryMode = 
-# 485 "./src/main/flight/pid.c" 3 4
+# 493 "./src/main/flight/pid.c" 3 4
                                              0
-# 485 "./src/main/flight/pid.c"
+# 493 "./src/main/flight/pid.c"
                                                   ;
                         systemBeep(
-# 486 "./src/main/flight/pid.c" 3 4
+# 494 "./src/main/flight/pid.c" 3 4
                        0
-# 486 "./src/main/flight/pid.c"
+# 494 "./src/main/flight/pid.c"
                        );
                     }
                 } else {
                     inCrashRecoveryMode = 
-# 489 "./src/main/flight/pid.c" 3 4
+# 497 "./src/main/flight/pid.c" 3 4
                                          0
-# 489 "./src/main/flight/pid.c"
+# 497 "./src/main/flight/pid.c"
                                               ;
                     systemBeep(
-# 490 "./src/main/flight/pid.c" 3 4
+# 498 "./src/main/flight/pid.c" 3 4
                    0
-# 490 "./src/main/flight/pid.c"
+# 498 "./src/main/flight/pid.c"
                    );
                 }
             }
@@ -8362,14 +8388,14 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
         const float ITerm = axisPID_I[axis];
         const float ITermNew = constrainf(ITerm + Ki[axis] * errorRate * dynCi, -itermLimit, itermLimit);
         const 
-# 508 "./src/main/flight/pid.c" 3 4
+# 516 "./src/main/flight/pid.c" 3 4
              _Bool 
-# 508 "./src/main/flight/pid.c"
+# 516 "./src/main/flight/pid.c"
                   outputSaturated = mixerIsOutputSaturated(axis, errorRate);
         if (outputSaturated == 
-# 509 "./src/main/flight/pid.c" 3 4
+# 517 "./src/main/flight/pid.c" 3 4
                               0 
-# 509 "./src/main/flight/pid.c"
+# 517 "./src/main/flight/pid.c"
                                     || __extension__ ({ __typeof__ (ITermNew) _x = (ITermNew); _x > 0 ? _x : -_x; }) < __extension__ ({ __typeof__ (ITerm) _x = (ITerm); _x > 0 ? _x : -_x; })) {
 
             axisPID_I[axis] = ITermNew;
@@ -8404,35 +8430,35 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
                         && __extension__ ({ __typeof__ (errorRate) _x = (errorRate); _x > 0 ? _x : -_x; }) > crashGyroThreshold
                         && __extension__ ({ __typeof__ (getSetpointRate(axis)) _x = (getSetpointRate(axis)); _x > 0 ? _x : -_x; }) < crashSetpointThreshold) {
                         inCrashRecoveryMode = 
-# 542 "./src/main/flight/pid.c" 3 4
+# 550 "./src/main/flight/pid.c" 3 4
                                              1
-# 542 "./src/main/flight/pid.c"
+# 550 "./src/main/flight/pid.c"
                                                  ;
                         crashDetectedAtUs = currentTimeUs;
                     }
                     if (inCrashRecoveryMode && cmpTimeUs(currentTimeUs, crashDetectedAtUs) < crashTimeDelayUs && (__extension__ ({ __typeof__ (errorRate) _x = (errorRate); _x > 0 ? _x : -_x; }) < crashGyroThreshold
                         || __extension__ ({ __typeof__ (getSetpointRate(axis)) _x = (getSetpointRate(axis)); _x > 0 ? _x : -_x; }) > crashSetpointThreshold)) {
                         inCrashRecoveryMode = 
-# 547 "./src/main/flight/pid.c" 3 4
+# 555 "./src/main/flight/pid.c" 3 4
                                              0
-# 547 "./src/main/flight/pid.c"
+# 555 "./src/main/flight/pid.c"
                                                   ;
                         systemBeep(
-# 548 "./src/main/flight/pid.c" 3 4
+# 556 "./src/main/flight/pid.c" 3 4
                        0
-# 548 "./src/main/flight/pid.c"
+# 556 "./src/main/flight/pid.c"
                        );
                     }
                 } else if (inCrashRecoveryMode) {
                     inCrashRecoveryMode = 
-# 551 "./src/main/flight/pid.c" 3 4
+# 559 "./src/main/flight/pid.c" 3 4
                                          0
-# 551 "./src/main/flight/pid.c"
+# 559 "./src/main/flight/pid.c"
                                               ;
                     systemBeep(
-# 552 "./src/main/flight/pid.c" 3 4
+# 560 "./src/main/flight/pid.c" 3 4
                    0
-# 552 "./src/main/flight/pid.c"
+# 560 "./src/main/flight/pid.c"
                    );
                 }
             }
@@ -8453,9 +8479,9 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
 }
 
 
-# 571 "./src/main/flight/pid.c" 3 4
+# 579 "./src/main/flight/pid.c" 3 4
 _Bool 
-# 571 "./src/main/flight/pid.c"
+# 579 "./src/main/flight/pid.c"
     crashRecoveryModeActive(void)
 {
     return inCrashRecoveryMode;

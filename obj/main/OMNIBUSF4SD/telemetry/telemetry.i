@@ -6688,6 +6688,11 @@ void checkMAVLinkTelemetryState(void);
 
 void freeMAVLinkTelemetryPort(void);
 void configureMAVLinkTelemetryPort(void);
+
+extern float uart_altitude;
+extern float uart_roll;
+extern float uart_pitch;
+extern float uart_yaw;
 # 52 "./src/main/telemetry/telemetry.c" 2
 # 1 "./src/main/telemetry/crsf.h" 1
 # 18 "./src/main/telemetry/crsf.h"

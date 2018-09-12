@@ -6230,6 +6230,9 @@ typedef enum {
     DEBUG_ATTITUDE,
     DEBUG_YAW,
     DEBUG_MSG2,
+    DEBUG_COMMAND,
+    DEBUG_DESIREDANGLE,
+    DEBUG_REQUEST,
     DEBUG_COUNT
 } debugType_e;
 

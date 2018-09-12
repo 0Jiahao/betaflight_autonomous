@@ -50,7 +50,7 @@ obj/main/OMNIBUSF4SD/flight/pid.o: src/main/flight/pid.c \
  src/main/drivers/bus_i2c.h src/main/drivers/sensor.h \
  src/main/sensors/acceleration.h src/main/drivers/accgyro/accgyro.h \
  src/main/drivers/exti.h src/main/drivers/accgyro/accgyro_mpu.h \
- src/main/sensors/sensors.h
+ src/main/sensors/sensors.h src/main/telemetry/mavlink.h
 
 src/main/platform.h:
 
@@ -197,3 +197,5 @@ src/main/drivers/exti.h:
 src/main/drivers/accgyro/accgyro_mpu.h:
 
 src/main/sensors/sensors.h:
+
+src/main/telemetry/mavlink.h:

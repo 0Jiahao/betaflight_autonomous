@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "cmath": "c",
+        "complex": "c",
+        "maths.h": "c",
+        "random": "c",
+        "gimbal.h": "c"
+    }
+}

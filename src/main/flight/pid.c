@@ -50,6 +50,7 @@
 
 #include "sensors/gyro.h"
 #include "sensors/acceleration.h"
+#include "telemetry/mavlink.h"
 
 FAST_RAM uint32_t targetPidLooptime;
 static FAST_RAM bool pidStabilisationEnabled;
@@ -391,6 +392,13 @@ static float pidLevel(int axis, const pidProfile_t *pidProfile, const rollAndPit
     angle += GPS_angle[axis];
 #endif
     angle = constrainf(angle, -pidProfile->levelAngleLimit, pidProfile->levelAngleLimit);
+    DEBUG_SET(DEBUG_DESIREDANGLE,axis,angle);
+    if(FLIGHT_MODE(RANGEFINDER_MODE))
+    {
+        if(axis == 0){angle = uart_roll / 3.14 * 180;}//roll
+        if(axis == 1){angle = uart_pitch / 3.14 * 180;}//roll
+    }
+    DEBUG_SET(DEBUG_DESIREDANGLE,axis,angle);
     const float errorAngle = angle - ((attitude.raw[axis] - angleTrim->raw[axis]) / 10.0f);
     if (FLIGHT_MODE(ANGLE_MODE)) {
         // ANGLE mode - control is angle based

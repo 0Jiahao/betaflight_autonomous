@@ -46,7 +46,7 @@
 #include "sensors/sensors.h"
 #include "sensors/barometer.h"
 #include "sensors/rangefinder.h"
-
+#include "telemetry/mavlink.h"
 
 int32_t AltHold;
 static int32_t estimatedVario = 0;                      // variometer in cm/s
@@ -105,7 +105,7 @@ static void applyMultirotorAltHold(void)
     // yv[0] = yv[1];
     // yv[1] = (xv[0] + xv[1]) + (0.7756795110 * yv[0]);
     // rangefinderAlt = (int32_t)yv[1];
-    error = my_althold - rangefinderAlt;
+    error = uart_altitude - rangefinderAlt;
         // I term 
         if(error_i + error < -1000000000)
         {

@@ -5812,6 +5812,9 @@ typedef enum {
     DEBUG_ATTITUDE,
     DEBUG_YAW,
     DEBUG_MSG2,
+    DEBUG_COMMAND,
+    DEBUG_DESIREDANGLE,
+    DEBUG_REQUEST,
     DEBUG_COUNT
 } debugType_e;
 
@@ -7241,7 +7244,22 @@ _Bool
 # 66 "./src/main/sensors/rangefinder.h"
     rangefinderIsHealthy(void);
 # 49 "./src/main/flight/altitude.c" 2
+# 1 "./src/main/telemetry/mavlink.h" 1
+# 18 "./src/main/telemetry/mavlink.h"
+       
 
+void initMAVLinkTelemetry(void);
+void handleMAVLinkTelemetry(void);
+void checkMAVLinkTelemetryState(void);
+
+void freeMAVLinkTelemetryPort(void);
+void configureMAVLinkTelemetryPort(void);
+
+extern float uart_altitude;
+extern float uart_roll;
+extern float uart_pitch;
+extern float uart_yaw;
+# 50 "./src/main/flight/altitude.c" 2
 
 int32_t AltHold;
 static int32_t estimatedVario = 0;
@@ -7304,7 +7322,7 @@ static void applyMultirotorAltHold(void)
 
 
 
-    error = my_althold - rangefinderAlt;
+    error = uart_altitude - rangefinderAlt;
 
         if(error_i + error < -1000000000)
         {

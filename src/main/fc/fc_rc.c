@@ -45,6 +45,7 @@
 #include "scheduler/scheduler.h"
 
 #include "sensors/battery.h"
+#include "telemetry/mavlink.h"
 
 typedef float (applyRatesFn)(const int axis, float rcCommandf, const float rcCommandfAbs);
 
@@ -52,7 +53,6 @@ static float setpointRate[3], rcDeflection[3], rcDeflectionAbs[3];
 static float throttlePIDAttenuation;
 static bool reverseMotors = false;
 static applyRatesFn *applyRates;
-static int32_t errorYaw_i = 0;
 
 float getSetpointRate(int axis)
 {
@@ -129,29 +129,27 @@ static void calculateSetpointRate(int axis)
     float angleRate = applyRates(axis, rcCommandf, rcCommandfAbs);
     DEBUG_SET(DEBUG_ANGLERATE, axis, angleRate);
     // add yaw control instead of yaw rate
-    if((FLIGHT_MODE(ANGLE_MODE)) && (axis == 2)) // yaw channel
+    if((FLIGHT_MODE(RANGEFINDER_MODE)) && (axis == 2)) // yaw channel
     {
-        float desiredYaw = -rcCommand[2];
+        float desiredYaw = uart_yaw;
         float currentYaw = attitude.values.yaw/10.0; // 0~360
         if(currentYaw > 180)
         {
             currentYaw = currentYaw - 360;
         }
         float errorYaw = desiredYaw - currentYaw;
-        errorYaw = errorYaw / fabs(errorYaw) * (((int)(fabs(errorYaw) * 10) + 1800) % 3600 - 1800) / 10.0;
-        if(errorYaw_i + (int)errorYaw > 100000000)
+        if(errorYaw > 180)
         {
-            errorYaw_i = 100000000;
+            errorYaw = errorYaw - 360;
         }
-        if(errorYaw_i + errorYaw > -100000000)
+        if(errorYaw < -180)
         {
-            errorYaw_i = -100000000;
+            errorYaw = 360 + errorYaw;
         }
-        errorYaw_i = errorYaw_i + errorYaw;
-        angleRate = - (2 * errorYaw - 0.25 * gyroz + errorYaw_i/1000000);
+        angleRate = - (2 * errorYaw - 0.25 * gyroz);
         DEBUG_SET(DEBUG_YAW,0,currentYaw);
         DEBUG_SET(DEBUG_YAW,1,desiredYaw);
-        DEBUG_SET(DEBUG_YAW,2,gyroz);
+        DEBUG_SET(DEBUG_YAW,2,errorYaw);
         DEBUG_SET(DEBUG_YAW,3,angleRate);
     }
     setpointRate[axis] = constrainf(angleRate, -SETPOINT_RATE_LIMIT, SETPOINT_RATE_LIMIT); // Rate limit protection (deg/sec)

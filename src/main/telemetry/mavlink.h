@@ -23,3 +23,8 @@ void checkMAVLinkTelemetryState(void);
 
 void freeMAVLinkTelemetryPort(void);
 void configureMAVLinkTelemetryPort(void);
+
+extern float uart_altitude;
+extern float uart_roll;
+extern float uart_pitch;
+extern float uart_yaw;

@@ -5541,6 +5541,9 @@ typedef enum {
     DEBUG_ATTITUDE,
     DEBUG_YAW,
     DEBUG_MSG2,
+    DEBUG_COMMAND,
+    DEBUG_DESIREDANGLE,
+    DEBUG_REQUEST,
     DEBUG_COUNT
 } debugType_e;
 
@@ -7552,22 +7555,37 @@ void batteryUpdateCurrentMeter(timeUs_t currentTimeUs);
 
 const lowVoltageCutoff_t *getLowVoltageCutoff(void);
 # 48 "./src/main/fc/fc_rc.c" 2
+# 1 "./src/main/telemetry/mavlink.h" 1
+# 18 "./src/main/telemetry/mavlink.h"
+       
+
+void initMAVLinkTelemetry(void);
+void handleMAVLinkTelemetry(void);
+void checkMAVLinkTelemetryState(void);
+
+void freeMAVLinkTelemetryPort(void);
+void configureMAVLinkTelemetryPort(void);
+
+extern float uart_altitude;
+extern float uart_roll;
+extern float uart_pitch;
+extern float uart_yaw;
+# 49 "./src/main/fc/fc_rc.c" 2
 
 typedef float (applyRatesFn)(const int axis, float rcCommandf, const float rcCommandfAbs);
 
 static float setpointRate[3], rcDeflection[3], rcDeflectionAbs[3];
 static float throttlePIDAttenuation;
 static 
-# 53 "./src/main/fc/fc_rc.c" 3 4
+# 54 "./src/main/fc/fc_rc.c" 3 4
       _Bool 
-# 53 "./src/main/fc/fc_rc.c"
+# 54 "./src/main/fc/fc_rc.c"
            reverseMotors = 
-# 53 "./src/main/fc/fc_rc.c" 3 4
+# 54 "./src/main/fc/fc_rc.c" 3 4
                            0
-# 53 "./src/main/fc/fc_rc.c"
+# 54 "./src/main/fc/fc_rc.c"
                                 ;
 static applyRatesFn *applyRates;
-static int32_t errorYaw_i = 0;
 
 float getSetpointRate(int axis)
 {
@@ -7644,29 +7662,27 @@ static void calculateSetpointRate(int axis)
     float angleRate = applyRates(axis, rcCommandf, rcCommandfAbs);
     {if (debugMode == (DEBUG_ANGLERATE)) {debug[(axis)] = (angleRate);}};
 
-    if(((flightModeFlags & (ANGLE_MODE))) && (axis == 2))
+    if(((flightModeFlags & (RANGEFINDER_MODE))) && (axis == 2))
     {
-        float desiredYaw = -rcCommand[2];
+        float desiredYaw = uart_yaw;
         float currentYaw = attitude.values.yaw/10.0;
         if(currentYaw > 180)
         {
             currentYaw = currentYaw - 360;
         }
         float errorYaw = desiredYaw - currentYaw;
-        errorYaw = errorYaw / fabs(errorYaw) * (((int)(fabs(errorYaw) * 10) + 1800) % 3600 - 1800) / 10.0;
-        if(errorYaw_i + (int)errorYaw > 100000000)
+        if(errorYaw > 180)
         {
-            errorYaw_i = 100000000;
+            errorYaw = errorYaw - 360;
         }
-        if(errorYaw_i + errorYaw > -100000000)
+        if(errorYaw < -180)
         {
-            errorYaw_i = -100000000;
+            errorYaw = 360 + errorYaw;
         }
-        errorYaw_i = errorYaw_i + errorYaw;
-        angleRate = - (2 * errorYaw - 0.25 * gyroz + errorYaw_i/1000000);
+        angleRate = - (2 * errorYaw - 0.25 * gyroz);
         {if (debugMode == (DEBUG_YAW)) {debug[(0)] = (currentYaw);}};
         {if (debugMode == (DEBUG_YAW)) {debug[(1)] = (desiredYaw);}};
-        {if (debugMode == (DEBUG_YAW)) {debug[(2)] = (gyroz);}};
+        {if (debugMode == (DEBUG_YAW)) {debug[(2)] = (errorYaw);}};
         {if (debugMode == (DEBUG_YAW)) {debug[(3)] = (angleRate);}};
     }
     setpointRate[axis] = constrainf(angleRate, -1998.0f, 1998.0f);
@@ -7804,9 +7820,9 @@ void processRcCommand(void)
 
     if (isRXDataNew) {
         isRXDataNew = 
-# 291 "./src/main/fc/fc_rc.c" 3 4
+# 289 "./src/main/fc/fc_rc.c" 3 4
                      0
-# 291 "./src/main/fc/fc_rc.c"
+# 289 "./src/main/fc/fc_rc.c"
                           ;
     }
 }
@@ -7877,17 +7893,17 @@ void updateRcCommands(void)
         } else {
             if (IS_RC_MODE_ACTIVE(BOX3D)) {
                 reverseMotors = 
-# 360 "./src/main/fc/fc_rc.c" 3 4
+# 358 "./src/main/fc/fc_rc.c" 3 4
                                1
-# 360 "./src/main/fc/fc_rc.c"
+# 358 "./src/main/fc/fc_rc.c"
                                    ;
                 fix12_t throttleScaler = qConstruct(rcCommand[THROTTLE] - 1000, 1000);
                 rcCommand[THROTTLE] = rxConfig()->midrc + qMultiply(throttleScaler, 1000 - rxConfig()->midrc);
             } else {
                 reverseMotors = 
-# 364 "./src/main/fc/fc_rc.c" 3 4
+# 362 "./src/main/fc/fc_rc.c" 3 4
                                0
-# 364 "./src/main/fc/fc_rc.c"
+# 362 "./src/main/fc/fc_rc.c"
                                     ;
                 fix12_t throttleScaler = qConstruct(rcCommand[THROTTLE] - 1000, 1000);
                 rcCommand[THROTTLE] = rxConfig()->midrc + qMultiply(throttleScaler, 2000 - rxConfig()->midrc);
@@ -7920,9 +7936,9 @@ void resetYawAxis(void)
 }
 
 
-# 395 "./src/main/fc/fc_rc.c" 3 4
+# 393 "./src/main/fc/fc_rc.c" 3 4
 _Bool 
-# 395 "./src/main/fc/fc_rc.c"
+# 393 "./src/main/fc/fc_rc.c"
     isMotorsReversed(void)
 {
     return reverseMotors;

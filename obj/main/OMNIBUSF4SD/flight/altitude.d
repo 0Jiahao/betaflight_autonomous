@@ -46,7 +46,7 @@ obj/main/OMNIBUSF4SD/flight/altitude.o: src/main/flight/altitude.c \
  src/main/drivers/barometer/barometer.h src/main/drivers/bus.h \
  src/main/drivers/bus_i2c.h src/main/drivers/rcc_types.h \
  src/main/sensors/rangefinder.h \
- src/main/drivers/rangefinder/rangefinder.h
+ src/main/drivers/rangefinder/rangefinder.h src/main/telemetry/mavlink.h
 
 src/main/platform.h:
 
@@ -175,3 +175,5 @@ src/main/drivers/rcc_types.h:
 src/main/sensors/rangefinder.h:
 
 src/main/drivers/rangefinder/rangefinder.h:
+
+src/main/telemetry/mavlink.h:

@@ -7957,6 +7957,60 @@ void updateRequiredOverlay(void);
 # 18 "./src/main/io/motors.h"
        
 # 59 "./src/main/telemetry/mavlink.c" 2
+# 1 "./src/main/io/beeper.h" 1
+# 18 "./src/main/io/beeper.h"
+       
+
+
+
+
+typedef enum {
+
+    BEEPER_SILENCE = 0,
+
+    BEEPER_GYRO_CALIBRATED,
+    BEEPER_RX_LOST,
+    BEEPER_RX_LOST_LANDING,
+    BEEPER_DISARMING,
+    BEEPER_ARMING,
+    BEEPER_ARMING_GPS_FIX,
+    BEEPER_BAT_CRIT_LOW,
+    BEEPER_BAT_LOW,
+    BEEPER_GPS_STATUS,
+    BEEPER_RX_SET,
+    BEEPER_ACC_CALIBRATION,
+    BEEPER_ACC_CALIBRATION_FAIL,
+    BEEPER_READY_BEEP,
+    BEEPER_MULTI_BEEPS,
+    BEEPER_DISARM_REPEAT,
+    BEEPER_ARMED,
+    BEEPER_SYSTEM_INIT,
+    BEEPER_USB,
+    BEEPER_BLACKBOX_ERASE,
+    BEEPER_CRASH_FLIP_MODE,
+    BEEPER_CAM_CONNECTION_OPEN,
+    BEEPER_CAM_CONNECTION_CLOSE,
+    BEEPER_ALL,
+    BEEPER_PREFERENCE,
+
+} beeperMode_e;
+
+void beeper(beeperMode_e mode);
+void beeperSilence(void);
+void beeperUpdate(timeUs_t currentTimeUs);
+void beeperConfirmationBeeps(uint8_t beepCount);
+void beeperWarningBeeps(uint8_t beepCount);
+uint32_t getArmingBeepTimeMicros(void);
+beeperMode_e beeperModeForTableIndex(int idx);
+uint32_t beeperModeMaskForTableIndex(int idx);
+const char *beeperNameForTableIndex(int idx);
+int beeperTableEntryCount(void);
+
+# 64 "./src/main/io/beeper.h" 3 4
+_Bool 
+# 64 "./src/main/io/beeper.h"
+    isBeeperOn(void);
+# 60 "./src/main/telemetry/mavlink.c" 2
 
 # 1 "./src/main/rx/rx.h" 1
 # 18 "./src/main/rx/rx.h"
@@ -8124,7 +8178,7 @@ void suspendRxSignal(void);
 void resumeRxSignal(void);
 
 uint16_t rxGetRefreshRate(void);
-# 61 "./src/main/telemetry/mavlink.c" 2
+# 62 "./src/main/telemetry/mavlink.c" 2
 
 # 1 "./src/main/sensors/sensors.h" 1
 # 18 "./src/main/sensors/sensors.h"
@@ -8167,7 +8221,7 @@ typedef enum {
     SENSOR_GPS = 1 << 5,
     SENSOR_GPSMAG = 1 << 6
 } sensors_e;
-# 63 "./src/main/telemetry/mavlink.c" 2
+# 64 "./src/main/telemetry/mavlink.c" 2
 # 1 "./src/main/sensors/acceleration.h" 1
 # 18 "./src/main/sensors/acceleration.h"
        
@@ -8258,7 +8312,7 @@ _Bool
 union flightDynamicsTrims_u;
 void setAccelerationTrims(union flightDynamicsTrims_u *accelerationTrimsToUse);
 void accInitFilters(void);
-# 64 "./src/main/telemetry/mavlink.c" 2
+# 65 "./src/main/telemetry/mavlink.c" 2
 # 1 "./src/main/sensors/gyro.h" 1
 # 18 "./src/main/sensors/gyro.h"
        
@@ -8375,7 +8429,7 @@ _Bool
 # 98 "./src/main/sensors/gyro.h"
     gyroOverflowDetected(void);
 uint16_t gyroAbsRateDps(int axis);
-# 65 "./src/main/telemetry/mavlink.c" 2
+# 66 "./src/main/telemetry/mavlink.c" 2
 # 1 "./src/main/sensors/barometer.h" 1
 # 18 "./src/main/sensors/barometer.h"
        
@@ -8458,7 +8512,7 @@ _Bool
     isBaroReady(void);
 int32_t baroCalculateAltitude(void);
 void performBaroCalibrationCycle(void);
-# 66 "./src/main/telemetry/mavlink.c" 2
+# 67 "./src/main/telemetry/mavlink.c" 2
 # 1 "./src/main/sensors/boardalignment.h" 1
 # 18 "./src/main/sensors/boardalignment.h"
        
@@ -8475,7 +8529,7 @@ extern boardAlignment_t boardAlignment_System; extern boardAlignment_t boardAlig
 
 void alignSensors(float *dest, uint8_t rotation);
 void initBoardAlignment(const boardAlignment_t *boardAlignment);
-# 67 "./src/main/telemetry/mavlink.c" 2
+# 68 "./src/main/telemetry/mavlink.c" 2
 # 1 "./src/main/sensors/battery.h" 1
 # 18 "./src/main/sensors/battery.h"
        
@@ -9002,7 +9056,7 @@ int32_t getMAhDrawn(void);
 void batteryUpdateCurrentMeter(timeUs_t currentTimeUs);
 
 const lowVoltageCutoff_t *getLowVoltageCutoff(void);
-# 68 "./src/main/telemetry/mavlink.c" 2
+# 69 "./src/main/telemetry/mavlink.c" 2
 
 # 1 "./src/main/telemetry/telemetry.h" 1
 # 25 "./src/main/telemetry/telemetry.h"
@@ -9128,7 +9182,7 @@ _Bool
     telemetryDetermineEnabledState(portSharing_e portSharing);
 
 void releaseSharedTelemetryPorts(void);
-# 70 "./src/main/telemetry/mavlink.c" 2
+# 71 "./src/main/telemetry/mavlink.c" 2
 # 1 "./src/main/telemetry/mavlink.h" 1
 # 18 "./src/main/telemetry/mavlink.h"
        
@@ -9139,7 +9193,12 @@ void checkMAVLinkTelemetryState(void);
 
 void freeMAVLinkTelemetryPort(void);
 void configureMAVLinkTelemetryPort(void);
-# 71 "./src/main/telemetry/mavlink.c" 2
+
+extern float uart_altitude;
+extern float uart_roll;
+extern float uart_pitch;
+extern float uart_yaw;
+# 72 "./src/main/telemetry/mavlink.c" 2
 
 # 1 "./src/main/build/debug.h" 1
 # 18 "./src/main/build/debug.h"
@@ -9195,11 +9254,14 @@ typedef enum {
     DEBUG_ATTITUDE,
     DEBUG_YAW,
     DEBUG_MSG2,
+    DEBUG_COMMAND,
+    DEBUG_DESIREDANGLE,
+    DEBUG_REQUEST,
     DEBUG_COUNT
 } debugType_e;
 
 extern const char * const debugModeNames[DEBUG_COUNT];
-# 73 "./src/main/telemetry/mavlink.c" 2
+# 74 "./src/main/telemetry/mavlink.c" 2
 
 
 
@@ -29284,7 +29346,7 @@ static inline void mavlink_msg_debug_decode(const mavlink_message_t* msg, mavlin
 }
 # 773 "./lib/main/MAVLink/common/common.h" 2
 # 26 "./lib/main/MAVLink/common/mavlink.h" 2
-# 79 "./src/main/telemetry/mavlink.c" 2
+# 80 "./src/main/telemetry/mavlink.c" 2
 #pragma GCC diagnostic pop
 
 
@@ -29294,27 +29356,36 @@ static inline void mavlink_msg_debug_decode(const mavlink_message_t* msg, mavlin
 extern uint16_t rssi;
 
 static serialPort_t *mavlinkPort = 
-# 87 "./src/main/telemetry/mavlink.c" 3 4
+# 88 "./src/main/telemetry/mavlink.c" 3 4
                                   ((void *)0)
-# 87 "./src/main/telemetry/mavlink.c"
+# 88 "./src/main/telemetry/mavlink.c"
                                       ;
 static serialPortConfig_t *portConfig;
 
 static 
-# 90 "./src/main/telemetry/mavlink.c" 3 4
+# 91 "./src/main/telemetry/mavlink.c" 3 4
       _Bool 
-# 90 "./src/main/telemetry/mavlink.c"
+# 91 "./src/main/telemetry/mavlink.c"
            mavlinkTelemetryEnabled = 
-# 90 "./src/main/telemetry/mavlink.c" 3 4
+# 91 "./src/main/telemetry/mavlink.c" 3 4
                                       0
-# 90 "./src/main/telemetry/mavlink.c"
+# 91 "./src/main/telemetry/mavlink.c"
                                            ;
 static portSharing_e mavlinkPortSharing;
-
+static uint32_t lastJeVoistime = 0;
+static uint32_t lastJeVoischeck = 0;
+uint8_t my_mode = 0;
+uint8_t JeVois_alive = 0;
 float uart_altitude;
 float uart_roll;
 float uart_pitch;
 float uart_yaw;
+
+float my_param[8] = {0,0,0,0,0,0,0,0};
+
+char param_name[6];
+
+uint8_t parameterchanged = 0;
 
 static void mavlinkReceive(uint16_t c, void *data)
 {
@@ -29323,6 +29394,7 @@ static void mavlinkReceive(uint16_t c, void *data)
     mavlink_status_t status;
     if(mavlink_parse_char(MAVLINK_COMM_0, (uint8_t)c,&msg,&status))
     {
+
         switch(msg.msgid)
         {
             case 105:
@@ -29336,14 +29408,24 @@ static void mavlinkReceive(uint16_t c, void *data)
             }
             case 81:
             {
+                lastJeVoistime = micros();
                 mavlink_manual_setpoint_t command;
                 mavlink_msg_manual_setpoint_decode(&msg,&command);
-                uart_altitude = command.thrust;
+                uart_altitude = -command.thrust * 100;
                 uart_roll = command.roll;
-                uart_pitch = command.pitch;
+                uart_pitch = -command.pitch;
                 uart_yaw = command.yaw;
                 {if (debugMode == (DEBUG_UART)) {debug[(1)] = (command.time_boot_ms);}};
                 {if (debugMode == (DEBUG_UART)) {debug[(3)] = (uart_altitude);}};
+                {if (debugMode == (DEBUG_COMMAND)) {debug[(0)] = (uart_altitude);}};
+                {if (debugMode == (DEBUG_COMMAND)) {debug[(1)] = (uart_roll / 3.14 * 180);}};
+                {if (debugMode == (DEBUG_COMMAND)) {debug[(2)] = (uart_pitch / 3.14 * 180);}};
+                {if (debugMode == (DEBUG_COMMAND)) {debug[(3)] = (uart_yaw / 3.14 * 180);}};
+                break;
+            }
+            case 21:
+            {
+                {if (debugMode == (DEBUG_REQUEST)) {debug[(0)] = (100);}};
                 break;
             }
         }
@@ -29352,11 +29434,11 @@ static void mavlinkReceive(uint16_t c, void *data)
 
 
 static const uint8_t mavRates[] = {
-    [MAV_DATA_STREAM_EXTENDED_STATUS] = 2,
+    [MAV_DATA_STREAM_EXTENDED_STATUS] = 1,
     [MAV_DATA_STREAM_RC_CHANNELS] = 5,
     [MAV_DATA_STREAM_POSITION] = 2,
-    [MAV_DATA_STREAM_EXTRA1] = 50,
-    [MAV_DATA_STREAM_EXTRA2] = 10
+    [MAV_DATA_STREAM_EXTRA1] = 15,
+    [MAV_DATA_STREAM_EXTRA2] = 15
 };
 
 
@@ -29399,14 +29481,14 @@ void freeMAVLinkTelemetryPort(void)
 {
     closeSerialPort(mavlinkPort);
     mavlinkPort = 
-# 180 "./src/main/telemetry/mavlink.c" 3 4
+# 201 "./src/main/telemetry/mavlink.c" 3 4
                  ((void *)0)
-# 180 "./src/main/telemetry/mavlink.c"
+# 201 "./src/main/telemetry/mavlink.c"
                      ;
     mavlinkTelemetryEnabled = 
-# 181 "./src/main/telemetry/mavlink.c" 3 4
+# 202 "./src/main/telemetry/mavlink.c" 3 4
                              0
-# 181 "./src/main/telemetry/mavlink.c"
+# 202 "./src/main/telemetry/mavlink.c"
                                   ;
 }
 
@@ -29429,9 +29511,9 @@ void configureMAVLinkTelemetryPort(void)
     }
 
     mavlinkPort = openSerialPort(portConfig->identifier, FUNCTION_TELEMETRY_MAVLINK, mavlinkReceive, 
-# 202 "./src/main/telemetry/mavlink.c" 3 4
+# 223 "./src/main/telemetry/mavlink.c" 3 4
                                                                                                     ((void *)0)
-# 202 "./src/main/telemetry/mavlink.c"
+# 223 "./src/main/telemetry/mavlink.c"
                                                                                                         , baudRates[baudRateIndex], MODE_RXTX, telemetryConfig()->telemetry_inverted ? SERIAL_INVERTED : SERIAL_NOT_INVERTED);
 
     if (!mavlinkPort) {
@@ -29439,9 +29521,9 @@ void configureMAVLinkTelemetryPort(void)
     }
 
     mavlinkTelemetryEnabled = 
-# 208 "./src/main/telemetry/mavlink.c" 3 4
+# 229 "./src/main/telemetry/mavlink.c" 3 4
                              1
-# 208 "./src/main/telemetry/mavlink.c"
+# 229 "./src/main/telemetry/mavlink.c"
                                  ;
 }
 
@@ -29449,22 +29531,22 @@ void checkMAVLinkTelemetryState(void)
 {
     if (portConfig && telemetryCheckRxPortShared(portConfig)) {
         if (!mavlinkTelemetryEnabled && telemetrySharedPort != 
-# 214 "./src/main/telemetry/mavlink.c" 3 4
+# 235 "./src/main/telemetry/mavlink.c" 3 4
                                                               ((void *)0)
-# 214 "./src/main/telemetry/mavlink.c"
+# 235 "./src/main/telemetry/mavlink.c"
                                                                   ) {
             mavlinkPort = telemetrySharedPort;
             mavlinkTelemetryEnabled = 
-# 216 "./src/main/telemetry/mavlink.c" 3 4
+# 237 "./src/main/telemetry/mavlink.c" 3 4
                                      1
-# 216 "./src/main/telemetry/mavlink.c"
+# 237 "./src/main/telemetry/mavlink.c"
                                          ;
         }
     } else {
         
-# 219 "./src/main/telemetry/mavlink.c" 3 4
+# 240 "./src/main/telemetry/mavlink.c" 3 4
        _Bool 
-# 219 "./src/main/telemetry/mavlink.c"
+# 240 "./src/main/telemetry/mavlink.c"
             newTelemetryEnabledValue = telemetryDetermineEnabledState(mavlinkPortSharing);
 
         if (newTelemetryEnabledValue == mavlinkTelemetryEnabled) {
@@ -29483,7 +29565,7 @@ void mavlinkSendSystemStatus(void)
     uint16_t msgLength;
 
     uint32_t onboardControlAndSensors = 35843;
-# 248 "./src/main/telemetry/mavlink.c"
+# 269 "./src/main/telemetry/mavlink.c"
     if (sensors(SENSOR_MAG)) onboardControlAndSensors |= 4100;
     if (sensors(SENSOR_BARO)) onboardControlAndSensors |= 8200;
     if (sensors(SENSOR_GPS)) onboardControlAndSensors |= 16416;
@@ -29559,6 +29641,25 @@ void mavlinkSendRCChannelsAndRSSI(void)
         (rxRuntimeConfig.channelCount >= 8) ? rcData[7] : 0,
 
         scaleRange(getRssi(), 0, 1023, 0, 255));
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+}
+
+void mavlinkSendHeartbeat(void)
+{
+    uint16_t msgLength;
+    mavlink_msg_heartbeat_pack(0, 200, &mavMsg,
+
+
+        0,
+
+        0,
+
+        0,
+
+        0,
+
+        0);
     msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
     mavlinkSerialWrite(mavBuffer, msgLength);
 }
@@ -29697,6 +29798,82 @@ void mavlinkSendMAVStates(void)
     {if (debugMode == (DEBUG_ATTITUDE)) {debug[(2)] = (attitude.values.yaw);}};
 }
 
+void mavlinkSendAttitude(void)
+{
+    uint16_t msgLength;
+    mavlink_msg_attitude_pack(0, 200, &mavMsg,
+
+        millis(),
+
+        ((attitude.values.roll / 10.0f) * 0.0174532925f),
+
+        ((-attitude.values.pitch / 10.0f) * 0.0174532925f),
+
+        ((attitude.values.yaw / 10.0f) * 0.0174532925f),
+
+        0,
+
+        0,
+
+        0);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+}
+
+
+void mavlinkSendMAVMode(void)
+{
+
+    lastJeVoischeck = micros();
+    if(lastJeVoischeck - lastJeVoistime < 5000000)
+    {
+        JeVois_alive = 1;
+    }
+    else
+    {
+        JeVois_alive = 0;
+        beeper(BEEPER_RX_LOST);
+    }
+    if((flightModeFlags & (RANGEFINDER_MODE)))
+    {
+        my_mode = 1;
+    }
+    else
+    {
+        my_mode = 2;
+    }
+    uint16_t msgLength;
+    mavlink_msg_set_mode_pack(0, 200, &mavMsg,
+
+    0,
+    my_mode,
+    JeVois_alive);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+}
+
+void mavlinkSendMAVParam(void)
+{
+    uint16_t msgLength;
+    char name[16] = {'P','A','R','A','M'};
+    mavlink_msg_param_request_read_pack(0, 200, &mavMsg,
+    1,
+    1,
+    name,
+    0);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+    mavlink_msg_param_value_pack(0, 200, &mavMsg,
+
+    name,
+    0,
+    0,
+    1,
+    0);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+}
+
 void mavlinkSendHUDAndHeartbeat(void)
 {
     uint16_t msgLength;
@@ -29723,7 +29900,7 @@ void mavlinkSendHUDAndHeartbeat(void)
 
         mavAltitude = gpsSol.llh.alt;
     }
-# 495 "./src/main/telemetry/mavlink.c"
+# 611 "./src/main/telemetry/mavlink.c"
     mavlink_msg_vfr_hud_pack(0, 200, &mavMsg,
 
         mavAirSpeed,
@@ -29827,9 +30004,22 @@ void processMAVLinkTelemetry(void)
 {
     {if (debugMode == (DEBUG_UART)) {debug[(0)] = (100);}};
 
+    if (mavlinkStreamTrigger(MAV_DATA_STREAM_EXTENDED_STATUS)) {
+        mavlinkSendSystemStatus();
+        mavlinkSendMAVParam();
+    }
+
+    if (mavlinkStreamTrigger(MAV_DATA_STREAM_RC_CHANNELS)) {
+        mavlinkSendHeartbeat();
+    }
     if (mavlinkStreamTrigger(MAV_DATA_STREAM_EXTRA1)) {
         mavlinkSendMAVStates();
+        mavlinkSendAttitude();
+        mavlinkSendMAVMode();
     }
+
+
+
 }
 
 void handleMAVLinkTelemetry(void)

@@ -56,6 +56,7 @@
 #include "io/gps.h"
 #include "io/ledstrip.h"
 #include "io/motors.h"
+#include "io/beeper.h"
 
 #include "rx/rx.h"
 
@@ -89,11 +90,20 @@ static serialPortConfig_t *portConfig;
 
 static bool mavlinkTelemetryEnabled =  false;
 static portSharing_e mavlinkPortSharing;
-
+static uint32_t lastJeVoistime = 0;
+static uint32_t lastJeVoischeck = 0;
+uint8_t my_mode = 0;
+uint8_t JeVois_alive = 0;
 float uart_altitude;
 float uart_roll;
 float uart_pitch;
 float uart_yaw;
+
+float my_param[8] = {0,0,0,0,0,0,0,0};
+
+char param_name[6];
+
+uint8_t parameterchanged = 0;
 
 static void mavlinkReceive(uint16_t c, void *data)
 {
@@ -102,6 +112,7 @@ static void mavlinkReceive(uint16_t c, void *data)
     mavlink_status_t status;
     if(mavlink_parse_char(MAVLINK_COMM_0, (uint8_t)c,&msg,&status))
     {
+
         switch(msg.msgid)
         {
             case 105: // highres_imu for test of communication
@@ -115,27 +126,37 @@ static void mavlinkReceive(uint16_t c, void *data)
             }
             case 81: //setpoint command
             {
+                lastJeVoistime = micros();
                 mavlink_manual_setpoint_t command;
                 mavlink_msg_manual_setpoint_decode(&msg,&command);
-                uart_altitude = command.thrust;
+                uart_altitude = -command.thrust * 100;
                 uart_roll = command.roll;   //maybe need normalization but this should be done in the JeVois
-                uart_pitch = command.pitch;
+                uart_pitch = -command.pitch;
                 uart_yaw = command.yaw;
                 DEBUG_SET(DEBUG_UART,1,command.time_boot_ms);	
                 DEBUG_SET(DEBUG_UART,3,uart_altitude);
+                DEBUG_SET(DEBUG_COMMAND,0,uart_altitude);
+                DEBUG_SET(DEBUG_COMMAND,1,uart_roll / 3.14 * 180);
+                DEBUG_SET(DEBUG_COMMAND,2,uart_pitch / 3.14 * 180);
+                DEBUG_SET(DEBUG_COMMAND,3,uart_yaw / 3.14 * 180);
                 break;
-            } 
+            }
+            case 21:
+            {
+                DEBUG_SET(DEBUG_REQUEST,0,100);
+                break;
+            }
         }
     }
 }
 
 /* MAVLink datastream rates in Hz */
 static const uint8_t mavRates[] = {
-    [MAV_DATA_STREAM_EXTENDED_STATUS] = 2, //2Hz
+    [MAV_DATA_STREAM_EXTENDED_STATUS] = 1, //1Hz
     [MAV_DATA_STREAM_RC_CHANNELS] = 5, //5Hz
     [MAV_DATA_STREAM_POSITION] = 2, //2Hz
-    [MAV_DATA_STREAM_EXTRA1] = 50, //10Hz
-    [MAV_DATA_STREAM_EXTRA2] = 10 //2Hz
+    [MAV_DATA_STREAM_EXTRA1] = 15, //15Hz
+    [MAV_DATA_STREAM_EXTRA2] = 15 //15Hz
 };
 
 #define MAXSTREAMS (sizeof(mavRates) / sizeof(mavRates[0]))
@@ -324,6 +345,25 @@ void mavlinkSendRCChannelsAndRSSI(void)
     mavlinkSerialWrite(mavBuffer, msgLength);
 }
 
+void mavlinkSendHeartbeat(void)
+{
+    uint16_t msgLength;
+    mavlink_msg_heartbeat_pack(0, 200, &mavMsg,
+        // time_boot_ms Timestamp (milliseconds since system boot)
+        // type
+        0,
+        // autopilot
+        0,
+        //base_mode
+        0,
+        //custon_mode
+        0,
+        // system_status
+        0);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+}
+
 #if defined(USE_GPS)
 void mavlinkSendPosition(void)
 {
@@ -456,6 +496,82 @@ void mavlinkSendMAVStates(void)
     DEBUG_SET(DEBUG_ATTITUDE,0,attitude.values.roll);
     DEBUG_SET(DEBUG_ATTITUDE,1,attitude.values.pitch);
     DEBUG_SET(DEBUG_ATTITUDE,2,attitude.values.yaw);
+}
+
+void mavlinkSendAttitude(void)
+{
+    uint16_t msgLength;
+    mavlink_msg_attitude_pack(0, 200, &mavMsg,
+        // time_boot_ms Timestamp (milliseconds since system boot)
+        millis(),
+        // roll Roll angle (rad)
+        DECIDEGREES_TO_RADIANS(attitude.values.roll),
+        // pitch Pitch angle (rad)
+        DECIDEGREES_TO_RADIANS(-attitude.values.pitch),
+        // yaw Yaw angle (rad)
+        DECIDEGREES_TO_RADIANS(attitude.values.yaw),
+        // rollspeed Roll angular speed (rad/s)
+        0,
+        // pitchspeed Pitch angular speed (rad/s)
+        0,
+        // yawspeed Yaw angular speed (rad/s)
+        0);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+}
+
+// send MAV states via MAVlink
+void mavlinkSendMAVMode(void)
+{
+    // check if Jevois still alive
+    lastJeVoischeck = micros();
+    if(lastJeVoischeck - lastJeVoistime < 5000000)
+    {
+        JeVois_alive = 1;
+    }
+    else
+    {
+        JeVois_alive = 0;
+        beeper(BEEPER_RX_LOST);
+    }
+    if(FLIGHT_MODE(RANGEFINDER_MODE))
+    {
+        my_mode = 1; // autonomous mode
+    }
+    else
+    {
+        my_mode = 2;
+    }
+    uint16_t msgLength;
+    mavlink_msg_set_mode_pack(0, 200, &mavMsg,
+    // time_boot_ms Timestamp (milliseconds since system boot)
+    0,
+    my_mode,
+    JeVois_alive);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+}
+
+void mavlinkSendMAVParam(void)
+{
+    uint16_t msgLength;
+    char name[16] = {'P','A','R','A','M'};
+    mavlink_msg_param_request_read_pack(0, 200, &mavMsg,
+    1,
+    1,
+    name,
+    0);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
+    mavlink_msg_param_value_pack(0, 200, &mavMsg,
+    // time_boot_ms Timestamp (milliseconds since system boot)
+    name,
+    0,
+    0,
+    1,
+    0);
+    msgLength = mavlink_msg_to_send_buffer(mavBuffer, &mavMsg);
+    mavlinkSerialWrite(mavBuffer, msgLength);
 }
 
 void mavlinkSendHUDAndHeartbeat(void)
@@ -595,9 +711,22 @@ void processMAVLinkTelemetry(void)
 {
     DEBUG_SET(DEBUG_UART,0,100);
     // is executed @ TELEMETRY_MAVLINK_MAXRATE rate
+    if (mavlinkStreamTrigger(MAV_DATA_STREAM_EXTENDED_STATUS)) {
+        mavlinkSendSystemStatus();
+        mavlinkSendMAVParam();
+    }
+
+    if (mavlinkStreamTrigger(MAV_DATA_STREAM_RC_CHANNELS)) {
+        mavlinkSendHeartbeat();
+    }
     if (mavlinkStreamTrigger(MAV_DATA_STREAM_EXTRA1)) {
         mavlinkSendMAVStates();
+        mavlinkSendAttitude();
+        mavlinkSendMAVMode();
     }
+    // if (mavlinkStreamTrigger(MAV_DATA_STREAM_EXTRA2)) {
+        
+    // }
 }
 
 void handleMAVLinkTelemetry(void)

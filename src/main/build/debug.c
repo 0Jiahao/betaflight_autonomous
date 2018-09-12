@@ -66,4 +66,7 @@ const char * const debugModeNames[DEBUG_COUNT] = {
     "ATTITUDE",
     "YAW",
     "MSG2",
+    "COMMAND",
+    "DESIREDANGLE",
+    "REQUEST",
 };
