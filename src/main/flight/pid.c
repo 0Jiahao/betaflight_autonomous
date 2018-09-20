@@ -45,8 +45,13 @@
 #include "flight/pid.h"
 #include "flight/imu.h"
 #include "flight/mixer.h"
+#include "flight/ol_filter.h"
+#include "flight/ol_flightplan.h"
+#include "flight/ol_control.h"
 
 #include "io/gps.h"
+
+#include "rx/rx.h"
 
 #include "sensors/gyro.h"
 #include "sensors/acceleration.h"
@@ -60,7 +65,7 @@ static FAST_RAM bool inCrashRecoveryMode = false;
 FAST_RAM float axisPID_P[3], axisPID_I[3], axisPID_D[3], axisPIDSum[3];
 
 static FAST_RAM float dT;
-
+static int32_t my_dt = 0;
 PG_REGISTER_WITH_RESET_TEMPLATE(pidConfig_t, pidConfig, PG_PID_CONFIG, 2);
 
 #ifdef STM32F10X
@@ -393,10 +398,25 @@ static float pidLevel(int axis, const pidProfile_t *pidProfile, const rollAndPit
 #endif
     angle = constrainf(angle, -pidProfile->levelAngleLimit, pidProfile->levelAngleLimit);
     DEBUG_SET(DEBUG_DESIREDANGLE,axis,angle);
-    if(FLIGHT_MODE(RANGEFINDER_MODE))
+    if(!FLIGHT_MODE(RANGEFINDER_MODE))
     {
-        if(axis == 0){angle = uart_roll / 3.14 * 180;}//roll
-        if(axis == 1){angle = uart_pitch / 3.14 * 180;}//roll
+        ol_filter_reset();
+        ol_control_reset();   
+    }
+    if(FLIGHT_MODE(RANGEFINDER_MODE))
+    {   
+        ol_filter_predict();
+        ol_control_run();  
+        // if(axis == 0){angle = uart_roll / 3.14 * 180;}//roll
+        // if(axis == 1){angle = uart_pitch / 3.14 * 180;}//pitch
+        // if(axis == 0){angle = dr_control.phi_cmd / 3.14 * 180;}//roll
+        // if(axis == 1){angle = dr_control.theta_cmd / 3.14 * 180;}//pitch
+        if(axis == 0){angle = constrainf((rcData[ROLL]-1500)/5,-180,180);}//roll
+        if(axis == 1){angle = constrainf((rcData[PITCH]-1500)/5,-180,180);}//pitch
+        DEBUG_SET(DEBUG_OLCTRL,0,100 * dr_control.alt_cmd);
+        DEBUG_SET(DEBUG_OLCTRL,1,dr_control.theta_cmd/3.14*180);
+        DEBUG_SET(DEBUG_OLCTRL,2,dr_control.phi_cmd/3.14*180);
+        DEBUG_SET(DEBUG_OLCTRL,3,dr_control.psi_cmd/3.14*180);
     }
     DEBUG_SET(DEBUG_DESIREDANGLE,axis,angle);
     const float errorAngle = angle - ((attitude.raw[axis] - angleTrim->raw[axis]) / 10.0f);
@@ -438,6 +458,10 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
 
     // calculate actual deltaT in seconds
     const float deltaT = (currentTimeUs - previousTimeUs) * 0.000001f;
+    const timeDelta_t my_deltaT = currentTimeUs - previousTimeUs; // 500 us
+    my_dt = (int)((float)my_deltaT);//ms
+    DEBUG_SET(DEBUG_DT,1,my_dt);
+    DEBUG_SET(DEBUG_DT,2,my_deltaT);
     previousTimeUs = currentTimeUs;
 
     // Dynamic i component,

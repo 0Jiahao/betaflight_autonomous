@@ -1,0 +1,69 @@
+# diff
+
+# version
+# Betaflight / OMNIBUSF4 (OBF4) 3.3.1 Sep 19 2018 / 17:22:58 (240cfdc) MSP API: 1.37
+
+# name
+
+# resources
+resource MOTOR 1 A03
+resource MOTOR 2 A02
+resource MOTOR 3 B01
+resource MOTOR 4 B00
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -OSD
+feature RANGEFINDER
+feature TELEMETRY
+
+# beeper
+
+# map
+map TREA1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 2 512 115200 57600 115200 115200
+serial 5 32768 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 900 1300 0
+aux 1 1 0 900 1300 0
+aux 2 22 1 1500 2100 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set baro_hardware = NONE
+set min_check = 1300
+set serialrx_provider = SPEK2048
+set motor_pwm_protocol = DSHOT300
+set align_board_yaw = 180
+set debug_mode = ALTCTRL
+set rangefinder_hardware = TFMINI
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0

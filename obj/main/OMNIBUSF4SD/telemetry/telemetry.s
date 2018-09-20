@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"telemetry.c"
-	.section	.gnu.lto_.profile.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.profile.70b53256e006157f,"",%progbits
 	.ascii	"x\234cc```\005bF\206\015\314)\000\003\007\001$"
 	.text
-	.section	.gnu.lto_.icf.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.icf.70b53256e006157f,"",%progbits
 	.ascii	"x\234cc``\360g@\000^\206\015[\373\266\3622\276\277t"
 	.ascii	"\365'\027\363\325\306\357;\270X\336\374\331\262\226"
 	.ascii	"\207\255\347\365\234?\374\354\247&\375\364\3458q\376"
@@ -20,7 +20,7 @@
 	.ascii	"{\373\327\313\315\374<\013\237l\233\317\305\333\377"
 	.ascii	"}b\017\017\037X\023\003\000c\031(\011"
 	.text
-	.section	.gnu.lto_.jmpfuncs.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.70b53256e006157f,"",%progbits
 	.ascii	"x\234cc``\320dd\200\003\016 fb\234\302\314\270\341\332"
 	.ascii	"\371&\256n\3469\314\014\214b\214\233\031e\030\030\017"
 	.ascii	"\2600\212\0011\003\003\0201322\326\317afd`\2030\230"
@@ -31,7 +31,7 @@
 	.ascii	"\025\350\234\255Py\260Y\014L\350\206\002%\320M@\323"
 	.ascii	"\302\000\000\350\012=\220"
 	.text
-	.section	.gnu.lto_.inline.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.inline.70b53256e006157f,"",%progbits
 	.ascii	"x\234\245\217\275\016\001A\024\205\317\231\031\263k"
 	.ascii	"\377\023\215B\020\017\340Q<\010\225\227\320P(\224\204"
 	.ascii	"BA'\321z\010\017\240\330R\251V\231Y\273++\333\210\231"
@@ -45,11 +45,11 @@
 	.ascii	"7\377\027\352peIRaF\026>\255E\205\310\346\274\000A\343"
 	.ascii	" \021"
 	.text
-	.section	.gnu.lto_.pureconst.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.pureconst.70b53256e006157f,"",%progbits
 	.ascii	"x\234cc``\020\004b\016\006\011F\026f\0116Vv\011\016"
 	.ascii	"\011N\011.\013\000\010\033\001\005"
 	.text
-	.section	.gnu.lto_telemetryDetermineEnabledState.part.0.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryDetermineEnabledState.part.0.70b53256e006157f,"",%progbits
 	.ascii	"x\234mP\317KTQ\030\375\316\375\336\2747X\272\224\210"
 	.ascii	"\2670h\026.t\204\026n\373\037\374\013&{\230\240SL\263"
 	.ascii	"\250\325\334\371E\016\011\206\345\370\203\007#H\004"
@@ -76,7 +76,7 @@
 	.ascii	"\177\253\356~\272p\347v*\335w+\221\032L\016xA2qc(\270"
 	.ascii	"\371\013\224\252\251\007"
 	.text
-	.section	.gnu.lto_telemetryCheckRxPortShared.part.1.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryCheckRxPortShared.part.1.70b53256e006157f,"",%progbits
 	.ascii	"x\234\225\223\337K\024Q\024\307\317\367\236\231\331"
 	.ascii	"mR\237\202\012\346\301\240\205\366\305\015\002_\202"
 	.ascii	"\010\372KB\266\020R\303|\351i/\272\242R\017\"\355\012"
@@ -111,7 +111,7 @@
 	.ascii	"\331\326\366XW\374B\274-\336\325y\271\332kj!\373bGg"
 	.ascii	"\327\231\216\366s\255\347\177\003!\014\200\017"
 	.text
-	.section	.gnu.lto_telemetryDetermineEnabledState.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryDetermineEnabledState.70b53256e006157f,"",%progbits
 	.ascii	"x\234mR\337K\223Q\030~\337\363~\277\332\324.\012\362"
 	.ascii	"bBA\"\336\270A\027\336\366\007t\327_`:JP\213\345MW;"
 	.ascii	"s\352\032\015\022\315\2052t\020\025\005a\322\264mj-"
@@ -148,7 +148,7 @@
 	.ascii	"\227.\206\272\317^h\011\265w\235\267\203]-\347:\202"
 	.ascii	"m\177\000\237X\012\340"
 	.text
-	.section	.gnu.lto_telemetryCheckRxPortShared.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryCheckRxPortShared.70b53256e006157f,"",%progbits
 	.ascii	"x\234mT]kTW\024\335\353\234\373=\367\336>\024\264\017"
 	.ascii	"SH\251\020\323\207\214P\360\245\340K\177\211HZ\204\252"
 	.ascii	"%\315K\237rM\014fj\036B0\037\015C\015B\353$\266\370"
@@ -199,7 +199,7 @@
 	.ascii	"\357#\357\363C\255m\037\037:\370\311\376O\337\000\231"
 	.ascii	"\227\2419"
 	.text
-	.section	.gnu.lto_telemetryCheckState.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryCheckState.70b53256e006157f,"",%progbits
 	.ascii	"x\234u\3211K\303@\024\007\360\367\356\2224*\256Vp\022"
 	.ascii	"\247\"4\237IJ\006\301:\324.N9-\332\012\016\0166]2\324"
 	.ascii	"A\304I\212V\033\265\020\374\000\016\256N\012*H\355\254"
@@ -218,7 +218,7 @@
 	.ascii	")y\345\225\325u\257\352\257\371e\277Z\331\374\317\212"
 	.ascii	"%\372\001\327z\254\234"
 	.text
-	.section	.gnu.lto_telemetryInit.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryInit.70b53256e006157f,"",%progbits
 	.ascii	"x\234u\321\277K\303@\024\007\360\367\356\2324\376h\273"
 	.ascii	"*N\342\324\245\375\233\264d\020\254C\355\342\224\323"
 	.ascii	"\242\255\240\350\240q\351\320\016\222I\244\3703\332"
@@ -239,7 +239,7 @@
 	.ascii	"\221\315\226\312+\265J\271:\277\270\\\256\273Kn\325"
 	.ascii	"\255\327V\377\273R\205~\000\317n\320\324"
 	.text
-	.section	.gnu.lto_telemetryProcess.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryProcess.70b53256e006157f,"",%progbits
 	.ascii	"x\234u\321\317K\002Q\020\007\360\371\356\350jY\235\203"
 	.ascii	"\014\012\204\350\342\3763\365\007\204\354A\310\016f"
 	.ascii	"\207N\276\324R\251C\2072\220\015\014\212NQ\321O\373"
@@ -262,7 +262,7 @@
 	.ascii	"C\356\2603h\014FCF\244/<`\304\314~3b\306\242\303\177"
 	.ascii	"Q0D\276\320P4j\016\304z\302\021\363\013]\241\320\243"
 	.text
-	.section	.gnu.lto_releaseSharedTelemetryPorts.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_releaseSharedTelemetryPorts.70b53256e006157f,"",%progbits
 	.ascii	"x\234eQAkSA\020\236og_\362\222h/\202(\344\240\320\036"
 	.ascii	"\212\222\334\274\370\007<\372\027J\015(X\2054\227\236"
 	.ascii	"\262m\023\323\242\207\0364\226\360\014\241Ez\350\241"
@@ -291,7 +291,7 @@
 	.ascii	"\370\350\345\241l\346\322\305\353\331\334\001O\313\272"
 	.ascii	"\323"
 	.text
-	.section	.gnu.lto_pgResetTemplate_telemetryConfig.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_pgResetTemplate_telemetryConfig.70b53256e006157f,"",%progbits
 	.ascii	"x\234U\216\273\012\3020\024\206\3637\265\326\033\276"
 	.ascii	"@\036B\235\372x]\024\301\325:98\010\342\244`\255\266"
 	.ascii	"^\020QD\034\034\035|\005'\035D\020\364\234DDC\222\217"
@@ -304,7 +304,7 @@
 	.ascii	"6\017\024Pt\306p\2200\322\246\346\"fd\214e\015r\230"
 	.ascii	"\300\023X\320\365\006ymR\277"
 	.text
-	.section	.gnu.lto_telemetryConfig_Registry.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_telemetryConfig_Registry.70b53256e006157f,"",%progbits
 	.ascii	"x\234cc``\270\002\304\312\014\0200\205\231\261\371\327"
 	.ascii	"\376\317|\365\177\033f44<\350\376)U?\207\231a\0013D"
 	.ascii	"\352\320\323u\354\026\333\032:\0264\010\314af\234\312"
@@ -318,7 +318,7 @@
 	.ascii	"\262~nbf\236~IjNjnjIQ%\202\245\227\314\000\000m\304"
 	.ascii	"V\344"
 	.text
-	.section	.gnu.lto_.symbol_nodes.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.70b53256e006157f,"",%progbits
 	.ascii	"x\234]\317\311n\023A\024\205\341{\334\266\273\312@\346"
 	.ascii	"\331I\3548#Sx\001\026\360$(\022Q\304\016%\336\260:\006"
 	.ascii	"\231 \261b\011BL\306@\230\347!a\014\230\300\012\211"
@@ -347,12 +347,12 @@
 	.ascii	"\367\223\332\367\023\332\317\035\320NnV\032+\033\371"
 	.ascii	"(\267_\232\311\312&\257\024\030M"
 	.text
-	.section	.gnu.lto_.refs.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.refs.70b53256e006157f,"",%progbits
 	.ascii	"x\234\015\303\301\015\000 \014\003\261KZ\362*,\300\376"
 	.ascii	"{\202%\007\270\277\204\345\242\213\025\005\247\266\333"
 	.ascii	"\307\303\003\010\004\000\201"
 	.text
-	.section	.gnu.lto_.decls.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.decls.70b53256e006157f,"",%progbits
 	.ascii	"x\234\305|yXTI\226/7#\223\204d\263\320\262\354*\247"
 	.ascii	"\226n\253\332\352\231*k\3517=\363\336\274\231\246\024"
 	.ascii	"K\272\335\036`Mu\277o^6B\252t#\370H\254\261\346\217"
@@ -1058,7 +1058,7 @@
 	.ascii	"\351\346C\312\341\267\304\330\222\325\240\316\316\250"
 	.ascii	"\322B\010\366\377\005\022\364\037\333"
 	.text
-	.section	.gnu.lto_.symtab.b854a3c7354ce72c,"",%progbits
+	.section	.gnu.lto_.symtab.70b53256e006157f,"",%progbits
 	.ascii	"telemetryDetermineEnabledState\000"
 	.ascii	"\000"
 	.ascii	"\000"

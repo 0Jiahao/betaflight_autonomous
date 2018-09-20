@@ -5661,7 +5661,7 @@ extern uint8_t debugMode;
 
 
 extern uint32_t sectionTimes[2][4];
-# 48 "./src/main/build/debug.h"
+# 50 "./src/main/build/debug.h"
 typedef enum {
     DEBUG_NONE,
     DEBUG_CYCLETIME,
@@ -5704,6 +5704,13 @@ typedef enum {
     DEBUG_COMMAND,
     DEBUG_DESIREDANGLE,
     DEBUG_REQUEST,
+    DEBUG_DT,
+    DEBUG_OL,
+    DEBUG_FP,
+    DEBUG_OLCTRL,
+    DEBUG_PSI,
+    DEBUG_CA,
+    DEBUG_PHIL,
     DEBUG_COUNT
 } debugType_e;
 
@@ -7140,6 +7147,85 @@ _Bool
 # 134 "./src/main/flight/mixer.h"
     mixerIsTricopter(void);
 # 48 "./src/main/flight/pid.c" 2
+# 1 "./src/main/flight/ol_filter.h" 1
+struct dronerace_vision_struct
+{
+  int cnt;
+  float dx;
+  float dy;
+  float dz;
+};
+
+
+extern struct dronerace_vision_struct dr_vision;
+
+struct dronerace_state_struct
+{
+
+  float time;
+
+
+  float x;
+  float y;
+
+
+  float vx;
+  float vy;
+
+
+  float psi;
+};
+
+extern struct dronerace_state_struct dr_state;
+extern float ol_dt;
+
+extern void ol_filter_reset(void);
+
+extern void ol_filter_predict(void);
+extern void ol_filter_correct(void);
+# 49 "./src/main/flight/pid.c" 2
+# 1 "./src/main/flight/ol_flightplan.h" 1
+struct dronerace_fp_struct
+{
+
+  int gate_nr;
+  float gate_x;
+  float gate_y;
+  float gate_alt;
+  float gate_psi;
+
+
+  float x_set;
+  float y_set;
+  float psi_set;
+  float alt_set;
+};
+
+
+extern struct dronerace_fp_struct dr_fp;
+
+
+extern void ol_flightplan_reset(void);
+extern void ol_flightplan_run(void);
+# 50 "./src/main/flight/pid.c" 2
+# 1 "./src/main/flight/ol_control.h" 1
+struct dronerace_control_struct
+{
+
+  float psi_ref;
+
+
+  float phi_cmd;
+  float theta_cmd;
+  float psi_cmd;
+  float alt_cmd;
+};
+
+extern struct dronerace_control_struct dr_control;
+
+extern void ol_control_reset(void);
+extern void ol_control_run(void);
+# 51 "./src/main/flight/pid.c" 2
 
 # 1 "./src/main/io/gps.h" 1
 # 18 "./src/main/io/gps.h"
@@ -7278,7 +7364,175 @@ void GPS_reset_home_position(void);
 void GPS_calc_longitude_scaling(int32_t lat);
 void navNewGpsData(void);
 void GPS_distance_cm_bearing(int32_t *currentLat1, int32_t *currentLon1, int32_t *destinationLat2, int32_t *destinationLon2, uint32_t *dist, int32_t *bearing);
-# 50 "./src/main/flight/pid.c" 2
+# 53 "./src/main/flight/pid.c" 2
+
+# 1 "./src/main/rx/rx.h" 1
+# 18 "./src/main/rx/rx.h"
+       
+# 43 "./src/main/rx/rx.h"
+typedef enum {
+    RX_FRAME_PENDING = 0,
+    RX_FRAME_COMPLETE = (1 << 0),
+    RX_FRAME_FAILSAFE = (1 << 1),
+    RX_FRAME_PROCESSING_REQUIRED = (1 << 2),
+} rxFrameState_e;
+
+typedef enum {
+    SERIALRX_SPEKTRUM1024 = 0,
+    SERIALRX_SPEKTRUM2048 = 1,
+    SERIALRX_SBUS = 2,
+    SERIALRX_SUMD = 3,
+    SERIALRX_SUMH = 4,
+    SERIALRX_XBUS_MODE_B = 5,
+    SERIALRX_XBUS_MODE_B_RJ01 = 6,
+    SERIALRX_IBUS = 7,
+    SERIALRX_JETIEXBUS = 8,
+    SERIALRX_CRSF = 9,
+    SERIALRX_SRXL = 10,
+    SERIALRX_TARGET_CUSTOM = 11,
+    SERIALRX_FPORT = 12,
+} SerialRXType;
+# 79 "./src/main/rx/rx.h"
+extern const char rcChannelLetters[];
+
+extern int16_t rcData[18];
+
+
+
+
+
+
+
+typedef enum {
+    RX_FAILSAFE_MODE_AUTO = 0,
+    RX_FAILSAFE_MODE_HOLD,
+    RX_FAILSAFE_MODE_SET,
+    RX_FAILSAFE_MODE_INVALID
+} rxFailsafeChannelMode_e;
+
+
+
+typedef enum {
+    RX_FAILSAFE_TYPE_FLIGHT = 0,
+    RX_FAILSAFE_TYPE_AUX
+} rxFailsafeChannelType_e;
+
+
+
+typedef struct rxFailsafeChannelConfig_s {
+    uint8_t mode;
+    uint8_t step;
+} rxFailsafeChannelConfig_t;
+
+extern rxFailsafeChannelConfig_t rxFailsafeChannelConfigs_SystemArray[18]; extern rxFailsafeChannelConfig_t rxFailsafeChannelConfigs_CopyArray[18]; static inline const rxFailsafeChannelConfig_t* rxFailsafeChannelConfigs(int _index) { return &rxFailsafeChannelConfigs_SystemArray[_index]; } static inline rxFailsafeChannelConfig_t* rxFailsafeChannelConfigsMutable(int _index) { return &rxFailsafeChannelConfigs_SystemArray[_index]; } static inline rxFailsafeChannelConfig_t (* rxFailsafeChannelConfigs_array(void))[18] { return &rxFailsafeChannelConfigs_SystemArray; } struct _dummy;
+
+typedef struct rxChannelRangeConfig_s {
+    uint16_t min;
+    uint16_t max;
+} rxChannelRangeConfig_t;
+
+extern rxChannelRangeConfig_t rxChannelRangeConfigs_SystemArray[4]; extern rxChannelRangeConfig_t rxChannelRangeConfigs_CopyArray[4]; static inline const rxChannelRangeConfig_t* rxChannelRangeConfigs(int _index) { return &rxChannelRangeConfigs_SystemArray[_index]; } static inline rxChannelRangeConfig_t* rxChannelRangeConfigsMutable(int _index) { return &rxChannelRangeConfigs_SystemArray[_index]; } static inline rxChannelRangeConfig_t (* rxChannelRangeConfigs_array(void))[4] { return &rxChannelRangeConfigs_SystemArray; } struct _dummy;
+
+typedef struct rxConfig_s {
+    uint8_t rcmap[8];
+    uint8_t serialrx_provider;
+    uint8_t serialrx_inverted;
+    uint8_t halfDuplex;
+    uint8_t rx_spi_protocol;
+
+    uint32_t rx_spi_id;
+    uint8_t rx_spi_rf_channel_count;
+    ioTag_t spektrum_bind_pin_override_ioTag;
+    ioTag_t spektrum_bind_plug_ioTag;
+    uint8_t spektrum_sat_bind;
+    uint8_t spektrum_sat_bind_autoreset;
+    uint8_t rssi_channel;
+    uint8_t rssi_scale;
+    uint8_t rssi_invert;
+    uint16_t midrc;
+    uint16_t mincheck;
+    uint16_t maxcheck;
+    uint8_t rcInterpolation;
+    uint8_t rcInterpolationChannels;
+    uint8_t rcInterpolationInterval;
+    uint8_t fpvCamAngleDegrees;
+    uint8_t airModeActivateThreshold;
+
+    uint16_t rx_min_usec;
+    uint16_t rx_max_usec;
+    uint8_t max_aux_channel;
+} rxConfig_t;
+
+extern rxConfig_t rxConfig_System; extern rxConfig_t rxConfig_Copy; static inline const rxConfig_t* rxConfig(void) { return &rxConfig_System; } static inline rxConfig_t* rxConfigMutable(void) { return &rxConfig_System; } struct _dummy;
+
+struct rxRuntimeConfig_s;
+typedef uint16_t (*rcReadRawDataFnPtr)(const struct rxRuntimeConfig_s *rxRuntimeConfig, uint8_t chan);
+typedef uint8_t (*rcFrameStatusFnPtr)(struct rxRuntimeConfig_s *rxRuntimeConfig);
+typedef 
+# 154 "./src/main/rx/rx.h" 3 4
+       _Bool 
+# 154 "./src/main/rx/rx.h"
+            (*rcProcessFrameFnPtr)(const struct rxRuntimeConfig_s *rxRuntimeConfig);
+
+typedef struct rxRuntimeConfig_s {
+    uint8_t channelCount;
+    uint16_t rxRefreshRate;
+    rcReadRawDataFnPtr rcReadRawFn;
+    rcFrameStatusFnPtr rcFrameStatusFn;
+    rcProcessFrameFnPtr rcProcessFrameFn;
+    uint16_t *channelData;
+    void *frameData;
+} rxRuntimeConfig_t;
+
+typedef enum {
+    RSSI_SOURCE_NONE = 0,
+    RSSI_SOURCE_ADC,
+    RSSI_SOURCE_RX_CHANNEL,
+    RSSI_SOURCE_RX_PROTOCOL,
+    RSSI_SOURCE_MSP,
+} rssiSource_e;
+
+extern rssiSource_e rssiSource;
+
+extern rxRuntimeConfig_t rxRuntimeConfig;
+
+void rxInit(void);
+
+# 179 "./src/main/rx/rx.h" 3 4
+_Bool 
+# 179 "./src/main/rx/rx.h"
+    rxUpdateCheck(timeUs_t currentTimeUs, timeDelta_t currentDeltaTimeUs);
+
+# 180 "./src/main/rx/rx.h" 3 4
+_Bool 
+# 180 "./src/main/rx/rx.h"
+    rxIsReceivingSignal(void);
+
+# 181 "./src/main/rx/rx.h" 3 4
+_Bool 
+# 181 "./src/main/rx/rx.h"
+    rxAreFlightChannelsValid(void);
+
+# 182 "./src/main/rx/rx.h" 3 4
+_Bool 
+# 182 "./src/main/rx/rx.h"
+    calculateRxChannelsAndUpdateFailsafe(timeUs_t currentTimeUs);
+
+void parseRcChannels(const char *input, rxConfig_t *rxConfig);
+
+void setRssiFiltered(uint16_t newRssi, rssiSource_e source);
+void setRssiUnfiltered(uint16_t rssiValue, rssiSource_e source);
+void setRssiMsp(uint8_t newMspRssi);
+void updateRSSI(timeUs_t currentTimeUs);
+uint16_t getRssi(void);
+
+void resetAllRxChannelRangeConfigurations(rxChannelRangeConfig_t *rxChannelRangeConfig);
+
+void suspendRxSignal(void);
+void resumeRxSignal(void);
+
+uint16_t rxGetRefreshRate(void);
+# 55 "./src/main/flight/pid.c" 2
 
 # 1 "./src/main/sensors/gyro.h" 1
 # 18 "./src/main/sensors/gyro.h"
@@ -7534,7 +7788,7 @@ _Bool
 # 98 "./src/main/sensors/gyro.h"
     gyroOverflowDetected(void);
 uint16_t gyroAbsRateDps(int axis);
-# 52 "./src/main/flight/pid.c" 2
+# 57 "./src/main/flight/pid.c" 2
 # 1 "./src/main/sensors/acceleration.h" 1
 # 18 "./src/main/sensors/acceleration.h"
        
@@ -7910,7 +8164,7 @@ _Bool
 union flightDynamicsTrims_u;
 void setAccelerationTrims(union flightDynamicsTrims_u *accelerationTrimsToUse);
 void accInitFilters(void);
-# 53 "./src/main/flight/pid.c" 2
+# 58 "./src/main/flight/pid.c" 2
 # 1 "./src/main/telemetry/mavlink.h" 1
 # 18 "./src/main/telemetry/mavlink.h"
        
@@ -7926,35 +8180,35 @@ extern float uart_altitude;
 extern float uart_roll;
 extern float uart_pitch;
 extern float uart_yaw;
-# 54 "./src/main/flight/pid.c" 2
+# 59 "./src/main/flight/pid.c" 2
 
  uint32_t targetPidLooptime;
 static 
-# 56 "./src/main/flight/pid.c" 3 4
+# 61 "./src/main/flight/pid.c" 3 4
                _Bool 
-# 56 "./src/main/flight/pid.c"
+# 61 "./src/main/flight/pid.c"
                     pidStabilisationEnabled;
 
 static 
-# 58 "./src/main/flight/pid.c" 3 4
+# 63 "./src/main/flight/pid.c" 3 4
                _Bool 
-# 58 "./src/main/flight/pid.c"
+# 63 "./src/main/flight/pid.c"
                     inCrashRecoveryMode = 
-# 58 "./src/main/flight/pid.c" 3 4
+# 63 "./src/main/flight/pid.c" 3 4
                                           0
-# 58 "./src/main/flight/pid.c"
+# 63 "./src/main/flight/pid.c"
                                                ;
 
  float axisPID_P[3], axisPID_I[3], axisPID_D[3], axisPIDSum[3];
 
 static float dT;
-
+static int32_t my_dt = 0;
 extern const pidConfig_t pgResetTemplate_pidConfig; pidConfig_t pidConfig_System; pidConfig_t pidConfig_Copy; extern const pgRegistry_t pidConfig_Registry; const pgRegistry_t pidConfig_Registry __attribute__ ((section(".pg_registry"), used, aligned(4))) = { .pgn = 504 | (2 << 12), .size = sizeof(pidConfig_t) | PGR_SIZE_SYSTEM_FLAG, .address = (uint8_t*)&pidConfig_System, .copy = (uint8_t*)&pidConfig_Copy, .ptr = 0, .reset = {.ptr = (void*)&pgResetTemplate_pidConfig}, };
-# 75 "./src/main/flight/pid.c"
+# 80 "./src/main/flight/pid.c"
 const pidConfig_t pgResetTemplate_pidConfig __attribute__ ((section(".pg_resetdata"), used, aligned(2))) = { .pid_process_denom = 4, .runaway_takeoff_prevention = 
-# 75 "./src/main/flight/pid.c" 3 4
+# 80 "./src/main/flight/pid.c" 3 4
 1
-# 75 "./src/main/flight/pid.c"
+# 80 "./src/main/flight/pid.c"
 , .runaway_takeoff_deactivate_throttle = 25, .runaway_takeoff_deactivate_delay = 500 }
 
 
@@ -7971,12 +8225,12 @@ extern void pgResetFn_pidProfiles(pidProfile_t *); pidProfile_t pidProfiles_Syst
 
 void resetPidProfile(pidProfile_t *pidProfile)
 {
-    static const pidProfile_t _reset_template_134 = { .pid = { [PID_ROLL] = { 40, 40, 30 }, [PID_PITCH] = { 58, 50, 35 }, [PID_YAW] = { 70, 45, 20 }, [PID_ALT] = { 50, 0, 0 }, [PID_POS] = { 15, 0, 0 }, [PID_POSR] = { 34, 14, 53 }, [PID_NAVR] = { 25, 33, 83 }, [PID_LEVEL] = { 50, 50, 75 }, [PID_MAG] = { 40, 0, 0 }, [PID_VEL] = { 55, 55, 75 } }, .pidSumLimit = 500, .pidSumLimitYaw = 400, .yaw_lpf_hz = 0, .dterm_lpf_hz = 100, .dterm_notch_hz = 260, .dterm_notch_cutoff = 160, .dterm_filter_type = FILTER_BIQUAD, .itermWindupPointPercent = 50, .vbatPidCompensation = 0, .pidAtMinThrottle = PID_STABILISATION_ON, .levelAngleLimit = 55, .setpointRelaxRatio = 100, .dtermSetpointWeight = 0, .yawRateAccelLimit = 100, .rateAccelLimit = 0, .itermThrottleThreshold = 350, .itermAcceleratorGain = 1000, .crash_time = 500, .crash_delay = 0, .crash_recovery_angle = 10, .crash_recovery_rate = 100, .crash_dthreshold = 50, .crash_gthreshold = 400, .crash_setpoint_threshold = 350, .crash_recovery = PID_CRASH_RECOVERY_OFF, .horizon_tilt_effect = 75, .horizon_tilt_expert_mode = 
-# 91 "./src/main/flight/pid.c" 3 4
+    static const pidProfile_t _reset_template_139 = { .pid = { [PID_ROLL] = { 40, 40, 30 }, [PID_PITCH] = { 58, 50, 35 }, [PID_YAW] = { 70, 45, 20 }, [PID_ALT] = { 50, 0, 0 }, [PID_POS] = { 15, 0, 0 }, [PID_POSR] = { 34, 14, 53 }, [PID_NAVR] = { 25, 33, 83 }, [PID_LEVEL] = { 50, 50, 75 }, [PID_MAG] = { 40, 0, 0 }, [PID_VEL] = { 55, 55, 75 } }, .pidSumLimit = 500, .pidSumLimitYaw = 400, .yaw_lpf_hz = 0, .dterm_lpf_hz = 100, .dterm_notch_hz = 260, .dterm_notch_cutoff = 160, .dterm_filter_type = FILTER_BIQUAD, .itermWindupPointPercent = 50, .vbatPidCompensation = 0, .pidAtMinThrottle = PID_STABILISATION_ON, .levelAngleLimit = 55, .setpointRelaxRatio = 100, .dtermSetpointWeight = 0, .yawRateAccelLimit = 100, .rateAccelLimit = 0, .itermThrottleThreshold = 350, .itermAcceleratorGain = 1000, .crash_time = 500, .crash_delay = 0, .crash_recovery_angle = 10, .crash_recovery_rate = 100, .crash_dthreshold = 50, .crash_gthreshold = 400, .crash_setpoint_threshold = 350, .crash_recovery = PID_CRASH_RECOVERY_OFF, .horizon_tilt_effect = 75, .horizon_tilt_expert_mode = 
+# 96 "./src/main/flight/pid.c" 3 4
    0
-# 91 "./src/main/flight/pid.c"
-   , .crash_limit_yaw = 200, .itermLimit = 150 }; memcpy((pidProfile), &_reset_template_134, sizeof(*(pidProfile)));
-# 134 "./src/main/flight/pid.c"
+# 96 "./src/main/flight/pid.c"
+   , .crash_limit_yaw = 200, .itermLimit = 150 }; memcpy((pidProfile), &_reset_template_139, sizeof(*(pidProfile)));
+# 139 "./src/main/flight/pid.c"
      ;
 }
 
@@ -8010,13 +8264,13 @@ void pidSetItermAccelerator(float newItermAccelerator)
 void pidStabilisationState(pidStabilisationState_e pidControllerState)
 {
     pidStabilisationEnabled = (pidControllerState == PID_STABILISATION_ON) ? 
-# 166 "./src/main/flight/pid.c" 3 4
+# 171 "./src/main/flight/pid.c" 3 4
                                                                             1 
-# 166 "./src/main/flight/pid.c"
+# 171 "./src/main/flight/pid.c"
                                                                                  : 
-# 166 "./src/main/flight/pid.c" 3 4
+# 171 "./src/main/flight/pid.c" 3 4
                                                                                    0
-# 166 "./src/main/flight/pid.c"
+# 171 "./src/main/flight/pid.c"
                                                                                         ;
 }
 
@@ -8247,10 +8501,25 @@ static float pidLevel(int axis, const pidProfile_t *pidProfile, const rollAndPit
 
     angle = constrainf(angle, -pidProfile->levelAngleLimit, pidProfile->levelAngleLimit);
     {if (debugMode == (DEBUG_DESIREDANGLE)) {debug[(axis)] = (angle);}};
+    if(!(flightModeFlags & (RANGEFINDER_MODE)))
+    {
+        ol_filter_reset();
+        ol_control_reset();
+    }
     if((flightModeFlags & (RANGEFINDER_MODE)))
     {
-        if(axis == 0){angle = uart_roll / 3.14 * 180;}
-        if(axis == 1){angle = uart_pitch / 3.14 * 180;}
+        ol_filter_predict();
+        ol_control_run();
+
+
+
+
+        if(axis == 0){angle = constrainf((rcData[ROLL]-1500)/5,-180,180);}
+        if(axis == 1){angle = constrainf((rcData[PITCH]-1500)/5,-180,180);}
+        {if (debugMode == (DEBUG_OLCTRL)) {debug[(0)] = (100 * dr_control.alt_cmd);}};
+        {if (debugMode == (DEBUG_OLCTRL)) {debug[(1)] = (100 * dr_control.theta_cmd);}};
+        {if (debugMode == (DEBUG_OLCTRL)) {debug[(2)] = (100 * dr_control.phi_cmd);}};
+        {if (debugMode == (DEBUG_OLCTRL)) {debug[(3)] = (100 * dr_control.psi_cmd);}};
     }
     {if (debugMode == (DEBUG_DESIREDANGLE)) {debug[(axis)] = (angle);}};
     const float errorAngle = angle - ((attitude.raw[axis] - angleTrim->raw[axis]) / 10.0f);
@@ -8292,6 +8561,10 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
 
 
     const float deltaT = (currentTimeUs - previousTimeUs) * 0.000001f;
+    const timeDelta_t my_deltaT = currentTimeUs - previousTimeUs;
+    my_dt = (int)((float)my_deltaT);
+    {if (debugMode == (DEBUG_DT)) {debug[(1)] = (my_dt);}};
+    {if (debugMode == (DEBUG_DT)) {debug[(2)] = (my_deltaT);}};
     previousTimeUs = currentTimeUs;
 
 
@@ -8320,9 +8593,9 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
         if (inCrashRecoveryMode && cmpTimeUs(currentTimeUs, crashDetectedAtUs) > crashTimeDelayUs) {
             if (pidProfile->crash_recovery == PID_CRASH_RECOVERY_BEEP) {
                 systemBeep(
-# 468 "./src/main/flight/pid.c" 3 4
+# 492 "./src/main/flight/pid.c" 3 4
                1
-# 468 "./src/main/flight/pid.c"
+# 492 "./src/main/flight/pid.c"
                );
             }
             if (axis == FD_YAW) {
@@ -8349,26 +8622,26 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
                     if (__extension__ ({ __typeof__ (attitude.raw[FD_ROLL] - angleTrim->raw[FD_ROLL]) _x = (attitude.raw[FD_ROLL] - angleTrim->raw[FD_ROLL]); _x > 0 ? _x : -_x; }) < crashRecoveryAngleDeciDegrees
                        && __extension__ ({ __typeof__ (attitude.raw[FD_PITCH] - angleTrim->raw[FD_PITCH]) _x = (attitude.raw[FD_PITCH] - angleTrim->raw[FD_PITCH]); _x > 0 ? _x : -_x; }) < crashRecoveryAngleDeciDegrees) {
                         inCrashRecoveryMode = 
-# 493 "./src/main/flight/pid.c" 3 4
+# 517 "./src/main/flight/pid.c" 3 4
                                              0
-# 493 "./src/main/flight/pid.c"
+# 517 "./src/main/flight/pid.c"
                                                   ;
                         systemBeep(
-# 494 "./src/main/flight/pid.c" 3 4
+# 518 "./src/main/flight/pid.c" 3 4
                        0
-# 494 "./src/main/flight/pid.c"
+# 518 "./src/main/flight/pid.c"
                        );
                     }
                 } else {
                     inCrashRecoveryMode = 
-# 497 "./src/main/flight/pid.c" 3 4
+# 521 "./src/main/flight/pid.c" 3 4
                                          0
-# 497 "./src/main/flight/pid.c"
+# 521 "./src/main/flight/pid.c"
                                               ;
                     systemBeep(
-# 498 "./src/main/flight/pid.c" 3 4
+# 522 "./src/main/flight/pid.c" 3 4
                    0
-# 498 "./src/main/flight/pid.c"
+# 522 "./src/main/flight/pid.c"
                    );
                 }
             }
@@ -8388,14 +8661,14 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
         const float ITerm = axisPID_I[axis];
         const float ITermNew = constrainf(ITerm + Ki[axis] * errorRate * dynCi, -itermLimit, itermLimit);
         const 
-# 516 "./src/main/flight/pid.c" 3 4
+# 540 "./src/main/flight/pid.c" 3 4
              _Bool 
-# 516 "./src/main/flight/pid.c"
+# 540 "./src/main/flight/pid.c"
                   outputSaturated = mixerIsOutputSaturated(axis, errorRate);
         if (outputSaturated == 
-# 517 "./src/main/flight/pid.c" 3 4
+# 541 "./src/main/flight/pid.c" 3 4
                               0 
-# 517 "./src/main/flight/pid.c"
+# 541 "./src/main/flight/pid.c"
                                     || __extension__ ({ __typeof__ (ITermNew) _x = (ITermNew); _x > 0 ? _x : -_x; }) < __extension__ ({ __typeof__ (ITerm) _x = (ITerm); _x > 0 ? _x : -_x; })) {
 
             axisPID_I[axis] = ITermNew;
@@ -8430,35 +8703,35 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
                         && __extension__ ({ __typeof__ (errorRate) _x = (errorRate); _x > 0 ? _x : -_x; }) > crashGyroThreshold
                         && __extension__ ({ __typeof__ (getSetpointRate(axis)) _x = (getSetpointRate(axis)); _x > 0 ? _x : -_x; }) < crashSetpointThreshold) {
                         inCrashRecoveryMode = 
-# 550 "./src/main/flight/pid.c" 3 4
+# 574 "./src/main/flight/pid.c" 3 4
                                              1
-# 550 "./src/main/flight/pid.c"
+# 574 "./src/main/flight/pid.c"
                                                  ;
                         crashDetectedAtUs = currentTimeUs;
                     }
                     if (inCrashRecoveryMode && cmpTimeUs(currentTimeUs, crashDetectedAtUs) < crashTimeDelayUs && (__extension__ ({ __typeof__ (errorRate) _x = (errorRate); _x > 0 ? _x : -_x; }) < crashGyroThreshold
                         || __extension__ ({ __typeof__ (getSetpointRate(axis)) _x = (getSetpointRate(axis)); _x > 0 ? _x : -_x; }) > crashSetpointThreshold)) {
                         inCrashRecoveryMode = 
-# 555 "./src/main/flight/pid.c" 3 4
+# 579 "./src/main/flight/pid.c" 3 4
                                              0
-# 555 "./src/main/flight/pid.c"
+# 579 "./src/main/flight/pid.c"
                                                   ;
                         systemBeep(
-# 556 "./src/main/flight/pid.c" 3 4
+# 580 "./src/main/flight/pid.c" 3 4
                        0
-# 556 "./src/main/flight/pid.c"
+# 580 "./src/main/flight/pid.c"
                        );
                     }
                 } else if (inCrashRecoveryMode) {
                     inCrashRecoveryMode = 
-# 559 "./src/main/flight/pid.c" 3 4
+# 583 "./src/main/flight/pid.c" 3 4
                                          0
-# 559 "./src/main/flight/pid.c"
+# 583 "./src/main/flight/pid.c"
                                               ;
                     systemBeep(
-# 560 "./src/main/flight/pid.c" 3 4
+# 584 "./src/main/flight/pid.c" 3 4
                    0
-# 560 "./src/main/flight/pid.c"
+# 584 "./src/main/flight/pid.c"
                    );
                 }
             }
@@ -8479,9 +8752,9 @@ void pidController(const pidProfile_t *pidProfile, const rollAndPitchTrims_t *an
 }
 
 
-# 579 "./src/main/flight/pid.c" 3 4
+# 603 "./src/main/flight/pid.c" 3 4
 _Bool 
-# 579 "./src/main/flight/pid.c"
+# 603 "./src/main/flight/pid.c"
     crashRecoveryModeActive(void)
 {
     return inCrashRecoveryMode;

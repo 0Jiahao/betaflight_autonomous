@@ -6,11 +6,263 @@
 # name
 
 # resources
+# diff
+
+# version
+# Betaflight / OMNIBUSF4SD (OBSD) 3.3.1 Aug 31 2018 / 15:26:28 (4b7eaf79d) MSP API: 1.37
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+sa ve
+# servo mix
+
+
+# feature
+feature RANGEFINDER
+feature TELEMETRY
+
+# beeper
+
+# map
+map TREA1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 2 512 115200 57600 115200 115200
+serial 5 32768 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 900 1300 0
+aux 1 1 0 900 1300 0
+aux 2 22 1 1500 2100 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+# diff
+
+# version
+# Betaflight / OMNIBUSF4SD (OBSD) 3.3.1 Aug 31 2018 / 15:26:28 (4b7eaf79d) MSP API: 1.37
+
+# name
+
+# resources
 
 # mixer
 
 # servo
 
+# servo mix
+
+
+# feature
+feature RANGEFINDER
+feature TELEMETRY
+
+# beeper
+
+# map
+map TREA1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 2 512 115200 57600 115200 115200
+serial 5 32768 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 900 1300 0
+aux 1 1 0 900 1300 0
+aux 2 22 1 1500 2100 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set baro_hardware = NONE
+set min_check = 1300
+set serialrx_provider = SPEK2048
+set motor_pwm_protocol = DSHOT300
+set align_board_yaw = 180
+set debug_mode = ALTCTRL
+set rangefinder_hardware = TFMINI
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0
+# master
+set baro_hardware = NONE
+set min_check = 1300
+set serialrx_provider = SPEK2048
+set motor_pwm_protocol = DSHOT300
+set align_board_yaw = 180
+set debug_mode = ALTCTRL
+set rangefinder_hardware = TFMINI# diff
+
+# version
+# Betaflight / OMNIBUSF4SD (OBSD) 3.3.1 Aug 31 2018 / 15:26:28 (4b7eaf79d) MSP API: 1.37
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature RANGEFINDER
+feature TELEMETRY
+
+# beeper
+
+# map
+map TREA1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 2 512 115200 57600 115200 115200
+serial 5 32768 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 900 1300 0
+aux 1 1 0 900 1300 0
+aux 2 22 1 1500 2100 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+# diff
+
+# version
+# Betaflight / OMNIBUSF4SD (OBSD) 3.3.1 Aug 31 2018 / 15:26:28 (4b7eaf79d) MSP API: 1.37
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature RANGEFINDER
+feature TELEMETRY
+
+# beeper
+
+# map
+map TREA1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 2 512 115200 57600 115200 115200
+serial 5 32768 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 900 1300 0
+aux 1 1 0 900 1300 0
+aux 2 22 1 1500 2100 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set baro_hardware = NONE
+set min_check = 1300
+set serialrx_provider = SPEK2048
+set motor_pwm_protocol = DSHOT300
+set align_board_yaw = 180
+set debug_mode = ALTCTRL
+set rangefinder_hardware = TFMINI
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0
+# master
+set baro_hardware = NONE
+set min_check = 1300
+set serialrx_provider = SPEK2048
+set motor_pwm_protocol = DSHOT300
+set align_board_yaw = 180
+set debug_mode = yaw
+set rangefinder_hardware = TFMINI
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0
+# mixer
+
+# servo
+sa ve
 # servo mix
 
 

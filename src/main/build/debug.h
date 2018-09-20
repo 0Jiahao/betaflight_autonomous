@@ -45,6 +45,8 @@ extern uint32_t sectionTimes[2][4];
 
 #endif
 
+
+
 typedef enum {
     DEBUG_NONE,
     DEBUG_CYCLETIME,
@@ -87,6 +89,13 @@ typedef enum {
     DEBUG_COMMAND,
     DEBUG_DESIREDANGLE,
     DEBUG_REQUEST,
+    DEBUG_DT,
+    DEBUG_OL,
+    DEBUG_FP,
+    DEBUG_OLCTRL,
+    DEBUG_PSI,
+    DEBUG_CA,
+    DEBUG_PHIL,
     DEBUG_COUNT
 } debugType_e;
 

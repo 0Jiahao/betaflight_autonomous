@@ -9,11 +9,11 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"usb_core.c"
-	.section	.gnu.lto_.profile.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.profile.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234cc```\003bF\206\371\234\213\330\001\004\206\001"
 	.ascii	"_"
 	.text
-	.section	.gnu.lto_.icf.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.icf.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\001\011\001\366\376\006\000\000\000\371\000\000"
 	.ascii	"\000\000\000\000\000\000\000\000\000*\000\274\367\354"
 	.ascii	"\262\016\001\341\337\305\226\014\002\254\352\351\353"
@@ -36,7 +36,7 @@
 	.ascii	"\007(\302\325\327\376\006)\255\210\231\247\014\000\015"
 	.ascii	"\321\201\213"
 	.text
-	.section	.gnu.lto_.jmpfuncs.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235S9K\003Q\020\236y\307\356z\304\215\032\017"
 	.ascii	"t\275\317\264i\374m\251\254,\304V\004!\245\330Xz&iD"
 	.ascii	"K\013+\3016\245\244\260\020\004A\214\263o'\311d\263"
@@ -61,7 +61,7 @@
 	.ascii	"\257+\312?\320\213\037\373\220\215\360\017\031\322\035"
 	.ascii	"\246"
 	.text
-	.section	.gnu.lto_.inline.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.inline.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\255WMh]E\024>g\356\334{'\357'\271i^\322\227\230"
 	.ascii	"\364][m\023)\032\244\212H\261\017\334\024\027\305\205"
 	.ascii	"\270\023\263nuS\227\005;\242\266EK)4\376 Y\004\254\022"
@@ -157,14 +157,14 @@
 	.ascii	"\365:c\204\353\205W0\353\322\323\024\355\316}\203\246"
 	.ascii	"\004\230\004\0269h\301\277\331;\255v"
 	.text
-	.section	.gnu.lto_.pureconst.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.pureconst.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\015\303\011\026BP\000\000\300O\245MZ\321\237V"
 	.ascii	"J\345<\335\377.\314{\223\205\020\376\343>H\244&\246"
 	.ascii	"f2\363\270\260\264\262\226\333(l\355\354\035\034\235"
 	.ascii	"\224*\2653.\256n\356\036\236\032\255\227\267.~\342\327"
 	.ascii	"Oo\00013\007\356"
 	.text
-	.section	.gnu.lto_USB_OTG_CoreReset.isra.1.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_CoreReset.isra.1.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235T]l\024U\024\276g\356\374\317,\022\022M\215"
 	.ascii	"\373\320\227\246!&\035\003\274\360\204U\343_bL,>W[W"
 	.ascii	"\323D\213\331\002\257\035\372C\273\250hH\267\352fpW"
@@ -226,7 +226,7 @@
 	.ascii	"\332m\321HE-S\237\253z\251\262b\223R\273mG\375v\365"
 	.ascii	"\215h\244!\262]~\373\265\310\316\177\000\363\0139H"
 	.text
-	.section	.gnu.lto_USB_OTG_WritePacket.part.2.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_WritePacket.part.2.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234mT]l\024U\024\276g\316\314\354\316nw\267\251<\020"
 	.ascii	"\2631>\330T\022\302H\373\340\203\211&F\243>\030M\200"
 	.ascii	"\370\270\241\353\0226\201\226\364\207Wn\273m\267\245"
@@ -286,7 +286,7 @@
 	.ascii	"{\"5z}\303\316\206\306zuWtW-D\335\341\332\306\232\206"
 	.ascii	"\252\312\352\377\000\256%\304\234"
 	.text
-	.section	.gnu.lto_USB_OTG_EP0StartXfer.part.3.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EP0StartXfer.part.3.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\245W[L\024W\030\236\177\316\356\314\336f\227;"
 	.ascii	"Hx \251\206h\033W\345\241I\373\3224M|j|\320\246o%^\320"
 	.ascii	"\220z!\200&\365\305\221\213\013B\255i\213U\\\225\252"
@@ -381,7 +381,7 @@
 	.ascii	"\231i\033%\274/\317Z-ef-\315Z\237\371\037\245\366\216"
 	.ascii	"\360"
 	.text
-	.section	.gnu.lto_USB_OTG_EPSetStall.part.4.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EPSetStall.part.4.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}T]L\034U\024\276\337\334\231;,K\227\372C\242\011"
 	.ascii	"Iy\220\220\2760\264<\230\370d\214?O\215\017\324\007"
 	.ascii	"\2376\024\366\201\244\"Y(\217\366\226n\263,\365/\306"
@@ -434,7 +434,7 @@
 	.ascii	";Z\023\335V\242#\332\232\350h\351\332\036onmM\252`\255"
 	.ascii	":\273\232\273vt\376\015\270\375\270_"
 	.text
-	.section	.gnu.lto_USB_OTG_ActiveRemoteWakeup.part.5.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ActiveRemoteWakeup.part.5.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235U[lTU\024=\373\236\373\230\327\235\026\021"
 	.ascii	"\371!\261\211\220\246D\271\011|\310\207\250!&|\031b"
 	.ascii	"\200\357F\332~\220 \220\0261\321\217^\2062\323V\022"
@@ -508,7 +508,7 @@
 	.ascii	"\025\227\254\321V\255\374\240\244T-.[]\246\026\027\255"
 	.ascii	"^\356\242\253\351\305sf\377\015s\015\021\366"
 	.text
-	.section	.gnu.lto_USB_OTG_UngateClock.part.6.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_UngateClock.part.6.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235T]HT[\024\336\353\254\363\327\344\230\017A"
 	.ascii	"/=H$\342\303\355\200=\324CQDT\004\321C\365,7\365A\350"
 	.ascii	"\217\361VP\017m'sF\013\212H\253\341\024\003\025=\334"
@@ -561,7 +561,7 @@
 	.ascii	")+\337fl\331\274\275<\244\227U\376Ui\263\231]6\267\370"
 	.ascii	"\033\3437\313."
 	.text
-	.section	.gnu.lto_USB_OTG_GetEPStatus.part.7.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_GetEPStatus.part.7.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234mS_L[U\034>\337=\367\336\376\241\264\274,\361\241"
 	.ascii	"Q\222A\310H\3442xX\342\223\032\023\037\314\342\003\370"
 	.ascii	"\340\213\015\243} \231J\012\333\353\016\265\2430A\347"
@@ -616,7 +616,7 @@
 	.ascii	"\246\366\003m%\341Hks\373\376PS8\0345\325\332\253\246"
 	.ascii	"\212p}\335\277F+\246\330"
 	.text
-	.section	.gnu.lto_USB_OTG_WritePacket.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_WritePacket.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234mS]H\024Q\024>g\316\354\314\272\233\026\241\024"
 	.ascii	"\261\017B\201\031\344\204\012=\364\026E\276D\017\332"
 	.ascii	"\363\222\333B\202n\262\242\257{\335Ut\321\260\007Wc"
@@ -655,7 +655,7 @@
 	.ascii	"\006\342dV\340\214?X\353\017\325\327Pu0\364\007F\374"
 	.ascii	"\375\373"
 	.text
-	.section	.gnu.lto_USB_OTG_ReadPacket.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ReadPacket.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234mT]h\034U\024\276g\316\235\331\335Lv\223\370P\004"
 	.ascii	"W\350\203!T\244C\323\007\011\370 \242\350\213\366\241"
 	.ascii	"\025|\013&\335\342BM$i\373\332\233l\2325\255\342\017"
@@ -709,7 +709,7 @@
 	.ascii	"=\235\341\366\316\375\035\373\2667\267A\362\037\001"
 	.ascii	"\003\240<"
 	.text
-	.section	.gnu.lto_USB_OTG_SelectCore.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_SelectCore.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\245Wkl\024U\024\276g\356\354\314\354\316>\372"
 	.ascii	"\340Y\227\322\037\002\301\037\254\312\017\023\322\370"
 	.ascii	"\212\211QcL|\374&\0025i\342\263\215\374\360\207\016"
@@ -819,7 +819,7 @@
 	.ascii	"\371\342\202\207\346\314)*(.\206\302\377\000\017\263"
 	.ascii	"\376\225"
 	.text
-	.section	.gnu.lto_USB_OTG_CoreInit.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_CoreInit.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235X[PUU\030^\377Z\347\354}\356 \207\310\214&"
 	.ascii	"\0362\247\313x\032m\246\036\322f\232f\232i\246\351\241"
 	.ascii	"z\350\311\021\262\262)j\250xh&\331\"\005G \315\202\024"
@@ -930,7 +930,7 @@
 	.ascii	"\327\013\346M\317c\2267^\230W\250\314}97\357\305\227"
 	.ascii	"\254/\345\341U\301Y\374\363?A\211\224\272"
 	.text
-	.section	.gnu.lto_USB_OTG_EnableGlobalInt.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EnableGlobalInt.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}\222[H\024a\030\206\377w\376\331\203\207\335\240"
 	.ascii	"\213.J\302\213D\274qB/\362\242\010\"\350*\272\320\256"
 	.ascii	"\027\335\264\204\262XI\272s\\\255\325\016\032\322Z\312"
@@ -970,7 +970,7 @@
 	.ascii	"B=\264\247\274\306Y\272\257\314_\261\367\027\300\026"
 	.ascii	"60"
 	.text
-	.section	.gnu.lto_USB_OTG_DisableGlobalInt.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_DisableGlobalInt.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}\222MHTQ\024\307\357y\367}\214\0373A\213\0265"
 	.ascii	"\204\213D\334\370B\027\271q\023A\253\210\320\326\203"
 	.ascii	"NZBY\214\344\302\215\327\321\234\261\017\214h,\345\031"
@@ -1011,7 +1011,7 @@
 	.ascii	"\332\347\325OV\227y\274\307}\345y^&\2378T^\243\226\036"
 	.ascii	")\363V\034\376\005pi>\233"
 	.text
-	.section	.gnu.lto_USB_OTG_FlushTxFifo.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_FlushTxFifo.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235T]l\024U\024\276\337\334\231\331\272?X\313"
 	.ascii	"Kc6\261\0176\015/\214\201\007\037x \240\011O\306\007"
 	.ascii	"\360\271\201u5Md1[\312\223Io\267\205\355\342\017\304"
@@ -1068,7 +1068,7 @@
 	.ascii	"\315W\243\333d\254e\263\021\331\322\022\333j\276\036"
 	.ascii	"\2176G\267\376\003z\316\364\232"
 	.text
-	.section	.gnu.lto_USB_OTG_FlushRxFifo.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_FlushRxFifo.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}T]L\024W\024\276\337\234\231Y\004\326\237>\371"
 	.ascii	"\260\017\244)1\2768F\037\372d\342O\023\237L\037\324"
 	.ascii	"gR\267\333\206\244\305fQ\3237\206\005aWi\325\226E\335"
@@ -1122,7 +1122,7 @@
 	.ascii	"Q\021\335\031\217\255\212*\375\213\217c{\214\350\316"
 	.ascii	"\335U\273\314O\343\261\352\330\256W\224Q\276\345"
 	.text
-	.section	.gnu.lto_USB_OTG_SetCurrentMode.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_SetCurrentMode.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235T]L\024W\024\276\337\234\231\273\270\260[\333"
 	.ascii	"\027\333d\233\220\250!\364\301\261\230X\037\372\320"
 	.ascii	"\030\223>\031M\324gR\021\033\222\212\006S^\271\254\333"
@@ -1175,7 +1175,7 @@
 	.ascii	"\257*\263?\337\276\261\264lkU\371\2222an\333T^mn\331"
 	.ascii	"\272\251\\r\264l\363\247\377\003\026\270\333\205"
 	.text
-	.section	.gnu.lto_USB_OTG_GetMode.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_GetMode.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234e\221\315O\023Q\024\305\357yo:\255(\356\211]ta"
 	.ascii	"$lx\021\023\377\000b\342\312\270\000\327\015\324.\232"
 	.ascii	"\000\232!\262\345\265 \005\225\210\011\255\206\014f"
@@ -1204,7 +1204,7 @@
 	.ascii	"\344\245\333S\344\\\276\230\036\372\007\335\233\265"
 	.ascii	"5"
 	.text
-	.section	.gnu.lto_USB_OTG_IsDeviceMode.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_IsDeviceMode.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234]\222\313k\023Q\024\306\3177g\036\261%\356\245"
 	.ascii	"YdQ,\335tj\013\376\001\"\270\022\027\255\353`c\220\200"
 	.ascii	"/R\354\266\223\207\035\243\026-\230\210a\224l\324\225"
@@ -1236,7 +1236,7 @@
 	.ascii	"\373b{S\311\231D\312\236N\305\355S\323S\261\370\211"
 	.ascii	"Tb$N\372\311\303\211\231\277\333W\322O"
 	.text
-	.section	.gnu.lto_USB_OTG_IsHostMode.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_IsHostMode.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234]\222\313k\023Q\024\306\3177gf\022[\342^:\213,"
 	.ascii	"\212\245\233Nm\301?@\004W\342\242u\035l\014\022\360"
 	.ascii	"E\212\335v\362\260c|\240\205&B:J6\352Jk\351cl\332\352"
@@ -1269,7 +1269,7 @@
 	.ascii	"\366\205\321\221D\362\\&\325\227$\375\374\311\324\330"
 	.ascii	"_\321T\322f"
 	.text
-	.section	.gnu.lto_USB_OTG_ReadCoreItr.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ReadCoreItr.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}\220Oh\023Q\020\306\347\333\331l\"\032\357b\017"
 	.ascii	"=XB/]\250\007=\212\010\236\304C\353\301S0i\204\200\377"
 	.ascii	"H1\327\276\244\265iT\260BS\245\254\262\265XO\365_\242"
@@ -1301,7 +1301,7 @@
 	.ascii	":\221\262\373Sq\373t\177,\032?\231Jt\305\311<\325\227"
 	.ascii	"H#\375\033M?\344\374"
 	.text
-	.section	.gnu.lto_USB_OTG_ReadOtgItr.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ReadOtgItr.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234eOMKTa\024>\317=w\356\014\244\355\303Y\314B\030"
 	.ascii	"\334\370\202B?@\202V\321\302q=\3504\213\201\276\270"
 	.ascii	"\222[\337\031?\306JP\301Q\030\256r]T\253\322rjj\264"
@@ -1328,7 +1328,7 @@
 	.ascii	"\243\376\276d\352\201\233nO\221\375\360Nz\340\024\351"
 	.ascii	"\212\2525"
 	.text
-	.section	.gnu.lto_USB_OTG_InitDevSpeed.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_InitDevSpeed.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}ROH\024Q\030\177\337|\263\343\226\256\201tK\312"
 	.ascii	"C\"\"8\241\207\274\004\025A\247\350\240\235\227\\\327"
 	.ascii	"\020\372#+y\314\347f\254\233Ea\256\3212\305B\246'\263"
@@ -1368,7 +1368,7 @@
 	.ascii	"[\352\275\276s\001\177\245O\250\315\015\376VWK\263\337"
 	.ascii	"\337\2406\370\032O\375\002\332\371;\203"
 	.text
-	.section	.gnu.lto_USB_OTG_EnableDevInt.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EnableDevInt.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235\226]L\024W\024\307\357\231;\263\213\373\005"
 	.ascii	"\345\315\310\003MK\254>8\006MjL\3324\215i\237\232\246"
 	.ascii	"Q\037\033\"\024\023\242`\003-\351\233\303G\027\020\233"
@@ -1438,7 +1438,7 @@
 	.ascii	"~\370Av\241)'\357\243\334\202C\011\370\227\221{\240"
 	.ascii	"\340\320\377\3045\230\030"
 	.text
-	.section	.gnu.lto_USB_OTG_CoreInitDev.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_CoreInitDev.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\245Y{PT\327\031\277\337\275\373\202}\001\242 "
 	.ascii	"\242b\022\3433\256\230N\353\037\355\244\323v\246\177"
 	.ascii	"\325N\233t\2463\235\214\255\017\3246\257\321$\323f:"
@@ -1625,7 +1625,7 @@
 	.ascii	"\327\336\010<\350\026-L[\002\313\014\213\026\277\201"
 	.ascii	"-\377\007-8j\331"
 	.text
-	.section	.gnu.lto_USB_OTG_GetDeviceSpeed.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_GetDeviceSpeed.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234eSMlTe\024\275\347\335\367\347\264SY\262h\220\204"
 	.ascii	"4\004\026<~\026\220\250\011\020\023W\306\005\260n\244"
 	.ascii	"\235E\023P\322A\226\366\353\264\320\016\220`\210C\353"
@@ -1674,7 +1674,7 @@
 	.ascii	"\003\255\231CN\366@&\323j\267f\017f\377\001\357\001"
 	.ascii	"[\220"
 	.text
-	.section	.gnu.lto_CSWTCH.23.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_CSWTCH.23.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234cc``X\000\304\214\014\0200\205\231q\317\374\236"
 	.ascii	"\225\\\335\314s\230\031\030\231\200\334\31693W\263\203"
 	.ascii	"\270\214\214\314@\356\326\3663\033\241\262\214\310\212"
@@ -1684,7 +1684,7 @@
 	.ascii	"o\003\342\255@\274\005\302g`\334\305h\301\000\000\305"
 	.ascii	"\327.\212"
 	.text
-	.section	.gnu.lto_USB_OTG_EP0Activate.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EP0Activate.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235V[l\024e\024\376\317\3763\263\367\242(\222"
 	.ascii	"`\243}\260!\360\300py\220\304k\014\211\276\250\017\340"
 	.ascii	"s#mMjP\233\026y\360Af\267\327\255$\220j)4\003l\024\313"
@@ -1760,7 +1760,7 @@
 	.ascii	"\336\240de\256_g\317\312\311\316\305\253\222\225\277"
 	.ascii	">\377_\015\244.3"
 	.text
-	.section	.gnu.lto_USB_OTG_EPActivate.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EPActivate.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\245ViLTW\024\276\347\335\367\336,\0143\354(Lu"
 	.ascii	"jj\254i\302\240\230\324\364\217M\323\244K\3226\2156"
 	.ascii	"\375I\024hb\252\326\240\365/\217EYl\265.h\231\274Z\242"
@@ -1854,7 +1854,7 @@
 	.ascii	"O\317\264\246\243\331\334\231s\276V\3233f\247\315\235"
 	.ascii	"\361\037\340\230T\355"
 	.text
-	.section	.gnu.lto_USB_OTG_EPDeactivate.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EPDeactivate.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\245VkLTG\024\236\263s\357\276\037B\037\210l\032"
 	.ascii	"\322\226\020\323\304\365\321X\323\037\265i\232\364\221"
 	.ascii	"\264\375\241\376&\0124!Uk\320\362\227+\"+Zhm\305\326"
@@ -1930,7 +1930,7 @@
 	.ascii	"^\243,\317\312\312\265f\241\333\272Uk?0ge\257\311\\"
 	.ascii	"\267\362\037V\206R\276"
 	.text
-	.section	.gnu.lto_USB_OTG_EPStartXfer.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EPStartXfer.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\245YkpTE\026\276\247\357\2742\231G\336\317I\010"
 	.ascii	"\010D@\031 (\010\376\330\332\242\344\317n\355\017\335"
 	.ascii	"?\373Cj\005\334b}Q\204\245Jwk\031H$\004\021]\025\220"
@@ -2097,7 +2097,7 @@
 	.ascii	"\305\347\312\2371\315(\237[n\2351s\366\334\362Y/Y\360"
 	.ascii	"\337\351s\237\375\037\365\215{."
 	.text
-	.section	.gnu.lto_USB_OTG_EP0StartXfer.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EP0StartXfer.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235\226klTE\024\307\347\334\271\217}o[D(ib?H*"
 	.ascii	"1a\201\232H\214\037\0141\321/\306\017\340\347FJI\032"
 	.ascii	"\021I\301&\362\245\267\245\330\026\211\030\241\230\256"
@@ -2178,7 +2178,7 @@
 	.ascii	"J\306\0273u\316\214\222r\245d\2161\243d\316\274\271"
 	.ascii	"\245\363u\374-\2367\353\177\253Z\017\323"
 	.text
-	.section	.gnu.lto_USB_OTG_EPSetStall.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EPSetStall.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\225\223KhTg\024\307\277\377=\367\336\231LL\242"
 	.ascii	"\325,\014YdQ\011n\274\352\024\024A\020)tU\\h7\335\204"
 	.ascii	"\232\314\"`m\2105\333|\211\251\223\211EE\235\024\207"
@@ -2227,7 +2227,7 @@
 	.ascii	"\373MclQ\2552\033\352bMF\254\301\256\2135\324~\273\341"
 	.ascii	"o\022\270\236^"
 	.text
-	.section	.gnu.lto_USB_OTG_EPClearStall.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EPClearStall.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\225\225kLTW\020\307\317\334s\037\373`Y\241\266"
 	.ascii	"\264\206T>H\010_\274*M4M\2324M\323~i\323\017\3324\355"
 	.ascii	"\027\242@\023\022K\011\266|\345\362\250\313b\037\266"
@@ -2294,7 +2294,7 @@
 	.ascii	"\274\367K\012\326\3461\2658\277\240T)(v\347\027\024"
 	.ascii	"\347}\260=wk~~\211.\237\377\007z\213\264I"
 	.text
-	.section	.gnu.lto_USB_OTG_ReadDevAllOutEp_itr.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ReadDevAllOutEp_itr.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}\221]HSa\030\307\337\377y\316\316Y\331\302\373"
 	.ascii	"$v\221\2107\036\260\213\242\213\210\010\272\212.\264"
 	.ascii	"\213\256F\233\013\006}1i\267\276\233\266\2712\224j\006"
@@ -2329,7 +2329,7 @@
 	.ascii	"\262\316w\006\003\241\263\321pKH\350\347:\3021\304~"
 	.ascii	"\003\232\362\361\012"
 	.text
-	.section	.gnu.lto_USB_OTG_ReadDevOutEP_itr.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ReadDevOutEP_itr.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\205\222[H\024Q\030\307\317\177\316\354\314zY\237"
 	.ascii	"\213|\360!\021_\234T(\010\222\210\240\247\350A{\350"
 	.ascii	"iI\333@H\223\025}\012<\256\346j\005I\251\3052\311\322"
@@ -2368,7 +2368,7 @@
 	.ascii	"V\035\367\373\212\252\230^w\304\327\350\362\325\325"
 	.ascii	"6\324\240\361\027\000(3\265"
 	.text
-	.section	.gnu.lto_USB_OTG_ReadDevAllInEPItr.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ReadDevAllInEPItr.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234}\221\317K\024a\030\307\337\357<\2633\033\265\376"
 	.ascii	"\003y\330C\"^\034\260\203\321!\"\202N\321A;tZ\332u\203"
 	.ascii	"\205~\261\322^}]m\327\255 !\327@\246XZ\312\223e\265"
@@ -2401,7 +2401,7 @@
 	.ascii	"%\242q\2537\036\261.\365\206C\221\013\361h{D\350\027"
 	.ascii	"{\242\011$~\003i\003\3638"
 	.text
-	.section	.gnu.lto_USB_OTG_EP0_OutStart.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_EP0_OutStart.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235\224]L\\E\024\307\347\177\347\336\273\313\262"
 	.ascii	"\267*\255\306\2306\341\301\246\251\017\275\2456\261"
 	.ascii	"\211\017~\304\304'\343C\361\231X\272\017$\3326\240<"
@@ -2458,7 +2458,7 @@
 	.ascii	"}\271nGU\365\356\332\310\246ja\356\331\031\251\017\355"
 	.ascii	"\334\035\331\363R]\315+\221\315\377\002\221\3737\002"
 	.text
-	.section	.gnu.lto_USB_OTG_ActiveRemoteWakeup.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_ActiveRemoteWakeup.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234mQMHTQ\024>\337;w\336\233\314\332\264u!\024\210"
 	.ascii	".\274\240\321\262 \002W\342B]\0179\315b\240,Ft;\327"
 	.ascii	"\311\030\245\240 g\222\341e\017\301ZU\206?9f\361\230"
@@ -2486,7 +2486,7 @@
 	.ascii	"\351\210]K%\207\022)=\220\212\353\301\201\276X\374v"
 	.ascii	"*\321\032'u\347Fb\350\010n\246\250\254"
 	.text
-	.section	.gnu.lto_USB_OTG_UngateClock.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_UngateClock.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234mQMHTQ\024>\337;w\336\0333[\265t!\024\210\022^"
 	.ascii	"Ph\033DP\233h\241\256\007\035g1\322\037#\271\222\346"
 	.ascii	":\0313\222`\2203\312\360\222\007!\255\322\"3\307,\036"
@@ -2514,7 +2514,7 @@
 	.ascii	"\354M\244tO*\256\037\364t\306\342\367R\211\2468\251"
 	.ascii	"\373]\211\336\377\265O\250e"
 	.text
-	.section	.gnu.lto_USB_OTG_StopDevice.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_StopDevice.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235T[l\024U\030>\337\2343\263\273\335\355EZ\305"
 	.ascii	"\230\215!FBxa\002\230\350\203\017\306\230\350\213\321"
 	.ascii	"\004|n\244\366\241\211\212Y\002\257\235^p\331h\242\213"
@@ -2572,7 +2572,7 @@
 	.ascii	"k\237\2134l\251\217\330\233\"u\366\346M\033j\3536F\352"
 	.ascii	"W\325\011\365\326k\365[\320\360/Hjk\226"
 	.text
-	.section	.gnu.lto_USB_OTG_GetEPStatus.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_GetEPStatus.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\225SMlTU\024\276\337;\357\257\323\231N]\230\030"
 	.ascii	"\234h\023J\032\\\364\00151qE\214\211qa\\\0247\272h\240"
 	.ascii	"\316\242\211\012i\201m\357\264\205\241\010\012\204V"
@@ -2628,7 +2628,7 @@
 	.ascii	"\363\361\375F|\217\335\274w\347\336}\035\177\002\023"
 	.ascii	"\303\246\005"
 	.text
-	.section	.gnu.lto_USB_OTG_SetEPStatus.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_USB_OTG_SetEPStatus.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\235XkPU\327\025\336k\237{\317}_\336o\254N\033"
 	.ascii	"u\314(W\301\304L\177t\332Nf\372+\323\037\246?\222?\216"
 	.ascii	"Q:c'\245\216\032\247\277\352AQD\223h\304\213\212\027"
@@ -2770,7 +2770,7 @@
 	.ascii	"?[\235:o\372\274\017\346zf\346\317\2361\357\375i\323"
 	.ascii	"g\316\234\243\312\347\377\001=\235\252\374"
 	.text
-	.section	.gnu.lto_.symbol_nodes.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234]\322KO\023Q\030\306\361\367\351\351E\320\026\257"
 	.ascii	"\200\2272\212B\241\204\370\025\360\223=C-T)\367z\305"
 	.ascii	"\013\006H\210\250\011Kp\205\004\214\011\221\217\300"
@@ -2795,10 +2795,10 @@
 	.ascii	"\237*\345m)\356@\266\265l0\260\355\361\357\260\337\304"
 	.ascii	"\035\001B"
 	.text
-	.section	.gnu.lto_.refs.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.refs.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234cc```\003bF\011\006I.\006\000\001{\000I"
 	.text
-	.section	.gnu.lto_.decls.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.decls.bed736b0633f15b5,"",%progbits
 	.ascii	"x\234\265\275\011\\\025W\2260N\275\373v\266D\311nO/"
 	.ascii	"\223\351\366\233\351\304\304d:\351\231\236\351Nk\022"
 	.ascii	"\355\311\342\027\223\356\231\376\37634Q\214v\024\030"
@@ -3979,7 +3979,7 @@
 	.ascii	"\342\376\213\374\020\256\034\335\015k\226\275\240{\363"
 	.ascii	"\377\007F\250\341\351"
 	.text
-	.section	.gnu.lto_.symtab.afa471c4d5840bb1,"",%progbits
+	.section	.gnu.lto_.symtab.bed736b0633f15b5,"",%progbits
 	.ascii	"USB_OTG_WritePacket\000"
 	.ascii	"\000"
 	.ascii	"\000"

@@ -121,7 +121,7 @@ static void mavlinkReceive(uint16_t c, void *data)
                 mavlink_msg_highres_imu_decode(&msg,&hr);
                 uart_altitude = hr.abs_pressure;
                 DEBUG_SET(DEBUG_UART,1,hr.time_usec);	
-                DEBUG_SET(DEBUG_UART,3,uart_altitude);
+                DEBUG_SET(DEBUG_UART,3,100*uart_altitude);
                 break;
             }
             case 81: //setpoint command
@@ -145,6 +145,13 @@ static void mavlinkReceive(uint16_t c, void *data)
             {
                 DEBUG_SET(DEBUG_REQUEST,0,100);
                 break;
+            }
+            case 102:
+            {
+                mavlink_vision_position_estimate_t vision;
+                mavlink_msg_vision_position_estimate_decode(&msg,&vision);
+                DEBUG_SET(DEBUG_PHIL,0,vision.x);
+                DEBUG_SET(DEBUG_PHIL,1,vision.y);
             }
         }
     }

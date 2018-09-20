@@ -103,6 +103,11 @@ FC_SRC = \
             fc/rc_controls.c \
             fc/rc_modes.c \
             flight/altitude.c \
+            flight/ol_flightplan.c\
+            flight/ol_filter.c\
+            flight/ol_ransac.c\
+   	    flight/ol_control.c\
+            flight/my_test.c\
             flight/failsafe.c \
             flight/imu.c \
             flight/mixer.c \

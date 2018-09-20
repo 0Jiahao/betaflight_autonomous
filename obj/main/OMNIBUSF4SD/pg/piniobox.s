@@ -9,21 +9,21 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"piniobox.c"
-	.section	.gnu.lto_.profile.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.profile.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.icf.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.icf.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc``\220b@\000\026\206\317\273\273\016r1\376\336"
 	.ascii	"\361\275\235\217i\357\303w\355\254\314`\222\001\000"
 	.ascii	"\256\231\014\235"
 	.text
-	.section	.gnu.lto_.inline.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.inline.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.pureconst.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.pureconst.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_pgResetTemplate_pinioBoxConfig.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_pgResetTemplate_pinioBoxConfig.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc``\250\005bF\006\010\230\302\314\270\276\365"
 	.ascii	"\311J\216n\3469\314\014\214\377\031\201\374C\2376,\347"
 	.ascii	"\001\361\031\031\231\201\334\243\377\277\037\340\207"
@@ -32,7 +32,7 @@
 	.ascii	"Bo\201\320 \343w\317\2766\207\005\242A`\0163\363T\240"
 	.ascii	"5\333\030-\030\030\267\003\011\000\213\277&\322"
 	.text
-	.section	.gnu.lto_pinioBoxConfig_Registry.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_pinioBoxConfig_Registry.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc``\270\012\304\322\014\0200\205\231\261\371\327"
 	.ascii	"\376\317|\365\177\033f44<\350\336-V7\207\231a\0013D"
 	.ascii	"\352\320\323u\354\026\333\032:\0264\010\314af\234\312"
@@ -46,16 +46,16 @@
 	.ascii	"\364\213\213\222\365s\0233\363\364\013\322\365\0132"
 	.ascii	"\3632\363\223\362+\364\222\031\000\265\273S:"
 	.text
-	.section	.gnu.lto_.symbol_nodes.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc``\260\007b\006\326.F\206V%\006\275\202\364\370"
 	.ascii	"\242\324\342\324\222\224\304\222D\240h\007##\\4=\263"
 	.ascii	"\270\244\250\022(\330\312\310\324\250\004\322\323\306"
 	.ascii	"\310\014f0\000\000!\230\017\023"
 	.text
-	.section	.gnu.lto_.refs.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.refs.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234cc``\340\004bfF&&&f&\006\006\000\001E\000\037"
 	.text
-	.section	.gnu.lto_.decls.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.decls.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"x\234\265VkP[\307\025\276{\367\002BH\306\003$\245\031"
 	.ascii	"&\261\033\231\321\217\202\342$M\232\037\235v\342\231"
 	.ascii	"\276~t:\351\343G2\251\"\213k\220\007$\025]:!3\235^\020"
@@ -181,7 +181,7 @@
 	.ascii	"L\263\232}\021\3223\253\214\373C\272C\022S\"W\315n\001"
 	.ascii	"\273\376\003><\260Z"
 	.text
-	.section	.gnu.lto_.symtab.94161bf76cec0ed7,"",%progbits
+	.section	.gnu.lto_.symtab.ef83f6e1e801a9d9,"",%progbits
 	.ascii	"pgResetTemplate_pinioBoxConfig\000"
 	.ascii	"\000"
 	.ascii	"\000"

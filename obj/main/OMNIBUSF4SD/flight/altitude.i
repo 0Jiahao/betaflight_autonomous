@@ -5772,7 +5772,7 @@ extern uint8_t debugMode;
 
 
 extern uint32_t sectionTimes[2][4];
-# 48 "./src/main/build/debug.h"
+# 50 "./src/main/build/debug.h"
 typedef enum {
     DEBUG_NONE,
     DEBUG_CYCLETIME,
@@ -5815,6 +5815,13 @@ typedef enum {
     DEBUG_COMMAND,
     DEBUG_DESIREDANGLE,
     DEBUG_REQUEST,
+    DEBUG_DT,
+    DEBUG_OL,
+    DEBUG_FP,
+    DEBUG_OLCTRL,
+    DEBUG_PSI,
+    DEBUG_CA,
+    DEBUG_PHIL,
     DEBUG_COUNT
 } debugType_e;
 
@@ -5945,6 +5952,21 @@ static inline float constrainf(float amt, float low, float high)
 # 30 "./src/main/flight/altitude.c" 2
 
 
+# 1 "./src/main/drivers/time.h" 1
+# 18 "./src/main/drivers/time.h"
+       
+
+
+
+# 1 "./src/main/common/time.h" 1
+# 18 "./src/main/common/time.h"
+       
+
+
+
+
+
+
 # 1 "./src/main/pg/pg.h" 1
 # 18 "./src/main/pg/pg.h"
        
@@ -6010,11 +6032,129 @@ _Bool
 # 191 "./src/main/pg/pg.h"
     pgResetCopy(void *copy, pgn_t pgn);
 void pgReset(const pgRegistry_t* reg);
+# 26 "./src/main/common/time.h" 2
+
+
+typedef int32_t timeDelta_t;
+
+typedef uint32_t timeMs_t ;
+
+
+
+
+
+typedef uint32_t timeUs_t;
+
+
+
+static inline timeDelta_t cmpTimeUs(timeUs_t a, timeUs_t b) { return (timeDelta_t)(a - b); }
+
+
+
+
+
+typedef struct timeConfig_s {
+    int16_t tz_offsetMinutes;
+} timeConfig_t;
+
+extern timeConfig_t timeConfig_System; extern timeConfig_t timeConfig_Copy; static inline const timeConfig_t* timeConfig(void) { return &timeConfig_System; } static inline timeConfig_t* timeConfigMutable(void) { return &timeConfig_System; } struct _dummy;
+
+
+typedef int64_t rtcTime_t;
+
+rtcTime_t rtcTimeMake(int32_t secs, uint16_t millis);
+int32_t rtcTimeGetSeconds(rtcTime_t *t);
+uint16_t rtcTimeGetMillis(rtcTime_t *t);
+
+typedef struct _dateTime_s {
+
+    uint16_t year;
+
+    uint8_t month;
+
+    uint8_t day;
+
+    uint8_t hours;
+
+    uint8_t minutes;
+
+    uint8_t seconds;
+
+    uint16_t millis;
+} dateTime_t;
+
+
+
+# 77 "./src/main/common/time.h" 3 4
+_Bool 
+# 77 "./src/main/common/time.h"
+    dateTimeFormatUTC(char *buf, dateTime_t *dt);
+
+# 78 "./src/main/common/time.h" 3 4
+_Bool 
+# 78 "./src/main/common/time.h"
+    dateTimeFormatLocal(char *buf, dateTime_t *dt);
+
+# 79 "./src/main/common/time.h" 3 4
+_Bool 
+# 79 "./src/main/common/time.h"
+    dateTimeFormatLocalShort(char *buf, dateTime_t *dt);
+
+void dateTimeUTCToLocal(dateTime_t *utcDateTime, dateTime_t *localDateTime);
+
+
+
+
+# 85 "./src/main/common/time.h" 3 4
+_Bool 
+# 85 "./src/main/common/time.h"
+    dateTimeSplitFormatted(char *formatted, char **date, char **time);
+
+
+# 87 "./src/main/common/time.h" 3 4
+_Bool 
+# 87 "./src/main/common/time.h"
+    rtcHasTime(void);
+
+
+# 89 "./src/main/common/time.h" 3 4
+_Bool 
+# 89 "./src/main/common/time.h"
+    rtcGet(rtcTime_t *t);
+
+# 90 "./src/main/common/time.h" 3 4
+_Bool 
+# 90 "./src/main/common/time.h"
+    rtcSet(rtcTime_t *t);
+
+
+# 92 "./src/main/common/time.h" 3 4
+_Bool 
+# 92 "./src/main/common/time.h"
+    rtcGetDateTime(dateTime_t *dt);
+
+# 93 "./src/main/common/time.h" 3 4
+_Bool 
+# 93 "./src/main/common/time.h"
+    rtcSetDateTime(dateTime_t *dt);
+# 23 "./src/main/drivers/time.h" 2
+
+void delayMicroseconds(timeUs_t us);
+void delay(timeMs_t ms);
+
+timeUs_t micros(void);
+timeUs_t microsISR(void);
+timeMs_t millis(void);
+
+uint32_t ticks(void);
+timeDelta_t ticks_diff_us(uint32_t begin, uint32_t end);
 # 33 "./src/main/flight/altitude.c" 2
+
+
 # 1 "./src/main/pg/pg_ids.h" 1
 # 18 "./src/main/pg/pg_ids.h"
        
-# 34 "./src/main/flight/altitude.c" 2
+# 36 "./src/main/flight/altitude.c" 2
 
 # 1 "./src/main/fc/config.h" 1
 # 18 "./src/main/fc/config.h"
@@ -6080,7 +6220,7 @@ uint16_t getCurrentMinthrottle(void);
 void resetConfigs(void);
 void targetConfiguration(void);
 void targetValidateConfiguration(void);
-# 36 "./src/main/flight/altitude.c" 2
+# 38 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/fc/rc_controls.h" 1
 # 18 "./src/main/fc/rc_controls.h"
        
@@ -6180,7 +6320,7 @@ int32_t getRcStickDeflection(int32_t axis, uint16_t midrc);
 struct pidProfile_s;
 struct modeActivationCondition_s;
 void useRcControlsConfig(struct pidProfile_s *pidProfileToUse);
-# 37 "./src/main/flight/altitude.c" 2
+# 39 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/fc/rc_modes.h" 1
 # 18 "./src/main/fc/rc_modes.h"
        
@@ -6300,7 +6440,7 @@ void updateActivatedModes(void);
 _Bool 
 # 129 "./src/main/fc/rc_modes.h"
     isModeActivationConditionPresent(boxId_e modeId);
-# 38 "./src/main/flight/altitude.c" 2
+# 40 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/fc/runtime_config.h" 1
 # 18 "./src/main/fc/runtime_config.h"
        
@@ -6391,119 +6531,13 @@ void sensorsClear(uint32_t mask);
 uint32_t sensorsMask(void);
 
 void mwDisarm(void);
-# 39 "./src/main/flight/altitude.c" 2
+# 41 "./src/main/flight/altitude.c" 2
 
 # 1 "./src/main/flight/altitude.h" 1
 # 18 "./src/main/flight/altitude.h"
        
 
-# 1 "./src/main/common/time.h" 1
-# 18 "./src/main/common/time.h"
-       
-# 28 "./src/main/common/time.h"
-typedef int32_t timeDelta_t;
 
-typedef uint32_t timeMs_t ;
-
-
-
-
-
-typedef uint32_t timeUs_t;
-
-
-
-static inline timeDelta_t cmpTimeUs(timeUs_t a, timeUs_t b) { return (timeDelta_t)(a - b); }
-
-
-
-
-
-typedef struct timeConfig_s {
-    int16_t tz_offsetMinutes;
-} timeConfig_t;
-
-extern timeConfig_t timeConfig_System; extern timeConfig_t timeConfig_Copy; static inline const timeConfig_t* timeConfig(void) { return &timeConfig_System; } static inline timeConfig_t* timeConfigMutable(void) { return &timeConfig_System; } struct _dummy;
-
-
-typedef int64_t rtcTime_t;
-
-rtcTime_t rtcTimeMake(int32_t secs, uint16_t millis);
-int32_t rtcTimeGetSeconds(rtcTime_t *t);
-uint16_t rtcTimeGetMillis(rtcTime_t *t);
-
-typedef struct _dateTime_s {
-
-    uint16_t year;
-
-    uint8_t month;
-
-    uint8_t day;
-
-    uint8_t hours;
-
-    uint8_t minutes;
-
-    uint8_t seconds;
-
-    uint16_t millis;
-} dateTime_t;
-
-
-
-# 77 "./src/main/common/time.h" 3 4
-_Bool 
-# 77 "./src/main/common/time.h"
-    dateTimeFormatUTC(char *buf, dateTime_t *dt);
-
-# 78 "./src/main/common/time.h" 3 4
-_Bool 
-# 78 "./src/main/common/time.h"
-    dateTimeFormatLocal(char *buf, dateTime_t *dt);
-
-# 79 "./src/main/common/time.h" 3 4
-_Bool 
-# 79 "./src/main/common/time.h"
-    dateTimeFormatLocalShort(char *buf, dateTime_t *dt);
-
-void dateTimeUTCToLocal(dateTime_t *utcDateTime, dateTime_t *localDateTime);
-
-
-
-
-# 85 "./src/main/common/time.h" 3 4
-_Bool 
-# 85 "./src/main/common/time.h"
-    dateTimeSplitFormatted(char *formatted, char **date, char **time);
-
-
-# 87 "./src/main/common/time.h" 3 4
-_Bool 
-# 87 "./src/main/common/time.h"
-    rtcHasTime(void);
-
-
-# 89 "./src/main/common/time.h" 3 4
-_Bool 
-# 89 "./src/main/common/time.h"
-    rtcGet(rtcTime_t *t);
-
-# 90 "./src/main/common/time.h" 3 4
-_Bool 
-# 90 "./src/main/common/time.h"
-    rtcSet(rtcTime_t *t);
-
-
-# 92 "./src/main/common/time.h" 3 4
-_Bool 
-# 92 "./src/main/common/time.h"
-    rtcGetDateTime(dateTime_t *dt);
-
-# 93 "./src/main/common/time.h" 3 4
-_Bool 
-# 93 "./src/main/common/time.h"
-    rtcSetDateTime(dateTime_t *dt);
-# 21 "./src/main/flight/altitude.h" 2
 
 extern int32_t AltHold;
 extern int32_t my_altitude;
@@ -6531,7 +6565,7 @@ int32_t getEstimatedVario(void);
 void applyAltHold(void);
 void updateAltHoldState(void);
 void updateRangefinderAltHoldState(void);
-# 41 "./src/main/flight/altitude.c" 2
+# 43 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/flight/imu.h" 1
 # 18 "./src/main/flight/imu.h"
        
@@ -6616,7 +6650,7 @@ _Bool
 # 102 "./src/main/flight/imu.h"
     imuQuaternionHeadfreeOffsetSet(void);
 void imuQuaternionHeadfreeTransformVectorEarthToBody(t_fp_vector_def * v);
-# 42 "./src/main/flight/altitude.c" 2
+# 44 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/flight/pid.h" 1
 # 18 "./src/main/flight/pid.h"
        
@@ -6735,7 +6769,25 @@ void pidCopyProfile(uint8_t dstPidProfileIndex, uint8_t srcPidProfileIndex);
 _Bool 
 # 141 "./src/main/flight/pid.h"
     crashRecoveryModeActive(void);
-# 43 "./src/main/flight/altitude.c" 2
+# 45 "./src/main/flight/altitude.c" 2
+# 1 "./src/main/flight/ol_control.h" 1
+struct dronerace_control_struct
+{
+
+  float psi_ref;
+
+
+  float phi_cmd;
+  float theta_cmd;
+  float psi_cmd;
+  float alt_cmd;
+};
+
+extern struct dronerace_control_struct dr_control;
+
+extern void ol_control_reset(void);
+extern void ol_control_run(void);
+# 46 "./src/main/flight/altitude.c" 2
 
 # 1 "./src/main/rx/rx.h" 1
 # 18 "./src/main/rx/rx.h"
@@ -6921,7 +6973,7 @@ void suspendRxSignal(void);
 void resumeRxSignal(void);
 
 uint16_t rxGetRefreshRate(void);
-# 45 "./src/main/flight/altitude.c" 2
+# 48 "./src/main/flight/altitude.c" 2
 
 # 1 "./src/main/sensors/sensors.h" 1
 # 18 "./src/main/sensors/sensors.h"
@@ -6964,7 +7016,7 @@ typedef enum {
     SENSOR_GPS = 1 << 5,
     SENSOR_GPSMAG = 1 << 6
 } sensors_e;
-# 47 "./src/main/flight/altitude.c" 2
+# 50 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/sensors/barometer.h" 1
 # 18 "./src/main/sensors/barometer.h"
        
@@ -7144,7 +7196,7 @@ _Bool
     isBaroReady(void);
 int32_t baroCalculateAltitude(void);
 void performBaroCalibrationCycle(void);
-# 48 "./src/main/flight/altitude.c" 2
+# 51 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/sensors/rangefinder.h" 1
 # 18 "./src/main/sensors/rangefinder.h"
        
@@ -7221,7 +7273,7 @@ typedef struct rangefinder_s {
 } rangefinder_t;
 
 extern rangefinder_t rangefinder;
-
+extern uint16_t rangefinder_idx;
 void rangefinderResetDynamicThreshold(void);
 
 # 59 "./src/main/sensors/rangefinder.h" 3 4
@@ -7243,7 +7295,7 @@ _Bool
 _Bool 
 # 66 "./src/main/sensors/rangefinder.h"
     rangefinderIsHealthy(void);
-# 49 "./src/main/flight/altitude.c" 2
+# 52 "./src/main/flight/altitude.c" 2
 # 1 "./src/main/telemetry/mavlink.h" 1
 # 18 "./src/main/telemetry/mavlink.h"
        
@@ -7259,7 +7311,7 @@ extern float uart_altitude;
 extern float uart_roll;
 extern float uart_pitch;
 extern float uart_yaw;
-# 50 "./src/main/flight/altitude.c" 2
+# 53 "./src/main/flight/altitude.c" 2
 
 int32_t AltHold;
 static int32_t estimatedVario = 0;
@@ -7275,31 +7327,38 @@ enum {
     DEBUG_ALTITUDE_VEL,
     DEBUG_ALTITUDE_HEIGHT
 };
-uint32_t my_althold = 150;
+uint32_t my_althold = 100;
 
 
 
 
-static int32_t error = 0;
-static int32_t error_i = 0;
-static int32_t error_d = 0;
+static float alt_error = 0;
+static float alt_error_last = 0;
+static float alt_error_i = 0;
+static float alt_error_d = 0;
 static int16_t my_throttle = 1463;
 
 
 float accX_tmp = 0;
 float accY_tmp = 0;
 float accZ_tmp = 0;
-
-
-
+static float xv[2] = {0,0};
+static float yv[2] = {0,0};
+static float xv_d[2] = {0,0};
+static float yv_d[2] = {0,0};
+static int32_t cf_Alt;
+static timeUs_t currentTimeUs;
+static timeUs_t previousTimeUs;
+float gain = 23.26673006;
+static float alt_dt = 0.0005;
 
 
 extern const airplaneConfig_t pgResetTemplate_airplaneConfig; airplaneConfig_t airplaneConfig_System; airplaneConfig_t airplaneConfig_Copy; extern const pgRegistry_t airplaneConfig_Registry; const pgRegistry_t airplaneConfig_Registry __attribute__ ((section(".pg_registry"), used, aligned(4))) = { .pgn = 29 | (0 << 12), .size = sizeof(airplaneConfig_t) | PGR_SIZE_SYSTEM_FLAG, .address = (uint8_t*)&airplaneConfig_System, .copy = (uint8_t*)&airplaneConfig_Copy, .ptr = 0, .reset = {.ptr = (void*)&pgResetTemplate_airplaneConfig}, };
 
 const airplaneConfig_t pgResetTemplate_airplaneConfig __attribute__ ((section(".pg_resetdata"), used, aligned(2))) = { .fixedwing_althold_reversed = 
-# 86 "./src/main/flight/altitude.c" 3 4
+# 96 "./src/main/flight/altitude.c" 3 4
 0 
-# 86 "./src/main/flight/altitude.c"
+# 96 "./src/main/flight/altitude.c"
 }
 
  ;
@@ -7314,38 +7373,37 @@ static int16_t initialThrottleHold;
 
 static void applyMultirotorAltHold(void)
 {
+    currentTimeUs = micros();
+    const timeDelta_t deltaT = currentTimeUs - previousTimeUs;
+    alt_dt = deltaT * 1e-6f;
 
-    rangefinderAlt = rangefinderGetLatestAltitude();
     my_altitude = rangefinderAlt;
+    alt_error = 100 - rangefinderAlt;
+    previousTimeUs = currentTimeUs;
+
+    if(alt_error_i + alt_error * alt_dt < -1000000000)
+    {
+        alt_error_i = -1000000000;
+    }
+    else if (alt_error_i + alt_error * alt_dt > 1000000000)
+    {
+        alt_error_i = 1000000000;
+    }
+    else
+    {
+        alt_error_i = alt_error_i + alt_error * alt_dt;
+    }
+    alt_error_last = alt_error;
 
 
-
-
-
-    error = uart_altitude - rangefinderAlt;
-
-        if(error_i + error < -1000000000)
-        {
-            error_i = -1000000000;
-        }
-        else if (error_i + error > 1000000000)
-        {
-            error_i = 1000000000;
-        }
-        else
-        {
-            error_i = error_i + error;
-        }
-    my_throttle = 1463 + error / 2.5 - error_d + error_i / 1000000;
+    my_throttle = 1459 + 0.075 * alt_error + 0.01 * alt_error_i;
     my_throttle = constrain(my_throttle, 1000, 2000);
 
-
-    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(0)] = (error);}};
-    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(1)] = (error_i);}};
-    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(2)] = (error_d);}};
-    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(3)] = (my_althold);}};
+    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(0)] = (cf_Alt);}};
+    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(1)] = (alt_error_i);}};
+    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(2)] = (alt_error_d);}};
+    {if (debugMode == (DEBUG_ALTCTRL)) {debug[(3)] = (my_throttle);}};
     rcCommand[THROTTLE] = my_throttle;
-    my_althold = rcData[THROTTLE] - 1160;
     {if (debugMode == (DEBUG_RCDATA)) {debug[(0)] = (rcData[THROTTLE]);}}
     {if (debugMode == (DEBUG_RCDATA)) {debug[(1)] = (rcData[ROLL]);}}
     {if (debugMode == (DEBUG_RCDATA)) {debug[(2)] = (rcData[PITCH]);}}
@@ -7354,6 +7412,9 @@ static void applyMultirotorAltHold(void)
     {if (debugMode == (DEBUG_RCCOMMAND)) {debug[(1)] = (rcCommand[1]);}};
     {if (debugMode == (DEBUG_RCCOMMAND)) {debug[(2)] = (rcCommand[2]);}};
     {if (debugMode == (DEBUG_RCCOMMAND)) {debug[(3)] = (rcCommand[3]);}};
+
+
+
 }
 
 static void applyFixedWingAltHold(void)
@@ -7405,13 +7466,15 @@ void updateRangefinderAltHoldState(void)
         initialThrottleHold = rcData[THROTTLE];
         errorVelocityI = 0;
         altHoldThrottleAdjustment = 0;
+        previousTimeUs = micros();
+        alt_error_i = 0;
     }
 }
 
 
-# 194 "./src/main/flight/altitude.c" 3 4
+# 208 "./src/main/flight/altitude.c" 3 4
 _Bool 
-# 194 "./src/main/flight/altitude.c"
+# 208 "./src/main/flight/altitude.c"
     isThrustFacingDownwards(attitudeEulerAngles_t *attitude)
 {
     return __extension__ ({ __typeof__ (attitude->values.roll) _x = (attitude->values.roll); _x > 0 ? _x : -_x; }) < 800 && __extension__ ({ __typeof__ (attitude->values.pitch) _x = (attitude->values.pitch); _x > 0 ? _x : -_x; }) < 800;
@@ -7481,7 +7544,6 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
             {if (debugMode == (DEBUG_ALTITUDE)) {debug[(1)] = (my_baro);}};
         }
     }
-
     int32_t rangefinderVel = 0;
 
     if (sensors(SENSOR_RANGEFINDER) && rangefinderProcess(getCosTiltAngle())) {
@@ -7500,7 +7562,6 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
     if (sensors(SENSOR_ACC)) {
         const float dt = accTimeSum * 1e-6f;
 
-
         if (accSumCount) {
             accX_tmp = (float)accSum[X] / accSumCount;
             accY_tmp = (float)accSum[Y] / accSumCount;
@@ -7512,8 +7573,10 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
 
         accAlt += (vel_acc * 0.5f) * dt + vel * dt;
         my_accalt = accAlt;
-
+        accAlt = accAlt * (0.001f * 250) + (float)rangefinderAlt * (1.0f - (0.001f * 250));
+        cf_Alt = accAlt;
         vel += vel_acc;
+        alt_error_d = - vel;
     }
 
     {if (debugMode == (DEBUG_ALTITUDE)) {debug[(0)] = (accSum[2]/accSumCount);}};
@@ -7541,7 +7604,6 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
 
     vel = vel * (0.001f * barometerConfig()->baro_cf_vel) + rangefinderVel * (1.0f - (0.001f * barometerConfig()->baro_cf_vel));
     int32_t vel_tmp = lrintf(vel);
-    error_d = vel_tmp;
 
     estimatedVario = applyDeadband(vel_tmp, 5);
 

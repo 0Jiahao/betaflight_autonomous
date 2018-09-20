@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"rcdevice_osd.c"
-	.section	.gnu.lto_.profile.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.profile.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc```\005bF\206\307\2145\000\003\264\001m"
 	.text
-	.section	.gnu.lto_.icf.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.icf.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``\310c@\000!\206\277\273\273\027\2620\366\274"
 	.ascii	"[1\213\223\351\306\374\327\335\274\314\223\266/\276"
 	.ascii	"\313\314\362z\332\214OL\254\207\216\037\337\301\310"
@@ -22,7 +22,7 @@
 	.ascii	"\005\356\265\2559\306*x\372\332\375\263l\014\000\334"
 	.ascii	"\3256\271"
 	.text
-	.section	.gnu.lto_.jmpfuncs.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\235S\313n\3020\020\334\261\363\200\024\010\037"
 	.ascii	"\300\201\337\344\004RUqh\217\210S$\316\034\021P\332"
 	.ascii	"\252\225\252\212c%\016\375\012\376\001)]\307\313#v\020"
@@ -40,7 +40,7 @@
 	.ascii	"H\277\375\006.\237\270s\304\017\266U\334\220\226M\373"
 	.ascii	"[\206\251\304\333\326\217\351\037\266;\330\311"
 	.text
-	.section	.gnu.lto_.inline.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.inline.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\205\2161\016\3020\014E\277\2236I\333\224\006\201"
 	.ascii	"\304\010'`dfDB\352m\270\001C7:2r\034FF&6$F\216\200\223"
 	.ascii	"\322\252\"\003\211d\377\274o9_\0018\022\206S\342\221"
@@ -52,12 +52,12 @@
 	.ascii	"\252h\310A\245$`\010r\033\352N\367.\275t\322U_L\220"
 	.ascii	"\006\234\310\206\010\037\200\021(\346"
 	.text
-	.section	.gnu.lto_.pureconst.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.pureconst.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``\220\006b^\006I\026\011V\0066\006v\006\016"
 	.ascii	"\011N\011.\011n\006\036\006^)~\006\001V\000\023\023"
 	.ascii	"\001;"
 	.text
-	.section	.gnu.lto_rcdeviceOSDInit.part.0.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDInit.part.0.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\215VmLTW\032>\3579\367\336\231\271\363=\340\256"
 	.ascii	"\265\263\011I\3274\266\331\322M\233\306\376\330M\223"
 	.ascii	"6i\366\307&\233M\266\2776i\014\314nIZi\2015\375\307"
@@ -161,13 +161,13 @@
 	.ascii	"\"U\377\303sA,+J\226\377\375\271D\305\262\222\227\215"
 	.ascii	"\212\025\177,-Nx\3130\246tyy\342ge\311Z\211"
 	.text
-	.section	.gnu.lto_osdDevice.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_osdDevice.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``\220\207b\020\230\302\314\270s\347\233\333"
 	.ascii	"\354\365\177\033:\032\032\036t\237\221b\236\303\314"
 	.ascii	"\260\200\031(\305\270\231\261\236AVO\277\270(Y?713O"
 	.ascii	"?3_\277(9%\265,395>\2778E/\231\001\000\0168\026\262"
 	.text
-	.section	.gnu.lto_rcdeviceOSDInit.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDInit.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234UQ\317KTQ\024>\337=w\336\374\240qg\264\030a\240"
 	.ascii	"@\234\205#\370\217\364\037H\274\231` \033\030\301\355"
 	.ascii	"\334t\"\207ZH\344s\230\0361\033)\332Td\331d\312\313"
@@ -195,7 +195,7 @@
 	.ascii	"\260O\231I\277t\261V\275\\\271R\376\013\247\307\245"
 	.ascii	"\261"
 	.text
-	.section	.gnu.lto_rcdeviceOSDGrab.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDGrab.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``x\010\304\332@,\015\304\214\314\014\214L\023"
 	.ascii	"\316104r012\202\030\015\034\214\014\365L\214\365\214"
 	.ascii	"=\314S\230\031/\266l\230\303\334\315<\007\250\214\005"
@@ -212,7 +212,7 @@
 	.ascii	"13O?3_\277(9%\265,395>\2778E/\231\201;%\263\270 '\261"
 	.ascii	"2 \277\250\004\000\014\240Yn"
 	.text
-	.section	.gnu.lto_rcdeviceOSDRelease.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDRelease.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``x\010\304\332@,\015\304\214\314\014\214L\023"
 	.ascii	"\316104r012\202\030\015\034\214\014\365L\214\365\214"
 	.ascii	"=\314S\230\031/\266l\230\303\334\315<\007\250\214\005"
@@ -229,7 +229,7 @@
 	.ascii	"13O?3_\277(9%\265,395>\2778E/\231\201;%\263\270 '\261"
 	.ascii	"2 \277\250\004\000[iZ\027"
 	.text
-	.section	.gnu.lto_rcdeviceOSDDrawScreen.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDDrawScreen.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``x\004\304\332@,\015\304\214\314\014\214L\023"
 	.ascii	"\316104r012\202\030\015\034\214\014\365L\214\365\214"
 	.ascii	"=\314S\230\031/\266l\230\303\334\315<\007\250\214\005"
@@ -247,7 +247,7 @@
 	.ascii	"\324\370\374\342\024\275d\006\356\224\314\342\202\234"
 	.ascii	"\304\312\200\374\242\022\000\254\306Z@"
 	.text
-	.section	.gnu.lto_rcdeviceOSDWriteString.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDWriteString.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234e\222\317k\023Q\020\307\347\273\263\273\331Z\355"
 	.ascii	"Q*\215\220\203\020ZJR\250\177\204G\377\003\251I\013"
 	.ascii	"\0015\222\250\330S^\223\226X+\255\224\272\352v\221x"
@@ -277,7 +277,7 @@
 	.ascii	"l*C\355\331\\\361\370\221\201\341\203\371\302\011\234"
 	.ascii	"\306\260}\370\344\320\320\017\232\206\274\004"
 	.text
-	.section	.gnu.lto_rcdeviceOSDWriteChar.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDWriteChar.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234e\222Ok\324`\020\306\347\311$\331\330j\257\322"
 	.ascii	"\272\302\036\204\245\"\273\225~\011\217~\003)\331\036"
 	.ascii	"\026\324\225]\021{\332\327\335\226\250\365 \322\246"
@@ -307,7 +307,7 @@
 	.ascii	"\341c\225Z\251\340Rw\251\\;u|h\344h\245z\032g1\002\367"
 	.ascii	"7\367\210\271\242"
 	.text
-	.section	.gnu.lto_rcdeviceOSDClearScreen.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDClearScreen.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234]PM/CQ\020\235\363\356\363Zi\370\003\236\244\013"
 	.ascii	"I\203\304[\370\023\226\376\201H\333E\023TZ\221X\365"
 	.ascii	"j\011R\013\021\236\340E*R]\"J\025\255\027\261E\020+"
@@ -331,7 +331,7 @@
 	.ascii	"X0\024\036\217\004\303\003\321x\250'H\276P$>:48\321"
 	.ascii	"\037\215\215}\003\214>\223\227"
 	.text
-	.section	.gnu.lto_rcdeviceOSDIsTransferInProgress.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDIsTransferInProgress.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\035\217;K\003Q\020\205\347\354\304MD\222Zp\205"
 	.ascii	"\024B\010BV\260\362_\370\017$\354\246XPWvE\260\3125"
 	.ascii	"\0174\304\302\302D\224\265\324\224\276_\330,\266\242"
@@ -350,7 +350,7 @@
 	.ascii	"\037\272\005\207\006\\/\234\233..N\372\301\374\037\021"
 	.ascii	"U__"
 	.text
-	.section	.gnu.lto_rcdeviceOSDHeartbeat.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDHeartbeat.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``x\010\304\332@,\015\304\214\314\014\214L\023"
 	.ascii	"\316104r012\202\030\015\034\214\014\365L\214\365\214"
 	.ascii	"=\314S\230\031/\266l\230\303\334\315<\007\250\214\005"
@@ -367,7 +367,7 @@
 	.ascii	"\236~f\276~QrJjYfrj|~q\212^2\003wJfqANbe@~Q\011\000"
 	.ascii	"\365\204YR"
 	.text
-	.section	.gnu.lto_rcdeviceOSDResync.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDResync.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\225R\337K\024Q\024\276\337\334\231\331]\315%z"
 	.ascii	"\261\007\213}\010D\002\347\315\207\036\372\033\372\017"
 	.ascii	"BV\037\026\252\2155\202\236\274\256?\326\315\036\"r"
@@ -404,7 +404,7 @@
 	.ascii	"\334\320x6\022n<\036mj\250\015\213\362\206H\323\351"
 	.ascii	"\023\365\347\216Ecg\376\002\217\270I\011"
 	.text
-	.section	.gnu.lto_rcdeviceOSDTxBytesFree.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDTxBytesFree.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234cc``\370\011\304\332@,\015\304\214\314\014\214"
 	.ascii	"L\023\316104r012\202\030\015\034\214\014\365L\214\365"
 	.ascii	"\214=\314S\230\031/\266l\230\303\334\315<\007\250\214"
@@ -423,7 +423,7 @@
 	.ascii	"Y?713O?3_\277(9%\265,395>\2778E/\231\201;%\263\270 "
 	.ascii	"'\2612 \277\250\004\000\215\002g\016"
 	.text
-	.section	.gnu.lto_rcdeviceScreenSize.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_rcdeviceScreenSize.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\225\220\275K#a\020\306\347\331Y7\212\234\376\001"
 	.ascii	"~\220B\220 \270\205\265\375\225\366W\210$\026\0015\222"
 	.ascii	"\034\202\225\257\211_G,\344\320\210q\021-\242\225\370"
@@ -449,7 +449,7 @@
 	.ascii	"Q\252\215\305S\203}=\303]\211\344\347\377\177\330\242"
 	.ascii	"+"
 	.text
-	.section	.gnu.lto_.symbol_nodes.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234U\3209N\003A\024\004\320\252\376\323\3066\213\301"
 	.ascii	"\030\3109\000g\200\223\325\200\206\3156\306lf\021\241"
 	.ascii	"/\001\031\322\000\011\202\200\013p\005B\022\304,\004"
@@ -464,13 +464,13 @@
 	.ascii	"\014]\344\2579\313\234\376lY\262\206\374\353\227\226"
 	.ascii	"\000{\337\317\264\346z}nm\324\331\356U\211?#\275o\302"
 	.text
-	.section	.gnu.lto_.refs.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.refs.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\025\311\261\015\2000\020\004\301]? \033\313H\210"
 	.ascii	"\210\230\204*\350\277,\374\301Mp\273\001\337\\\005\265"
 	.ascii	"4\243\3430.\274\361\301w\276\247K\326\232\264d\237\304"
 	.ascii	" \244\254\036\235\0378f\001k"
 	.text
-	.section	.gnu.lto_.decls.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.decls.5f5d6005e9470b37,"",%progbits
 	.ascii	"x\234\265{{TTW\232o\355\332\247x\026`\320\2331\011\351"
 	.ascii	"\356\3112\011w\356\030\362\350;\335\231\325\263f:\352"
 	.ascii	"t;\223V\227\332\351\264\177\\\032\241L\350\253`C\231"
@@ -916,7 +916,7 @@
 	.ascii	"\015U\024IQ\366\220\036Y\263#\250\266c\233\037M\300"
 	.ascii	"tF\267\244\017\027\326\233\244A\212\374O\033\215?p"
 	.text
-	.section	.gnu.lto_.symtab.e42e224c1e55bbcb,"",%progbits
+	.section	.gnu.lto_.symtab.5f5d6005e9470b37,"",%progbits
 	.ascii	"osdDevice\000"
 	.ascii	"\000"
 	.ascii	"\000"

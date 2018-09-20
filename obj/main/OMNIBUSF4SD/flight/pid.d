@@ -45,7 +45,9 @@ obj/main/OMNIBUSF4SD/flight/pid.o: src/main/flight/pid.c \
  src/main/fc/runtime_config.h src/main/flight/pid.h src/main/flight/imu.h \
  src/main/flight/mixer.h src/main/drivers/pwm_output_counts.h \
  src/main/drivers/io_types.h src/main/drivers/pwm_output.h \
- src/main/drivers/timer.h src/main/drivers/rcc_types.h src/main/io/gps.h \
+ src/main/drivers/timer.h src/main/drivers/rcc_types.h \
+ src/main/flight/ol_filter.h src/main/flight/ol_flightplan.h \
+ src/main/flight/ol_control.h src/main/io/gps.h src/main/rx/rx.h \
  src/main/sensors/gyro.h src/main/drivers/bus.h \
  src/main/drivers/bus_i2c.h src/main/drivers/sensor.h \
  src/main/sensors/acceleration.h src/main/drivers/accgyro/accgyro.h \
@@ -178,7 +180,15 @@ src/main/drivers/timer.h:
 
 src/main/drivers/rcc_types.h:
 
+src/main/flight/ol_filter.h:
+
+src/main/flight/ol_flightplan.h:
+
+src/main/flight/ol_control.h:
+
 src/main/io/gps.h:
+
+src/main/rx/rx.h:
 
 src/main/sensors/gyro.h:
 

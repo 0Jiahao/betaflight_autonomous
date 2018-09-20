@@ -4,6 +4,24 @@
         "complex": "c",
         "maths.h": "c",
         "random": "c",
-        "gimbal.h": "c"
-    }
+        "gimbal.h": "c",
+        "sstream": "c",
+        "ol_filter.h": "c",
+        "pg_ids.h": "c",
+        "array": "c",
+        "bitset": "c",
+        "initializer_list": "c",
+        "string_view": "c",
+        "utility": "c",
+        "rope": "c",
+        "slist": "c",
+        "valarray": "c",
+        "time.h": "c",
+        "ol_control.h": "c",
+        "fc_core.h": "c",
+        "navigation.h": "c",
+        "platform.h": "c",
+        "gps.h": "c"
+    },
+    "git.ignoreLimitWarning": true
 }

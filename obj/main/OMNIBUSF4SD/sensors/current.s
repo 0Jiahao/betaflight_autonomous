@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"current.c"
-	.section	.gnu.lto_.profile.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.profile.1454705f6b647afd,"",%progbits
 	.ascii	"x\234cc```\003bF\206\355Lk\030\001\004\337\001t"
 	.text
-	.section	.gnu.lto_.icf.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.icf.1454705f6b647afd,"",%progbits
 	.ascii	"x\234cc``X\314\200\000\322\014\217\377\037\271\317\317"
 	.ascii	"\330\377\367\375s^\246y\207o\257ag>\324~\370\0123\313"
 	.ascii	"\243\237]k\370Y\277L\370z\230\231\355C\327\2637\254"
@@ -24,7 +24,7 @@
 	.ascii	"\253S\227\275\340\026\007\213H<X|p\027\247\344\324\313"
 	.ascii	"?\2461I\3158\260\350.\013\003\0000YVL"
 	.text
-	.section	.gnu.lto_.jmpfuncs.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.1454705f6b647afd,"",%progbits
 	.ascii	"x\234}R\273J\003Q\020\235\263w\223l^\356j\275\301\336"
 	.ascii	"\237\260\360\253ReA|\240mH\241\021\366\007,4F\2151\232"
 	.ascii	"\304\200 \201\210Vb\247 \026\026\026b\343c\235\271{"
@@ -49,7 +49,7 @@
 	.ascii	"\253n\314\373\011\006\371\022VY\326y\014\024\313\302"
 	.ascii	"\226\270\243?\016-\327\244"
 	.text
-	.section	.gnu.lto_.inline.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.inline.1454705f6b647afd,"",%progbits
 	.ascii	"x\234u\221\277K\303@\024\307\277\357\356\222\\L\332"
 	.ascii	"\304\332V\220B\335\335\034:8\025\004\301\245\177\201"
 	.ascii	"\213k\373Odq\322\241\24089\324M\320A\320\212\335\212"
@@ -71,11 +71,11 @@
 	.ascii	"\205lOU\310\246;\250(\310}Ge\014I\213\350\266\222_\332"
 	.ascii	"\344\232\231\360\003cVR\373"
 	.text
-	.section	.gnu.lto_.pureconst.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.pureconst.1454705f6b647afd,"",%progbits
 	.ascii	"x\234cc``\220\006b^\006)&)f\0116)\016)N\011n)^)>\011"
 	.ascii	"~I\001)A)!)\000\033n\001\376"
 	.text
-	.section	.gnu.lto_currentMeterRead.part.0.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterRead.part.0.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\225\222\337KSa\030\307\337\347}\316\316V\241\005"
 	.ascii	"FX,\360\"\223]\264\023t\337]\177H\330.\014\266\301\266"
 	.ascii	"\256}\233\232\332\014DRa\035b5c\335HI\313:\313j\255"
@@ -111,7 +111,7 @@
 	.ascii	"x[\304\212\207\"\361h,n\265\236\212\305B\221D\260Ux"
 	.ascii	"\302\241D(&\333Nx\302\321D4\366\013\342\3410\212"
 	.text
-	.section	.gnu.lto_currentMeterReset.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterReset.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\225P\273J\003A\024\275g'\273\012\276ZE\205\024"
 	.ascii	"JH\223\375\012?D\302\026\012\211\260\253\265c4&\242"
 	.ascii	"\205\205F\210\253\254h\260\022\025\237\361\271\004\261"
@@ -135,7 +135,7 @@
 	.ascii	"\262m+9\030\213\223\236\260\006-\373\033\350\271\257"
 	.ascii	">"
 	.text
-	.section	.gnu.lto_currentMeterADCInit.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterADCInit.1454705f6b647afd,"",%progbits
 	.ascii	"x\234m\221\273K\003A\020\306\347\273Mrg|\220\302B0A"
 	.ascii	"K\265\360\376&\011\026\026F\270\323\372VC\036\242\205"
 	.ascii	"H\214\240\247\234\225\245h\342#>\342\231F\020QI+X\030"
@@ -158,7 +158,7 @@
 	.ascii	"\330\250i[qsrl\"a\332\343\011{\312\262\315\370\214e"
 	.ascii	"\215'\246G\343\364\015\345\324\256o"
 	.text
-	.section	.gnu.lto_currentMeterADCRefresh.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterADCRefresh.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\225V_P\224U\024\277\347\273\273\260,\013\013\310"
 	.ascii	"\" \310\252 \342\277\255|\351\245\007}\356\255\351\251"
 	.ascii	"'\206x\300\001dX\3521\276\004\027\260HFe+\\\235u\320"
@@ -239,7 +239,7 @@
 	.ascii	"\306Z\266\241\270\346\215\342\212\252\362\322\204\022"
 	.ascii	"|_\266\276\242\312m\255(+//{wSy\215\373_tJ\247\232"
 	.text
-	.section	.gnu.lto_currentMeterADCRead.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterADCRead.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\245\222\317k\023A\024\307\347;/\273I\025\353\255"
 	.ascii	"\210V\311A)E\350\372O\370\207H\310A\241\021\222z\316"
 	.ascii	"41\246\3768\210\230\010q\221\025\033z\022\025kukm\327"
@@ -269,7 +269,7 @@
 	.ascii	"s^!\233+\234\314\027\274\314\251|>\233\033\031\312("
 	.ascii	"g8;\222\315\377\001\344\217\025\217"
 	.text
-	.section	.gnu.lto_currentMeterVirtualInit.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterVirtualInit.1454705f6b647afd,"",%progbits
 	.ascii	"x\234]P=K\303P\024\275\347\275&\015\250\035E0\342\\"
 	.ascii	"\301\3467I\350\340`\204D\347<-\375\020\035Dj\\\202\304"
 	.ascii	"\311Q\304X\215\203\204\216\016\012n\"8(\210C\021\212"
@@ -288,7 +288,7 @@
 	.ascii	"uV\226\226='\250{\301\252\0378\356\272\357\327\275\265"
 	.ascii	"\232K\177\324\356j\223"
 	.text
-	.section	.gnu.lto_currentMeterVirtualRefresh.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterVirtualRefresh.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\215U]L\\U\020>s\317\275w\177\330\037\240X~\002"
 	.ascii	"\221D\011i\223\262\215\304\304\304\370\320\027_\264"
 	.ascii	"\361\301\370\342\033\201\255\265i\331fw\215>\311\225"
@@ -356,7 +356,7 @@
 	.ascii	"t$\360W\366\354\361\271\375\353\333\027\313\312\321"
 	.ascii	"\343?\227x\215g"
 	.text
-	.section	.gnu.lto_currentMeterVirtualRead.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterVirtualRead.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\235\222\315k\023Q\024\305\357ywf2R\254[\241\021"
 	.ascii	"\263PJ7\235\277\302?DB\026\012\2150\251\353\274&\306"
 	.ascii	"\264~\200\210\251\020\007\031\261\241\024\021\025cu"
@@ -386,7 +386,7 @@
 	.ascii	"p\314/x\331\343\276\237\313O\216g\311\236\310M\346\374"
 	.ascii	"_4\250\367\342"
 	.text
-	.section	.gnu.lto_currentMeterESCInit.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterESCInit.1454705f6b647afd,"",%progbits
 	.ascii	"x\234]P\277K\303@\030\375\336]\223f1\263`\304\271\016"
 	.ascii	"\315\354\237#\241\203\203\025\022;\347\264\364\207\350"
 	.ascii	" \242\021\344\22089\212X\265Q\220\320\261\203\202\253"
@@ -404,7 +404,7 @@
 	.ascii	"Z\360'V\375(\014\374\355\315\255\272\037\325\352\321"
 	.ascii	"N\030\371A#\014k\365\335j@\177\000\012j\243"
 	.text
-	.section	.gnu.lto_currentMeterESCRefresh.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterESCRefresh.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\225\223\317O\023A\024\307\347\273\263\333_@/^"
 	.ascii	"\214)\011\011\022\002\211\354\305\223\007\023\023\377"
 	.ascii	"\005\377\200\246\366`\242h\332\352\265\003\005\013\352"
@@ -446,7 +446,7 @@
 	.ascii	"\216\354;\262\337\037\011\356\2118\203\341\300^\177"
 	.ascii	"\304\377\027\3658\211\210"
 	.text
-	.section	.gnu.lto_currentMeterESCReadCombined.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterESCReadCombined.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\235\222\317k\023A\024\307\337w\336f\263 \306\233"
 	.ascii	"\210V\311A)\275t\377\001\257\376!\022rPh\204\244\236"
 	.ascii	"3M\255\251?\016\"\266B\\\312\212\325\236\212\226\306"
@@ -476,7 +476,7 @@
 	.ascii	"\243\345r\2614:\\\240\314Hq\264X\376\011\036\023\354"
 	.ascii	"b"
 	.text
-	.section	.gnu.lto_currentMeterESCReadMotor.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterESCReadMotor.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\225\224\337K\024Q\024\307\357w\356\314\354\266"
 	.ascii	"k\012\276\244a$\204,F8R!D=\326c\275\364\027\230\354"
 	.ascii	"C\201\012\273\372\322\2137]S\263\207\036\324j\233dM"
@@ -523,7 +523,7 @@
 	.ascii	"\217\371\003Z\241\277\304\037p\371\203\005\007\363K"
 	.ascii	"\362\377\000\354\314\320\262"
 	.text
-	.section	.gnu.lto_currentMeterRead.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterRead.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\235VmO\024W\024\276g\356\316\313\316,\253-\211"
 	.ascii	"VC[\222\266A\276\270\246M\354/\350\267\376\211\206\362"
 	.ascii	"\201&\320d\261\237\231\002\013\"\232\030S\326\204\016"
@@ -586,7 +586,7 @@
 	.ascii	"\303\215\241\232/\302\341\332\206C\373k\230R\367\251"
 	.ascii	"Z_{\2506\374/\206\340\340\035"
 	.text
-	.section	.gnu.lto_currentSensorVirtualConfig_Registry.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentSensorVirtualConfig_Registry.1454705f6b647afd,"",%progbits
 	.ascii	"x\234cc``\330\013\304\362\014\0200\205\231\361S\377"
 	.ascii	"\271\257,\026\333\032:\0264\010\314af\230\312\314\300"
 	.ascii	"\250'\003\222\230\326z\350<{7\363\034fFF\020w\347\316"
@@ -600,14 +600,14 @@
 	.ascii	"\374\242b\375\344\322\242\242\324\274\022\275d\006\000"
 	.ascii	"\032bI\203"
 	.text
-	.section	.gnu.lto_pgResetTemplate_currentSensorADCConfig.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_pgResetTemplate_currentSensorADCConfig.1454705f6b647afd,"",%progbits
 	.ascii	"x\234cc``p\001bF\006\010\230\302\314\270\376\315\316"
 	.ascii	"\237\274\335\314s\230\201\202@\356\236\215\355\233x"
 	.ascii	" \334\011\314@\376\353\377'\0263Zlk\350X\320\2400\207"
 	.ascii	"\231q*P|\013\243\314TfF\306\315\2142\014\214[\031-\030"
 	.ascii	"\000hx\025\376"
 	.text
-	.section	.gnu.lto_currentSensorADCConfig_Registry.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentSensorADCConfig_Registry.1454705f6b647afd,"",%progbits
 	.ascii	"x\234cc``\270\006\304\362\014\0200\205\231\261\371\327"
 	.ascii	"\376\317|\365\177\033f44<\350>\301<\333x\0163\303\002"
 	.ascii	"f\210\334\241\247\353\330-\2665t,h\020\230\303\3148"
@@ -622,7 +622,7 @@
 	.ascii	"E\311\372\271\211\231y\372\305\251y\305\371E\305\372"
 	.ascii	"\311\245EE\251y%z\311\014\000/\020T\222"
 	.text
-	.section	.gnu.lto_currentMeterIds.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterIds.1454705f6b647afd,"",%progbits
 	.ascii	"x\234U\220MK\002A\034\207gvS\261|\371\002\373\011\272"
 	.ascii	"e\027\017\275|\263\330\320\2422H\302\243\207\244\"\302"
 	.ascii	"\"\311\324\334\314t}O\023#)\004\263\250\260\360\020"
@@ -645,7 +645,7 @@
 	.ascii	"\316\200\006\342\340\024\304@\024D\300\011\010S\205"
 	.ascii	"\320*u\222?\231\273\255\217"
 	.text
-	.section	.gnu.lto_currentMeterSourceNames.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_currentMeterSourceNames.1454705f6b647afd,"",%progbits
 	.ascii	"x\234cc``p`d`\260e\200\200)\314\214_\366_9\311\251\310"
 	.ascii	"4\277a\206\302\034f\260\310\261gm[9\353\3776\314hhx"
 	.ascii	"0\377&\323\034fF\306\315\214\212`\251\213-\033\3460"
@@ -665,7 +665,7 @@
 	.ascii	"PG\037\006\026G\027g\006V?\177?W\006\000\346\031\200"
 	.ascii	"\374"
 	.text
-	.section	.gnu.lto_.symbol_nodes.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.1454705f6b647afd,"",%progbits
 	.ascii	"x\234e\221\311J\003A\020\206\353\237\316L2Y\235\271"
 	.ascii	"\272D\362\000>\203>\205G\011\030\2027I\346\342\251F"
 	.ascii	"\320\213q\211\210\212\340\0225\356\333U\275)\001\301"
@@ -685,7 +685,7 @@
 	.ascii	"nK\253\233\344\213\211\226\206\215z\211\372D\357O\257"
 	.ascii	"\226\362=z|\376\004\375\000\354<\223\344"
 	.text
-	.section	.gnu.lto_.refs.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.refs.1454705f6b647afd,"",%progbits
 	.ascii	"x\234%\315\313\012\3020\030D\341\231\3114i\376F[oU\020"
 	.ascii	"\\\250\033\361\245\373\250\006\\\234\335\201/\003\330"
 	.ascii	"z\002H\320J25h\312(\025\245\321\213\206#\312\035\345"
@@ -694,7 +694,7 @@
 	.ascii	"s/\3223\231\311\332Wr\322\362w\273a\301\2063\242\"\232"
 	.ascii	"Nj:\247UEW]\360\003\265y\004\306"
 	.text
-	.section	.gnu.lto_.decls.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.decls.1454705f6b647afd,"",%progbits
 	.ascii	"x\234\265{\011TTW\272n\355\263\253((&[M\264\215ymr\355"
 	.ascii	"\304\274{\035\323\335\271y\267o\337\244Mr_\326j\323"
 	.ascii	"\275\222t\336J\356\272M\023(\225^\0126\224};}\327\353"
@@ -1194,7 +1194,7 @@
 	.ascii	"z\2553\311\277/=vB\317\0156\326^\353\016\036\000\015"
 	.ascii	"\265\234\365~\371\236\363\377\000GgS5"
 	.text
-	.section	.gnu.lto_.symtab.621488f2e380ef42,"",%progbits
+	.section	.gnu.lto_.symtab.1454705f6b647afd,"",%progbits
 	.ascii	"currentMeterESCState\000"
 	.ascii	"\000"
 	.ascii	"\004"

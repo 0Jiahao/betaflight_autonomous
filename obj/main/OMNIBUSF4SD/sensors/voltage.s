@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"voltage.c"
-	.section	.gnu.lto_.profile.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.profile.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234cc```\003bF\206UL\255\214\000\004]\001@"
 	.text
-	.section	.gnu.lto_.icf.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.icf.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234cc``hb@\0001\206e?\272\356p3\276[6\1773\027S\317"
 	.ascii	"\365]OY\231W/Z\264\216\215e\371\222\037{YY\273g\315"
 	.ascii	"\270\301\315\006\026a_tv\261;\307\365\037G\357\362s"
@@ -22,7 +22,7 @@
 	.ascii	"\363\257\361\010\201\265\012?\\\333&,r\362O\267\231"
 	.ascii	"\350\375u\307\356p0\000\000\276\203A\373"
 	.text
-	.section	.gnu.lto_.jmpfuncs.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\245\223]K\033Q\020\206\347=g\2631\272\311\366"
 	.ascii	"\322\013\245\267AP\177\204\277\312\253\254\324\226b"
 	.ascii	"\240\005I\245\340\"\013\355mQ\3603~T\223\306\246\037"
@@ -51,7 +51,7 @@
 	.ascii	"_`\213\251x\251a\340\\(\304\244\256\371G\377\001\235"
 	.ascii	" !\337"
 	.text
-	.section	.gnu.lto_.inline.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.inline.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234eP\261N\3030\024\274\367\3548n\0227P\024\246J\215"
 	.ascii	"\304\302\324\0011\243|A~\000\361\003\360\017\210\235"
 	.ascii	"%\003#CX\020\003\033,l\225\230A\210\231\001\230`k\027"
@@ -69,11 +69,11 @@
 	.ascii	"O)\273`\256\241\251\233\232Slh\227\022\277\322\3606"
 	.ascii	"k"
 	.text
-	.section	.gnu.lto_.pureconst.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.pureconst.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234cc``\220\004b\036\006)&)\026)V\006v)N).\013n\011"
 	.ascii	"\036I^)>)~)\000\026\255\001\313"
 	.text
-	.section	.gnu.lto_pgResetFn_voltageSensorADCConfig.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_pgResetFn_voltageSensorADCConfig.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234UR[k\023Q\020\236\357\314^B\325\324\027%`\224\276"
 	.ascii	"\224\220\012\315\217\351/\010!H@S\350\026_s\232\264"
 	.ascii	"6\251\327\007\255%,a\213\224\276\325z\267\3326k\012"
@@ -103,7 +103,7 @@
 	.ascii	"X\366\206G\274\334\371\341\263\243\3713\305\301\002"
 	.ascii	"%Jeo4_.\024Q\372\013V?\276{"
 	.text
-	.section	.gnu.lto__reset_template_124.9991.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto__reset_template_124.9991.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234cc``\210\002bF\006\010\230\302\314\270\345\310"
 	.ascii	"\3616\216n\3469\314\014\214\214@\356\337\017\027\376"
 	.ascii	"\362@\270\\@\356\266\023\255\035\374\020\356;\220\352"
@@ -111,7 +111,7 @@
 	.ascii	"T\240\370VF\231\251\314\214\214[@\024\023\343fF\031"
 	.ascii	"\006\306m\214\026\014\000\260C\034\030"
 	.text
-	.section	.gnu.lto_voltageMeterRead.part.0.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterRead.part.0.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\215\222\315KTQ\030\306\317s\337;\037\025Zd\013"
 	.ascii	"\243\011\\d2\213\274A\313\026\265\351\017\021\033\302"
 	.ascii	"h\034\230\221\266\236\374h\264)\010I\205\351\026\003"
@@ -147,7 +147,7 @@
 	.ascii	"\032i\213\304\255\226\343\276h\254-\026\377\015^\245"
 	.ascii	"\026\305"
 	.text
-	.section	.gnu.lto_voltageMeterReset.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterReset.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\225OMKBQ\020\235\363\256\357%\210\265\2152pQD"
 	.ascii	"\033\337\257\350\207\210H\024\245\240\322\266\253e\032"
 	.ascii	"\025\264H\003{\205\241\021\005b\321\247}\361\220pWQ"
@@ -170,7 +170,7 @@
 	.ascii	"\217\306\342\346dt<\021\034\011\007B\244O\204\023\341"
 	.ascii	"\3307\030\250\223\306"
 	.text
-	.section	.gnu.lto_getVoltageMeterADC.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_getVoltageMeterADC.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234-P\313J\003A\020\354\332\311K\210\372\001F\310"
 	.ascii	"E\202\027\327\340\027\211\006\011h\002Y\021o\031\023"
 	.ascii	"51*\250\370\300\270\310z\020E\010Q\\\037\353\003\026"
@@ -195,7 +195,7 @@
 	.ascii	"\272\021K\030\311\224\241\217$\007\207{\007b]}\344\215"
 	.ascii	"'\372c\243?q\225\214^"
 	.text
-	.section	.gnu.lto_voltageMeterADCRefresh.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterADCRefresh.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\215V]P\224U\030>\357w\366\217Ev\371g\225\005Q"
 	.ascii	"\004\004\201\215\232\246\253\256\273\352\252\233n\031"
 	.ascii	"\243r\006\265\300\251\213\232\331\217\277\005\203\032"
@@ -273,7 +273,7 @@
 	.ascii	"\361F\006\233l/o*\337VVQ\366\322\013\245\233_+/\213"
 	.ascii	"\251(}S\216\036\267\360U\366\037fE\250\013"
 	.text
-	.section	.gnu.lto_voltageMeterADCRead.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterADCRead.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\225R\317k\023A\024\236og\273I\223\230\203\036"
 	.ascii	"T\214\220[(B\326\342\301?\300\243\364\217\0101\250P"
 	.ascii	"SH\212\027\017\231\246\306\264\352\241\212i \256\022"
@@ -307,7 +307,7 @@
 	.ascii	"\0379\021K&\023\203\201nv 1\234H\375\002\347\235\014"
 	.ascii	"\342"
 	.text
-	.section	.gnu.lto_voltageMeterADCInit.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterADCInit.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234uRAk\023A\024\236o\337\356&M\323\322\203\240\302"
 	.ascii	"\006\365Pj=$\202?\302\337QJ\221\202\266\320\210\027"
 	.ascii	"\017;M\333$%\242RlZ\354\"+\245\364\"\304Z\253Fm\335"
@@ -340,7 +340,7 @@
 	.ascii	"\351\201\241\364\360H:ua\370\354\371\2763\003\311~\201"
 	.ascii	"\301\237\021R\342\023"
 	.text
-	.section	.gnu.lto_voltageMeterESCInit.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterESCInit.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\205Q]+DQ\024\335\353\236\371\270\310\344I\312"
 	.ascii	"L^\215\007\367\335\277\221$\305\250\031y\275\007\315"
 	.ascii	"\030\241$\306\203K\327\023/\222\306\327\370\274\346"
@@ -365,7 +365,7 @@
 	.ascii	"\2517\022\361&\243\275\2615f$\232c\211\216x\302\350"
 	.ascii	"\352h\353lli\256o\242/\254\326\265}"
 	.text
-	.section	.gnu.lto_voltageMeterESCRefresh.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterESCRefresh.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\225T[KTQ\024\336\337Y\347\234\031gt\354\362\022"
 	.ascii	"4\305@\210\330\203\347\245\267^\373#\203H\004\245\340"
 	.ascii	"H\257\263u\034G+!\"'\221\223\214\365`\322\315\360R\243"
@@ -406,7 +406,7 @@
 	.ascii	"\252\262\"\225U\221\352\232\210u\266\372tm\370dey\205"
 	.ascii	"\360TF*N\204k\303\277\000u\345[ "
 	.text
-	.section	.gnu.lto_voltageMeterESCReadMotor.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterESCReadMotor.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\225S[HTQ\024=\353\356;\367\2163S\366\225\026\023"
 	.ascii	"\011\021C\021\216\020\004A\037}\364[\277}\233\014Q\244"
 	.ascii	"\302\214\365\353I\307W\366\321GN1\\b**\212\242\247\346"
@@ -453,7 +453,7 @@
 	.ascii	"\374\245\345\025\345\321M;K\267D\242\001w{c\244\"\022"
 	.ascii	"5#\261\222\015\305\025\305?\001\005\306\227\346"
 	.text
-	.section	.gnu.lto_voltageMeterESCReadCombined.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterESCReadCombined.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\225Q\337KTQ\020\236\357\314\365\336K\345\366\032"
 	.ascii	"i\264\017\201\010\341\375\017\372\017\372#L\226\010"
 	.ascii	"RaW|\335\343\232\255V\017\022\251\260\\\352\366\220"
@@ -481,7 +481,7 @@
 	.ascii	"\013\321`\377\371\201\356\263\271\256\036:\264k\236"
 	.ascii	"\316\015\344\362\177\000\\\213\326!"
 	.text
-	.section	.gnu.lto_voltageMeterRead.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterRead.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\215T\337o\024U\024\276\337\234\231\331\231n\273"
 	.ascii	"\020\372P!5!QS\313\003\003\230\340_\340\213\304\277"
 	.ascii	"\200\247\006\033\203\021\032[\302\213\017\035\372\223"
@@ -532,13 +532,13 @@
 	.ascii	"\353>\332U\363A\355\372m\312\330\376\276\265\243vWm"
 	.ascii	"\375\377y\204\321Q"
 	.text
-	.section	.gnu.lto_voltageMeterADCtoIDMap.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterADCtoIDMap.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234cc``\320\005bF\006\010\230\302\314\370\367\303"
 	.ascii	"\205\277<\335\314s\230\031\030\271\200\334\273\027\356"
 	.ascii	"O\347\265\330\326\320\261\240A`\0163#\243\241\014\343"
 	.ascii	"fF\031\006\306-\214\026\014\000\257\223\017f"
 	.text
-	.section	.gnu.lto_voltageSensorADCConfig_Registry.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageSensorADCConfig_Registry.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234cc``\270\001\304\362\014\0200\205\231q\347\316"
 	.ascii	"7\267\331\353\3776t44<\350~\315|\327x\0163\3034f\210"
 	.ascii	"\334\314\246\333\337\371-\2665t,h\020\230\303\3148\225"
@@ -552,7 +552,7 @@
 	.ascii	"\323/N\315+\316/*\326/\313\317)ILO\325Kf\000\000\210"
 	.ascii	"cVA"
 	.text
-	.section	.gnu.lto_voltageMeterIds.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterIds.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234M\220MK\002A\034\207\347\277\233\212\245\371\005"
 	.ascii	"\366Kd\027\017\275|\263X\320\242,H\302\243\207\240\""
 	.ascii	"\302\"\311\324v3[\327\367\222(\220B(\223\212\012\017"
@@ -573,7 +573,7 @@
 	.ascii	"\023\030\340\004d@\032\244\3001H\222\306\250N\001\366"
 	.ascii	"\013\275\261\2417"
 	.text
-	.section	.gnu.lto_voltageMeterSourceNames.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_voltageMeterSourceNames.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234cc``\330\007\304\372\014\0200\205\231\361\310\364"
 	.ascii	";\262\212L\363\033f(\314a\006\013\354\232{\274\231\267"
 	.ascii	"\376o\303\214\206\206\007\363o1\315afd\334\314\250\010"
@@ -588,7 +588,7 @@
 	.ascii	"9%\211\351\251z\311\014,\216.\316\014\254~\376~\256"
 	.ascii	"\014\000W\035RH"
 	.text
-	.section	.gnu.lto_.symbol_nodes.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234U\222\273N\303@\020E\347\356\306v\342\007\206\206"
 	.ascii	"\360\020B\362\007\360\015\360%T(\242C\201\206j\214\024"
 	.ascii	"R\360J\020H\274IH\014T\024\224\320\201R\303/ D\3117"
@@ -605,14 +605,14 @@
 	.ascii	"\006\245\017J\037\316Z\037\326i\224\367E\2457\177\340"
 	.ascii	"\363qN\307\021\275\266\337\025\375\002\025\315\200X"
 	.text
-	.section	.gnu.lto_.refs.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.refs.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234%\2141\016\302@\020\304f<\260lB\024\024RD\2244"
 	.ascii	"\024|\215\377\367\234\024\311\356,\227\244\337\320\003"
 	.ascii	"@\261\022_)\246\033\025u\251W\365\356:\324/\365[\375"
 	.ascii	"q}\231T\250.\314\224G\314\235\230\220\305i2;\013\353"
 	.ascii	"9\343q\246\331h\236H\177\253l\002\266"
 	.text
-	.section	.gnu.lto_.decls.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.decls.3cbc1cd7305090b0,"",%progbits
 	.ascii	"x\234\265z\011TU\311\271\356\251]\3730\017\266\332\335"
 	.ascii	"\246C^L_o7\375^\332\201\364\220~\311K\272cw\222^+v\277"
 	.ascii	"\327\335\361^;+\217\246\341\250d)p\341\330\211\311\273"
@@ -1087,7 +1087,7 @@
 	.ascii	"\333N\215~[adC\312%\037x\270\177\341\315\225\377\177"
 	.ascii	"\031\301s@"
 	.text
-	.section	.gnu.lto_.symtab.b5c7c7b8d4de3614,"",%progbits
+	.section	.gnu.lto_.symtab.3cbc1cd7305090b0,"",%progbits
 	.ascii	"pgResetFn_voltageSensorADCConfig\000"
 	.ascii	"\000"
 	.ascii	"\000"

@@ -54,7 +54,7 @@ typedef struct rangefinder_s {
 } rangefinder_t;
 
 extern rangefinder_t rangefinder;
-
+extern uint16_t rangefinder_idx;
 void rangefinderResetDynamicThreshold(void);
 bool rangefinderInit(void);
 

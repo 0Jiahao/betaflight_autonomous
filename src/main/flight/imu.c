@@ -84,6 +84,7 @@ float accVelScale;
 static float throttleAngleScale;
 static float fc_acc;
 static float smallAngleCosZ = 0;
+static int32_t my_dt = 0;
 
 // my gyro data
 float gyrox = 0;
@@ -207,7 +208,8 @@ static void imuCalculateAcceleration(timeDelta_t deltaT)
 
     // deltaT is measured in us ticks
     const float dT = (float)deltaT * 1e-6f;
-
+    my_dt = (int)((float)deltaT * 1e-3f); //10ms
+    DEBUG_SET(DEBUG_DT,0,my_dt);
     t_fp_vector accel_ned;
     accel_ned.V.X = acc.accADC[X];
     accel_ned.V.Y = acc.accADC[Y];

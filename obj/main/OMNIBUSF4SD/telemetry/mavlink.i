@@ -9214,7 +9214,7 @@ extern uint8_t debugMode;
 
 
 extern uint32_t sectionTimes[2][4];
-# 48 "./src/main/build/debug.h"
+# 50 "./src/main/build/debug.h"
 typedef enum {
     DEBUG_NONE,
     DEBUG_CYCLETIME,
@@ -9257,6 +9257,13 @@ typedef enum {
     DEBUG_COMMAND,
     DEBUG_DESIREDANGLE,
     DEBUG_REQUEST,
+    DEBUG_DT,
+    DEBUG_OL,
+    DEBUG_FP,
+    DEBUG_OLCTRL,
+    DEBUG_PSI,
+    DEBUG_CA,
+    DEBUG_PHIL,
     DEBUG_COUNT
 } debugType_e;
 
@@ -29403,7 +29410,7 @@ static void mavlinkReceive(uint16_t c, void *data)
                 mavlink_msg_highres_imu_decode(&msg,&hr);
                 uart_altitude = hr.abs_pressure;
                 {if (debugMode == (DEBUG_UART)) {debug[(1)] = (hr.time_usec);}};
-                {if (debugMode == (DEBUG_UART)) {debug[(3)] = (uart_altitude);}};
+                {if (debugMode == (DEBUG_UART)) {debug[(3)] = (100*uart_altitude);}};
                 break;
             }
             case 81:
@@ -29427,6 +29434,13 @@ static void mavlinkReceive(uint16_t c, void *data)
             {
                 {if (debugMode == (DEBUG_REQUEST)) {debug[(0)] = (100);}};
                 break;
+            }
+            case 102:
+            {
+                mavlink_vision_position_estimate_t vision;
+                mavlink_msg_vision_position_estimate_decode(&msg,&vision);
+                {if (debugMode == (DEBUG_PHIL)) {debug[(0)] = (vision.x);}};
+                {if (debugMode == (DEBUG_PHIL)) {debug[(1)] = (vision.y);}};
             }
         }
     }
@@ -29481,14 +29495,14 @@ void freeMAVLinkTelemetryPort(void)
 {
     closeSerialPort(mavlinkPort);
     mavlinkPort = 
-# 201 "./src/main/telemetry/mavlink.c" 3 4
+# 208 "./src/main/telemetry/mavlink.c" 3 4
                  ((void *)0)
-# 201 "./src/main/telemetry/mavlink.c"
+# 208 "./src/main/telemetry/mavlink.c"
                      ;
     mavlinkTelemetryEnabled = 
-# 202 "./src/main/telemetry/mavlink.c" 3 4
+# 209 "./src/main/telemetry/mavlink.c" 3 4
                              0
-# 202 "./src/main/telemetry/mavlink.c"
+# 209 "./src/main/telemetry/mavlink.c"
                                   ;
 }
 
@@ -29511,9 +29525,9 @@ void configureMAVLinkTelemetryPort(void)
     }
 
     mavlinkPort = openSerialPort(portConfig->identifier, FUNCTION_TELEMETRY_MAVLINK, mavlinkReceive, 
-# 223 "./src/main/telemetry/mavlink.c" 3 4
+# 230 "./src/main/telemetry/mavlink.c" 3 4
                                                                                                     ((void *)0)
-# 223 "./src/main/telemetry/mavlink.c"
+# 230 "./src/main/telemetry/mavlink.c"
                                                                                                         , baudRates[baudRateIndex], MODE_RXTX, telemetryConfig()->telemetry_inverted ? SERIAL_INVERTED : SERIAL_NOT_INVERTED);
 
     if (!mavlinkPort) {
@@ -29521,9 +29535,9 @@ void configureMAVLinkTelemetryPort(void)
     }
 
     mavlinkTelemetryEnabled = 
-# 229 "./src/main/telemetry/mavlink.c" 3 4
+# 236 "./src/main/telemetry/mavlink.c" 3 4
                              1
-# 229 "./src/main/telemetry/mavlink.c"
+# 236 "./src/main/telemetry/mavlink.c"
                                  ;
 }
 
@@ -29531,22 +29545,22 @@ void checkMAVLinkTelemetryState(void)
 {
     if (portConfig && telemetryCheckRxPortShared(portConfig)) {
         if (!mavlinkTelemetryEnabled && telemetrySharedPort != 
-# 235 "./src/main/telemetry/mavlink.c" 3 4
+# 242 "./src/main/telemetry/mavlink.c" 3 4
                                                               ((void *)0)
-# 235 "./src/main/telemetry/mavlink.c"
+# 242 "./src/main/telemetry/mavlink.c"
                                                                   ) {
             mavlinkPort = telemetrySharedPort;
             mavlinkTelemetryEnabled = 
-# 237 "./src/main/telemetry/mavlink.c" 3 4
+# 244 "./src/main/telemetry/mavlink.c" 3 4
                                      1
-# 237 "./src/main/telemetry/mavlink.c"
+# 244 "./src/main/telemetry/mavlink.c"
                                          ;
         }
     } else {
         
-# 240 "./src/main/telemetry/mavlink.c" 3 4
+# 247 "./src/main/telemetry/mavlink.c" 3 4
        _Bool 
-# 240 "./src/main/telemetry/mavlink.c"
+# 247 "./src/main/telemetry/mavlink.c"
             newTelemetryEnabledValue = telemetryDetermineEnabledState(mavlinkPortSharing);
 
         if (newTelemetryEnabledValue == mavlinkTelemetryEnabled) {
@@ -29565,7 +29579,7 @@ void mavlinkSendSystemStatus(void)
     uint16_t msgLength;
 
     uint32_t onboardControlAndSensors = 35843;
-# 269 "./src/main/telemetry/mavlink.c"
+# 276 "./src/main/telemetry/mavlink.c"
     if (sensors(SENSOR_MAG)) onboardControlAndSensors |= 4100;
     if (sensors(SENSOR_BARO)) onboardControlAndSensors |= 8200;
     if (sensors(SENSOR_GPS)) onboardControlAndSensors |= 16416;
@@ -29900,7 +29914,7 @@ void mavlinkSendHUDAndHeartbeat(void)
 
         mavAltitude = gpsSol.llh.alt;
     }
-# 611 "./src/main/telemetry/mavlink.c"
+# 618 "./src/main/telemetry/mavlink.c"
     mavlink_msg_vfr_hud_pack(0, 200, &mavMsg,
 
         mavAirSpeed,

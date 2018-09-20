@@ -9,18 +9,18 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"timer_stm32f4xx.c"
-	.section	.gnu.lto_.profile.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.profile.5b9693d46df81023,"",%progbits
 	.ascii	"x\234cc```\001bF\006~>\000\000\244\000)"
 	.text
-	.section	.gnu.lto_.icf.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.icf.5b9693d46df81023,"",%progbits
 	.ascii	"x\234cc``\340c@\000&\206_\327\267\374eb:\371\361\304"
 	.ascii	"9v\006\0006]\006\364"
 	.text
-	.section	.gnu.lto_.jmpfuncs.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.5b9693d46df81023,"",%progbits
 	.ascii	"x\234cc``\340b@\000F\006FF\306\3729\314\014\014\000"
 	.ascii	"\006\245\0013"
 	.text
-	.section	.gnu.lto_.inline.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.inline.5b9693d46df81023,"",%progbits
 	.ascii	"x\234cc```ed\200\003 S\200\223\221\233A!k\0123c\357"
 	.ascii	"\345uW\331\273\231\3470306t\2644\2600nf\224a`P\310\206"
 	.ascii	"\322 %\213\026\376\276\316\012U\322\000R\262\005\252"
@@ -32,10 +32,10 @@
 	.ascii	"\204}\206\255A\000\312fZ\305s\205\013\034\010\000\370"
 	.ascii	"$>%"
 	.text
-	.section	.gnu.lto_.pureconst.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.pureconst.5b9693d46df81023,"",%progbits
 	.ascii	"x\234cc```\006bF\006\026\000\000i\000\017"
 	.text
-	.section	.gnu.lto_timerClock.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_timerClock.5b9693d46df81023,"",%progbits
 	.ascii	"x\234\215\222KkSQ\020\307g\316\271\257\3046\212\210"
 	.ascii	"\213R\304\205R\203\322\210\272\351\242\237\301\217 "
 	.ascii	"R+d\021\027I\221\342&\307<j\213-\024\037\021\342%$b"
@@ -70,7 +70,7 @@
 	.ascii	"\221\201h\254?~&1\020;y\342\374\251\301\301\356>\340"
 	.ascii	"\224\372\013\027\362\007,"
 	.text
-	.section	.gnu.lto_timerDefinitions.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_timerDefinitions.5b9693d46df81023,"",%progbits
 	.ascii	"x\234]\224kS\322A\024\306Yn\346\375m\027\352\013t\231"
 	.ascii	"\2627~\274\277\212\2459\026\016\220\315\204\011^&\035"
 	.ascii	"QQK\004\323\300K\206W.\032\241\250\250\010HH*\024:\344"
@@ -116,16 +116,16 @@
 	.ascii	"t\236\324M\352\"\375D:Ij'\035g\2652\366\213\276\376"
 	.ascii	"\001\"\273\362/"
 	.text
-	.section	.gnu.lto_.symbol_nodes.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.5b9693d46df81023,"",%progbits
 	.ascii	"x\234cc``P\005b\006\246\177\014\365\014\014\023\316"
 	.ascii	"1\200\250]\015\216\014\014\254\377\031\030\024\2002"
 	.ascii	"\254\177\031\030\033\225@j\000\260\207\007\315"
 	.text
-	.section	.gnu.lto_.refs.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.refs.5b9693d46df81023,"",%progbits
 	.ascii	"x\234cc``\340\004b&\006\006F6\006Fv\006\000\0013\000"
 	.ascii	"!"
 	.text
-	.section	.gnu.lto_.decls.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.decls.5b9693d46df81023,"",%progbits
 	.ascii	"x\234\315\030[P\024\331\265o\337a\030\206g\241\265e"
 	.ascii	"\022*\3312*T\245p\344\221U\253\362\021w \273~\340Z@"
 	.ascii	"\262\225|d\012q\2241\302\2700li\276\232\207/\\\037\370"
@@ -281,7 +281,7 @@
 	.ascii	"!a]\262ii\3427\277\231\316\025RE\223\364\246\377\000"
 	.ascii	"i`\312C"
 	.text
-	.section	.gnu.lto_.symtab.28817ef842bbc22c,"",%progbits
+	.section	.gnu.lto_.symtab.5b9693d46df81023,"",%progbits
 	.ascii	"timerClock\000"
 	.ascii	"\000"
 	.ascii	"\000"

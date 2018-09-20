@@ -9,15 +9,15 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"inverter.c"
-	.section	.gnu.lto_.profile.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.profile.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234cc```\005bF\206i\214\026\000\002\211\000\334"
 	.text
-	.section	.gnu.lto_.icf.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.icf.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234cc``\220g@\000V\206\263[O\367r0\356}\370\256\235"
 	.ascii	"\225\351\357\314\311=\214\314\213.\177,c\371\273~\327"
 	.ascii	"\025\026\006\000\356\260\016\377"
 	.text
-	.section	.gnu.lto_.jmpfuncs.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234m\220=\012\302@\020\205\337\333M\"\210\220\013"
 	.ascii	"\344\000\"x\300T)D,l\305*\205\205\027\020\377\255\202"
 	.ascii	"h!\012)\354\274\210\215\020w6\213\371\301\205m\336\373"
@@ -31,7 +31,7 @@
 	.ascii	"\337FY\377Z\274\263\260\364\025\217\316W\316\347\240"
 	.ascii	"\261\272;v\320:vb\362\206\2214o\035\034_t\037Z\366"
 	.text
-	.section	.gnu.lto_.inline.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.inline.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234cc``Had\200\003\026\006\006\001iFf\006\205\214"
 	.ascii	")\314\214_\272Z\2773w3\317af`dg\334\314(\303\300\240"
 	.ascii	"\220\016\245\201ZX8\016\3301\260-\220gb`Y /\300\300"
@@ -46,11 +46,11 @@
 	.ascii	"\203\330\006\240\267\236H6050\242\004\013\003\000S)"
 	.ascii	"?s"
 	.text
-	.section	.gnu.lto_.pureconst.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.pureconst.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234cc``\340\004b\026\006I&If\011\026\011\000\002\274"
 	.ascii	"\000\177"
 	.text
-	.section	.gnu.lto_inverterSet.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_inverterSet.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234]RQK\024Q\024\276\337\234\331\231uR{\211\350AD"
 	.ascii	"!\331\004q\263\350g\364#B\267\330\250-V\351uG\335\315"
 	.ascii	"5{XL7Y\206\230\264\010\002\263\314\2545\323q\327\254"
@@ -90,7 +90,7 @@
 	.ascii	"p$\330\024\015_\010E\233\203\341\010o-\241h}\2430\302"
 	.ascii	"M\241HK\370d8\024U\316E\350|8\362\007G\317\035\346"
 	.text
-	.section	.gnu.lto_initInverter.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_initInverter.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234mRkKTQ\024=\353\356\373\230\306W/\243\017\022\012"
 	.ascii	"\211\012\342\340\207~F?\"\324`\242\206\030\245\257^"
 	.ascii	"\037\343#\3730\210^a\270\304M\251 0\263\324\032\363"
@@ -134,7 +134,7 @@
 	.ascii	"`\270\262*R\023>\035\256\212\322\371p\344/\225\326H"
 	.ascii	"\320"
 	.text
-	.section	.gnu.lto_initInverters.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_initInverters.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234u\220MK[A\024\206\317{O\276\026~l\012\241m\020"
 	.ascii	"\005Al\301\254\374\005\375\003]\324\037 6\226\013\032"
 	.ascii	"\341F\272\315\030Sb\320B\021\033!\\\352](\012]\324\266"
@@ -159,7 +159,7 @@
 	.ascii	"\257cN\"j\307e\033\2179}C\364 \021s\354\301\221\347"
 	.ascii	"v\374\331X|\330~\365bl \021\273\003\002u\252\367"
 	.text
-	.section	.gnu.lto_enableInverter.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_enableInverter.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234US\333KTA\034\236o\346\\\366,kA/\026-Q\220\230"
 	.ascii	"En\024\365\320[\377B\027\3505t\213}h\203U\244\267\035"
 	.ascii	"\357n&\010\256\032\353\011,/\005=d7s\267\254\243R\254"
@@ -198,7 +198,7 @@
 	.ascii	"\310\241\003\007\017\237\346\247\242\376Hy8Z\0319\036"
 	.ascii	"\011\307\376\0018X\011\365"
 	.text
-	.section	.gnu.lto_.symbol_nodes.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234]\212\313\015\3020\020Dg\354\330\241\004$nT\002"
 	.ascii	"\225\355*\012\016\277\003\355\300\015\224sj\000\304"
 	.ascii	"\015\211\022\200\305\012\022\341\260z3o6\002\270\333"
@@ -209,10 +209,10 @@
 	.ascii	"\3342\201\2521Z8\235m7^{V\237\377\302\366\364\230\340"
 	.ascii	"\015\005H=\010"
 	.text
-	.section	.gnu.lto_.refs.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.refs.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234cc``\020\000bF bddb`dad\0062\030\000\002r\000)"
 	.text
-	.section	.gnu.lto_.decls.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.decls.fcf381576edd5a3f,"",%progbits
 	.ascii	"x\234\265\231yT\324\331\225\307\353\325c)\212\315F\247"
 	.ascii	"\323I\350\236\236\036\322\303$Q\332%\311\344\234\371"
 	.ascii	"#\010\264]gT8U\330K\376\251\3206\335M\037\205\016`\246"
@@ -490,7 +490,7 @@
 	.ascii	"\274\003\267~\017\311\267R\270cB\267y(\334\315\024\356"
 	.ascii	"\012\250|\315\267\252\225\311\376_\357\"\366\022"
 	.text
-	.section	.gnu.lto_.symtab.337d9ee4f3801944,"",%progbits
+	.section	.gnu.lto_.symtab.fcf381576edd5a3f,"",%progbits
 	.ascii	"initInverters\000"
 	.ascii	"\000"
 	.ascii	"\000"

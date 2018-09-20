@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"frsky_hub.c"
-	.section	.gnu.lto_.profile.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.profile.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234cc```\003bF\206\371\334\263X\000\004y\001V"
 	.text
-	.section	.gnu.lto_.icf.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.icf.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234cc``\370\315\200\000Z\014=W\037\356\347`\232\177"
 	.ascii	"\253}\0033\363\366\257\227\233\371Y\246=\235\373\236"
 	.ascii	"\221\025\314f[\362\377\353Zvv0\233\343z\317\221\203"
@@ -30,7 +30,7 @@
 	.ascii	"k\2369\351\357\377\367y\013\277\001\330H\006\000\037"
 	.ascii	"\235\205\014"
 	.text
-	.section	.gnu.lto_.jmpfuncs.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\225VmS\023W\024\276g7\011\331$$\012t\000Y+\212"
 	.ascii	"S\251v\324\257\312H\177B\377E\377\203\237\222Q\013R"
 	.ascii	"\035\031\253\3400Ck\251\255/\255S\255\242\326hLD\205"
@@ -97,7 +97,7 @@
 	.ascii	"I\2378\343q`6\276G\177\023]y\013\256\211\377\000C\023"
 	.ascii	"\226y"
 	.text
-	.section	.gnu.lto_.inline.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.inline.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\205T=o\323P\024=\367\331q\236\363\341\270nH\372"
 	.ascii	"\021\342 *QR\024\330\020 \225\254\200\344\201\231\231"
 	.ascii	"\001~\012\213\207\202\204\324!be\000\011\204\312DTu"
@@ -130,14 +130,14 @@
 	.ascii	"i4\216\006K\235\\EU9\251\215\207y\004\377\000^;\215"
 	.ascii	"\244"
 	.text
-	.section	.gnu.lto_.pureconst.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.pureconst.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\015\303\333\012@@\030\205\321\277I\023\302\205"
 	.ascii	"C\276\355\320\250q\341\024\217\340\375\337\212U\313"
 	.ascii	"\233\331\373\01768\022yR2r\012\225T\3244\264t\364Bb"
 	.ascii	"db&\260\020Y\331\33098\271\270y\370\000\264\335\006"
 	.ascii	"@"
 	.text
-	.section	.gnu.lto_GPStoDDDMM_MMMM.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_GPStoDDDMM_MMMM.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\225T\375k\223W\024\276\347=\357G\2324\251\305"
 	.ascii	"Z)8\346\320\"\212\230\037\374\301\037V\006\373K\206"
 	.ascii	"\037\231+\263e4\225!\003{\333\270\304\352\320\352\264"
@@ -196,7 +196,7 @@
 	.ascii	"\261\241\276\021w\205v\333\333w\204\011\375\027\211"
 	.ascii	"\236\367\205"
 	.text
-	.section	.gnu.lto_frSkyHubWriteByteInternal.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_frSkyHubWriteByteInternal.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234U\217\277KBQ\024\307\317\367^\177A\331\330\222"
 	.ascii	"CA`\016\371\202\376\204\376\22003\212\262Ampz7\3054"
 	.ascii	"j\220\260\027\210\305#\210\206\206\212\354\307\213\206"
@@ -218,7 +218,7 @@
 	.ascii	"\231\304B\"\231\310\244\262\306L*=\237\235\234]\232"
 	.ascii	"\212\306\3113\035\313\304~\001\326\274t\345"
 	.text
-	.section	.gnu.lto_configureFrSkyHubTelemetryPort.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_configureFrSkyHubTelemetryPort.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234mR\317k\023A\024~\337\314\354&&i\253\366\032\320"
 	.ascii	"\342\251P\262\027\377\037\321\022Q\264\036\322z(\010"
 	.ascii	"\231&J\032[\260\024\033!D\335SEDD\215?R\243n\323\037"
@@ -253,7 +253,7 @@
 	.ascii	"\031I\236O\016%GR\243\316\351\324\360\271\321\023g."
 	.ascii	"\236J\014\322_6\326\377\201"
 	.text
-	.section	.gnu.lto_serializeFrSkyHub.part.0.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_serializeFrSkyHub.part.0.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215PMKBQ\020\235\363\346\371\224 \027\255]\024"
 	.ascii	"$\324\"\015Z\367[\302\312(\372X\250-Zy\323B\243\026"
 	.ascii	"\021i!\026FD\204A\205f\331\007H\233v\025m\243MBP\204"
@@ -275,7 +275,7 @@
 	.ascii	"\214\205\307\302\343\341Xd*8\024\211\216N\365\015O\366"
 	.ascii	"\007\006\310\034\014\305B\337\0209\222\361"
 	.text
-	.section	.gnu.lto_serializeFrSkyHub.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_serializeFrSkyHub.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215S\317k\023A\024~\337\274\375\021j\033O\301"
 	.ascii	"K\016\012B\314\245)\010\322S\377\014\257\022kD\321z"
 	.ascii	"H\343\241\247\214i\244-z\220`\"\224(Q\250\032\205\212"
@@ -307,7 +307,7 @@
 	.ascii	"\354\320\261\323\207\373\207\311:\222-d\377\001'\203"
 	.ascii	"\351\306"
 	.text
-	.section	.gnu.lto_frSkyHubWriteFrame.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_frSkyHubWriteFrame.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215\222\301k\023A\024\306\3377o7\331\246\215\365"
 	.ascii	"$\2029(\010\241\024\032\301?Fz\222\330F,Z\017i<\364"
 	.ascii	"\22411\246b\205\"u\305\260\325(\204 \036D\254\325\330"
@@ -337,7 +337,7 @@
 	.ascii	"\314h&\227\035O\235\316\216\235\035?y\346\302\251\201"
 	.ascii	"!R#\303\326p:\227\376\015\277\322\334`"
 	.text
-	.section	.gnu.lto_sendAccel.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendAccel.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215S\337K\024Q\024\276\337\2753\273\263\253\356"
 	.ascii	"JB\275(\030\350\203P\015\322\233\377F\177@\224\031I"
 	.ascii	"\331\203\032\344\323\336\\]\225\022\"r\305m\212\315"
@@ -378,7 +378,7 @@
 	.ascii	"k\250knl\261O66\235n9z\352\334\361C\265\014\365\277"
 	.ascii	"\001\200I4\201"
 	.text
-	.section	.gnu.lto_sendLatLong.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendLatLong.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\205TYo\023W\024\276\337\334Ylg\223\000!\225\316"
 	.ascii	"C(\211\020\010a\011\345!R\037\370\005\375\015\025\204"
 	.ascii	"\240\242\262H!}\340\311\227`\032\223 5,1j4PS((\010+"
@@ -430,7 +430,7 @@
 	.ascii	"\266D\3276l\376|\313\247\237}\261zy\235\260\3526mjX"
 	.ascii	"\023\011\342\272\215\253\032\353\377\001\374{\355\317"
 	.text
-	.section	.gnu.lto_sendFakeLatLong.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendFakeLatLong.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215RKk\023Q\024\276\337\334L2Z\323*\202\033[P"
 	.ascii	"\260H\024\032\262\353\257\350\312\275h\214\370\252\205"
 	.ascii	"\264.\272\312\355\30345RJ\260\021\343(#\202QD\212X\033"
@@ -466,7 +466,7 @@
 	.ascii	"\307\343\375\247\007\017\2378w\264+*\314h__\374\330"
 	.ascii	"\037C-\036\313"
 	.text
-	.section	.gnu.lto_sendGPSLatLong.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendGPSLatLong.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215T\335K\024Q\024?g\356\314\354\350\272\256\320"
 	.ascii	"C\004\006\005\372\260\025N\373\244\377D\370'D\231Q\230"
 	.ascii	"\011j\017\366\262\243\273\342\372\221\204\344\206\262"
@@ -513,7 +513,7 @@
 	.ascii	"K\213\313\324\313\305%\005e\347\257\334\270\230\225"
 	.ascii	"\007R^QQ\361\245?0I\241\214"
 	.text
-	.section	.gnu.lto_sendGpsAltitude.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendGpsAltitude.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234uSMO\023Q\024}\347\335\351t\332\002\032\023w\263"
 	.ascii	"\320\010\013\210a6\376\010\377\205A\254\221\010.JY\260"
 	.ascii	"\352\203\212\305\350\002\324VR\213\031B,\272PB\004\264"
@@ -549,7 +549,7 @@
 	.ascii	"\034\217u\236\354>r\242\353hs\253\260Z\332\343m\361"
 	.ascii	"\256c\321\337S\337\003\314"
 	.text
-	.section	.gnu.lto_sendSatalliteSignalQualityAsTemperature2.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendSatalliteSignalQualityAsTemperature2.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215T\355STe\024\177\316}\366\276\355\335eyq\372"
 	.ascii	"`Kcc\304h\023\333\330\327\376\202>\364\007\364\245\210"
 	.ascii	"hp\002m`\375\300'n\254,\213f\221\303\313\272.\316\232"
@@ -618,7 +618,7 @@
 	.ascii	"x\277\267\220{K>\331\271%\272\340`I\311\301\003x\366"
 	.ascii	"\026\225\345\025\261\277\001\217\014J\247"
 	.text
-	.section	.gnu.lto_sendSpeed.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendSpeed.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215SMk\023Q\024\275w\336|\345\253!v%dQ\021\204"
 	.ascii	"n:\024\374\031\376\001W\242%\242h]\244u\321UFc\223\006"
 	.ascii	"\265\210\330h\303\264\214\272\220.\264\212\265&\361"
@@ -654,7 +654,7 @@
 	.ascii	">~\312\032L\235L\365\247\006\323C\326\321\364\300\211"
 	.ascii	"\241C\307N\037\351\351\203\337\267\317%L"
 	.text
-	.section	.gnu.lto_sendHeading.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendHeading.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234uP\313+DQ\030\377~\347p\347\322\260R\026\356\202"
 	.ascii	"\254l\334\345\374-VB#\362\252\301\302j.\323\014b!\314"
 	.ascii	"(]\272J\254\204<\307\363f#\013L\026,X)\212\204Q\222"
@@ -678,7 +678,7 @@
 	.ascii	"\232\333\315\256`k\260-\330\025\3521\033C\235-=\265"
 	.ascii	"M\335\365\325\015\364\015\322\027\240\320"
 	.text
-	.section	.gnu.lto_sendTemperature1.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendTemperature1.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\225Q\317k\023A\024~\337\276\315n\232\266\271z"
 	.ascii	"Y\241\202E\212\220\275H\301\273\177\206 1D\024\255\207"
 	.ascii	"$\036z\3124?\210\305\036<\330\010ac\243B\245\007Q\261"
@@ -710,7 +710,7 @@
 	.ascii	"{*\227?;|\342\364\205\223\251\014\331\331|\346X\272"
 	.ascii	"\220\376\003\346\344\335-"
 	.text
-	.section	.gnu.lto_sendThrottleOrBatterySizeAsRpm.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendThrottleOrBatterySizeAsRpm.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234}\221\313k\023Q\024\306\317w\317d\222&\325\255"
 	.ascii	"\233,*X\244\010\231M\351_\340\377!1D\024\215\213$.\272"
 	.ascii	"\312m\036\304\020A\0276\3250JPh\027\"Q\264jj\3251j)"
@@ -743,7 +743,7 @@
 	.ascii	"\034\312\346\216\016\0378|\342`\"E\341t.\265?\231O\376"
 	.ascii	"\004O\\\331>"
 	.text
-	.section	.gnu.lto_sendVoltageCells.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendVoltageCells.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\225T\335OTW\020?s\317\275\373\375\001(lb6\262"
 	.ascii	"$\345\2014\021\023c|i\232&\375\037\372\324\244\241t"
 	.ascii	"\373\221\242&\270>\370RNYX\\\241\011m\354V7\213Ycbm"
@@ -802,7 +802,7 @@
 	.ascii	"\323\253{\367\357I\370i\365\332\336\246D\303;\361\377"
 	.ascii	"\0005\271.}"
 	.text
-	.section	.gnu.lto_sendVoltageAmp.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendVoltageAmp.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215S[kTI\020\256:}n3\2313\011b\362 \203D0\210"
 	.ascii	",d\026\304\007\365\321\177\340\037\020\015\263*F\205"
 	.ascii	"\230\010\276l\332\214N\022V1\336F\015\023\035\311.."
@@ -854,7 +854,7 @@
 	.ascii	"\256YY^\001\241\212De\345\322\0155\353\253\235M\033"
 	.ascii	"*\253W\254J|\001\3323\302\307"
 	.text
-	.section	.gnu.lto_sendAmperage.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendAmperage.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234UN\277KBQ\024>\337=\372\336#\362\037(\207\242%"
 	.ascii	"\227\367\266\376\227\246(1\012\263Ampz7\2454jh(\203"
 	.ascii	"x\201\322\320XQ\317r{\264\006!\215\26554\204D4\004\005"
@@ -873,7 +873,7 @@
 	.ascii	"B>\355\345\026W\327\275bf-\223\313\024\363%o9_\310\226"
 	.ascii	"\026V6\226\3344\375\002\241Ym\273"
 	.text
-	.section	.gnu.lto_sendFuelLevel.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendFuelLevel.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234mRQK\024Q\024>\337\334\331\231\331]W\355-r\211"
 	.ascii	"\302$\364\301\205\036z\360\265\327\376C\230)F\256\202"
 	.ascii	"n\017>\355\315M\324,\220\320Me\215\215H\251\020)mk\325"
@@ -913,7 +913,7 @@
 	.ascii	"\271\332\313\347\313\253H\277P\031\251<\362\027\254"
 	.ascii	"\252!\034n\250\347<R\333T^K\277\001\223{\036\326"
 	.text
-	.section	.gnu.lto_sendTime.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_sendTime.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\205\221\317k\023A\024\307\337w\337f\2234MN\202"
 	.ascii	"\202A*\330C\021\232\253\240\377\210'\321\030Q\264\025"
 	.ascii	"\222z\350\305\214Ym\352\017h\005\215\0326\232P\304\213"
@@ -946,7 +946,7 @@
 	.ascii	"\335\265\377\310\236\3014\205s\231\364\341\341\275\271"
 	.ascii	"?\375\255\333\022"
 	.text
-	.section	.gnu.lto_initFrSkyHubTelemetry.part.1.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_initFrSkyHubTelemetry.part.1.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234]\222\315k\023Q\024\305\357ywf\362\235l]\004\241"
 	.ascii	"\270*\224Fp\343B\304\275\177\204h\211(Z\027i]t\225g"
 	.ascii	"\333\220\304\010\026\261\221\226Af\245K\251\266\326"
@@ -977,7 +977,7 @@
 	.ascii	"\213\227\213\203\305\341\322H\341|i\350\322\310\231"
 	.ascii	"\013W\317\365\017\320>\232\000\364H"
 	.text
-	.section	.gnu.lto_checkFrSkyHubTelemetryState.part.2.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_checkFrSkyHubTelemetryState.part.2.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215Q\317KTQ\024>\337;\357\215\203i\273\320\205"
 	.ascii	" \202.\004\361\005\256\202\240\240?!\3672\312\013\305"
 	.ascii	"\321\305h\013W\3576\2169\303\264\220\320\027\014\017"
@@ -1005,7 +1005,7 @@
 	.ascii	"\340\335\376\356\001\272\342\215\246\372\323\336m/3"
 	.ascii	"\224J\367\376)\371\015\326\020\274\330"
 	.text
-	.section	.gnu.lto_processFrSkyHubTelemetry.part.3.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_processFrSkyHubTelemetry.part.3.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215W\373oT\307\025\2363\263\217\273\357]\357z"
 	.ascii	"m\203[\014\201PZ5\364)\241\266\252*\265\377@\245\366"
 	.ascii	"\347(!\256\212\022\022\311\030\251\371\311\027?\326"
@@ -1121,7 +1121,7 @@
 	.ascii	"^)y\201?\373\027\355\271\227J7\225n}\241\370\177\256"
 	.ascii	"J\377\230"
 	.text
-	.section	.gnu.lto_handleFrSkyHubTelemetry.part.4.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_handleFrSkyHubTelemetry.part.4.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234MRKkSQ\020\236\357\314\271IZL\301e!\213\012\305"
 	.ascii	"\322MB\367\376\003\267\272\026\215\221\026M\013I\272"
 	.ascii	"\350*\247ijR\252\240\2427\032/\222E\305\215X\213U\033"
@@ -1151,7 +1151,7 @@
 	.ascii	"\361\302\261\261l\346x\276\277+>=\221\315NH\232<$G\351"
 	.ascii	"/1\026\307\337"
 	.text
-	.section	.gnu.lto_initFrSkyHubTelemetry.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_initFrSkyHubTelemetry.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234mP\315+\304Q\024=\347\335\337of\222ak\361K\311"
 	.ascii	"\312\306\320\224\177G>F\344c1(V\363\030\023\023\013"
 	.ascii	"\211Q\2324;v\222\317a\363\013kd\243(e\312F\223\262Q"
@@ -1172,7 +1172,7 @@
 	.ascii	"\321tOb\270k`$1\226\032J\015\247\306\322\223\211\276"
 	.ascii	"\364\350\340dg\377xwk\017\276\000I\335~\333"
 	.text
-	.section	.gnu.lto_initFrSkyHubTelemetryExternal.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_initFrSkyHubTelemetryExternal.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\205QMh\023a\020\235\367\315\346\207\332\306\253"
 	.ascii	"\302\"\212\205\322\036\032A\361\246\007A\360\342\311"
 	.ascii	"\203Gi\313\026K\177\016\333\024\214\227\254IC]\254("
@@ -1203,7 +1203,7 @@
 	.ascii	"\260\335\223\262\366\245S\326\376c)\313\036\350\350"
 	.ascii	"\373\005\334\301\326\310"
 	.text
-	.section	.gnu.lto_freeFrSkyHubTelemetryPort.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_freeFrSkyHubTelemetryPort.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215\217=K\003A\020\206\347\335M.AP[A\021\305*"
 	.ascii	"\010\271\037\343\017\020\015'\212\306\342\022\213\200"
 	.ascii	"pkbLB,D\364\0049\344\260\261\0241~\2346G\012\013\003"
@@ -1223,7 +1223,7 @@
 	.ascii	"ZsV\332\312\3329s\312\316\314\346\306\247\027&\223)"
 	.ascii	"\372\002;\270|a"
 	.text
-	.section	.gnu.lto_checkFrSkyHubTelemetryState.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_checkFrSkyHubTelemetryState.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\215\224\337K\024Q\024\307\317\271w~\355\356\370"
 	.ascii	"\253\210J\004\213\222\260\007\015\214\240\210\350O\010"
 	.ascii	"\352\251\207Be#I}P{\360\311iWS\253\207H\333J\206\030"
@@ -1270,7 +1270,7 @@
 	.ascii	"\312\023\325G\217\237,\312+\206u\376\362\302\242R\377"
 	.ascii	"A\177EIa\351\241\305\220\177\307\262\262\247"
 	.text
-	.section	.gnu.lto_processFrSkyHubTelemetry.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_processFrSkyHubTelemetry.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234]Q\317k\023Q\020\236ogw\223\026\323\263B@\205B"
 	.ascii	"\351%\241\370gx\325\263h\\i\321ma\223\036z\332\327\246"
 	.ascii	"iZ\252P\305nJX$\202\305\213X\203U\033\177\261DA/\265"
@@ -1298,7 +1298,7 @@
 	.ascii	"\322\2511\337;]<\362O~a\302\367'\344\231\\\344F\351"
 	.ascii	"\027\023g\270-"
 	.text
-	.section	.gnu.lto_handleFrSkyHubTelemetry.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_handleFrSkyHubTelemetry.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234m\222\317k\023Q\020\307\347\373f_v\033lA\320\203"
 	.ascii	"\320\212B\261\364\322\350\321\253\376\013z\026\015+"
 	.ascii	"\026M\017\233\364\320\213y\246-i\321\203\025M!,e\017"
@@ -1327,7 +1327,7 @@
 	.ascii	"\305\223CGN\014\036\353\313S{~0\010\374\201\322\241"
 	.ascii	"\376\202\177\270\370\00737\302\317"
 	.text
-	.section	.gnu.lto_.symbol_nodes.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234]\221[sSU\024\200\327\332\373\2344\247$\001z1\015"
 	.ascii	"II\240\247P$\024Q.^\012\310\037\341\257\254p\214\251"
 	.ascii	"Sf*CU\036x\200\351\204\007\036\235\001Fx\222X-\024*"
@@ -1376,7 +1376,7 @@
 	.ascii	"s|\222\205\003\301\204\220\345\036hL\254\223\375\272"
 	.ascii	"hs\037\214~\331\013\377\002\256B\364>"
 	.text
-	.section	.gnu.lto_.refs.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.refs.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234%\216mO\0031\014\203\037'\275\266\333m\273\225"
 	.ascii	"\001\022\007L\333\215\225w\020_\220\020\342\377\377"
 	.ascii	"-:\220\242\304r\234\330\021\270\024\234*\311py\240\023"
@@ -1390,7 +1390,7 @@
 	.ascii	"\316\361\310k\226\317\331\367\370Jo\355\306\336O;w~"
 	.ascii	"\001\314\215\013\033"
 	.text
-	.section	.gnu.lto_.decls.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.decls.f23731ac8aedff42,"",%progbits
 	.ascii	"x\234\265\275yXTI\226(\316\315\310\215\335\255\252\254"
 	.ascii	"j\273\272\247\306\356\262{^\225KU/\363\275\371\243-"
 	.ascii	"\227j\273\335F\254\352\356z\337\373h\012\323\222)\004"
@@ -2405,7 +2405,7 @@
 	.ascii	"v\2716n\241n\355\351\375g_\2761\265\334\303w\233\247"
 	.ascii	"\333w\377\037\214\342}\241"
 	.text
-	.section	.gnu.lto_.symtab.7ba7e1e240a1a08c,"",%progbits
+	.section	.gnu.lto_.symtab.f23731ac8aedff42,"",%progbits
 	.ascii	"initFrSkyHubTelemetry\000"
 	.ascii	"\000"
 	.ascii	"\000"

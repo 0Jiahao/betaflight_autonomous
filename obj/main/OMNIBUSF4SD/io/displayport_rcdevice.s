@@ -9,14 +9,14 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"displayport_rcdevice.c"
-	.section	.gnu.lto_.profile.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.profile.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234cc```\001bF\006un\000\000\321\000>"
 	.text
-	.section	.gnu.lto_.icf.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.icf.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234cc``\020a@\000f\206\376\357\317\037\3600>\372\331"
 	.ascii	"\265\206\237\251\363S\313\024N\006\000g\201\0116"
 	.text
-	.section	.gnu.lto_.jmpfuncs.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234cc``\270\310\200\000\214\014\214@0\207\231\201"
 	.ascii	"\211q\0123\343\316\235on\263\327\377m\340\230\303\314"
 	.ascii	"\270\200\031$\275\231\261\236\201\361\000\013#\003\020"
@@ -26,15 +26,15 @@
 	.ascii	"\031\201\032\266\341\267\221\011h\343v\240^ fb\252\004"
 	.ascii	"\271\037\252\366?H-\003\003\000\371\335?O"
 	.text
-	.section	.gnu.lto_.inline.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.inline.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234cc``\320d@\000F\006\006^eF\006&\226\005\362\014"
 	.ascii	"l\013\344\231@bL\334 qf\036 \213\001L1N\360c\000\000"
 	.ascii	"DD\002\373"
 	.text
-	.section	.gnu.lto_.pureconst.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.pureconst.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234cc```\006bF\006\011\000\000}\000#"
 	.text
-	.section	.gnu.lto_rcdeviceDisplayPortInit.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_rcdeviceDisplayPortInit.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234\205\221\315k\023a\020\306\347yg\363\331\244x\222"
 	.ascii	"\036z\250\240\324^\032(\370?x\364?\220\222D\010TSR)"
 	.ascii	"x\332\267&\301H=\210\324(a\221E\224\202\027\225Fk\374"
@@ -66,7 +66,7 @@
 	.ascii	"\215\216\014\037\033Mg\216\036\314\304\023\311\361T"
 	.ascii	"<9\030\247\360x<q \223>\224\032I\376\000^\304\003\322"
 	.text
-	.section	.gnu.lto_rcdeviceOSDVTable.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_rcdeviceOSDVTable.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234e\317=J\003a\020\306\361yv\366#\311\011\274\200"
 	.ascii	"\330e\333\334F\302&\305\202\232\260\021\301j_\260\011"
 	.ascii	"\332\232\267\332\"G\020\324\3045~\200G\260T\220d\033"
@@ -82,7 +82,7 @@
 	.ascii	"N<\350\357\265\217\373\275\344p7\211:\335\2438\3526"
 	.ascii	"#\372\007L|\243\342"
 	.text
-	.section	.gnu.lto_.symbol_nodes.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234U\312\311\015\302@\024\003P;\303\204-@\001\271"
 	.ascii	"Q\011T\346A\012\373\222\000\015\004\211*(\202\0328p"
 	.ascii	"L\015\210\001\011\211\177\371\266\236\177\012 g<\311"
@@ -92,12 +92,12 @@
 	.ascii	"\300\231\352\033XQ\331\017\302\007\226\324\340\037\034"
 	.ascii	"F\270>^t\030\342Y713\024\227\206x\003\374G?\220"
 	.text
-	.section	.gnu.lto_.refs.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.refs.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234\025\306\311\015\000 \014\004\261\315\220p\005"
 	.ascii	"\352\240\377\016\201\207%WI\347qa\005\012\346X\344\237"
 	.ascii	"\023T\032\235\301$Yl]\021y\000\311"
 	.text
-	.section	.gnu.lto_.decls.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.decls.766f20d569ea4bbe,"",%progbits
 	.ascii	"x\234\265X}PT\327\025\177\367\335\005v\227\025\254\330"
 	.ascii	"\204\316\220\251\223\222\310\264\325M\242\235\304\231"
 	.ascii	"\266\323\3064\037\323N\232\21165\231L\326\025\026\331"
@@ -291,7 +291,7 @@
 	.ascii	"zW*\205\237\271q&e\242\0149W^&\1771E$y\312\264\020]"
 	.ascii	"\011Q\344Y\351\233\255\307\277\001\037}U1"
 	.text
-	.section	.gnu.lto_.symtab.dfe043d59482c2d2,"",%progbits
+	.section	.gnu.lto_.symtab.766f20d569ea4bbe,"",%progbits
 	.ascii	"rcdeviceDisplayPortInit\000"
 	.ascii	"\000"
 	.ascii	"\000"

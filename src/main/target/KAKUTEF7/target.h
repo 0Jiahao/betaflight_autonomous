@@ -144,6 +144,9 @@
 #define I2C1_SCL                PB6
 #define I2C1_SDA                PB7
 
+#define USE_RANGEFINDER
+#define USE_RANGEFINDER_TF
+
 #define USE_BARO
 #define USE_BARO_BMP280
 #define BARO_I2C_INSTANCE     I2C_DEVICE

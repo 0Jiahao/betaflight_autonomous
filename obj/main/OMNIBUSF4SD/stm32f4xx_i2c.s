@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"stm32f4xx_i2c.c"
-	.section	.gnu.lto_.profile.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.profile.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234cc```\003bF\206'\314w\231\000\005\371\001\324"
 	.text
-	.section	.gnu.lto_.icf.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.icf.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234cc``\270\305\200\000*\014\233_\255Z\317\310x\351"
 	.ascii	"\316\345\305\\L+\276\036j\342e\236w\372\306FV\226\315"
 	.ascii	"\3277\237db=>\361B\003/\333\3567\007w\260\263ooz\333"
@@ -27,7 +27,7 @@
 	.ascii	"\240\253\237W\361m\323\2417|J\007/\354x\312\245\014"
 	.ascii	"f3\000\000\010\331nB"
 	.text
-	.section	.gnu.lto_.jmpfuncs.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234u\221;O\303@\020\204wn\317v\022\036\001\302\033"
 	.ascii	"Cx\375O\334D)\322\242\024(\022\025\015\035\202\000\025"
 	.ascii	"B\324HH\224\224\324\024\374\200H\346\316>\331c\311\234"
@@ -44,7 +44,7 @@
 	.ascii	"\345\001C\312\335\017y\375\310\313G$'\303\320\355\230"
 	.ascii	"/O\030N\031\316\030\344\017@)\234\306"
 	.text
-	.section	.gnu.lto_.inline.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.inline.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\265\2261o\323@\024\307\337;\237\355Kl\034\003"
 	.ascii	"\245-\241\020\003\225\272ue`\351'\200\257\220\271\021"
 	.ascii	"\337\301\014E\225\030@\242\240\016\035\272Tb`\010ji"
@@ -87,14 +87,14 @@
 	.ascii	"\206\334\212\245\037\363\030\3068\321\335\177Q\340/"
 	.ascii	"\3211e\310"
 	.text
-	.section	.gnu.lto_.pureconst.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.pureconst.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\015\303\013\026\201@\000\000\300\215Z\224\224"
 	.ascii	"O\265\015\022\271L\367\277\020\363\336\304\020\302\372"
 	.ascii	"\377\015)K\033[\271B\264\263wP\252\034\325N\032\255"
 	.ascii	"\263\213\253\233No\220\214\270{x\232\274\314\336>\026"
 	.ascii	"?\341\254\006\216"
 	.text
-	.section	.gnu.lto_I2C_DeInit.part.0.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_DeInit.part.0.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234uOKK[Q\020\236\357\316\311CA\027\202\340\"\013"
 	.ascii	"7.\\\350\205\304\177P\021\024\004E\367AS\245\027\252"
 	.ascii	"H\"\222Us\032\214\211(\342B\257 w\021\020\021qa}\265"
@@ -119,7 +119,7 @@
 	.ascii	"v\242\211\346\004\251\366\350\207\364\177\213\344\222"
 	.ascii	"\217"
 	.text
-	.section	.gnu.lto_I2C_DeInit.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_DeInit.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234uQMHTQ\024>\337\273\357oF\263U\322b\026-\002\231"
 	.ascii	"\215\023cD\2536EP \024\266\227\232\254\0062b\224p7\327"
 	.ascii	"\311\361\207\254\204t\002y\220\021a\032\241f\232\223"
@@ -154,7 +154,7 @@
 	.ascii	"\376]\244%\021\213\264\2646\327EO\250\353x4V\033#\375"
 	.ascii	"@to\333?\271\027\012\213"
 	.text
-	.section	.gnu.lto_I2C_Init.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_Init.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\245V}pT\325\025\277\347\335}\357\355\356\333M"
 	.ascii	"@DI\010%#`\264H\226\006G\362G\373W;\235\2613\3168\245"
 	.ascii	"\177u:\303\320m\320\214\201\342&v\350\037\235\274|m"
@@ -263,7 +263,7 @@
 	.ascii	"\240\310\2652\220\367b`\305\352\347\362\264\242Uk\002"
 	.ascii	"y\317\375\007\210d\325\300"
 	.text
-	.section	.gnu.lto_I2C_StructInit.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_StructInit.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235\222\317k\023A\024\307\347\273\223l\342\217"
 	.ascii	"\246PA\004{\350A\011\275t!\365?P\012\025\013B\274y\010"
 	.ascii	"\032+.\330\"\233Uz\35346M\212\036\244\330\212e\221\024"
@@ -296,7 +296,7 @@
 	.ascii	"\214\230\0255bvWk\350\250<6C\321\226(\013\264\207vG"
 	.ascii	"\332\273M;l['\243\366o\364W,c"
 	.text
-	.section	.gnu.lto_I2C_Cmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_Cmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235QMHTQ\024\276\337;w\336\274rt\323\246\305,"
 	.ascii	"\004\203A\011_\214\255\333\024A\201\025\331\252\215"
 	.ascii	"\230M4\220\021\343P\263\363\3727\376d\322\"M\344Q\023"
@@ -331,7 +331,7 @@
 	.ascii	"\234\016'\343\215\325\215B\036\211\037\314X\307\022"
 	.ascii	"W\352\322\015\351\304_Wm\020\332"
 	.text
-	.section	.gnu.lto_I2C_AnalogFilterCmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_AnalogFilterCmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235QMHTQ\024\276\337;\367\315L\376\321*Z\270\020"
 	.ascii	"\014D\027\276\030[\267)\202\002#\232Vn\304l\242\201"
 	.ascii	"\214\230\031jv^\307\2771MZ\244\211\274j\202\"\\\224"
@@ -365,7 +365,7 @@
 	.ascii	"\025\213w4\005\217\353r$\330\336\330.\344\376\340\236"
 	.ascii	"D\340`\370l(\336\026\017\377\005A\034\021\200"
 	.text
-	.section	.gnu.lto_I2C_DigitalFilterConfig.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_DigitalFilterConfig.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\205S\335KTA\024\237s\317\365\356\252\255\026\004"
 	.ascii	"\011I\370\220\210/^X\375\017\022\241@\210\354\271\305"
 	.ascii	"\326\315n\254!\273[\354\233\263_~PFA*-\233l\037VBf\242"
@@ -404,7 +404,7 @@
 	.ascii	"6\030\336\200\307\247\005\332\332}\236\326\337cy\017"
 	.ascii	"\363"
 	.text
-	.section	.gnu.lto_I2C_GenerateSTART.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_GenerateSTART.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235QMHTQ\024\276\337;\367\275\231lt\0351\013\301"
 	.ascii	"@t\341\213\261\266m\212\240\300\210l\325Fl\232h\"#\306"
 	.ascii	"\241\334y\375\3272i\241&\362\250\211\212pQS\224MN\246"
@@ -438,7 +438,7 @@
 	.ascii	"j\360cvs\"j7'\233j#'u8\036\211\326D\205<\020\331\333"
 	.ascii	"\022<\024\273P\237lL\306\376\0022\367\022~"
 	.text
-	.section	.gnu.lto_I2C_GenerateSTOP.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_GenerateSTOP.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235QMHTQ\024\276\337;\367\315L\345\3306j\026\202"
 	.ascii	"\201\350\302\027c\320\256M\021\024\030\221\255\332\210"
 	.ascii	"M\023\015d\304\314\220\356\274\216\243\243e\322\"\177"
@@ -474,7 +474,7 @@
 	.ascii	"\007\303\373\332\003\207\243mM\311\226d\364/Z\363\021"
 	.ascii	"\316"
 	.text
-	.section	.gnu.lto_I2C_Send7bitAddress.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_Send7bitAddress.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234e\222_HSq\024\307\177\337\373\273w\033c\363\331"
 	.ascii	"\007\021\301`\350\2037f\257\005\221\004\005BdO\275H"
 	.ascii	"m\253.\244\325f\2617\177N\235M+\202\334\222q\213\005"
@@ -511,7 +511,7 @@
 	.ascii	"\006\317\310m#\030j\0111\365H\360P\334}0\034\216Fb1"
 	.ascii	"?9\235mF4\022\3521.t\377\005\026,\364x"
 	.text
-	.section	.gnu.lto_I2C_AcknowledgeConfig.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_AcknowledgeConfig.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235QMHTQ\024\276\337;\367\315L\245\266m1\204`"
 	.ascii	" \272\360\305Lk7EP`D\266j#f\023\015d\304\314P\003.\274"
 	.ascii	"\352\250c\251\264\310\037\344Q\266\220p\021\026\375"
@@ -547,7 +547,7 @@
 	.ascii	"\265\324\265\010y,t8\0318\021\271\332\230hND\376\002"
 	.ascii	"\0027\023\272"
 	.text
-	.section	.gnu.lto_I2C_OwnAddress2Config.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_OwnAddress2Config.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\205S\317KTQ\024\276\337;\3177\343\217\261\332"
 	.ascii	"\011I\271H\304\215/\306\376\201(\202\002!\262U\033+"
 	.ascii	"\235j Cf$f\225wF\035\013S\222\324`x\325TH\2710\023\263"
@@ -585,7 +585,7 @@
 	.ascii	"\016\236R\327\341`}U\2750\017\006\367\305|{\033\032"
 	.ascii	"\"\241h\324jnl\212\204N\377\006J1\013\266"
 	.text
-	.section	.gnu.lto_I2C_DualAddressCmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_DualAddressCmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RMh\023A\024\236og\262\211\332\026\274y\310"
 	.ascii	"\241X!\264\207\256&\236\275(\202BE\214'/\245\306\210"
 	.ascii	"\001+\222\004\315\255\32346i\254E\301\324R\202\346\240"
@@ -622,7 +622,7 @@
 	.ascii	"\321\230\353T\360\272?\332\023\015\376\005\211\301\024"
 	.ascii	"\205"
 	.text
-	.section	.gnu.lto_I2C_GeneralCallCmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_GeneralCallCmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RMHTQ\024>\337\273\367\315L\245B\273\026.\204"
 	.ascii	"\011D\027\276\032[\267)\202\002#\262U\033\261i\242\201"
 	.ascii	"\214\230\031j\026\201\327\321\032-G\012\322D\206rQ\210"
@@ -657,7 +657,7 @@
 	.ascii	"\326\321\0348\241\323\341@\260)Hr\177`O\334w0t\2565"
 	.ascii	"\326\036\013\375\005\207b\025\257"
 	.text
-	.section	.gnu.lto_I2C_SoftwareResetCmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_SoftwareResetCmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RMh\023A\024\236ogv\0235-x\024z(T\014\355\241"
 	.ascii	"+\211g/\212\240P\021\353\311K\2515b\300\212$As(t\332"
 	.ascii	"F\323j-\012\375\011e\261\271\224\322\203\324\022\265"
@@ -692,7 +692,7 @@
 	.ascii	"\201\236\366\036&\216\006\016\305\275\307CW:c\335\261"
 	.ascii	"\320_\372\310\024z"
 	.text
-	.section	.gnu.lto_I2C_StretchClockCmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_StretchClockCmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RAh\023A\024\235\2673\233\304\332\026<\012"
 	.ascii	"9\024*\206\366\320\225\304\263\027EP\250\210\361\344"
 	.ascii	"\245\324\0301`E\222\2409\010\235\246\321\244Z\213\202"
@@ -727,7 +727,7 @@
 	.ascii	"\210\204\003F$\332\343\363\036W\351\2207\320\021`b\237"
 	.ascii	"ww\314u x\326\037\355\216\006\377\002\300a\026>"
 	.text
-	.section	.gnu.lto_I2C_FastModeDutyCycleConfig.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_FastModeDutyCycleConfig.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235\222\177HSQ\024\307\357\367\335\373\266\221"
 	.ascii	"\315\012\372+\024$\202\341?>\231\365o\377(A\201\020"
 	.ascii	"\331\377\243\326\242\201Fl+\024\002\257\277\322UJ\201"
@@ -763,7 +763,7 @@
 	.ascii	"\327\370\2318\352\255ou\323\346k\270\030i\253o\3637"
 	.ascii	"\007\376\001H\357$\036"
 	.text
-	.section	.gnu.lto_I2C_NACKPositionConfig.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_NACKPositionConfig.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235\222_HSq\024\307\177\347\376~\367n\250\263"
 	.ascii	"\005\201\020>\354!\030\366\340\205Y>\006a\004\025\206"
 	.ascii	"d\357#\227\321\205\324\330F\354!\360\347\\\251\375\303"
@@ -800,7 +800,7 @@
 	.ascii	"5\217\257\326G\330!OC\310\211\233\367\350\376\206#M"
 	.ascii	"\035\001-\250u\264\377\003\271\032%\207"
 	.text
-	.section	.gnu.lto_I2C_SMBusAlertConfig.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_SMBusAlertConfig.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235\222]h\023A\020\307wn\367.\301\330\250 \364"
 	.ascii	"\301>\024\021B\021z\220J}\023\374@P\010\210\361=j\214"
 	.ascii	"\030hE\222(y\020\272I\243\375RQ\260\021\312)AH\245\017"
@@ -838,7 +838,7 @@
 	.ascii	"\333\356%l\217sg\330\216\213\307\355\332q2\270\275\313"
 	.ascii	"\027\010\375\003\014\266%/"
 	.text
-	.section	.gnu.lto_I2C_ARPCmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_ARPCmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RMh\023A\024\236ogv\023\355\017z6\207B\205"
 	.ascii	"\322\036\262\222\012\336\274(\202BE\254'/\245\306\210"
 	.ascii	"\001+\222\004\315A\3504\255m\252\261(\330ZJ\324\200"
@@ -873,7 +873,7 @@
 	.ascii	"\016\251t\320\347\367\372\231\330\351\333\026u\357\016"
 	.ascii	"\234\350\214tG\002\177\001\263\252\025u"
 	.text
-	.section	.gnu.lto_I2C_SendData.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_SendData.25b4f4a048c262e,"",%progbits
 	.ascii	"x\2345P\317KTQ\024>\337;\3177.r\300\265\203\270\010"
 	.ascii	"\0067^\231\361?H\202\004!4\332\3128\031>H\221\231!f"
 	.ascii	"\347\235I\033\363\027\005\216\301\360\212Y(\321\",\254"
@@ -901,7 +901,7 @@
 	.ascii	"\221\373\206v#\361\2668\331\267\"7\322vg,\025\373\007"
 	.ascii	"\312\017\237\340"
 	.text
-	.section	.gnu.lto_I2C_ReceiveData.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_ReceiveData.25b4f4a048c262e,"",%progbits
 	.ascii	"x\2345OMK\033Q\024\275g\356dt\023\377\200\263\310\242"
 	.ascii	" n\034\231\370\017Z\004\013BK\334\007M-\0164\"\211H"
 	.ascii	"vy\211Vk\375@K\243\020\006q\321R\\\224(\266\215&Y\014"
@@ -925,7 +925,7 @@
 	.ascii	"\251\211\370#\347\244S\011'=\235\214\272\2575\355\271"
 	.ascii	"\211\276\004\231C\356\323\314_\253\033\212\271"
 	.text
-	.section	.gnu.lto_I2C_TransmitPEC.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_TransmitPEC.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RMh\023A\024\236og6\211\332\026\274\347\020"
 	.ascii	"\250\020\332CW\022/^\274(\202BE\214'/\245\306\210\001"
 	.ascii	"+\222\004\315A\3504\215&\325Z*\264\265\224\2409X\244"
@@ -960,7 +960,7 @@
 	.ascii	"\276\223*\035\366\005;\202L\034\360\355\215\273\016"
 	.ascii	"\205\316\007b\335\261\320_\021\260\0269"
 	.text
-	.section	.gnu.lto_I2C_PECPositionConfig.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_PECPositionConfig.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235\222Mh\023Q\020\307\337\354{\273\211\255i+"
 	.ascii	"\010\275T\310A\010\275t!\221^\004/UA\241\020\254\367"
 	.ascii	"Pc\305\005\333J\022$\007\241\257ib[?\253\364\003\312"
@@ -998,7 +998,7 @@
 	.ascii	"\333\337\344'\354\230\273%\\\213\233\317{\244\305\333"
 	.ascii	"\035\324BZw\327?\346\335#\346"
 	.text
-	.section	.gnu.lto_I2C_CalculatePEC.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_CalculatePEC.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RMh\023A\024\236ogv\023\265-x\217\020\250\020"
 	.ascii	"\332CWR\361\"xQ\004\205\212\030O^J\215\021\003V$\015"
 	.ascii	"\232\203\322i\022m\243\265(\264\265\224\2409(\322\203"
@@ -1033,7 +1033,7 @@
 	.ascii	"\376`[\220\211}\376\3351\367\201\320\331@\264+\032\372"
 	.ascii	"\003\2135\024\325"
 	.text
-	.section	.gnu.lto_I2C_GetPEC.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_GetPEC.25b4f4a048c262e,"",%progbits
 	.ascii	"x\2345\217\315kSA\024\305\357\231\373\336K6\351?`\204"
 	.ascii	",\012\245\233\276\222\010\376\001\212\240P\260\324}"
 	.ascii	"\251\261\322\007V$)\222]'I\355\227mi\301\264\020\036"
@@ -1059,7 +1059,7 @@
 	.ascii	"x.\27031\332\355\371\371\\\326\317OMf\3227\265\035\244"
 	.ascii	"\263\003Yr.\247/\024\376\001W\013\2276"
 	.text
-	.section	.gnu.lto_I2C_DMACmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_DMACmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235RMh\023A\024\236og6\211\265-z/R\250\020\332"
 	.ascii	"CW\022O\202^\024A\241\"\306\223\227Rc\304\200\025I\202"
 	.ascii	"\346 t\232\3066\325Z\252\330Z\312\242A\021\351A\253"
@@ -1095,7 +1095,7 @@
 	.ascii	"A&\366\370v\306=\373B\247\003\261\266X\350/U\201\026"
 	.ascii	"\215"
 	.text
-	.section	.gnu.lto_I2C_DMALastTransferCmd.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_DMALastTransferCmd.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235\222Mh\023A\024\307\347\2773\273\211\037-x"
 	.ascii	"\363P$P!\264\207\256\244\336D/\212\240P\021\343\311"
 	.ascii	"K\2515b\300\212$\301\346 t\232F\233j-\012m\015%h.Az"
@@ -1131,7 +1131,7 @@
 	.ascii	"\327\335\326\315\304\001\337\336\250\373P\240\327\037"
 	.ascii	"\351\212\004\376\0026\342\026j"
 	.text
-	.section	.gnu.lto_I2C_ReadRegister.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_ReadRegister.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234UQ\337KSa\030\376\336\363\236\263\251\333\254\373"
 	.ascii	"v1(Y\336xb\353\017\010\212\240@\020\355~\244\255:\320"
 	.ascii	"bl#\326\225\337\2469]9\"t\3018\245e\026\021a\245Y\366"
@@ -1166,7 +1166,7 @@
 	.ascii	"b\341\320Q\376l\204\272Z\272\204z \2647\355\245\020"
 	.ascii	"i\217\0363\222\251h\002S\261\370\037d\202\363\307"
 	.text
-	.section	.gnu.lto_I2C_ITConfig.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_ITConfig.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\235\222MHTQ\024\307\357\377\235\367\346\215\226"
 	.ascii	"\026\321\242\205\013\301Ht\341\213\231\326m\212\300"
 	.ascii	"\300\210f6\255\304l\242\201\214\030\207r\021x\2351?"
@@ -1204,7 +1204,7 @@
 	.ascii	"\337wJ\205\303\276\352\262j\241\227\373\016\324yXT\226"
 	.ascii	"\007\275GB\027\002\321\252h\350/w\2070s"
 	.text
-	.section	.gnu.lto_I2C_CheckEvent.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_CheckEvent.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\225\223MHTQ\024\307\317y\367\2757_Zm\304\315,"
 	.ascii	"Z$\242\013\307Fq-\224AA\021%\255\0021\323\032\320\012"
 	.ascii	"g\022\027\201WG\307\257\222\250\246h\030\313>\324F\020"
@@ -1250,7 +1250,7 @@
 	.ascii	"\225q cO\246\352te\273N:\225\274\374\354#v\315n5\345"
 	.ascii	"g;]\271E\271\307\\?\001\346Cof"
 	.text
-	.section	.gnu.lto_I2C_GetLastEvent.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_GetLastEvent.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\225\221\317KTQ\024\307\317yw\336\274\361'\355"
 	.ascii	"Z\344\302E\"\"\370h\354\017\010\212\240@\210l\321*\261"
 	.ascii	"i\264\001\225\230\031\304\205\340\235q\032g\324B\302"
@@ -1288,7 +1288,7 @@
 	.ascii	"#9\015\265>\277\273\331\335\344\377\003\260\373\033"
 	.ascii	"\254"
 	.text
-	.section	.gnu.lto_I2C_GetFlagStatus.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_GetFlagStatus.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234mS\375oSU\030>\357=\367\253_\323\220e\030\323("
 	.ascii	"\211.\015\204P\322\361\007h0\030\210$FL\214\361\207"
 	.ascii	"e_@\243\030\323V\323\3378[\353\266^\001\201\270+6eY"
@@ -1345,7 +1345,7 @@
 	.ascii	"\250\335\364\312\213/\233\010\246\353\353\222M:.\022"
 	.ascii	"M;|\365\361T2U\227z?\371/\365L\275\311"
 	.text
-	.section	.gnu.lto_I2C_ClearFlag.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_ClearFlag.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234]R\337KSQ\034?\237\373\275\273\333\313\014zMB\""
 	.ascii	"\031>\344\205\255?\240(\224\"!\262\267\036\206.\255"
 	.ascii	"\201\226l\022{\363l\232\233e\021\341\014\306-\006\225"
@@ -1377,7 +1377,7 @@
 	.ascii	"\376~U\016\373C\355!\241\037\361\037\212yx\013v\034"
 	.ascii	";\330\351\356\037\35093t>\372\033Z\276\320T"
 	.text
-	.section	.gnu.lto_I2C_GetITStatus.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_GetITStatus.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\225R]HTQ\020>s\317\275wW\367\247\236zZH(Y\014"
 	.ascii	"rE\245\247\036\002#0\020\"}\351I\324\224\026\324\302"
 	.ascii	"\335\3027\217\256?\273j\022\241&\262\212\230&\006a\222"
@@ -1425,7 +1425,7 @@
 	.ascii	"\245y\371\305\205\036o\236\367\252'.\337\355\325\275"
 	.ascii	"\2776\240e<"
 	.text
-	.section	.gnu.lto_I2C_ClearITPendingBit.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_I2C_ClearITPendingBit.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234]R_HSQ\030?\277\373\335\335;\210\031\364\232\204"
 	.ascii	"D2|\331\205\331SOA\021\030\010\221\276\364\264li\015"
 	.ascii	"\264d\223\330\233g\323\334,\225\010g0.1\250!\005a\242"
@@ -1456,7 +1456,7 @@
 	.ascii	"\261\241\201\366`\237*G\202\341@X\350\035\301\013q\203"
 	.ascii	"\267PG\267\331\327\337sk\360n\3547\236\377\317\374"
 	.text
-	.section	.gnu.lto_.symbol_nodes.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234U\322I2\004q\024\304\341\314*\332<w\233g\335\367"
 	.ascii	"\340dYhm\246\315\363\020\202C\260\023a\315\025,\254"
 	.ascii	"\334@\240\250\177\205\205\334\274_\274\357m_\001\300"
@@ -1472,10 +1472,10 @@
 	.ascii	"\312\260\227B\336B\200\233\273b\276}\344\251\326^\242"
 	.ascii	"8\252d\307\224\370\005\217\371\277\026"
 	.text
-	.section	.gnu.lto_.refs.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.refs.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.decls.25b4f4a048c262e,"",%progbits
 	.ascii	"x\234\265ZyTTG\272\357\272EC\323l.\211\343\274\307\037"
 	.ascii	"99y\2067\357)j\222Ir\336L\216\212\230\361e\363\200\363"
 	.ascii	"N\222\177\230\016\264\332\021\301@\023\3077'o\032QD"
@@ -1778,7 +1778,7 @@
 	.ascii	"\027\030\214\323\310\312\230\277d\301\034V\303\346\324"
 	.ascii	"\321\005\003(l\315\220\205\370\377\210)\306@"
 	.text
-	.section	.gnu.lto_.symtab.4081f4a2f6cb475,"",%progbits
+	.section	.gnu.lto_.symtab.25b4f4a048c262e,"",%progbits
 	.ascii	"I2C_DeInit\000"
 	.ascii	"\000"
 	.ascii	"\000"

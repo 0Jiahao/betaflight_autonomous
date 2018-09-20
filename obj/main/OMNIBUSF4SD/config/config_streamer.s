@@ -9,16 +9,16 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"config_streamer.c"
-	.section	.gnu.lto_.profile.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.profile.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234cc```\005bF\206\373\214%\000\003\240\001a"
 	.text
-	.section	.gnu.lto_.icf.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.icf.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234cc``0d@\000\016\206\031\017\227\255\341b\232\266"
 	.ascii	"f\2237\363\261\207{\377p\263\\m\231q\221\213u\343\357"
 	.ascii	"\356\365<l;\257=?\301\311\276\357\304\356\347\214\034"
 	.ascii	"\277Z\247\237ef\000\000W`\027\366"
 	.text
-	.section	.gnu.lto_.jmpfuncs.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234\215\220\275\012\0021\020\204g\222\334\217\210"
 	.ascii	"\330Z\334\023\370\206V\"\330\331Z\336\023X\372\333j"
 	.ascii	"\341{\234\202\215\007\302aa\247\356\306 z\012\2720\204"
@@ -33,7 +33,7 @@
 	.ascii	"\353j\3074\222}SL+\377\332\006\035W\314Ti\230\011\334"
 	.ascii	"\001rH\200o"
 	.text
-	.section	.gnu.lto_.inline.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.inline.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234m\220\261J\303p\020\306\277\273\3737\37746XA-B"
 	.ascii	"!\335\012N.\366\011\2343;v\224\364%\272\010\005\227"
 	.ascii	"\010\305A:\344\031t)\216\016\016.\016\016v\350\003t"
@@ -52,11 +52,11 @@
 	.ascii	"\012Wa*+\243\222\247!\332\221a\371\275>\373\303\341"
 	.ascii	"\277%M\016\025\001l\001\315?De"
 	.text
-	.section	.gnu.lto_.pureconst.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.pureconst.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234cc``\020\004b\016\006)&If\011\026)V)6Vv)\016)\000"
 	.ascii	"\011p\000\373"
 	.text
-	.section	.gnu.lto_write_word.part.0.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_write_word.part.0.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234\225U\353O\024W\024\277g\356\314\354\356\354{\201"
 	.ascii	"F\223i\302\007-\265\211\256\211mb\373\311\376\007\376"
 	.ascii	"\007\015!\2661\2516\021\365c\031Yta\225\372\302\225"
@@ -138,7 +138,7 @@
 	.ascii	"\257]\263\242t\325\2125\213\312\010\224)\353K\177\\"
 	.ascii	"\267B-_[\272v]\371\277\272*\371\303"
 	.text
-	.section	.gnu.lto_write_word.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_write_word.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234]P\317K\024q\024\177\237\357\233\231\235\2252\272"
 	.ascii	"{XIX\326\303\316\241\216\375/\261,[\010j\260V\327\371"
 	.ascii	"j\306&u\210\320M\246!\366\320\352A\244_\226\255m2X\004"
@@ -167,7 +167,7 @@
 	.ascii	"\263\003\347\016\303\231\221\013\345Ra\250T\316\027"
 	.ascii	"\011E\367Ra\360b\351\017\201\367\255\232"
 	.text
-	.section	.gnu.lto_config_streamer_init.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_config_streamer_init.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234-OMK\002Q\024\275g\3568J_k\241YD\010f\013\375I"
 	.ascii	"!\203\205\013\015\264\375\274\314\324\310E\0133\220"
 	.ascii	"Y\030$.+\314lZ\015\355\023\252e\020a\324J\204\240m\326"
@@ -187,7 +187,7 @@
 	.ascii	"\331\255\377\261Q\334)d\322\271L!\351\020\234_\240\003"
 	.ascii	"j9"
 	.text
-	.section	.gnu.lto_config_streamer_start.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_config_streamer_start.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234\235\223\357KSQ\030\307\317\367\236\373cM\355\265"
 	.ascii	"\306^\354\2050\354\205\227\242\377'\326Xa\240\301\326"
 	.ascii	"\253\336\354LgsXQ\240\013\326EFS\004#L\312jfv\235f\345"
@@ -225,7 +225,7 @@
 	.ascii	"z1\022\016\266\206#\315!\206\220~&\030\015\353\321\226"
 	.ascii	"K\341\277/jF\361"
 	.text
-	.section	.gnu.lto_config_streamer_write.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_config_streamer_write.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234\235T\331KTQ\030?\277{\3562\315&DA\201\017>(bE"
 	.ascii	"\243\364\322S\317\365W\204\211\205AV\332S/^\235\324"
 	.ascii	"\246\005\242\322`\272\230e\266\211\331b\245fu\3256S"
@@ -277,7 +277,7 @@
 	.ascii	"\010\024`\207^Z\264\273P\356\310\337\365\023\352\331"
 	.ascii	"\351\233"
 	.text
-	.section	.gnu.lto_config_streamer_status.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_config_streamer_status.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234MOMKBA\024\275\347\315\363\203\240\026ms\341\302"
 	.ascii	"07\276E\277!\010\372\021!\017\013\027\032h{GM4j\321"
 	.ascii	"B\015\354\021\006=$\"*\372\2604\342\341\242\235\206"
@@ -298,7 +298,7 @@
 	.ascii	"Gb\011\303\\I,\305\226G\317bj5\031\215\304\243\311\260"
 	.ascii	"I0\177\000?\360v*"
 	.text
-	.section	.gnu.lto_config_streamer_flush.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_config_streamer_flush.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234\235R]K\024a\024>\317\274\363\261\255\037\033]"
 	.ascii	"\357\305^Hf\027\016Q?\"\350G\204,\026\006\032h\367;"
 	.ascii	"\256\037\253\325\205\220\273\245M\261F\233T\364\375"
@@ -337,7 +337,7 @@
 	.ascii	"@\335\301\302g\177\323\221\306\332\232\372\332\306\352"
 	.ascii	"8!\376\023TQ\\g"
 	.text
-	.section	.gnu.lto_config_streamer_finish.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_config_streamer_finish.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234\205\221MK[Q\020\206\347\275sro\352G7\256\204,"
 	.ascii	"\262\020R7^\244\375\021\335\264\177\241H\320bA\013\261"
 	.ascii	"\373\034\023%\006]\270\320\024\342\245da\024\021\321"
@@ -366,7 +366,7 @@
 	.ascii	"\321\247\335\035\235\217\253\313\243\236g\261\366\266"
 	.ascii	"\256\366XK\224\020\375\017|\037\320i"
 	.text
-	.section	.gnu.lto_.symbol_nodes.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234U\316;N\002a\024\305\361s\276;\017\230\031\260"
 	.ascii	"\267\301\326\2065\310z\\\304\375\3441*\217\3045\230"
 	.ascii	"\331\004t&\332P\310\016\210\232\351\265\304\002\302"
@@ -380,10 +380,10 @@
 	.ascii	"\206\345\376Z\322\002u\340\324\341\271\374\216\245u"
 	.ascii	"\201z\327\307\021L\333[\036"
 	.text
-	.section	.gnu.lto_.refs.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.refs.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234cc```\003bF\006&F\026\006\000\000\267\000\025"
 	.text
-	.section	.gnu.lto_.decls.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.decls.2c0ac7b1ee11217,"",%progbits
 	.ascii	"x\234\265XyPTg\266\277\337\375\272\241i6\243\316\014"
 	.ascii	"\363\212W\317dLI\315\033\300%S\231\324L\275\027\243"
 	.ascii	"h\250q+0\223\247\363^uZh\204\014t;\335\315dyK]\026\021"
@@ -616,7 +616,7 @@
 	.ascii	"\371\305J\235\231\276dY\235g0\262y\354\031\2537E\255"
 	.ascii	"\324\353\302\247\204Ej\215\377\017\341FrP"
 	.text
-	.section	.gnu.lto_.symtab.60b193dccb09c86b,"",%progbits
+	.section	.gnu.lto_.symtab.2c0ac7b1ee11217,"",%progbits
 	.ascii	"config_streamer_init\000"
 	.ascii	"\000"
 	.ascii	"\000"

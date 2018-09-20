@@ -6190,7 +6190,7 @@ extern uint8_t debugMode;
 
 
 extern uint32_t sectionTimes[2][4];
-# 48 "./src/main/build/debug.h"
+# 50 "./src/main/build/debug.h"
 typedef enum {
     DEBUG_NONE,
     DEBUG_CYCLETIME,
@@ -6233,6 +6233,13 @@ typedef enum {
     DEBUG_COMMAND,
     DEBUG_DESIREDANGLE,
     DEBUG_REQUEST,
+    DEBUG_DT,
+    DEBUG_OL,
+    DEBUG_FP,
+    DEBUG_OLCTRL,
+    DEBUG_PSI,
+    DEBUG_CA,
+    DEBUG_PHIL,
     DEBUG_COUNT
 } debugType_e;
 

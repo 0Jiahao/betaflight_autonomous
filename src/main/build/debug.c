@@ -69,4 +69,11 @@ const char * const debugModeNames[DEBUG_COUNT] = {
     "COMMAND",
     "DESIREDANGLE",
     "REQUEST",
+    "DT",
+    "OL",
+    "FP",
+    "OLCTRL",
+    "PSI",
+    "CA",
+    "PHIL",
 };

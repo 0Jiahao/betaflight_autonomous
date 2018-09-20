@@ -9,24 +9,24 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"stack_check.c"
-	.section	.gnu.lto_.profile.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.profile.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234cc```\001bF\006\026&\000\000\202\000\022"
 	.text
-	.section	.gnu.lto_.icf.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.icf.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234cc``\340c@\000&\206\216\177\007\35732\201I\006"
 	.ascii	"\0000\344\006g"
 	.text
-	.section	.gnu.lto_.jmpfuncs.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234cc``\340`@\000&(\006\000\001`\000\023"
 	.text
-	.section	.gnu.lto_.inline.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.inline.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234cc``Pc@\000&\006\006f&F\020\305\300\266@\236\011"
 	.ascii	"\"\204.\302\000\000%\024\001\317"
 	.text
-	.section	.gnu.lto_.pureconst.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.pureconst.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234cc```\005b&\020\002\000\000\226\000\020"
 	.text
-	.section	.gnu.lto_stackTotalSize.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_stackTotalSize.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234-\217\275K\303P\024\305\357\311\213i\004\233\321"
 	.ascii	"\245\035\024\247.\315\237$%\026,E\221D\\\363l\225Vt"
 	.ascii	"\020\321\012!HtqT1Z\343 \301\301A\360s\025\027\013\016"
@@ -46,7 +46,7 @@
 	.ascii	"=\343\326\226\252\256g{\213\025\247>\355\314V\235z\331"
 	.ascii	"\241?Q\372k>"
 	.text
-	.section	.gnu.lto_stackHighMem.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_stackHighMem.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234-\217\275K\003A\020\305\347\335\306$\202^ic\012"
 	.ascii	"\305*M\356O\222p\006\014A\221\213\330\336\232(\211h"
 	.ascii	"\021D#\204CN\033\253\240\342\371q\026rXX\010\306\217"
@@ -66,15 +66,15 @@
 	.ascii	"\253:\325\325\242[\231w\027Kn\245\340\312\037\200\216"
 	.ascii	"jI"
 	.text
-	.section	.gnu.lto_.symbol_nodes.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234cc``0\003b\006\246f\306z\006\206\011\347\030\030"
 	.ascii	"\200\324\256\006G\006\006\326VF\006\005\220L\013c=#"
 	.ascii	"\252L\033##H\206\001\000>,\012Q"
 	.text
-	.section	.gnu.lto_.refs.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.refs.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234cc``\340\006bF\006&FFF&&fF\006\000\001y\000 "
 	.text
-	.section	.gnu.lto_.decls.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.decls.b1cc4e487184c0f0,"",%progbits
 	.ascii	"x\234\265R]l\024U\024\276g\356\320n\307e\213\204\207"
 	.ascii	"\232\354\303\332H\350\203\273\203`B\210\211/>\310\013"
 	.ascii	"\372\200>\3704\031\246\003;ewFwfI\340\205kK\211\261"
@@ -130,7 +130,7 @@
 	.ascii	"\327\330&\012\370\234U+k\026\352\015[\324\374\005\346"
 	.ascii	"\177\273\207"
 	.text
-	.section	.gnu.lto_.symtab.77145c8d5003841b,"",%progbits
+	.section	.gnu.lto_.symtab.b1cc4e487184c0f0,"",%progbits
 	.ascii	"stackTotalSize\000"
 	.ascii	"\000"
 	.ascii	"\000"

@@ -42,11 +42,12 @@ obj/main/OMNIBUSF4SD/fc/fc_rc.o: src/main/fc/fc_rc.c src/main/platform.h \
  src/main/common/time.h src/main/fc/fc_rc.h src/main/fc/rc_controls.h \
  src/main/fc/rc_modes.h src/main/fc/runtime_config.h \
  src/main/flight/failsafe.h src/main/flight/imu.h src/main/flight/pid.h \
- src/main/rx/rx.h src/main/drivers/io_types.h \
- src/main/scheduler/scheduler.h src/main/sensors/battery.h \
- src/main/common/filter.h src/main/sensors/current.h \
- src/main/sensors/current_ids.h src/main/sensors/voltage.h \
- src/main/sensors/voltage_ids.h src/main/telemetry/mavlink.h
+ src/main/flight/ol_control.h src/main/rx/rx.h \
+ src/main/drivers/io_types.h src/main/scheduler/scheduler.h \
+ src/main/sensors/battery.h src/main/common/filter.h \
+ src/main/sensors/current.h src/main/sensors/current_ids.h \
+ src/main/sensors/voltage.h src/main/sensors/voltage_ids.h \
+ src/main/telemetry/mavlink.h
 
 src/main/platform.h:
 
@@ -161,6 +162,8 @@ src/main/flight/failsafe.h:
 src/main/flight/imu.h:
 
 src/main/flight/pid.h:
+
+src/main/flight/ol_control.h:
 
 src/main/rx/rx.h:
 

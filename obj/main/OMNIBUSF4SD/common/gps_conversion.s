@@ -9,25 +9,25 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"gps_conversion.c"
-	.section	.gnu.lto_.profile.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.profile.21d621ffd962f886,"",%progbits
 	.ascii	"x\234cc```\001bF\006C\003\000\001\012\000m"
 	.text
-	.section	.gnu.lto_.icf.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.icf.21d621ffd962f886,"",%progbits
 	.ascii	"x\234cc``\340`@\000F\206\271\177\327\26613\000\000\016"
 	.ascii	";\002\340"
 	.text
-	.section	.gnu.lto_.jmpfuncs.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.21d621ffd962f886,"",%progbits
 	.ascii	"x\234cc``\340b@\000F\006FF\306\3729\314\014\014\000"
 	.ascii	"\006\245\0013"
 	.text
-	.section	.gnu.lto_.inline.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.inline.21d621ffd962f886,"",%progbits
 	.ascii	"x\234cc``Pd@\000F\006\006\243\026FFF\006\005 \2139\346"
 	.ascii	"W;?\003\333\002y&\006\246W9,`\005\000Vt\005\025"
 	.text
-	.section	.gnu.lto_.pureconst.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.pureconst.21d621ffd962f886,"",%progbits
 	.ascii	"x\234cc```\006bF\006S\000\000\232\000@"
 	.text
-	.section	.gnu.lto_GPS_coord_to_degrees.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_GPS_coord_to_degrees.21d621ffd962f886,"",%progbits
 	.ascii	"x\234uUml\224U\026\276\347\275\357;_\357|\317t\2120"
 	.ascii	"\224\362Q\332\002i\201\362%\272\373\303_\273?6\331\304"
 	.ascii	"\375i\262\351\266\003i\"\255\231v7\373\317\267\200-"
@@ -134,14 +134,14 @@
 	.ascii	";\324o}b{2\321\334\034H&(;\302$\330\277\255!\361t\375"
 	.ascii	"\223\211gj\223\265-M\311\237\000\227\203\272\233"
 	.text
-	.section	.gnu.lto_.symbol_nodes.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.21d621ffd962f886,"",%progbits
 	.ascii	"x\234cc``\020\001b\006\246\277\014\365\014\014\023\316"
 	.ascii	"1\200\250]\015\216@!\0009\323\004\361"
 	.text
-	.section	.gnu.lto_.refs.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.refs.21d621ffd962f886,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.decls.21d621ffd962f886,"",%progbits
 	.ascii	"x\234\265S]l\024U\024\276gf\333n\307m\227\220>\324d"
 	.ascii	"\036\232\232l\367ew\240\020\221\027b\342\003<\031\023"
 	.ascii	"\343\003\3720\031\246Cw\233\356\014\356\314\232\340"
@@ -202,7 +202,7 @@
 	.ascii	"\277s0w\232\222lZu\010\210\300/\254,\025)u$zI\266J\334"
 	.ascii	"\331\025m\355\213\262\345\367\026\217\001qg\024v"
 	.text
-	.section	.gnu.lto_.symtab.104a402c1f68d40e,"",%progbits
+	.section	.gnu.lto_.symtab.21d621ffd962f886,"",%progbits
 	.ascii	"GPS_coord_to_degrees\000"
 	.ascii	"\000"
 	.ascii	"\000"

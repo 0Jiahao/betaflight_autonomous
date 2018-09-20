@@ -9,14 +9,14 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"initialisation.c"
-	.section	.gnu.lto_.profile.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.profile.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc```\001bF\0067~\000\001\023\000a"
 	.text
-	.section	.gnu.lto_.icf.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.icf.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc``\020a@\000f\206\215\353\327\254ggy\264\363"
 	.ascii	"\3079\016V0\311\000\000d\177\011\273"
 	.text
-	.section	.gnu.lto_.jmpfuncs.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc``\250g@\000F0\311\3028\205\231\361z\343\365"
 	.ascii	"G\214\372\272s\230\031\02603Le\006\211\003E\347MZ\322"
 	.ascii	"\300_\377\267\201c\0163#\343fF}\240\226-\214\365\014"
@@ -25,16 +25,16 @@
 	.ascii	"Q\006\204\031\340\352\376\003-bB\342\202\264\001-\000"
 	.ascii	"\000or!\375"
 	.text
-	.section	.gnu.lto_.inline.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.inline.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc``\260`@\000F\006\006A;F\006&\2163&\014l\013"
 	.ascii	"\344\231\300b\\0\202\231\207\201\201\211a\202\037\230"
 	.ascii	"\303\304\015\024\235\340\007\242\030\030\000\221#\004"
 	.ascii	"j"
 	.text
-	.section	.gnu.lto_.pureconst.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.pureconst.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc```\006bF\006\011\000\000}\000#"
 	.text
-	.section	.gnu.lto_sensorsAutodetect.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_sensorsAutodetect.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234m\222\337k\323P\034\305\277'7ikm\353\357=\025\031"
 	.ascii	"h\221!,j\375\023\374;\204R\213\024\264\205\266/>5k7"
 	.ascii	"\327\342\204!\266\016\011\022\361\301)\310\220\315\272"
@@ -69,7 +69,7 @@
 	.ascii	"N\\I\347\023\205t6\323\237\244\320\345k\271\354\205"
 	.ascii	"T!\225,\244.\375\005\265N)\221"
 	.text
-	.section	.gnu.lto_detectedSensors.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_detectedSensors.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc``\350\000bF\006\010\230\302\314\270\376\315"
 	.ascii	"\316\237\274\335\314s\230\201\202@\356\305\226\015s"
 	.ascii	"\230A\\FF\026 w\313\221\343m\034\020YF \367\320\247"
@@ -78,7 +78,7 @@
 	.ascii	"\270\231Q\206\321H\206q+\220\332\316\010\241\267A\351"
 	.ascii	"-\214`i\006\306\035\214\026\014\000HF(\255"
 	.text
-	.section	.gnu.lto_requestedSensors.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_requestedSensors.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc``\350\000bF\006\010\230\302\314\270\376\315"
 	.ascii	"\316\237\274\335\314s\230\201\202@\356\305\226\015s"
 	.ascii	"\230A\\FF\026 w\313\221\343m\034\020YF \367\320\247"
@@ -87,7 +87,7 @@
 	.ascii	"\270\231Q\206\321H\206q+\220\332\316\010\241\267A\351"
 	.ascii	"-\214`i\006\306\035\214\026\014\000HF(\255"
 	.text
-	.section	.gnu.lto_.symbol_nodes.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234U\213\271\015\302@\024D\337xms\025\001\242\000"
 	.ascii	"j\200\312\376\"Y\304d\334\346\220\253\240\010\022\032"
 	.ascii	"\000\211\220\006H\020\353\215\330`\364\346\277\257)"
@@ -97,11 +97,11 @@
 	.ascii	"\377\3021\240y|\345\350S}&\216\036\315\263=\273\274"
 	.ascii	"\";T\213\367\320Q\322\004\362\003\224\325.\254"
 	.text
-	.section	.gnu.lto_.refs.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.refs.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234cc``\340\001bf\006\006Ff\006&6&fv\006\000\001\332"
 	.ascii	"\000."
 	.text
-	.section	.gnu.lto_.decls.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.decls.ae3504e9b546fd5b,"",%progbits
 	.ascii	"x\234\265Z\013P\224W\226\356\373\337~\3214`\324d\314"
 	.ascii	"\016\263\233u\231\204\335\035E\321\230L\325\326\326"
 	.ascii	"\0305\263V\305\304\022\223\332\231\252l\247\003\255"
@@ -426,7 +426,7 @@
 	.ascii	"\337\374\306]\263\033KE\203\037\213\224iV\210\341O\241"
 	.ascii	"\006\223\320\360\377\347>\364\344"
 	.text
-	.section	.gnu.lto_.symtab.9d4735799143c183,"",%progbits
+	.section	.gnu.lto_.symtab.ae3504e9b546fd5b,"",%progbits
 	.ascii	"sensorsAutodetect\000"
 	.ascii	"\000"
 	.ascii	"\000"

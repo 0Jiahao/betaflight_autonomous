@@ -40,6 +40,8 @@
 #include "flight/failsafe.h"
 #include "flight/imu.h"
 #include "flight/pid.h"
+#include "flight/ol_control.h"
+
 #include "rx/rx.h"
 
 #include "scheduler/scheduler.h"
@@ -131,8 +133,10 @@ static void calculateSetpointRate(int axis)
     // add yaw control instead of yaw rate
     if((FLIGHT_MODE(RANGEFINDER_MODE)) && (axis == 2)) // yaw channel
     {
-        float desiredYaw = uart_yaw;
-        float currentYaw = attitude.values.yaw/10.0; // 0~360
+        // float desiredYaw = uart_yaw;
+        // float desiredYaw = dr_control.psi_cmd / 3.14 * 180;
+        float desiredYaw = constrainf(rcData[YAW]-1500,-180,180);
+        float currentYaw = attitude.values.yaw / 10.0; // 0~360
         if(currentYaw > 180)
         {
             currentYaw = currentYaw - 360;

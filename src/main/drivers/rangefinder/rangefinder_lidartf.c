@@ -179,11 +179,6 @@ void lidarTFUpdate(rangefinderDev_t *dev)
                     uint16_t distance = tfFrame[0] | (tfFrame[1] << 8);
                     uint16_t strength = tfFrame[2] | (tfFrame[3] << 8);
 
-                    DEBUG_SET(DEBUG_LIDAR_TF, 0, distance);
-                    DEBUG_SET(DEBUG_LIDAR_TF, 1, strength);
-                    DEBUG_SET(DEBUG_LIDAR_TF, 2, tfFrame[4]);
-                    DEBUG_SET(DEBUG_LIDAR_TF, 3, tfFrame[5]);
-
                     switch (tfDevtype) {
                     case TF_DEVTYPE_MINI:
                         if (distance >= TF_MINI_RANGE_MIN && distance < TF_MINI_RANGE_MAX) {

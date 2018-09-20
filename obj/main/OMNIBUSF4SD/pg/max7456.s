@@ -9,26 +9,26 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"max7456.c"
-	.section	.gnu.lto_.profile.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.profile.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.icf.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.icf.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc``\220b@\000\026\206\325/\336oba|\366{\336!f"
 	.ascii	"\246I\333\027\337ef\006\223\014\000\255W\014?"
 	.text
-	.section	.gnu.lto_.inline.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.inline.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.pureconst.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.pureconst.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_pgResetTemplate_max7456Config.3a81973933117159,"",%progbits
+	.section	.gnu.lto_pgResetTemplate_max7456Config.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc``\320\005bF\006\010\230\302\314\270\345\310"
 	.ascii	"\3616\216n\3469\314\014\214\214@n\377\201)\177\271,"
 	.ascii	"\2665t,h\020\230\303\3148\025(\274\231Q\206\201q\013"
 	.ascii	"\243\005\003\000\202S\016h"
 	.text
-	.section	.gnu.lto_max7456Config_Registry.3a81973933117159,"",%progbits
+	.section	.gnu.lto_max7456Config_Registry.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc``\270\012\304R\014\0200\205\231\261\371\327"
 	.ascii	"\376\317|\365\177\033f44<\350\336-P;\207\231a\0013D"
 	.ascii	"\352\320\323u\354\026\333\032:\0264\010\314af\234\312"
@@ -41,16 +41,16 @@
 	.ascii	"A6\306-\214\026\014\214\273\200\204\204\236~qQ\262~"
 	.ascii	"nbf\236~A:\220\2560715\323Kf\000\000\025 Q4"
 	.text
-	.section	.gnu.lto_.symbol_nodes.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc``\260\007b\006\326vF\206V%\006\275\202\364\370"
 	.ascii	"\242\324\342\324\222\224\304\222D\240h+##\\4=\263\270"
 	.ascii	"\244\250\022(\330\304\310\324\250\004\322\323\314\310"
 	.ascii	"\014f0\000\000 \033\017\007"
 	.text
-	.section	.gnu.lto_.refs.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.refs.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234cc``\340\004bfF&&&f&\006\006\000\001E\000\037"
 	.text
-	.section	.gnu.lto_.decls.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.decls.ec57751146e1cc17,"",%progbits
 	.ascii	"x\234\265VoPT\327\025\177\347\335\207,\313\002\006h"
 	.ascii	"B\2474\203\031d\370\020\330\230X\255\323~h\307\231\376"
 	.ascii	"\371\322\351\244\177>\244\323l6\313\012ka\227\262\217"
@@ -172,7 +172,7 @@
 	.ascii	"\325\344\211\220#\275m\373]\226]6\247\205{O\256G\253"
 	.ascii	"\376\015\260d|Q"
 	.text
-	.section	.gnu.lto_.symtab.3a81973933117159,"",%progbits
+	.section	.gnu.lto_.symtab.ec57751146e1cc17,"",%progbits
 	.ascii	"pgResetTemplate_max7456Config\000"
 	.ascii	"\000"
 	.ascii	"\000"

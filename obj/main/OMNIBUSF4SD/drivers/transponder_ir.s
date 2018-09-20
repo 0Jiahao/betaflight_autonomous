@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"transponder_ir.c"
-	.section	.gnu.lto_.profile.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.profile.8005448c596cc632,"",%progbits
 	.ascii	"x\234cc```\003bF\206\025\254\223\230\000\004y\001O"
 	.text
-	.section	.gnu.lto_.icf.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.icf.8005448c596cc632,"",%progbits
 	.ascii	"x\234cc``\310`@\000A\206E\247\326\336\343g\272\376}"
 	.ascii	"\3479^\346?\327\266\035fb\331\376\365r3?+\230d\003\223"
 	.ascii	"\354\213~t\316\343\340\3306\353\300\033\016\316\371"
@@ -21,7 +21,7 @@
 	.ascii	"\023\234\177\363\347\003>\2413_/m\346`\000\000\005\350"
 	.ascii	"5\260"
 	.text
-	.section	.gnu.lto_.jmpfuncs.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.8005448c596cc632,"",%progbits
 	.ascii	"x\234\255U\261n\023A\020\235\267\353\370\3166\216m\352"
 	.ascii	"+R\347\007h\363)\374\004\205+\273\010\212\020%(\005"
 	.ascii	"\034\221{$\020\202\3408\201\304IL\000\307`@\020!EB\364"
@@ -57,7 +57,7 @@
 	.ascii	"\334b\271\265\225\214\253\231q \377\353\371\275\314"
 	.ascii	"\003`\003j2?3[\362qrK\210\376\001\337n?\201"
 	.text
-	.section	.gnu.lto_.inline.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.inline.8005448c596cc632,"",%progbits
 	.ascii	"x\234uR\271JCA\024=wf^2\331\314\213DC \220t\376\201"
 	.ascii	"v~B\376\300ZQ\277\300B\322\210\021-R\210 \010F\260\021"
 	.ascii	"A\020\267\024)B@+!\226\026\026)\375\000?\300;\313\233"
@@ -83,11 +83,11 @@
 	.ascii	"\250\276\232F\363\343\215P\306\237&3\236,$\354c&M\011"
 	.ascii	"\272:\307\321\006;\246\370\005\0231}#"
 	.text
-	.section	.gnu.lto_.pureconst.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.pureconst.8005448c596cc632,"",%progbits
 	.ascii	"x\234cc``\020\007bn\006)&)f)v\011N\011.)n)^I>I~\011"
 	.ascii	"A)\000\023\217\001\244"
 	.text
-	.section	.gnu.lto_TRANSPONDER_DMA_IRQHandler.part.0.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_TRANSPONDER_DMA_IRQHandler.part.0.8005448c596cc632,"",%progbits
 	.ascii	"x\234\225S\315KTQ\024\277\277w\337\327<\035\315E\340"
 	.ascii	"b\300\001\003\321\205\203A\264\210\266\375\013\255\372"
 	.ascii	"\020u1Pjo\244\355\334\231\324\321>\240E\216:L1-\"\212"
@@ -130,7 +130,7 @@
 	.ascii	"-\315\215M\366\201\240]\333\300\254\306\246P\203\035"
 	.ascii	"lmk\261\377\000x\340iZ"
 	.text
-	.section	.gnu.lto_TRANSPONDER_DMA_IRQHandler.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_TRANSPONDER_DMA_IRQHandler.8005448c596cc632,"",%progbits
 	.ascii	"x\234\225S\315KTQ\024\277\347\335\3675\343|\240F\270"
 	.ascii	"\030\320E0\270qp\021\321\242?\243\010Z\230\251\213\011"
 	.ascii	"Ry#m\347\315\250\363Q\011-r\304\341\021\266\2106\205"
@@ -173,7 +173,7 @@
 	.ascii	"w\031\211X\237\321\336\235\350\355\351\356\3542\332"
 	.ascii	"\342FK\007\363wv%:\214xo_\217\361\007\203\336pB"
 	.text
-	.section	.gnu.lto_transponderIrHardwareInit.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrHardwareInit.8005448c596cc632,"",%progbits
 	.ascii	"x\234\225YyTT\347\025\177\367}\263\0023 (\010\"\342"
 	.ascii	"\202\0106!5ik\032c\314\3226\246\265i\033\273\374\227"
 	.ascii	"\303QN\017=u9\243i{\372G|\212\210\270DD}\"\031q*Q\203"
@@ -339,7 +339,7 @@
 	.ascii	"\341\373o{\335\353G\367&\"\337[\35132<w\377\017@%\023"
 	.ascii	"\221"
 	.text
-	.section	.gnu.lto_transponderIrInit.part.1.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrInit.part.1.8005448c596cc632,"",%progbits
 	.ascii	"x\234\215\223\317KTQ\024\307\357\367\335\367KS7B$L\320"
 	.ascii	"\"\030\\\344\004Q\213\376\212\026\021\264\012Q\213Y"
 	.ascii	"\2442\206\333\271\246\2233\2500H>K\036:\004\022\022"
@@ -381,7 +381,7 @@
 	.ascii	"*\230\021\254\271\\~\303\256\015\325\324\007i\361\017"
 	.ascii	"\022{~\226"
 	.text
-	.section	.gnu.lto_transponderIrInit.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrInit.8005448c596cc632,"",%progbits
 	.ascii	"x\234U\220\315K\033Q\024\305\357yw&\031$\331+dW!\030"
 	.ascii	"\321\024B\267\375+\272/!\212\314\302D&\305m^k\202\246"
 	.ascii	"\266\220EcB\030,\010\342\302\205J?4\015\224\241J\227"
@@ -406,7 +406,7 @@
 	.ascii	"^>\371\314Kg\363s\271\354\324\264\367\324\365&3d\273"
 	.ascii	"\271'\351\031g\316\313\315\2732\374\003\334>\2221"
 	.text
-	.section	.gnu.lto_isTransponderIrReady.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_isTransponderIrReady.8005448c596cc632,"",%progbits
 	.ascii	"x\234]\216?K\303P\024\305\357\311m\223\200tV\260\203"
 	.ascii	"\203\010]\022\301\017$\245\355\320\301(/\342\232\327"
 	.ascii	"\206P\213\016\016\266\202\004\251\223\233\"\326?E\204"
@@ -425,7 +425,7 @@
 	.ascii	"\252\315\300\257\253\346FC\205\376\272\252\006\341\332"
 	.ascii	"jPo\250\345\246\362j\364\015\240\373`\207"
 	.text
-	.section	.gnu.lto_transponderIrWaitForTransmitComplete.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrWaitForTransmitComplete.8005448c596cc632,"",%progbits
 	.ascii	"x\234\215\220\315K\033Q\024\305\357ywf\0222\325u\027"
 	.ascii	"Y\226\202\033\347\337\360\277\020\211.\2620\225\211"
 	.ascii	"\270\315\3234\037\375X\024\321)\310 \343J\212`\011\215"
@@ -451,7 +451,7 @@
 	.ascii	")\037\215{e\277\340\315N\025K\336\264_\\\230\361\313"
 	.ascii	"\336\274?U*\317=)M\317\370\223E\177\274@w\\$\254\022"
 	.text
-	.section	.gnu.lto_transponderIrUpdateData.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrUpdateData.8005448c596cc632,"",%progbits
 	.ascii	"x\234\215\222\317k\023Q\020\307\347\373&\331\254U\323"
 	.ascii	"k\321\034z(\204^\2727\351\301\243\377\207\204\266\207"
 	.ascii	"\034\214\262)^\367516R\301Rl*\341!\353\241\364P\212"
@@ -481,7 +481,7 @@
 	.ascii	"\322\364\214\177\261\350OL\321\360\200\347Ba\266\360"
 	.ascii	"\007\222P\313\030"
 	.text
-	.section	.gnu.lto_transponderIrDMAEnable.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrDMAEnable.8005448c596cc632,"",%progbits
 	.ascii	"x\234\215\223\315k\023Q\024\305\357\2317\231\211\211"
 	.ascii	"I\375Z\010F\310\242\020\272\351\200;\377\024\027RJ\333"
 	.ascii	"E\026F\231\210\333\274\246\306T\352B\304N!Lj\212\204"
@@ -516,7 +516,7 @@
 	.ascii	"\355\317\345\317\234\316\015\016\271}Y\267w\200\342"
 	.ascii	"m;\177\001\224\005\032\233"
 	.text
-	.section	.gnu.lto_transponderIrDisable.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrDisable.8005448c596cc632,"",%progbits
 	.ascii	"x\234\215\223\317O\023A\024\307\337w\247\335\266@\013"
 	.ascii	"\342/\3245\341`L\360\300\206\253\377\214!\300\241\007"
 	.ascii	"\253\331\032\257](\205\242\036\210\302\232\230\325\254"
@@ -550,7 +550,7 @@
 	.ascii	"{\255\344\371>+m\236\263\272S\351\263gR\275}\326\251"
 	.ascii	"\244\325\331C\177\001\352\0155W"
 	.text
-	.section	.gnu.lto_transponderIrTransmit.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_transponderIrTransmit.8005448c596cc632,"",%progbits
 	.ascii	"x\234m\221;K\003A\024\205\357\331I6\253\242v\"(b!B\032"
 	.ascii	"\363\007\374/\022b\212\024F\331\210\355\216\306\230"
 	.ascii	"\210\026\"\032\233%\254U:C0Q\343#\256[\212\017\020\264"
@@ -574,7 +574,7 @@
 	.ascii	"M\204c\361\320\270\031\233\211\232\211\320\264\031\216"
 	.ascii	"'\246&\343\343Qs,f\216D\350\033U\201\264\251"
 	.text
-	.section	.gnu.lto_.symbol_nodes.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.8005448c596cc632,"",%progbits
 	.ascii	"x\234U\320\311V\023A\024\306\361\357\353\312 b\022#"
 	.ascii	"C\200\000\011aVD}\003}\262\333\304&hP@\301\021e\262"
 	.ascii	"\235\207\265\272\022N\273\365\031\034z\201G\217q\341"
@@ -605,7 +605,7 @@
 	.ascii	"\205\331\344\\a*9W\230\214^\216\335?\207\320\266\230"
 	.ascii	"\3145\305<\352v\360_\276\241\"\314"
 	.text
-	.section	.gnu.lto_.refs.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.refs.8005448c596cc632,"",%progbits
 	.ascii	"x\234\035\215M\012\002Q\014\203\277\366\245o\3528\352"
 	.ascii	"\214\270p\357\031\004A\360\222^H\360\016\342\302\303"
 	.ascii	"X]\204$\220\237\016\334\013\206\231-\315$\213$F\367"
@@ -615,7 +615,7 @@
 	.ascii	"\323W}\367w\215\010b`\376\335\266\305\366^\335\012\363"
 	.ascii	"\005\353/\010\002"
 	.text
-	.section	.gnu.lto_.decls.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.decls.8005448c596cc632,"",%progbits
 	.ascii	"x\234\315\275\011XUW\266.\312b\356\275\351!Q\323T\312"
 	.ascii	":\325\345$\236\252J\014&\251\356\236so\0314\011\257"
 	.ascii	"bs\300Tw\337\367q)%\011\247\214\346 Vw\316\273g\323"
@@ -1588,7 +1588,7 @@
 	.ascii	"f\222\014\013\231\267i8\340*\363\320g\237\235rr\375"
 	.ascii	"\177\001wS\255\037"
 	.text
-	.section	.gnu.lto_.symtab.f3535e156693cb2b,"",%progbits
+	.section	.gnu.lto_.symtab.8005448c596cc632,"",%progbits
 	.ascii	"transponderIrDataTransferInProgress\000"
 	.ascii	"\000"
 	.ascii	"\000"

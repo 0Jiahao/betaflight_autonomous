@@ -9,10 +9,10 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"compass.c"
-	.section	.gnu.lto_.profile.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.profile.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234cc```\003bF\206\263L\007\031\001\005a\001\237"
 	.text
-	.section	.gnu.lto_.icf.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.icf.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234cc``\310`@\000A\206i\333\0274\2620\256\356nX\306"
 	.ascii	"\316\364\350g\327\032~\226\276\007o\266\360\260\202"
 	.ascii	"\331l\223v\256?\303\302\276\346\357\215\353l\034\373"
@@ -21,7 +21,7 @@
 	.ascii	"\277^n\346\347\007\263\005\300\244\340\321#\257\017"
 	.ascii	"\362\010\201\315a\000\000D\2662\312"
 	.text
-	.section	.gnu.lto_.jmpfuncs.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.jmpfuncs.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234}Q\275J\304@\020\376\276\2355Y\317\342^\340\012"
 	.ascii	"kE\356\225|\004[\253=\013\021\024,D\255\302\221\302"
 	.ascii	"\027\020=5\376\034b-X\246\260\263\366\011D\321\231D"
@@ -38,7 +38,7 @@
 	.ascii	"\265\376\3179?\362\375\342\310S\2044\027\333\303C\273"
 	.ascii	"}\252\366c\345\216\355/\340\007\017\244\240\304"
 	.text
-	.section	.gnu.lto_.inline.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.inline.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234cc``\370\312\200\000\354\014\014<\334\214\014L"
 	.ascii	"\234+\334\030\370O\2442\201\304\030\031\004%\200B\374"
 	.ascii	"\357\302\0308O\351\200\205\230y\200\302\023\374\230"
@@ -50,11 +50,11 @@
 	.ascii	"\341\035\003Pp\002c\323\017\016\2700#\027T'#\324U\023"
 	.ascii	"\374X\005\301\256c\000\000\256b\033\015"
 	.text
-	.section	.gnu.lto_.pureconst.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.pureconst.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234cc``\340\007bv\006)F)\026\011\016)N\011.\026n)"
 	.ascii	"\000\007\253\000\344"
 	.text
-	.section	.gnu.lto_pgResetFn_compassConfig.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_pgResetFn_compassConfig.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\235\223]k\023A\024\206\317\273\263\331]\254\355"
 	.ascii	"\205\275Q\254\220\013\261\364\302\356\217\360\227\224"
 	.ascii	"\240\322\213&\322\375\001\335&JZS\304\013[\245\004\015"
@@ -86,7 +86,7 @@
 	.ascii	"s\023\251\221\023C\2367\230\240\356Vx$\225<6|\374/\226"
 	.ascii	"=p\200"
 	.text
-	.section	.gnu.lto_compassDetect.part.0.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_compassDetect.part.0.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\225T\357O[U\030>\317=\367\336\226\026p\"\323I"
 	.ascii	"\272\310\207\221e\321\254\222%\373h\374\350?\340\037"
 	.ascii	"P\031Q?\260\031\0325~\342\216\226\000\203\0302\2455"
@@ -145,7 +145,7 @@
 	.ascii	"\274\336\243eB\236(\177\307|\355m/M\316\012\317\353"
 	.ascii	"\257x*O\274\353\251,\377\027\200\204N*"
 	.text
-	.section	.gnu.lto_compassInit.part.1.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_compassInit.part.1.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\225T\357O[U\030>\317=\367\266\245\035-2\266hR"
 	.ascii	"\"\211\0223\226\254\032\023\023\243\311\374W&.f\037"
 	.ascii	"`f\375\342'{,\264+\316\230\271\214\212\330\351\015S"
@@ -204,7 +204,7 @@
 	.ascii	"\373\242\321=\325B\326\034\250\225/\355\177\371o\214"
 	.ascii	"R^Q"
 	.text
-	.section	.gnu.lto_compassDetect.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_compassDetect.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\245V\355S\224U\024\277\347\271\317\313\276\262"
 	.ascii	"\201D\206+\322\244\343\310\007\267\031\233\351K\323"
 	.ascii	"_\322\027%\233\351\203\332\270\223\037\343\301e]\026"
@@ -277,7 +277,7 @@
 	.ascii	":\354\365\224\036:\360\366^\257ww)\343o\354?\242\357"
 	.ascii	"{\307\213\217\277\000\256\0334\206"
 	.text
-	.section	.gnu.lto_compassInit.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_compassInit.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234]\222\317K\033Q\020\307\347\373f\223l\244\246W"
 	.ascii	"\221\015z\365\342\266x\367\177\261\301C\017jq\377\200"
 	.ascii	"}\032\203\206\026*\305\244\305nuo\275(\"\265?R\253."
@@ -304,7 +304,7 @@
 	.ascii	"\037\214\027\374\221\241\207\243~0<\032\214\215\007"
 	.ascii	"~al\344\321P\020\364\027\350\027\035\243\264\324"
 	.text
-	.section	.gnu.lto_compassIsHealthy.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_compassIsHealthy.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\215SAk\023Q\020\236\357\275\267\233ES\005\275"
 	.ascii	"xHPP(\255\320\265\370+\274\372\007\244\004\017\036\332"
 	.ascii	"J\367\007\344\231\030\232\240\240\024\323\212\015\222"
@@ -335,7 +335,7 @@
 	.ascii	"\343\277*\331\347\007#)\177p\340\322\220\037\\\034\012"
 	.ascii	"\206G\002?5<xy \010\372R\364\0071\004\000\271"
 	.text
-	.section	.gnu.lto_compassUpdate.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_compassUpdate.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\225X\335STG\026\277\247{\276\277\370\030\030\030"
 	.ascii	"\034\020?\020Iv\245\330Z\313\252T\345\315\207l\266*"
 	.ascii	"O\273\177\200e\371\340\203fKv\253\266\366\205Qt\204"
@@ -473,7 +473,7 @@
 	.ascii	"\212\025K\226\377\361wK\227-\371}\275e\321\237\227\326"
 	.ascii	"\377\037\347[s\337"
 	.text
-	.section	.gnu.lto_compassConfig_Registry.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_compassConfig_Registry.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234cc``\270\012\304\362\014\0200\205\231q\347\316"
 	.ascii	"7\267\331\353\3776t44<\350\376+T;\207\231a\0323Djf\323"
 	.ascii	"\355\357\374\026\333\032:\0264\010\314af\234\312\314"
@@ -487,7 +487,7 @@
 	.ascii	"S\363\212\363\213\212\365\223\363s\013\022\213\213\365"
 	.ascii	"\222\031\000~iUh"
 	.text
-	.section	.gnu.lto_.symbol_nodes.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234]\216=3\003Q\030\205\317\331\2737\331\315\372("
 	.ascii	"|S0\371\001\371\015\374\020\2432\031\235\011\215\352"
 	.ascii	"\015\023\321\021&\304\267 \276J\205\202Nf\013\303L*"
@@ -507,7 +507,7 @@
 	.ascii	"K\2379\025\214\304\343*\030FX\373pT0\204\306\333\303"
 	.ascii	"\244\033\340\331\244\200o\271{|\021"
 	.text
-	.section	.gnu.lto_.refs.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.refs.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\025\310\273N\003A\024\004\321\352\036\337\273"
 	.ascii	"\354\3033c;\000\004\022\017\201%H \200\200\300\376o"
 	.ascii	"2\022\376\213%(\251t\022\370^\263\360Fe\0346\353*Fr"
@@ -517,7 +517,7 @@
 	.ascii	"\370\250x\241\276\022o\264w\265\017\372\247\372\227"
 	.ascii	"\352\211v\246\377 \377Rv\266\367\206?^6\010\237"
 	.text
-	.section	.gnu.lto_.decls.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.decls.4daafc85ec8ee815,"",%progbits
 	.ascii	"x\234\265{yXUW\226\357\335g\337\313\035\270\200\021"
 	.ascii	"\222\230.\323\225J\254\204\036\"Q3\230\357\353\376^"
 	.ascii	"%\232\244|\035S>5\251\356\324\353\246\010\336\030\352"
@@ -1053,7 +1053,7 @@
 	.ascii	"\017\034\311\351\257W.#!\255#\347\344\011F/\362\302"
 	.ascii	"\202\3249\314\247\236&'\005\327\377\017e\370\250\223"
 	.text
-	.section	.gnu.lto_.symtab.3129388ee2e05870,"",%progbits
+	.section	.gnu.lto_.symtab.4daafc85ec8ee815,"",%progbits
 	.ascii	"pgResetFn_compassConfig\000"
 	.ascii	"\000"
 	.ascii	"\000"

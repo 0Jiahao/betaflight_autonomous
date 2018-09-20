@@ -29,6 +29,8 @@
 #include "common/maths.h"
 #include "common/utils.h"
 
+#include "drivers/time.h"
+
 #include "pg/pg.h"
 #include "pg/pg_ids.h"
 
@@ -40,6 +42,7 @@
 #include "flight/altitude.h"
 #include "flight/imu.h"
 #include "flight/pid.h"
+#include "flight/ol_control.h"
 
 #include "rx/rx.h"
 
@@ -62,23 +65,29 @@ enum {
     DEBUG_ALTITUDE_VEL,
     DEBUG_ALTITUDE_HEIGHT
 };
-uint32_t my_althold = 150;
 // 40hz update rate (20hz LPF on acc)
 #define BARO_UPDATE_FREQUENCY_40HZ (1000 * 25)
 
 // initialization of PID
-static int32_t error = 0;
-static int32_t error_i = 0;
-static int32_t error_d = 0;
+static float alt_error = 0;
+static float alt_error_last = 0;
+static float alt_error_i = 0;
+static float alt_error_d = 0;
 static int16_t my_throttle = 1463;
 
 // my_accleration
 float accX_tmp = 0;
 float accY_tmp = 0;
 float accZ_tmp = 0;
-// static float xv[2] = {0,0};
-// static float yv[2] = {0,0};
-// float gain = 8.915815088;
+static float xv[2] = {0,0};
+static float yv[2] = {0,0};
+static float xv_d[2] = {0,0};
+static float yv_d[2] = {0,0};
+static int32_t cf_Alt;
+static timeUs_t currentTimeUs;
+static timeUs_t previousTimeUs;
+float gain = 23.26673006;
+static float alt_dt = 0.0005; //s
 #if defined(USE_ALT_HOLD)
 
 PG_REGISTER_WITH_RESET_TEMPLATE(airplaneConfig_t, airplaneConfig, PG_AIRPLANE_CONFIG, 0);
@@ -97,38 +106,38 @@ static int16_t initialThrottleHold;
 
 static void applyMultirotorAltHold(void)
 {
+    currentTimeUs = micros();
+    const timeDelta_t deltaT = currentTimeUs - previousTimeUs;
+    alt_dt = deltaT * 1e-6f;
     // compute the P I D terms
-    rangefinderAlt = rangefinderGetLatestAltitude();
     my_altitude = rangefinderAlt;
-    // xv[0] = xv[1];
-    // xv[1] = rangefinderAlt / gain;
-    // yv[0] = yv[1];
-    // yv[1] = (xv[0] + xv[1]) + (0.7756795110 * yv[0]);
-    // rangefinderAlt = (int32_t)yv[1];
-    error = uart_altitude - rangefinderAlt;
-        // I term 
-        if(error_i + error < -1000000000)
-        {
-            error_i = -1000000000;
-        }
-        else if (error_i + error > 1000000000)
-        {
-            error_i = 1000000000;
-        }
-        else
-        {
-            error_i = error_i + error;
-        }
-    my_throttle = 1463 + error / 2.5 - error_d + error_i / 1000000; // 7.5 > d > 5
+    alt_error = 150 - rangefinderAlt;
+    previousTimeUs = currentTimeUs;
+    // I term 
+    if(alt_error_i + alt_error * alt_dt < -1000000000)
+    {
+        alt_error_i = -1000000000;
+    }
+    else if (alt_error_i + alt_error * alt_dt > 1000000000)
+    {
+        alt_error_i = 1000000000;
+    }
+    else
+    {
+        alt_error_i = alt_error_i + alt_error * alt_dt;
+    }
+    alt_error_last = alt_error;
+    // feedforward 1459
+    // p term 
+    my_throttle = 1459 + 0.4 * alt_error + 1.25 * alt_error_d + 0.002 * alt_error_i; // + 0.00025 * alt_error_i + 2 * alt_error_d;
     my_throttle = constrain(my_throttle, PWM_RANGE_MIN, PWM_RANGE_MAX);
-
+    my_throttle = constrain(my_throttle, 1350, 1550);
     // debug message
-    DEBUG_SET(DEBUG_ALTCTRL,0,error);
-    DEBUG_SET(DEBUG_ALTCTRL,1,error_i);
-    DEBUG_SET(DEBUG_ALTCTRL,2,error_d);
-    DEBUG_SET(DEBUG_ALTCTRL,3,my_althold);
+    DEBUG_SET(DEBUG_ALTCTRL,0,cf_Alt);
+    DEBUG_SET(DEBUG_ALTCTRL,1,alt_error_i);
+    DEBUG_SET(DEBUG_ALTCTRL,2,alt_error_d);
+    DEBUG_SET(DEBUG_ALTCTRL,3,my_throttle);
     rcCommand[THROTTLE] = my_throttle;
-    my_althold = rcData[THROTTLE] - 1160;
     DEBUG_SET(DEBUG_RCDATA,0,rcData[THROTTLE])
     DEBUG_SET(DEBUG_RCDATA,1,rcData[ROLL])
     DEBUG_SET(DEBUG_RCDATA,2,rcData[PITCH])
@@ -137,6 +146,9 @@ static void applyMultirotorAltHold(void)
     DEBUG_SET(DEBUG_RCCOMMAND, 1, rcCommand[1]);
     DEBUG_SET(DEBUG_RCCOMMAND, 2, rcCommand[2]);
     DEBUG_SET(DEBUG_RCCOMMAND, 3, rcCommand[3]);
+    // error = uart_altitude - rangefinderAlt;
+    // error = dr_control.alt_cmd - rangefinderAlt;
+    // error = 150 - rangefinderAlt;
 }
 
 static void applyFixedWingAltHold(void)
@@ -188,6 +200,8 @@ void updateRangefinderAltHoldState(void)
         initialThrottleHold = rcData[THROTTLE];
         errorVelocityI = 0;
         altHoldThrottleAdjustment = 0;
+        previousTimeUs = micros();
+        alt_error_i = 0;
     }
 }
 
@@ -260,7 +274,6 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
             DEBUG_SET(DEBUG_ALTITUDE, 1, my_baro);
         }
     }
-
     int32_t rangefinderVel = 0;
 // #ifdef USE_RANGEFINDER
     if (sensors(SENSOR_RANGEFINDER) && rangefinderProcess(getCosTiltAngle())) {
@@ -278,7 +291,6 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
 
     if (sensors(SENSOR_ACC)) {
         const float dt = accTimeSum * 1e-6f; // delta acc reading time in seconds
-
         // Integrator - velocity, cm/sec
         if (accSumCount) {
             accX_tmp = (float)accSum[X] / accSumCount;
@@ -291,7 +303,8 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
         // Integrator - Altitude in cm
         accAlt += (vel_acc * 0.5f) * dt + vel * dt;  // integrate velocity to get distance (x= a/2 * t^2)
         my_accalt = accAlt;
-        // accAlt = accAlt * CONVERT_PARAMETER_TO_FLOAT(250) + (float)rangefinderAlt * (1.0f - CONVERT_PARAMETER_TO_FLOAT(250));    // complementary filter for altitude estimation (baro & acc)
+        accAlt = accAlt * CONVERT_PARAMETER_TO_FLOAT(250) + (float)rangefinderAlt * (1.0f - CONVERT_PARAMETER_TO_FLOAT(250));    // complementary filter for altitude estimation (baro & acc)
+        cf_Alt = accAlt;
         vel += vel_acc;
     }
 
@@ -320,7 +333,7 @@ void calculateEstimatedAltitude(timeUs_t currentTimeUs)
     // By using CF it's possible to correct the drift of integrated accZ (velocity) without loosing the phase, i.e without delay
     vel = vel * CONVERT_PARAMETER_TO_FLOAT(barometerConfig()->baro_cf_vel) + rangefinderVel * (1.0f - CONVERT_PARAMETER_TO_FLOAT(barometerConfig()->baro_cf_vel));
     int32_t vel_tmp = lrintf(vel);
-    error_d = vel_tmp;
+    alt_error_d = -vel_tmp;
     // set vario
     estimatedVario = applyDeadband(vel_tmp, 5);
 

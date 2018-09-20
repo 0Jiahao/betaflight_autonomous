@@ -5501,7 +5501,7 @@ extern uint8_t debugMode;
 
 
 extern uint32_t sectionTimes[2][4];
-# 48 "./src/main/build/debug.h"
+# 50 "./src/main/build/debug.h"
 typedef enum {
     DEBUG_NONE,
     DEBUG_CYCLETIME,
@@ -5544,6 +5544,13 @@ typedef enum {
     DEBUG_COMMAND,
     DEBUG_DESIREDANGLE,
     DEBUG_REQUEST,
+    DEBUG_DT,
+    DEBUG_OL,
+    DEBUG_FP,
+    DEBUG_OLCTRL,
+    DEBUG_PSI,
+    DEBUG_CA,
+    DEBUG_PHIL,
     DEBUG_COUNT
 } debugType_e;
 
@@ -6674,6 +6681,25 @@ _Bool
 # 141 "./src/main/flight/pid.h"
     crashRecoveryModeActive(void);
 # 43 "./src/main/fc/fc_rc.c" 2
+# 1 "./src/main/flight/ol_control.h" 1
+struct dronerace_control_struct
+{
+
+  float psi_ref;
+
+
+  float phi_cmd;
+  float theta_cmd;
+  float psi_cmd;
+  float alt_cmd;
+};
+
+extern struct dronerace_control_struct dr_control;
+
+extern void ol_control_reset(void);
+extern void ol_control_run(void);
+# 44 "./src/main/fc/fc_rc.c" 2
+
 # 1 "./src/main/rx/rx.h" 1
 # 18 "./src/main/rx/rx.h"
        
@@ -6858,7 +6884,7 @@ void suspendRxSignal(void);
 void resumeRxSignal(void);
 
 uint16_t rxGetRefreshRate(void);
-# 44 "./src/main/fc/fc_rc.c" 2
+# 46 "./src/main/fc/fc_rc.c" 2
 
 # 1 "./src/main/scheduler/scheduler.h" 1
 # 18 "./src/main/scheduler/scheduler.h"
@@ -7026,7 +7052,7 @@ void schedulerResetTaskStatistics(cfTaskId_e taskId);
 void schedulerInit(void);
 void scheduler(void);
 void taskSystem(timeUs_t currentTime);
-# 46 "./src/main/fc/fc_rc.c" 2
+# 48 "./src/main/fc/fc_rc.c" 2
 
 # 1 "./src/main/sensors/battery.h" 1
 # 18 "./src/main/sensors/battery.h"
@@ -7554,7 +7580,7 @@ int32_t getMAhDrawn(void);
 void batteryUpdateCurrentMeter(timeUs_t currentTimeUs);
 
 const lowVoltageCutoff_t *getLowVoltageCutoff(void);
-# 48 "./src/main/fc/fc_rc.c" 2
+# 50 "./src/main/fc/fc_rc.c" 2
 # 1 "./src/main/telemetry/mavlink.h" 1
 # 18 "./src/main/telemetry/mavlink.h"
        
@@ -7570,20 +7596,20 @@ extern float uart_altitude;
 extern float uart_roll;
 extern float uart_pitch;
 extern float uart_yaw;
-# 49 "./src/main/fc/fc_rc.c" 2
+# 51 "./src/main/fc/fc_rc.c" 2
 
 typedef float (applyRatesFn)(const int axis, float rcCommandf, const float rcCommandfAbs);
 
 static float setpointRate[3], rcDeflection[3], rcDeflectionAbs[3];
 static float throttlePIDAttenuation;
 static 
-# 54 "./src/main/fc/fc_rc.c" 3 4
+# 56 "./src/main/fc/fc_rc.c" 3 4
       _Bool 
-# 54 "./src/main/fc/fc_rc.c"
+# 56 "./src/main/fc/fc_rc.c"
            reverseMotors = 
-# 54 "./src/main/fc/fc_rc.c" 3 4
+# 56 "./src/main/fc/fc_rc.c" 3 4
                            0
-# 54 "./src/main/fc/fc_rc.c"
+# 56 "./src/main/fc/fc_rc.c"
                                 ;
 static applyRatesFn *applyRates;
 
@@ -7664,8 +7690,10 @@ static void calculateSetpointRate(int axis)
 
     if(((flightModeFlags & (RANGEFINDER_MODE))) && (axis == 2))
     {
-        float desiredYaw = uart_yaw;
-        float currentYaw = attitude.values.yaw/10.0;
+
+
+        float desiredYaw = constrainf(rcData[YAW]-1500,-180,180);
+        float currentYaw = attitude.values.yaw / 10.0;
         if(currentYaw > 180)
         {
             currentYaw = currentYaw - 360;
@@ -7820,9 +7848,9 @@ void processRcCommand(void)
 
     if (isRXDataNew) {
         isRXDataNew = 
-# 289 "./src/main/fc/fc_rc.c" 3 4
+# 293 "./src/main/fc/fc_rc.c" 3 4
                      0
-# 289 "./src/main/fc/fc_rc.c"
+# 293 "./src/main/fc/fc_rc.c"
                           ;
     }
 }
@@ -7893,17 +7921,17 @@ void updateRcCommands(void)
         } else {
             if (IS_RC_MODE_ACTIVE(BOX3D)) {
                 reverseMotors = 
-# 358 "./src/main/fc/fc_rc.c" 3 4
+# 362 "./src/main/fc/fc_rc.c" 3 4
                                1
-# 358 "./src/main/fc/fc_rc.c"
+# 362 "./src/main/fc/fc_rc.c"
                                    ;
                 fix12_t throttleScaler = qConstruct(rcCommand[THROTTLE] - 1000, 1000);
                 rcCommand[THROTTLE] = rxConfig()->midrc + qMultiply(throttleScaler, 1000 - rxConfig()->midrc);
             } else {
                 reverseMotors = 
-# 362 "./src/main/fc/fc_rc.c" 3 4
+# 366 "./src/main/fc/fc_rc.c" 3 4
                                0
-# 362 "./src/main/fc/fc_rc.c"
+# 366 "./src/main/fc/fc_rc.c"
                                     ;
                 fix12_t throttleScaler = qConstruct(rcCommand[THROTTLE] - 1000, 1000);
                 rcCommand[THROTTLE] = rxConfig()->midrc + qMultiply(throttleScaler, 2000 - rxConfig()->midrc);
@@ -7936,9 +7964,9 @@ void resetYawAxis(void)
 }
 
 
-# 393 "./src/main/fc/fc_rc.c" 3 4
+# 397 "./src/main/fc/fc_rc.c" 3 4
 _Bool 
-# 393 "./src/main/fc/fc_rc.c"
+# 397 "./src/main/fc/fc_rc.c"
     isMotorsReversed(void)
 {
     return reverseMotors;

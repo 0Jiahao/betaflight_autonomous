@@ -9,29 +9,29 @@
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"flash_m25p16.c"
-	.section	.gnu.lto_.profile.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.profile.5c2555cfeb889f70,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.icf.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.icf.5c2555cfeb889f70,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.inline.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.inline.5c2555cfeb889f70,"",%progbits
 	.ascii	"x\234cc```b@\006\000\000\232\000\011"
 	.text
-	.section	.gnu.lto_.pureconst.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.pureconst.5c2555cfeb889f70,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.symbol_nodes.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.symbol_nodes.5c2555cfeb889f70,"",%progbits
 	.ascii	"x\234cc```b\000\001\000\000R\000\011"
 	.text
-	.section	.gnu.lto_.refs.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.refs.5c2555cfeb889f70,"",%progbits
 	.ascii	"x\234cc```\004b\006\000\000D\000\010"
 	.text
-	.section	.gnu.lto_.decls.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.decls.5c2555cfeb889f70,"",%progbits
 	.ascii	"x\234cc\200\000F V\001\342\377@\000b\037d \000\000\276"
 	.ascii	"|\004\352"
 	.text
-	.section	.gnu.lto_.symtab.87c8a030a8e378e1,"",%progbits
+	.section	.gnu.lto_.symtab.5c2555cfeb889f70,"",%progbits
 	.text
 	.section	.gnu.lto_.opts,"",%progbits
 	.ascii	"'-fno-math-errno' '-fno-signed-zeros' '-fno-trappin"
